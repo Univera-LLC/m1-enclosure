@@ -14,11 +14,13 @@ Keep the original logic board and heatsink. Print the parts around them. D2.6 is
 
 ## Print the small kit first
 
+Start with the [20 mm calibration cube](cad/solidcraft-m1/calibration/calibration-cube-20mm.stl). Check that the slicer shows 20 mm on all three axes at 100%, then measure the cooled print. If its size is off, check the printer settings before printing the case.
+
 1. **Unzip the [first-fit kit](cad/solidcraft-m1/prototype-d26/d2.6-first-fit.zip).** It contains a power holder (**01**), rear panel (**02**) and three little pieces (**06–08**) that stand in for the board supports, side guide and lid stop. Leave the full base and lid for later.
 2. **Print the supplied STL orientations at 100%, in millimetres.** The checked Ender 3 Pro setup uses PETG, a 0.4 mm nozzle and no supports. Use **0.10 mm for every layer of the panel**, including the first. Its smooth outside face is already on the bed. The holder and samples use 0.20 mm layers.
 3. **Try the parts without power.** Set the panel against the bare board. It should sit flat without pressing on the metal between the two Thunderbolt sockets. Compare each plug with and without the panel; try both USB-A plugs together and check that the Ethernet latch releases. Check the holder, guides and board supports before printing the [five-part case](cad/solidcraft-m1/prototype-d26/d2.6-cold-fit-kit.zip).
 
-[Full fit procedure (Ukrainian)](cad/solidcraft-m1/prototype-d26/FIT-FIRST.md) · [How to report a fit result](CONTRIBUTING.md#report-a-fit-result)
+[Step-by-step fit guide (English)](docs/guides/first-fit.md) · [Original kit instructions (Українська)](cad/solidcraft-m1/prototype-d26/FIT-FIRST.md) · [Report a fit result](CONTRIBUTING.md#report-a-fit-result)
 
 ## Why this panel looks different
 

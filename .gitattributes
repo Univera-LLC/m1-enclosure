@@ -2,6 +2,8 @@
 # Source data, publication receipts, and kit contents have byte-level hashes.
 # Keep the original bytes on every platform, including Windows checkouts.
 cad/** -text
+# Frozen CAD reports may use CRLF; keep checking for whitespace before the line ending.
+cad/**/*.json whitespace=trailing-space,space-before-tab,cr-at-eol
 release/** -text
 *.stl binary
 *.glb binary

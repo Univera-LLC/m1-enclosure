@@ -24,6 +24,11 @@
 !/docs/assets/
 !/docs/CAD-BUILD.md
 !/docs/VIEWER.md
+# Public maker guides are Markdown; other working files in this area stay local.
+!/docs/guides/
+/docs/guides/**
+!/docs/guides/**/
+!/docs/guides/**/*.md
 
 # Historical CAD folders mix source, privately supplied material and generated
 # files. Their reviewed inputs are explicitly tracked; edits to them show as
@@ -32,9 +37,16 @@
 /cad/*
 !/cad/solidcraft-m1/
 /cad/solidcraft-m1/*
+!/cad/solidcraft-m1/calibration/
+/cad/solidcraft-m1/calibration/*
+!/cad/solidcraft-m1/calibration/calibration-cube-20mm.stl
 !/cad/solidcraft-m1/prototype-d26/
 /cad/solidcraft-m1/prototype-d26/*
 !/cad/solidcraft-m1/prototype-d26/*.py
+!/cad/solidcraft-m1/prototype-d26/base-fit.json
+!/cad/solidcraft-m1/prototype-d26/board-study/
+/cad/solidcraft-m1/prototype-d26/board-study/*
+!/cad/solidcraft-m1/prototype-d26/board-study/port-contract.json
 !/cad/solidcraft-m1/viewer/
 /cad/solidcraft-m1/viewer/*
 !/cad/solidcraft-m1/viewer/d26/

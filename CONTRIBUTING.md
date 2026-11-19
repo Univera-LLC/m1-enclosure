@@ -26,9 +26,15 @@ The browser check uses an installed Edge or Playwright Chromium; the [viewer gui
 2. Make the smallest coherent change. If a panel change also affects the base, lid or holder, name the matching parts. Give a changed printable design its own revision; keep the recorded D2.6 files intact.
 3. Report the commands you ran, what they verified and what remains open. For a geometry change, include a comparable before/after view or a dimensional result. For a viewer change, check the relevant interaction as well as the rendered page.
 
-The public Git tree is a selection from a larger engineering workspace. If a build needs a new CAD input, list it in [cad-inputs.txt](tools/cad-inputs.txt), confirm it can be redistributed, and add that specific path to Git. Do not force-add a whole historical directory. Use `python tools/check_public_tree.py` to check the staged file list and links before you submit.
-
 Use **SOURCE** for geometry taken from a reference; **DOCUMENTED** for a specification or drawing; **MEASURED** for a physical measurement; and **ASSUMED** for an unverified input. Record a CAD or slicer result as calculated, with its input revision. A successful slice does not establish printed fit, electrical behavior or temperature.
+
+## Add a public file
+
+Put new public Markdown guides in `docs/guides/`. Use relative links to files in the public checkout so the guide also works in a fork. Private engineering notes, owner photos and vendor manuals stay out of this directory.
+
+If a new file is missing from `git status`, run `git check-ignore -v -- path/to/the/file` to find the matching rule. Existing tracked files still show edits even when a rule would hide a new file at that path.
+
+For a new CAD revision, add a narrow exception in [.gitignore](.gitignore) for the revision directory, keep its contents ignored by default, and allow only the reviewed source paths. Confirm that each input can be redistributed; list files needed to rebuild in [cad-inputs.txt](tools/cad-inputs.txt). Do not force-add a historical directory. Stage the intended paths, review `git diff --cached --name-only`, and run `python tools/check_public_tree.py` to verify the public file list and guide links.
 
 ## Rights in new contributions
 

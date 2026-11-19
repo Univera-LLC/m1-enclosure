@@ -25,7 +25,8 @@ def main():
         if not (ROOT / name).is_file():
             audit.flag(name,"missing working file");continue
         audit.blob(name,(ROOT / name).read_bytes())
-        if not (path.suffix == ".md" and (len(path.parts) == 1 or path.parent == PurePosixPath("docs"))):
+        contributor_doc = len(path.parts) == 1 or path.parent == PurePosixPath("docs") or path.is_relative_to("docs/guides")
+        if path.suffix != ".md" or not contributor_doc:
             continue
         body = (ROOT / name).read_text(encoding="utf-8")
         for ref in re.findall(r"\]\(([^)\s]+)\)", body):

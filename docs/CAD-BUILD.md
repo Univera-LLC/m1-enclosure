@@ -44,6 +44,8 @@ Windows portable option: extract the official `PrusaSlicer-2.9.7.zip` (SHA-256 `
 
 The artifacts are in `build/d26-first/workspace/cad/solidcraft-m1/prototype-d26/`. Start with `fit-validation.json`, `print/slice-checks.json`, `reference-crosscheck.json` and `d2.6-first-fit.zip`; follow `FIT-FIRST.md` for the physical check. The frozen D2.6 design has 341 CAD operations, 5,023 fit comparisons and 26 panel layers. Its original raw board model and photo-registered board disagree around the common Thunderbolt shield. The crosscheck intentionally reports both.
 
+You can inspect two D2.6 reports without installing CAD tools. The [board connector dimensions](../cad/solidcraft-m1/prototype-d26/board-study/port-contract.json) give the axes and outlines of the seven original board sockets and distinguish source geometry, photo estimates and assumptions. The [base fit report](../cad/solidcraft-m1/prototype-d26/base-fit.json) details the 118 digital base comparisons, including screw access and support on the two board mounting rings.
+
 The runner checks [project.json](../project.json) before a build. If another revision is selected, it stops; `--verify` can still verify a previous D2.6 output directory.
 
 **Compatibility with the published D2.6 release:** SolidCraft 0.44.1 rejects duplicate sketch names during a clean build. The builder now includes the X station in the names of the YZ sections and their extrusions. This changes 14 display-name fields in the 454 submitted commands; removing only those suffixes reproduces the archived command hash exactly. The corrected operation SHA-256 starts with `285da3c3`; the published release report retains `994b76eb`. No command coordinates, sizes, operations or materials changed.
