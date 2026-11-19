@@ -26,7 +26,7 @@ The first command checks the rebuilt UI. The second checks the unchanged publish
 
 The smoke test uses Microsoft Edge when installed at its standard Windows path, otherwise Playwright Chromium. To install the browser, run `npx playwright install chromium` from `cad/solidcraft-m1/viewer`; on a minimal Linux runner use `npx playwright install --with-deps chromium`. Node dependencies and the browser require an initial download; local verification, builds, and checks then run offline.
 
-For a standalone copy, run `python tools/verify_release.py --site-dir build/d26-site`. The target must not yet exist. This writes the 36 verified routes and 20 companion assets with the original bytes; it is a snapshot of this release, not a mirror of older manufacturing archives. To verify another checkout from an existing installation, pass `--root PATH`.
+For a standalone copy, run `python tools/verify_release.py --site-dir build/d26-site`. The target must not yet exist. This writes the 36 verified routes and 20 companion assets with the original bytes; it is a snapshot of this release, not a mirror of older manufacturing archives. To verify another checkout from an existing installation, pass `--root PATH`. Links inside the frozen `release/d2.6-site/README.md` use the published URL layout; use the local preview or materialize the site before following them.
 
 ## Maintainer notes
 

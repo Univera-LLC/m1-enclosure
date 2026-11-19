@@ -73,6 +73,45 @@ def toolchain():
     return solid, slicer, {"python":sys.version.split()[0], **LOCK, "solidcraft":scver,"slicer":psver}
 
 
+def cad_inputs(base, paths):
+    # Relative file names + byte hashes; the digest is independent of copy location/order.
+    files = {}
+    for rel in paths:
+        p = (base/rel).resolve()
+        if not p.is_relative_to(base.resolve()): raise ValueError(f"Invalid source path: {rel}")
+        files[Path(rel).as_posix()] = digest(p)
+    encoded = json.dumps(files,sort_keys=True,separators=(",",":")).encode("utf8")
+    return {"sha256":hashlib.sha256(encoded).hexdigest(),"files_sha256":files}
+
+
+def published_prints(active, manifest_path):
+    data = manifest_path.read_bytes()
+    manifest = json.loads(data)
+    published = manifest["revision"]
+    if not isinstance(published,str) or not published: raise ValueError("Published manifest revision is missing")
+    proof = {"working_revision":"D2.6","published_revision":published,
+             "manifest_sha256":hashlib.sha256(data).hexdigest()}
+    if published != "D2.6":
+        print(f"Published {published} differs from working D2.6; no cross-revision STL comparison.",flush=True)
+        return {**proof,"status":"different revision; not compared"}
+    prefix = "downloads/d2.6/print/"
+    expected = {route:row["sha256"] for route,row in manifest["files"].items()
+                if route.startswith(prefix) and route.endswith(".stl")}
+    files = {prefix+f.name:f for f in (active/"print").glob("*.stl")}
+    if len(expected) != 8 or expected.keys() != files.keys():
+        raise ValueError("Expected exactly the same eight D2.6 STL routes in build and published manifest")
+    for route,path in files.items(): check_hash(path,expected[route])
+    print("All 8 rebuilt STL files exactly match the published D2.6 print routes.",flush=True)
+    return {**proof,"status":"passed","matched_routes_sha256":expected}
+
+
+def selected_manifest():
+    project = json.loads((ROOT/"project.json").read_text(encoding="utf8"))
+    path = (ROOT/project["published_manifest"]).resolve()
+    if not path.is_relative_to(ROOT): raise ValueError("Published manifest path must stay within the project")
+    return path
+
+
 def make_arrays(stl, target):
     # Same exact float32 welding and face-edge connectivity as the historical source analysis.
     import numpy as np
@@ -104,8 +143,9 @@ def save(path, data):
     tmp.replace(path)
 
 
-def verify(out):
-    ledger = json.loads((out/"verified.json").read_text(encoding="utf8"))
+def verify(out,ledger=None):
+    if ledger is None:
+        ledger = json.loads((out/"verified.json").read_text(encoding="utf8"))
     base = out/"workspace"/ACTIVE
     required = {*KITS, "cad-validation.json","fit-validation.json","reference-crosscheck.json",
                 "print/slice-checks.json","print/stl-checks.json","d26-workbench.sc",
@@ -116,6 +156,17 @@ def verify(out):
         path = (base/name).resolve()
         if not path.is_relative_to(base.resolve()): raise ValueError("Invalid verification path")
         check_hash(path,h)
+    if "cad_inputs" in ledger:
+        recorded = ledger["cad_inputs"]
+        if cad_inputs(base.parent,recorded["files_sha256"]) != recorded:
+            raise ValueError("Staged CAD inputs no longer match the completed build")
+    if ledger.get("published_prints",{}).get("status") == "passed":
+        routes = ledger["published_prints"]["matched_routes_sha256"]
+        if len(routes) != 8: raise ValueError("Incomplete D2.6 STL equivalence record")
+        for route,h in routes.items():
+            part = Path(route).name
+            if route != "downloads/d2.6/print/"+part: raise ValueError("Invalid recorded STL route")
+            check_hash(base/"print"/part,h)
     print(f"Verified {len(ledger['sha256'])} output files; {base}",flush=True)
 
 
@@ -157,6 +208,7 @@ def main():
         for rel in sources:
             to = ws/CAD/rel;to.parent.mkdir(parents=True,exist_ok=True)
             shutil.copyfile(ROOT/CAD/rel,to)
+        state["cad_inputs"] = cad_inputs(ws/CAD,sources)
         raw = ws/CAD/"source-analysis";raw.mkdir(parents=True,exist_ok=True)
         if a.assembly: make_arrays(a.assembly,raw)
         else:
@@ -176,10 +228,13 @@ def main():
                      and p.suffix in (".json",".stl",".glb",".svg",".sc",".step",".zip")]
         hashes = {p.relative_to(active).as_posix():digest(p) for p in sorted(generated)}
         for n in KITS: check_hash(active/n,hashes[n])
+        state["current_stage"] = "published STL comparison"; save(out/"run.json",state)
+        state["published_prints"] = published_prints(active,selected_manifest())
         state.update(status="passed",current_stage=None)
+        ledger = {**state,"sha256":hashes,"physical_fit":"NOT TESTED"}
+        verify(out,ledger)
         save(out/"run.json",state)
-        save(out/"verified.json",{**state,"sha256":hashes,"physical_fit":"NOT TESTED"})
-        verify(out)
+        save(out/"verified.json",ledger)
     except BaseException as exc:
         state.update(status="failed",error=str(exc));save(out/"run.json",state)
         raise

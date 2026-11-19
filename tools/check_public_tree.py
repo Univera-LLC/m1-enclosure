@@ -8,7 +8,7 @@ import sys
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-TOP_PRIVATE = {".publish", ".review", ".archify", "bin", "build", "lib", "pcb", "share", "tmp"}
+TOP_PRIVATE = {".publish", ".review", ".archify", ".local-tools", "bin", "build", "lib", "pcb", "share", "tmp"}
 CACHES = {"node_modules", "__pycache__", ".work", ".venv", "vendor"}
 TEXT = {".json", ".py", ".md", ".txt", ".mjs", ".js", ".ps1", ".html", ".svg", ".yml", ".toml"}
 PRIVATE_TEXT = re.compile(rb"(?:[a-z]:[\\/]+Users[\\/]+[\w.-]+[\\/]|\bPXL_20\d{6}_\d{6}|-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----)", re.I)
