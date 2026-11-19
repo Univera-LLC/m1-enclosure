@@ -1,4 +1,4 @@
-"""Build the organization Pages artifact from the verified D2.6 release and viewer source."""
+"""Build the organization Pages artifact from D2.6 and the separate Redline preview."""
 import argparse
 import hashlib
 from html.parser import HTMLParser
@@ -13,6 +13,7 @@ from verify_release import ROOT, inside, require, verify
 
 PAGES = "https://univera-llc.github.io/m1-enclosure/"
 RAW = "https://raw.githubusercontent.com/Univera-LLC/m1-enclosure/main/"
+REDLINE_ASSETS = ("index.html", "front.webp", "rear.webp", "exploded.webp")
 # These archives are not part of the verified D2.6 receipt. Match links and legacy JS redirects.
 OLDER = re.compile(r"""(?P<q>["'])\.\./(?P<route>(?:downloads/d2\.5|reference/d2\.5|d1|d2(?:\.[1-4])?|h1)/)""")
 MARKDOWN_LINK = re.compile(r"(\]\()([^()\s]+)(\))")
@@ -95,8 +96,19 @@ def package(dest):
         (directory / "LICENSES").mkdir()
         shutil.copyfile(ROOT / "LICENSES/three-js.txt", directory / "LICENSES/three-js.txt")
 
+    redline = dest / "redline"
+    redline.mkdir()
+    for name in REDLINE_ASSETS:
+        shutil.copyfile(ROOT / "release/redline-r2-site" / name, redline / name)
+    home_path = dest / "index.html"
+    home_source = home_path.read_text(encoding="utf-8")
+    marker = "<!-- PAGES_EXPERIMENT -->"
+    require(home_source.count(marker) == 1, "missing Redline navigation slot")
+    home_path.write_text(home_source.replace(marker, '<p><a href="redline/">Експеримент Redline R2 ↗</a></p>'),
+                         encoding="utf-8", newline="\n")
+
     home = check_html(dest, "index.html")
-    for route in ("d2.5/index.html", "accessories/index.html"):
+    for route in ("d2.5/index.html", "accessories/index.html", "redline/index.html"):
         check_html(dest, route)
     expected = {r for r in routes if r.startswith("downloads/d2.6/") and
                 Path(r).suffix in {".stl", ".step", ".sc", ".zip"}} | {"reference/d2.6/mac-board-reference.glb"}
@@ -105,7 +117,7 @@ def package(dest):
         for base in (built, dest):
             actual = hashlib.sha256((base / route).read_bytes()).hexdigest()
             require(actual == manifest["files"][route]["sha256"], f"download differs from release: {route}")
-    print(f"Organization Pages ready: {dest}; three HTML routes checked, all 14 downloads match D2.6.")
+    print(f"Organization Pages ready: {dest}; Redline preview and D2.6 routes checked, all 14 downloads match D2.6.")
 
 
 if __name__ == "__main__":

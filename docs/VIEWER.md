@@ -28,6 +28,8 @@ Open **http://127.0.0.1:8000/m1-enclosure/**. To exercise this exact site, run `
 
 Packaging verifies the original release receipt, rebuilds the home page, verifies all 14 downloadable files against their SHA-256 hashes, and checks the HTML routes under the same URL prefix as Pages. The D2.5 viewer and accessory models are included. Older archives and D2.5 manufacturing downloads point to their original host. The site carries the current Univera license, source and dependency notices and the machine-readable navigation index. The published ZIPs remain byte-for-byte identical to the original D2.6 release.
 
+The organization site also links to the separate [Redline R2 experiment](https://univera-llc.github.io/m1-enclosure/redline/). The [preview snapshot](../release/redline-r2-site/) contains its self-contained 3D view and three CAD renders. Redline is a visual preview for an unpowered fit prototype; D2.6 remains the revision for the site's print kits.
+
 The [workflow](../.github/workflows/check.yml) tests the actual static artifact on pull requests and branch pushes. Only a successful push or manual run on the organization's `main` branch uploads and deploys it to the `github-pages` environment. The repository's Pages source must be **GitHub Actions**. The raw directory in `release/d2.6-site/` is a set of frozen inputs with their original navigation; use a materialized site for browsing.
 
 ## Browser and release checks
