@@ -1,0 +1,7 @@
+{
+  "revision": "D2.6",
+  "cad": "cad/solidcraft-m1/prototype-d26",
+  "viewer": "cad/solidcraft-m1/viewer/d26",
+  "first_fit": "cad/solidcraft-m1/prototype-d26/d2.6-first-fit.zip",
+  "published_manifest": "release/d2.6-manifest.json"
+}

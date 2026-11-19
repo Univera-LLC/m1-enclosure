@@ -1,0 +1,93 @@
+{
+  "status": "COLD BOTTOMPLATE PROPOSAL ONLY",
+  "owner_fit_verified": false,
+  "case_assembly_verified": false,
+  "source_path": "cad/references/snazzylabs-139893/original/Bottom Cover.stl",
+  "source_sha256": "b6c6f19b67e724270738bd046d34f7a12dcd58de7da1b827b98f6353a871c573",
+  "mounting": "four source centre lines recovered",
+  "holes_enabled": true,
+  "normalisation": "X=x-77.709898; Y=-z+110.123045; rigid source X+90deg frame",
+  "source_centres_xz": [
+    [
+      11.70983898140655,
+      156.02304613518294
+    ],
+    [
+      39.58836411620805,
+      77.77990627898551
+    ],
+    [
+      143.70983948954918,
+      156.0230461350779
+    ],
+    [
+      144.7098379700116,
+      83.02304745312505
+    ]
+  ],
+  "normalised_centres_xy": [
+    [
+      -66.00005901859345,
+      -45.90000113518293
+    ],
+    [
+      -38.12153388379195,
+      32.3431387210145
+    ],
+    [
+      65.99994148954919,
+      -45.900001135077886
+    ],
+    [
+      66.9999399700116,
+      27.09999754687496
+    ]
+  ],
+  "parameters": {
+    "source_width": 155,
+    "source_depth": 115,
+    "wall": 2.4,
+    "fit_gap": 0.3,
+    "rear_extension": 12,
+    "plate_t": 2.4,
+    "bottom_z": -0.2,
+    "hole_d": 2.4,
+    "source_origin_x": 77.709898,
+    "source_origin_z": 110.123045,
+    "source_hole_1_x": 11.70983898140655,
+    "source_hole_1_z": 156.02304613518294,
+    "source_hole_2_x": 39.58836411620805,
+    "source_hole_2_z": 77.77990627898551,
+    "source_hole_3_x": 143.70983948954918,
+    "source_hole_3_z": 156.0230461350779,
+    "source_hole_4_x": 144.7098379700116,
+    "source_hole_4_z": 83.02304745312505
+  },
+  "expected": {
+    "bbox": {
+      "min": [
+        -74.8,
+        -54.800000000000004,
+        -0.2
+      ],
+      "max": [
+        74.8,
+        69.2,
+        2.1999999999999997
+      ]
+    },
+    "dimensions": [
+      149.6,
+      124.0,
+      2.4
+    ],
+    "volume": 44477.53062315677
+  },
+  "not_designed": [
+    "head recesses",
+    "feet",
+    "case/tray attachment",
+    "PCB posts",
+    "final screw lengths/torque"
+  ]
+}

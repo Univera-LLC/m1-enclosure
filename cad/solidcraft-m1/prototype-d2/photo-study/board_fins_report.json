@@ -1,0 +1,953 @@
+{
+  "SOURCE_original_total_crests_including_two_outer_walls": 22,
+  "DOCUMENTED_photo_total_crests_including_two_outer_walls": 23,
+  "DOCUMENTED_photo_interior_crests": 21,
+  "DOCUMENTED_photo_open_channels": 22,
+  "SOURCE_and_reconstructed_field_bounds_xyz_mm": [
+    [
+      -51.8,
+      -20.15,
+      17.4
+    ],
+    [
+      18.2,
+      31.35,
+      36.9
+    ]
+  ],
+  "SOURCE_root_and_crest_z_mm": [
+    24.9,
+    36.9
+  ],
+  "SOURCE_endpoint_crest_centres_x_mm": [
+    -51.3,
+    17.7009
+  ],
+  "ASSUMED_reconstruction_centres_x_mm": [
+    -51.3,
+    -48.1636,
+    -45.0272,
+    -41.89079,
+    -38.75439,
+    -35.61798,
+    -32.48158,
+    -29.34517,
+    -26.20877,
+    -23.07236,
+    -19.93596,
+    -16.79955,
+    -13.66315,
+    -10.52674,
+    -7.39034,
+    -4.25393,
+    -1.11753,
+    2.01888,
+    5.15528,
+    8.29169,
+    11.42809,
+    14.5645,
+    17.7009
+  ],
+  "ASSUMED_uniform_pitch_mm": 3.136405,
+  "SOURCE_flat_flank_thickness_at_z26_mm": 1.0,
+  "copied_SOURCE_inner_tooth": "translated unscaled (curved feet and crown preserved)",
+  "replaced_source_triangle_count": 3498,
+  "unchanged_source_triangle_count": 6182,
+  "replacement_patch_triangles": 3658,
+  "exact_board_interface_edges": 60,
+  "status": "REFERENCE ONLY. The count/direction are visible in photos; all metric data come from SOURCE or its reconstruction. No measured dimensions, fit, airflow, or thermal result.",
+  "photo_evidence": "board_fins_pixels.json",
+  "linked_photo_result": {
+    "full_width_strips": 12,
+    "threshold_checks": 36,
+    "open_channels": 22,
+    "internal_crests": 21,
+    "outer_walls": 2,
+    "crest_lines_including_outer_walls": 23,
+    "direction": "front/rear, running from the native I/O side toward the front board mounts"
+  },
+  "source_obj_sha256": "aea88d1dfb4c62a826cc3dad1c1d399544b548e54dfd97a912c51f2420157b06",
+  "combined_board": {
+    "watertight": true,
+    "winding_consistent": true,
+    "unpaired_edges": 0,
+    "bbox_desk_mm": [
+      [
+        -73.9,
+        -43.15,
+        13.0
+      ],
+      [
+        73.0,
+        56.45,
+        36.9
+      ]
+    ],
+    "oriented_unmodified_triangles": 6182,
+    "total_triangles": 9840,
+    "glTF_readback_max_coordinate_error_mm": 3.426902409842114e-06
+  },
+  "independent_geometry": {
+    "XY_sections_at_eight_heights_mm": {
+      "24.902": {
+        "SOURCE": 22,
+        "corrected": 23,
+        "interior_profile_width_mm": 1.45431
+      },
+      "25.05": {
+        "SOURCE": 22,
+        "corrected": 23,
+        "interior_profile_width_mm": 1.04367
+      },
+      "25.3": {
+        "SOURCE": 22,
+        "corrected": 23,
+        "interior_profile_width_mm": 1.0
+      },
+      "26.0": {
+        "SOURCE": 22,
+        "corrected": 23,
+        "interior_profile_width_mm": 1.0
+      },
+      "29.7": {
+        "SOURCE": 22,
+        "corrected": 23,
+        "interior_profile_width_mm": 1.0
+      },
+      "35.5": {
+        "SOURCE": 22,
+        "corrected": 23,
+        "interior_profile_width_mm": 1.0
+      },
+      "36.7": {
+        "SOURCE": 22,
+        "corrected": 23,
+        "interior_profile_width_mm": 0.98887
+      },
+      "36.85": {
+        "SOURCE": 22,
+        "corrected": 23,
+        "interior_profile_width_mm": 0.79715
+      }
+    },
+    "XZ_sections_y_mm": [
+      -20.05,
+      -7.5,
+      13.0,
+      31.25
+    ],
+    "crest_and_channel_root_rays": 180,
+    "SOURCE_minus_corrected_and_corrected_minus_SOURCE": [
+      {
+        "bbox_xyz_mm": [
+          [
+            -47.9136,
+            -20.15,
+            24.9
+          ],
+          [
+            14.3145,
+            31.35,
+            36.9
+          ]
+        ],
+        "volume_mm3": 8814.276
+      },
+      {
+        "bbox_xyz_mm": [
+          [
+            -48.9136,
+            -20.15,
+            24.9
+          ],
+          [
+            15.3145,
+            31.35,
+            36.9
+          ]
+        ],
+        "volume_mm3": 9432.264
+      }
+    ]
+  },
+  "d2_1": {
+    "reference_vs_native_bodies_without_positive_intersection": 24,
+    "unchanged_inherited_three_RF_intersection_volumes": true,
+    "minimum_lid_gap_over_all_23_crests_at_bridge_y_4_6_mm": 6.7,
+    "air_gauge_width_mm": 1.4,
+    "old_paths_clear_on_original_SOURCE": 21,
+    "old_paths_intersecting_new_fin_field": [
+      "M1-2-floor",
+      "M1-2-nose",
+      "M1-3-floor",
+      "M1-3-nose",
+      "M1-4-floor",
+      "M1-4-nose",
+      "M1-5-floor",
+      "M1-5-nose",
+      "M1-6-floor",
+      "M1-6-nose",
+      "M1-7-floor",
+      "M1-7-nose",
+      "M1-8-floor",
+      "M1-8-nose",
+      "M1-9-floor",
+      "M1-9-nose"
+    ],
+    "updated_gauge_paths_clear_against_corrected_board_24_native_3_RF_and_2_short_loom_study": 21,
+    "updated_segments_checked": 102,
+    "max_shift_mm": 1.12548,
+    "gauge_axes": {
+      "M1-1": {
+        "old_x_mm": 12.773,
+        "adapted_x_mm": 12.99629,
+        "move_x_mm": 0.2233,
+        "common_allowed_x_interval_mm": [
+          12.62809,
+          13.3645
+        ]
+      },
+      "M1-2": {
+        "old_x_mm": 6.202,
+        "adapted_x_mm": 6.72349,
+        "move_x_mm": 0.52149,
+        "common_allowed_x_interval_mm": [
+          6.35528,
+          7.09169
+        ]
+      },
+      "M1-3": {
+        "old_x_mm": -0.37,
+        "adapted_x_mm": 0.45067,
+        "move_x_mm": 0.82067,
+        "common_allowed_x_interval_mm": [
+          0.08247,
+          0.81888
+        ]
+      },
+      "M1-4": {
+        "old_x_mm": -6.942,
+        "adapted_x_mm": -5.96617,
+        "move_x_mm": 0.97583,
+        "common_allowed_x_interval_mm": [
+          -6.19034,
+          -5.742
+        ]
+      },
+      "M1-5": {
+        "old_x_mm": -13.513,
+        "adapted_x_mm": -12.38808,
+        "move_x_mm": 1.12492,
+        "common_allowed_x_interval_mm": [
+          -12.46315,
+          -12.313
+        ]
+      },
+      "M1-6": {
+        "old_x_mm": -20.085,
+        "adapted_x_mm": -21.21048,
+        "move_x_mm": -1.12548,
+        "common_allowed_x_interval_mm": [
+          -21.285,
+          -21.13596
+        ]
+      },
+      "M1-7": {
+        "old_x_mm": -26.657,
+        "adapted_x_mm": -27.63289,
+        "move_x_mm": -0.97589,
+        "common_allowed_x_interval_mm": [
+          -27.857,
+          -27.40877
+        ]
+      },
+      "M1-8": {
+        "old_x_mm": -33.228,
+        "adapted_x_mm": -34.04978,
+        "move_x_mm": -0.82178,
+        "common_allowed_x_interval_mm": [
+          -34.41798,
+          -33.68158
+        ]
+      },
+      "M1-9": {
+        "old_x_mm": -39.8,
+        "adapted_x_mm": -40.32259,
+        "move_x_mm": -0.52259,
+        "common_allowed_x_interval_mm": [
+          -40.69079,
+          -39.95439
+        ]
+      },
+      "M1-10": {
+        "old_x_mm": -46.371,
+        "adapted_x_mm": -46.5954,
+        "move_x_mm": -0.2244,
+        "common_allowed_x_interval_mm": [
+          -46.9636,
+          -46.2272
+        ]
+      }
+    },
+    "updated_gauges_desk_mm": {
+      "M1-1-floor": [
+        [
+          12.9963,
+          -67.0,
+          3.0
+        ],
+        [
+          12.9963,
+          -47.5,
+          3.0
+        ],
+        [
+          12.9963,
+          -47.5,
+          10.3
+        ],
+        [
+          12.9963,
+          -54.38,
+          10.3
+        ],
+        [
+          12.9963,
+          -54.38,
+          28.2
+        ],
+        [
+          12.9963,
+          18.0,
+          28.2
+        ],
+        [
+          12.9963,
+          18.0,
+          48.0
+        ]
+      ],
+      "M1-1-nose": [
+        [
+          12.9963,
+          -64.0,
+          11.25
+        ],
+        [
+          12.9963,
+          -54.38,
+          11.25
+        ],
+        [
+          12.9963,
+          -54.38,
+          28.2
+        ],
+        [
+          12.9963,
+          -13.0,
+          28.2
+        ],
+        [
+          12.9963,
+          -13.0,
+          48.0
+        ]
+      ],
+      "M1-2-floor": [
+        [
+          6.72348,
+          -67.0,
+          3.0
+        ],
+        [
+          6.72348,
+          -47.5,
+          3.0
+        ],
+        [
+          6.72348,
+          -47.5,
+          10.3
+        ],
+        [
+          6.72348,
+          -54.38,
+          10.3
+        ],
+        [
+          6.72348,
+          -54.38,
+          28.2
+        ],
+        [
+          6.72348,
+          18.0,
+          28.2
+        ],
+        [
+          6.72348,
+          18.0,
+          48.0
+        ]
+      ],
+      "M1-2-nose": [
+        [
+          6.72348,
+          -64.0,
+          11.25
+        ],
+        [
+          6.72348,
+          -54.38,
+          11.25
+        ],
+        [
+          6.72348,
+          -54.38,
+          28.2
+        ],
+        [
+          6.72348,
+          -13.0,
+          28.2
+        ],
+        [
+          6.72348,
+          -13.0,
+          48.0
+        ]
+      ],
+      "M1-3-floor": [
+        [
+          0.45067,
+          -67.0,
+          3.0
+        ],
+        [
+          0.45067,
+          -47.5,
+          3.0
+        ],
+        [
+          0.45067,
+          -47.5,
+          10.3
+        ],
+        [
+          0.45067,
+          -54.38,
+          10.3
+        ],
+        [
+          0.45067,
+          -54.38,
+          28.2
+        ],
+        [
+          0.45067,
+          18.0,
+          28.2
+        ],
+        [
+          0.45067,
+          18.0,
+          48.0
+        ]
+      ],
+      "M1-3-nose": [
+        [
+          0.45067,
+          -64.0,
+          11.25
+        ],
+        [
+          0.45067,
+          -54.38,
+          11.25
+        ],
+        [
+          0.45067,
+          -54.38,
+          28.2
+        ],
+        [
+          0.45067,
+          -13.0,
+          28.2
+        ],
+        [
+          0.45067,
+          -13.0,
+          48.0
+        ]
+      ],
+      "M1-4-floor": [
+        [
+          -5.96617,
+          -67.0,
+          3.0
+        ],
+        [
+          -5.96617,
+          -47.5,
+          3.0
+        ],
+        [
+          -5.96617,
+          -47.5,
+          10.3
+        ],
+        [
+          -5.96617,
+          -54.38,
+          10.3
+        ],
+        [
+          -5.96617,
+          -54.38,
+          28.2
+        ],
+        [
+          -5.96617,
+          18.0,
+          28.2
+        ],
+        [
+          -5.96617,
+          18.0,
+          48.0
+        ]
+      ],
+      "M1-4-nose": [
+        [
+          -5.96617,
+          -64.0,
+          11.25
+        ],
+        [
+          -5.96617,
+          -54.38,
+          11.25
+        ],
+        [
+          -5.96617,
+          -54.38,
+          28.2
+        ],
+        [
+          -5.96617,
+          -13.0,
+          28.2
+        ],
+        [
+          -5.96617,
+          -13.0,
+          48.0
+        ]
+      ],
+      "M1-5-floor": [
+        [
+          -12.38808,
+          -67.0,
+          3.0
+        ],
+        [
+          -12.38808,
+          -47.5,
+          3.0
+        ],
+        [
+          -12.38808,
+          -47.5,
+          10.3
+        ],
+        [
+          -12.38808,
+          -54.38,
+          10.3
+        ],
+        [
+          -12.38808,
+          -54.38,
+          28.2
+        ],
+        [
+          -12.38808,
+          18.0,
+          28.2
+        ],
+        [
+          -12.38808,
+          18.0,
+          48.0
+        ]
+      ],
+      "M1-5-nose": [
+        [
+          -12.38808,
+          -64.0,
+          11.25
+        ],
+        [
+          -12.38808,
+          -54.38,
+          11.25
+        ],
+        [
+          -12.38808,
+          -54.38,
+          28.2
+        ],
+        [
+          -12.38808,
+          -13.0,
+          28.2
+        ],
+        [
+          -12.38808,
+          -13.0,
+          48.0
+        ]
+      ],
+      "M1-6-floor": [
+        [
+          -21.21048,
+          -67.0,
+          3.0
+        ],
+        [
+          -21.21048,
+          -47.5,
+          3.0
+        ],
+        [
+          -21.21048,
+          -47.5,
+          10.3
+        ],
+        [
+          -21.21048,
+          -54.38,
+          10.3
+        ],
+        [
+          -21.21048,
+          -54.38,
+          28.2
+        ],
+        [
+          -21.21048,
+          18.0,
+          28.2
+        ],
+        [
+          -21.21048,
+          18.0,
+          48.0
+        ]
+      ],
+      "M1-6-nose": [
+        [
+          -21.21048,
+          -64.0,
+          11.25
+        ],
+        [
+          -21.21048,
+          -54.38,
+          11.25
+        ],
+        [
+          -21.21048,
+          -54.38,
+          28.2
+        ],
+        [
+          -21.21048,
+          -13.0,
+          28.2
+        ],
+        [
+          -21.21048,
+          -13.0,
+          48.0
+        ]
+      ],
+      "M1-7-floor": [
+        [
+          -27.63288,
+          -67.0,
+          3.0
+        ],
+        [
+          -27.63288,
+          -47.5,
+          3.0
+        ],
+        [
+          -27.63288,
+          -47.5,
+          10.3
+        ],
+        [
+          -27.63288,
+          -54.38,
+          10.3
+        ],
+        [
+          -27.63288,
+          -54.38,
+          28.2
+        ],
+        [
+          -27.63288,
+          18.0,
+          28.2
+        ],
+        [
+          -27.63288,
+          18.0,
+          48.0
+        ]
+      ],
+      "M1-7-nose": [
+        [
+          -27.63288,
+          -64.0,
+          11.25
+        ],
+        [
+          -27.63288,
+          -54.38,
+          11.25
+        ],
+        [
+          -27.63288,
+          -54.38,
+          28.2
+        ],
+        [
+          -27.63288,
+          -13.0,
+          28.2
+        ],
+        [
+          -27.63288,
+          -13.0,
+          48.0
+        ]
+      ],
+      "M1-8-floor": [
+        [
+          -34.04978,
+          -67.0,
+          3.0
+        ],
+        [
+          -34.04978,
+          -47.5,
+          3.0
+        ],
+        [
+          -34.04978,
+          -47.5,
+          10.3
+        ],
+        [
+          -34.04978,
+          -54.38,
+          10.3
+        ],
+        [
+          -34.04978,
+          -54.38,
+          28.2
+        ],
+        [
+          -34.04978,
+          18.0,
+          28.2
+        ],
+        [
+          -34.04978,
+          18.0,
+          48.0
+        ]
+      ],
+      "M1-8-nose": [
+        [
+          -34.04978,
+          -64.0,
+          11.25
+        ],
+        [
+          -34.04978,
+          -54.38,
+          11.25
+        ],
+        [
+          -34.04978,
+          -54.38,
+          28.2
+        ],
+        [
+          -34.04978,
+          -13.0,
+          28.2
+        ],
+        [
+          -34.04978,
+          -13.0,
+          48.0
+        ]
+      ],
+      "M1-9-floor": [
+        [
+          -40.32259,
+          -67.0,
+          3.0
+        ],
+        [
+          -40.32259,
+          -47.5,
+          3.0
+        ],
+        [
+          -40.32259,
+          -47.5,
+          10.3
+        ],
+        [
+          -40.32259,
+          -54.38,
+          10.3
+        ],
+        [
+          -40.32259,
+          -54.38,
+          28.2
+        ],
+        [
+          -40.32259,
+          18.0,
+          28.2
+        ],
+        [
+          -40.32259,
+          18.0,
+          48.0
+        ]
+      ],
+      "M1-9-nose": [
+        [
+          -40.32259,
+          -64.0,
+          11.25
+        ],
+        [
+          -40.32259,
+          -54.38,
+          11.25
+        ],
+        [
+          -40.32259,
+          -54.38,
+          28.2
+        ],
+        [
+          -40.32259,
+          -13.0,
+          28.2
+        ],
+        [
+          -40.32259,
+          -13.0,
+          48.0
+        ]
+      ],
+      "M1-10-floor": [
+        [
+          -46.5954,
+          -67.0,
+          3.0
+        ],
+        [
+          -46.5954,
+          -47.5,
+          3.0
+        ],
+        [
+          -46.5954,
+          -47.5,
+          10.3
+        ],
+        [
+          -46.5954,
+          -54.38,
+          10.3
+        ],
+        [
+          -46.5954,
+          -54.38,
+          28.2
+        ],
+        [
+          -46.5954,
+          18.0,
+          28.2
+        ],
+        [
+          -46.5954,
+          18.0,
+          48.0
+        ]
+      ],
+      "M1-10-nose": [
+        [
+          -46.5954,
+          -64.0,
+          11.25
+        ],
+        [
+          -46.5954,
+          -54.38,
+          11.25
+        ],
+        [
+          -46.5954,
+          -54.38,
+          28.2
+        ],
+        [
+          -46.5954,
+          -13.0,
+          28.2
+        ],
+        [
+          -46.5954,
+          -13.0,
+          48.0
+        ]
+      ],
+      "power": [
+        [
+          -98,
+          10.0,
+          3.0
+        ],
+        [
+          -86.75,
+          10.0,
+          3.0
+        ],
+        [
+          -86.75,
+          10.0,
+          48.0
+        ]
+      ]
+    },
+    "meaning": "Continuous rectangular segment gauges on the unchanged D2.1 case. Shifting a check axis is not a lid or floor modification. No complete installed loom, flow rate or thermal acceptance."
+  }
+}

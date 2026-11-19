@@ -1,0 +1,1027 @@
+{
+  "revision": "D2.6",
+  "slicer": "PrusaSlicer-2.9.7 based on Slic3r (with GUI support)",
+  "presets": {
+    "printer": "Creality Ender-3 Pro (0.4 mm nozzle)",
+    "print": "0.20 mm NORMAL (0.4 mm nozzle) @CREALITY",
+    "filament": "Generic PETG @CREALITY"
+  },
+  "scope": "Offline, no printer. Ordinary parts 0.20 mm; panel 0.10 mm INCLUDING first layer (26 layers = 2.60 mm), Classic, 100% Rectilinear. No supports.",
+  "panel_layer_height_mm": 0.1,
+  "panel_first_layer_height_mm": 0.1,
+  "vendor_ini_sha256": "79992570253bcde938819785e9c5fa7226b88f74188b3efa11c6e2d556a74040",
+  "panel_config_sha256": "05c73775b36a9328ac2e6adff9ba3f1d761cb47cef6f3e81743a533f348638ff",
+  "parts": {
+    "01-power-saddle.stl": {
+      "layers": 94,
+      "first_last_z_mm": [
+        0.2,
+        18.8
+      ],
+      "types": [
+        "Bridge infill",
+        "Custom",
+        "External perimeter",
+        "Internal infill",
+        "Perimeter",
+        "Solid infill",
+        "Top solid infill"
+      ],
+      "seam_position": "nearest",
+      "perimeter_generator": "arachne",
+      "bridge_regions": 5,
+      "warnings": [],
+      "toolpath_sha256": "b3fff31797511336d01af988a112d09c597dcb60a051af679e5c6c89289eeae2",
+      "input_sha256": "ff560947a9268b4e92dc8c951f757ac385a65f1aa4c5c54c7c950947d1bc06bd"
+    },
+    "02-flat-rear-panel.stl": {
+      "layers": 26,
+      "first_last_z_mm": [
+        0.1,
+        2.6
+      ],
+      "types": [
+        "Custom",
+        "External perimeter",
+        "Gap fill",
+        "Internal infill",
+        "Perimeter",
+        "Solid infill",
+        "Top solid infill"
+      ],
+      "seam_position": "nearest",
+      "perimeter_generator": "classic",
+      "bridge_regions": 0,
+      "warnings": [],
+      "toolpath_sha256": "856ad45bf2feae904c75e56ad101e08949e0c3bdf5b58991b921c8686f0ef294",
+      "input_sha256": "37944523e33fff7563e0741044d43aaa1b96849fa6ec029864daa712f50a0005"
+    },
+    "03-monolithic-base.stl": {
+      "layers": 188,
+      "first_last_z_mm": [
+        0.2,
+        37.6
+      ],
+      "types": [
+        "Bridge infill",
+        "Custom",
+        "External perimeter",
+        "Internal infill",
+        "Perimeter",
+        "Solid infill",
+        "Top solid infill"
+      ],
+      "seam_position": "nearest",
+      "perimeter_generator": "arachne",
+      "bridge_regions": 17,
+      "warnings": [],
+      "toolpath_sha256": "0345a3af540ebe7176b3d138b6b331d0cf9fb2e0be14933def218d09063bc62d",
+      "input_sha256": "750dcdd8855db52d23c65214012d4768ef0305b28a0f6d1c56d5dd3b7c143308"
+    },
+    "04-vented-lid.stl": {
+      "layers": 102,
+      "first_last_z_mm": [
+        0.2,
+        20.4
+      ],
+      "types": [
+        "Bridge infill",
+        "Custom",
+        "External perimeter",
+        "Internal infill",
+        "Perimeter",
+        "Solid infill",
+        "Top solid infill"
+      ],
+      "seam_position": "nearest",
+      "perimeter_generator": "arachne",
+      "bridge_regions": 1,
+      "warnings": [],
+      "toolpath_sha256": "43762c6c60ee791579c19f3ce0674b35222448abf33e09f0ffc64a685cf1c1df",
+      "input_sha256": "3e15b4fa78903130c4d1a8f55f5d4aedeb160ab8b0557992acceea09721812cb"
+    },
+    "05-front-blank.stl": {
+      "layers": 49,
+      "first_last_z_mm": [
+        0.2,
+        9.8
+      ],
+      "types": [
+        "Bridge infill",
+        "Custom",
+        "External perimeter",
+        "Internal infill",
+        "Perimeter",
+        "Solid infill",
+        "Top solid infill"
+      ],
+      "seam_position": "nearest",
+      "perimeter_generator": "arachne",
+      "bridge_regions": 1,
+      "warnings": [],
+      "toolpath_sha256": "cc491db141e5e00c15dcd79dce2700557fe65a108702d5be7d7bc89e0cacf79d",
+      "input_sha256": "7922c67bb8f6e4007ad3b858fad922fb646601dbfa01efe2ab68f50b38727e2e"
+    },
+    "06-board-datum-strip.stl": {
+      "layers": 43,
+      "first_last_z_mm": [
+        0.2,
+        8.6
+      ],
+      "types": [
+        "Bridge infill",
+        "Custom",
+        "External perimeter",
+        "Internal infill",
+        "Perimeter",
+        "Solid infill",
+        "Top solid infill"
+      ],
+      "seam_position": "nearest",
+      "perimeter_generator": "arachne",
+      "bridge_regions": 3,
+      "warnings": [],
+      "toolpath_sha256": "c282aa8d40ab8665947de421faefc2e29f85411a44bfc1691d017452319825cb",
+      "input_sha256": "50ef502e8cf5fe77e68b32cabc237299ee40920468967856818f832b5cdcf0aa"
+    },
+    "07-side-guide-sample.stl": {
+      "layers": 188,
+      "first_last_z_mm": [
+        0.2,
+        37.6
+      ],
+      "types": [
+        "Bridge infill",
+        "Custom",
+        "External perimeter",
+        "Internal infill",
+        "Perimeter",
+        "Solid infill",
+        "Top solid infill"
+      ],
+      "seam_position": "nearest",
+      "perimeter_generator": "arachne",
+      "bridge_regions": 2,
+      "warnings": [],
+      "toolpath_sha256": "23f474848594321c08456a469517086fbecbd392b6bcd410961cff03da60f030",
+      "input_sha256": "3ffe8d9ebb7e555bf582e604a8ccda6d81d71a94c7fda2258a0ed450c8da2d5d"
+    },
+    "08-lid-stop-sample.stl": {
+      "layers": 25,
+      "first_last_z_mm": [
+        0.2,
+        5.0
+      ],
+      "types": [
+        "Bridge infill",
+        "Custom",
+        "External perimeter",
+        "Internal infill",
+        "Perimeter",
+        "Solid infill",
+        "Top solid infill"
+      ],
+      "seam_position": "nearest",
+      "perimeter_generator": "arachne",
+      "bridge_regions": 1,
+      "warnings": [],
+      "toolpath_sha256": "c3ee91194bd737c982d429a83ce17d4a3c78e5fb502b9fc2db25786e6b11d0ff",
+      "input_sha256": "0c582b47bb4c160c0d6b19717cc686765ae087d88d4b7d709994bb91b2d3f992"
+    }
+  },
+  "full_base_seam_checks": {
+    "nearest": {
+      "layers": 188,
+      "first_last_z_mm": [
+        0.2,
+        37.6
+      ],
+      "types": [
+        "Bridge infill",
+        "Custom",
+        "External perimeter",
+        "Internal infill",
+        "Perimeter",
+        "Solid infill",
+        "Top solid infill"
+      ],
+      "seam_position": "nearest",
+      "perimeter_generator": "arachne",
+      "bridge_regions": 17,
+      "warnings": [],
+      "toolpath_sha256": "0345a3af540ebe7176b3d138b6b331d0cf9fb2e0be14933def218d09063bc62d",
+      "input_sha256": "750dcdd8855db52d23c65214012d4768ef0305b28a0f6d1c56d5dd3b7c143308"
+    },
+    "aligned": {
+      "layers": 188,
+      "first_last_z_mm": [
+        0.2,
+        37.6
+      ],
+      "types": [
+        "Bridge infill",
+        "Custom",
+        "External perimeter",
+        "Internal infill",
+        "Perimeter",
+        "Solid infill",
+        "Top solid infill"
+      ],
+      "seam_position": "aligned",
+      "perimeter_generator": "arachne",
+      "bridge_regions": 17,
+      "warnings": [],
+      "toolpath_sha256": "6d02d309e66e071e4cf47ff41a9d20a5462374a7c6fd8304b5dabffd40076008",
+      "input_sha256": "750dcdd8855db52d23c65214012d4768ef0305b28a0f6d1c56d5dd3b7c143308"
+    },
+    "rear": {
+      "layers": 188,
+      "first_last_z_mm": [
+        0.2,
+        37.6
+      ],
+      "types": [
+        "Bridge infill",
+        "Custom",
+        "External perimeter",
+        "Internal infill",
+        "Perimeter",
+        "Solid infill",
+        "Top solid infill"
+      ],
+      "seam_position": "rear",
+      "perimeter_generator": "arachne",
+      "bridge_regions": 17,
+      "warnings": [],
+      "toolpath_sha256": "ee1da55a843590360015342a8488b0ff39c64e740dfc8140b132de03c80b3d61",
+      "input_sha256": "750dcdd8855db52d23c65214012d4768ef0305b28a0f6d1c56d5dd3b7c143308"
+    }
+  },
+  "extrusion_paths": {
+    "positive_extrusion_segments": 51795,
+    "minimum_metal_nose_to_bead_mm": {
+      "A1": 0.3145,
+      "A2": 0.3145,
+      "HDMI": 0.2814,
+      "TB1": 0.1506,
+      "TB2": 0.1506,
+      "RJ": 0.575,
+      "audio": 0.9215,
+      "PD": 0.1106
+    },
+    "minimum_socket_frame_to_bead_mm": {
+      "A1": 0.2461,
+      "A2": 0.2461,
+      "HDMI": 0.396,
+      "TB1": 0.288,
+      "TB2": 0.288,
+      "RJ": 0.346,
+      "audio": 0.1967,
+      "USB_A_vertical_bridge": 0.575,
+      "Audio_horizontal_bridge_and_shield": 0.1967,
+      "TB_shared_shield": 0.296,
+      "PD": 0.2977
+    },
+    "minimum_RJ_spring_to_bead_mm": {
+      "central latch": 0.4101,
+      "terminal latch": 0.526
+    },
+    "installed_field_motion_xyz_bounds_mm": [
+      [
+        -0.125,
+        -0.085,
+        -0.002
+      ],
+      [
+        0.125,
+        0.002,
+        0.204
+      ]
+    ],
+    "layer_results": {
+      "0.1": {
+        "separate_socket_holes": 8,
+        "metal_nose_to_bead_mm": {
+          "A1": 0.4149,
+          "A2": 0.4149,
+          "HDMI": 0.3811,
+          "TB1": 0.2508,
+          "TB2": 0.2508,
+          "RJ": 0.675,
+          "audio": 1.0217,
+          "PD": 0.2099
+        },
+        "socket_frame_to_bead_mm": {},
+        "latch_to_bead_mm": {
+          "central latch": 0.5115
+        },
+        "signed_bead_coverage_of_mask_witness_mm": {
+          "A1": 0.041,
+          "A2": 0.041,
+          "HDMI": 0.14,
+          "TB1": 0.101,
+          "TB2": 0.101,
+          "RJ": 0.151,
+          "audio": 0.1616,
+          "PD": -0.05
+        },
+        "deposited_webs": {
+          "USB-A pair": {
+            "extrusion_crossings": 7,
+            "material_width_lower_bound_mm": 2.7028
+          },
+          "TB pair": {
+            "extrusion_crossings": 6,
+            "material_width_lower_bound_mm": 2.0972
+          }
+        }
+      },
+      "0.2": {
+        "separate_socket_holes": 8,
+        "metal_nose_to_bead_mm": {
+          "A1": 0.3145,
+          "A2": 0.3145,
+          "HDMI": 0.2814,
+          "TB1": 0.1506,
+          "TB2": 0.1506,
+          "RJ": 0.575,
+          "audio": 0.9215,
+          "PD": 0.1106
+        },
+        "socket_frame_to_bead_mm": {},
+        "latch_to_bead_mm": {
+          "central latch": 0.4101
+        },
+        "signed_bead_coverage_of_mask_witness_mm": {
+          "A1": 0.141,
+          "A2": 0.141,
+          "HDMI": 0.04,
+          "TB1": 0.201,
+          "TB2": 0.201,
+          "RJ": 0.189,
+          "audio": 0.1011,
+          "PD": 0.05
+        },
+        "deposited_webs": {
+          "USB-A pair": {
+            "extrusion_crossings": 8,
+            "material_width_lower_bound_mm": 3.0
+          },
+          "TB pair": {
+            "extrusion_crossings": 4,
+            "material_width_lower_bound_mm": 1.76
+          }
+        }
+      },
+      "0.3": {
+        "separate_socket_holes": 8,
+        "metal_nose_to_bead_mm": {
+          "A1": 0.3145,
+          "A2": 0.3145,
+          "HDMI": 0.2814,
+          "TB1": 0.1506,
+          "TB2": 0.1506,
+          "RJ": 0.575,
+          "audio": 0.9215,
+          "PD": 0.1106
+        },
+        "socket_frame_to_bead_mm": {
+          "audio": 0.1967
+        },
+        "latch_to_bead_mm": {
+          "central latch": 0.4148
+        },
+        "signed_bead_coverage_of_mask_witness_mm": {
+          "A1": 0.141,
+          "A2": 0.141,
+          "HDMI": 0.04,
+          "TB1": 0.201,
+          "TB2": 0.201,
+          "RJ": 0.189,
+          "audio": 0.1011,
+          "PD": 0.05
+        },
+        "deposited_webs": {
+          "USB-A pair": {
+            "extrusion_crossings": 8,
+            "material_width_lower_bound_mm": 3.0
+          },
+          "TB pair": {
+            "extrusion_crossings": 4,
+            "material_width_lower_bound_mm": 1.76
+          }
+        }
+      },
+      "0.4": {
+        "separate_socket_holes": 8,
+        "metal_nose_to_bead_mm": {
+          "A1": 0.3145,
+          "A2": 0.3145,
+          "HDMI": 0.2814,
+          "TB1": 0.1506,
+          "TB2": 0.1506,
+          "RJ": 0.575,
+          "audio": 0.9215,
+          "PD": 0.1106
+        },
+        "socket_frame_to_bead_mm": {
+          "audio": 0.1967
+        },
+        "latch_to_bead_mm": {
+          "central latch": 0.4262
+        },
+        "signed_bead_coverage_of_mask_witness_mm": {
+          "A1": 0.141,
+          "A2": 0.141,
+          "HDMI": 0.04,
+          "TB1": 0.201,
+          "TB2": 0.201,
+          "RJ": 0.189,
+          "audio": 0.1011,
+          "PD": 0.05
+        },
+        "deposited_webs": {
+          "USB-A pair": {
+            "extrusion_crossings": 8,
+            "material_width_lower_bound_mm": 3.0
+          },
+          "TB pair": {
+            "extrusion_crossings": 4,
+            "material_width_lower_bound_mm": 1.76
+          }
+        }
+      },
+      "0.5": {
+        "separate_socket_holes": 8,
+        "metal_nose_to_bead_mm": {
+          "A1": 0.3145,
+          "A2": 0.3145,
+          "HDMI": 0.2814,
+          "TB1": 0.1506,
+          "TB2": 0.1506,
+          "RJ": 0.575,
+          "audio": 0.9215,
+          "PD": 0.6401
+        },
+        "socket_frame_to_bead_mm": {
+          "audio": 0.1967,
+          "PD": 0.2997
+        },
+        "latch_to_bead_mm": {
+          "central latch": 0.4441
+        },
+        "signed_bead_coverage_of_mask_witness_mm": {
+          "A1": 0.141,
+          "A2": 0.141,
+          "HDMI": 0.04,
+          "TB1": 0.201,
+          "TB2": 0.201,
+          "RJ": 0.189,
+          "audio": 0.1011,
+          "PD": -0.6
+        },
+        "deposited_webs": {
+          "USB-A pair": {
+            "extrusion_crossings": 8,
+            "material_width_lower_bound_mm": 3.0
+          },
+          "TB pair": {
+            "extrusion_crossings": 7,
+            "material_width_lower_bound_mm": 2.5551
+          }
+        }
+      },
+      "0.6": {
+        "separate_socket_holes": 8,
+        "metal_nose_to_bead_mm": {
+          "A1": 0.3145,
+          "A2": 0.3145,
+          "HDMI": 0.2814,
+          "TB1": 0.1506,
+          "TB2": 0.1506,
+          "RJ": 0.575,
+          "audio": 0.9215,
+          "PD": 0.6394
+        },
+        "socket_frame_to_bead_mm": {
+          "audio": 0.1967,
+          "PD": 0.2993
+        },
+        "latch_to_bead_mm": {
+          "central latch": 0.4677,
+          "terminal latch": 0.526
+        },
+        "signed_bead_coverage_of_mask_witness_mm": {
+          "A1": 0.141,
+          "A2": 0.141,
+          "HDMI": 0.04,
+          "TB1": 0.201,
+          "TB2": 0.201,
+          "RJ": 0.189,
+          "audio": 0.1011
+        },
+        "deposited_webs": {
+          "USB-A pair": {
+            "extrusion_crossings": 8,
+            "material_width_lower_bound_mm": 3.0
+          },
+          "TB pair": {
+            "extrusion_crossings": 4,
+            "material_width_lower_bound_mm": 1.76
+          }
+        }
+      },
+      "0.7": {
+        "separate_socket_holes": 8,
+        "metal_nose_to_bead_mm": {
+          "A1": 0.3145,
+          "A2": 0.3145,
+          "HDMI": 0.2814,
+          "TB1": 0.1506,
+          "TB2": 0.1506,
+          "RJ": 0.575,
+          "audio": 0.9215,
+          "PD": 0.6395
+        },
+        "socket_frame_to_bead_mm": {
+          "audio": 0.1967,
+          "PD": 0.3009
+        },
+        "latch_to_bead_mm": {
+          "central latch": 0.4967,
+          "terminal latch": 0.526
+        },
+        "signed_bead_coverage_of_mask_witness_mm": {
+          "A1": 0.141,
+          "A2": 0.141,
+          "HDMI": 0.04,
+          "TB1": 0.201,
+          "TB2": 0.201,
+          "RJ": 0.189,
+          "audio": 0.1011
+        },
+        "deposited_webs": {
+          "USB-A pair": {
+            "extrusion_crossings": 8,
+            "material_width_lower_bound_mm": 3.0
+          },
+          "TB pair": {
+            "extrusion_crossings": 4,
+            "material_width_lower_bound_mm": 1.76
+          }
+        }
+      },
+      "0.8": {
+        "separate_socket_holes": 8,
+        "metal_nose_to_bead_mm": {
+          "A1": 0.3145,
+          "A2": 0.3145,
+          "HDMI": 0.2814,
+          "TB1": 0.1506,
+          "TB2": 0.1506,
+          "RJ": 0.575,
+          "audio": 0.9215,
+          "PD": 0.639
+        },
+        "socket_frame_to_bead_mm": {
+          "audio": 0.1967,
+          "Audio_horizontal_bridge_and_shield": 0.1967,
+          "PD": 0.301
+        },
+        "latch_to_bead_mm": {
+          "central latch": 0.5304,
+          "terminal latch": 0.5368
+        },
+        "signed_bead_coverage_of_mask_witness_mm": {
+          "A1": 0.141,
+          "A2": 0.141,
+          "HDMI": 0.04,
+          "TB1": 0.201,
+          "TB2": 0.201,
+          "RJ": 0.189,
+          "audio": 0.1271
+        },
+        "deposited_webs": {
+          "USB-A pair": {
+            "extrusion_crossings": 7,
+            "material_width_lower_bound_mm": 2.4814
+          },
+          "TB pair": {
+            "extrusion_crossings": 4,
+            "material_width_lower_bound_mm": 1.76
+          }
+        }
+      },
+      "0.9": {
+        "separate_socket_holes": 6,
+        "metal_nose_to_bead_mm": {
+          "A1": 2.325,
+          "A2": 2.325,
+          "HDMI": 1.83,
+          "TB1": 0.1506,
+          "TB2": 0.1506,
+          "RJ": 2.473,
+          "audio": 2.723,
+          "PD": 0.6387
+        },
+        "socket_frame_to_bead_mm": {
+          "A1": 0.575,
+          "A2": 0.575,
+          "HDMI": 0.396,
+          "RJ": 0.346,
+          "audio": 0.875,
+          "USB_A_vertical_bridge": 0.575,
+          "Audio_horizontal_bridge_and_shield": 0.4551,
+          "PD": 0.2996
+        },
+        "latch_to_bead_mm": {
+          "central latch": 2.3335,
+          "terminal latch": 1.4491
+        },
+        "signed_bead_coverage_of_mask_witness_mm": {
+          "A1": -1.4,
+          "A2": -5.2,
+          "HDMI": -1.025,
+          "TB1": 0.201,
+          "TB2": 0.201,
+          "RJ": -1.25,
+          "audio": -1.9
+        },
+        "deposited_webs": {
+          "TB pair": {
+            "extrusion_crossings": 6,
+            "material_width_lower_bound_mm": 2.232
+          }
+        }
+      },
+      "1.0": {
+        "separate_socket_holes": 6,
+        "metal_nose_to_bead_mm": {
+          "A1": 2.325,
+          "A2": 2.325,
+          "HDMI": 1.83,
+          "TB1": 1.831,
+          "TB2": 1.831,
+          "RJ": 2.473,
+          "audio": 2.723
+        },
+        "socket_frame_to_bead_mm": {
+          "A1": 0.575,
+          "A2": 0.575,
+          "HDMI": 0.396,
+          "TB1": 0.288,
+          "TB2": 0.288,
+          "RJ": 0.346,
+          "audio": 0.875,
+          "USB_A_vertical_bridge": 0.575,
+          "Audio_horizontal_bridge_and_shield": 0.4551,
+          "PD": 0.2977
+        },
+        "latch_to_bead_mm": {
+          "central latch": 2.3616,
+          "terminal latch": 1.4614
+        },
+        "signed_bead_coverage_of_mask_witness_mm": {
+          "TB1": -1.0,
+          "TB2": -1.0
+        }
+      },
+      "1.1": {
+        "separate_socket_holes": 6,
+        "metal_nose_to_bead_mm": {
+          "A1": 2.325,
+          "A2": 2.325,
+          "HDMI": 1.83,
+          "TB1": 1.831,
+          "TB2": 1.831,
+          "RJ": 2.473,
+          "audio": 2.723
+        },
+        "socket_frame_to_bead_mm": {
+          "A1": 0.2461,
+          "A2": 0.2461,
+          "HDMI": 0.396,
+          "TB1": 0.288,
+          "TB2": 0.288,
+          "RJ": 0.346,
+          "audio": 0.875,
+          "USB_A_vertical_bridge": 0.575,
+          "Audio_horizontal_bridge_and_shield": 0.4551,
+          "PD": 0.3014
+        },
+        "latch_to_bead_mm": {
+          "central latch": 2.3896,
+          "terminal latch": 1.4738
+        },
+        "signed_bead_coverage_of_mask_witness_mm": {}
+      },
+      "1.2": {
+        "separate_socket_holes": 5,
+        "metal_nose_to_bead_mm": {
+          "A1": 2.325,
+          "A2": 2.325,
+          "HDMI": 1.83,
+          "TB1": 1.831,
+          "TB2": 1.831,
+          "RJ": 2.473,
+          "audio": 2.723
+        },
+        "socket_frame_to_bead_mm": {
+          "A1": 0.2461,
+          "A2": 0.2461,
+          "HDMI": 0.396,
+          "TB1": 0.288,
+          "TB2": 0.288,
+          "RJ": 0.346,
+          "audio": 0.875,
+          "USB_A_vertical_bridge": 0.575,
+          "Audio_horizontal_bridge_and_shield": 0.4551,
+          "PD": 0.3214
+        },
+        "latch_to_bead_mm": {
+          "central latch": 2.4177,
+          "terminal latch": 1.4861
+        },
+        "signed_bead_coverage_of_mask_witness_mm": {}
+      },
+      "1.3": {
+        "separate_socket_holes": 5,
+        "metal_nose_to_bead_mm": {
+          "A1": 2.325,
+          "A2": 2.325,
+          "HDMI": 1.83,
+          "TB1": 1.831,
+          "TB2": 1.831,
+          "RJ": 2.473,
+          "audio": 2.723
+        },
+        "socket_frame_to_bead_mm": {
+          "A1": 0.2461,
+          "A2": 0.2461,
+          "HDMI": 0.396,
+          "TB1": 0.288,
+          "TB2": 0.288,
+          "RJ": 0.346,
+          "audio": 0.848,
+          "USB_A_vertical_bridge": 0.575,
+          "Audio_horizontal_bridge_and_shield": 0.4498,
+          "PD": 0.3195
+        },
+        "latch_to_bead_mm": {
+          "central latch": 2.4458,
+          "terminal latch": 1.4984
+        },
+        "signed_bead_coverage_of_mask_witness_mm": {}
+      },
+      "1.4": {
+        "separate_socket_holes": 5,
+        "metal_nose_to_bead_mm": {
+          "TB1": 1.831,
+          "TB2": 1.831
+        },
+        "socket_frame_to_bead_mm": {
+          "A1": 0.2461,
+          "A2": 0.2461,
+          "HDMI": 0.396,
+          "TB1": 0.288,
+          "TB2": 0.288,
+          "RJ": 0.346,
+          "audio": 0.848,
+          "USB_A_vertical_bridge": 0.575,
+          "Audio_horizontal_bridge_and_shield": 0.4498,
+          "PD": 0.3177
+        },
+        "latch_to_bead_mm": {},
+        "signed_bead_coverage_of_mask_witness_mm": {}
+      },
+      "1.5": {
+        "separate_socket_holes": 5,
+        "metal_nose_to_bead_mm": {},
+        "socket_frame_to_bead_mm": {
+          "A1": 0.2461,
+          "A2": 0.2461,
+          "HDMI": 0.396,
+          "TB1": 0.288,
+          "TB2": 0.288,
+          "RJ": 0.346,
+          "audio": 0.848,
+          "USB_A_vertical_bridge": 0.575,
+          "Audio_horizontal_bridge_and_shield": 0.4498,
+          "PD": 0.3186
+        },
+        "latch_to_bead_mm": {},
+        "signed_bead_coverage_of_mask_witness_mm": {}
+      },
+      "1.6": {
+        "separate_socket_holes": 5,
+        "metal_nose_to_bead_mm": {},
+        "socket_frame_to_bead_mm": {
+          "A1": 0.2461,
+          "A2": 0.2461,
+          "HDMI": 0.396,
+          "TB1": 0.288,
+          "TB2": 0.288,
+          "RJ": 0.346,
+          "audio": 0.848,
+          "USB_A_vertical_bridge": 0.575,
+          "Audio_horizontal_bridge_and_shield": 0.4498,
+          "PD": 0.3195
+        },
+        "latch_to_bead_mm": {},
+        "signed_bead_coverage_of_mask_witness_mm": {}
+      },
+      "1.7": {
+        "separate_socket_holes": 5,
+        "metal_nose_to_bead_mm": {},
+        "socket_frame_to_bead_mm": {
+          "A1": 0.2461,
+          "A2": 0.2461,
+          "HDMI": 0.396,
+          "TB1": 0.288,
+          "TB2": 0.288,
+          "RJ": 0.346,
+          "audio": 0.848,
+          "USB_A_vertical_bridge": 0.575,
+          "Audio_horizontal_bridge_and_shield": 0.4498,
+          "PD": 0.3195
+        },
+        "latch_to_bead_mm": {},
+        "signed_bead_coverage_of_mask_witness_mm": {}
+      },
+      "1.8": {
+        "separate_socket_holes": 5,
+        "metal_nose_to_bead_mm": {},
+        "socket_frame_to_bead_mm": {
+          "A1": 0.2461,
+          "A2": 0.2461,
+          "HDMI": 0.396,
+          "TB1": 0.288,
+          "TB2": 0.288,
+          "RJ": 0.346,
+          "audio": 0.848,
+          "USB_A_vertical_bridge": 0.575,
+          "Audio_horizontal_bridge_and_shield": 0.4498,
+          "PD": 0.3204
+        },
+        "latch_to_bead_mm": {},
+        "signed_bead_coverage_of_mask_witness_mm": {}
+      },
+      "1.9": {
+        "separate_socket_holes": 4,
+        "metal_nose_to_bead_mm": {},
+        "socket_frame_to_bead_mm": {
+          "A1": 0.2461,
+          "A2": 0.2461,
+          "HDMI": 0.396,
+          "TB1": 0.75,
+          "TB2": 0.75,
+          "RJ": 0.346,
+          "audio": 0.848,
+          "USB_A_vertical_bridge": 0.575,
+          "Audio_horizontal_bridge_and_shield": 0.4498,
+          "PD": 0.3214
+        },
+        "latch_to_bead_mm": {},
+        "signed_bead_coverage_of_mask_witness_mm": {}
+      },
+      "2.0": {
+        "separate_socket_holes": 4,
+        "metal_nose_to_bead_mm": {},
+        "socket_frame_to_bead_mm": {
+          "A1": 0.2461,
+          "A2": 0.2461,
+          "HDMI": 0.396,
+          "TB1": 0.75,
+          "TB2": 0.75,
+          "RJ": 0.346,
+          "audio": 0.848,
+          "USB_A_vertical_bridge": 0.575,
+          "Audio_horizontal_bridge_and_shield": 0.4498,
+          "TB_shared_shield": 0.75,
+          "PD": 0.3223
+        },
+        "latch_to_bead_mm": {},
+        "signed_bead_coverage_of_mask_witness_mm": {}
+      },
+      "2.1": {
+        "separate_socket_holes": 4,
+        "metal_nose_to_bead_mm": {},
+        "socket_frame_to_bead_mm": {
+          "A1": 0.2461,
+          "A2": 0.2461,
+          "HDMI": 0.396,
+          "TB1": 0.75,
+          "TB2": 0.75,
+          "RJ": 0.346,
+          "audio": 0.848,
+          "USB_A_vertical_bridge": 0.575,
+          "Audio_horizontal_bridge_and_shield": 0.4498,
+          "TB_shared_shield": 0.75,
+          "PD": 0.3232
+        },
+        "latch_to_bead_mm": {},
+        "signed_bead_coverage_of_mask_witness_mm": {}
+      },
+      "2.2": {
+        "separate_socket_holes": 3,
+        "metal_nose_to_bead_mm": {},
+        "socket_frame_to_bead_mm": {
+          "A1": 0.2461,
+          "A2": 0.2461,
+          "HDMI": 0.396,
+          "TB1": 0.725,
+          "TB2": 0.75,
+          "RJ": 0.346,
+          "audio": 0.848,
+          "USB_A_vertical_bridge": 0.575,
+          "Audio_horizontal_bridge_and_shield": 0.4498,
+          "TB_shared_shield": 0.296,
+          "PD": 0.3241
+        },
+        "latch_to_bead_mm": {},
+        "signed_bead_coverage_of_mask_witness_mm": {}
+      },
+      "2.3": {
+        "separate_socket_holes": 3,
+        "metal_nose_to_bead_mm": {},
+        "socket_frame_to_bead_mm": {
+          "A1": 0.2461,
+          "A2": 0.2461,
+          "HDMI": 0.396,
+          "TB1": 0.725,
+          "TB2": 0.75,
+          "RJ": 0.346,
+          "audio": 0.848,
+          "USB_A_vertical_bridge": 0.575,
+          "Audio_horizontal_bridge_and_shield": 0.4498,
+          "TB_shared_shield": 0.296,
+          "PD": 0.3241
+        },
+        "latch_to_bead_mm": {},
+        "signed_bead_coverage_of_mask_witness_mm": {}
+      },
+      "2.4": {
+        "separate_socket_holes": 3,
+        "metal_nose_to_bead_mm": {},
+        "socket_frame_to_bead_mm": {
+          "A1": 0.2461,
+          "A2": 0.2461,
+          "HDMI": 0.396,
+          "TB1": 0.725,
+          "TB2": 0.75,
+          "RJ": 0.346,
+          "audio": 0.848,
+          "USB_A_vertical_bridge": 0.575,
+          "Audio_horizontal_bridge_and_shield": 0.4498,
+          "TB_shared_shield": 0.296,
+          "PD": 0.3241
+        },
+        "latch_to_bead_mm": {},
+        "signed_bead_coverage_of_mask_witness_mm": {}
+      },
+      "2.5": {
+        "separate_socket_holes": 3,
+        "metal_nose_to_bead_mm": {},
+        "socket_frame_to_bead_mm": {
+          "A1": 0.2461,
+          "A2": 0.2461,
+          "HDMI": 0.396,
+          "TB1": 0.725,
+          "TB2": 0.75,
+          "RJ": 0.346,
+          "audio": 0.848,
+          "USB_A_vertical_bridge": 0.575,
+          "Audio_horizontal_bridge_and_shield": 0.4498,
+          "TB_shared_shield": 0.296,
+          "PD": 0.3241
+        },
+        "latch_to_bead_mm": {},
+        "signed_bead_coverage_of_mask_witness_mm": {}
+      },
+      "2.6": {
+        "separate_socket_holes": 3,
+        "metal_nose_to_bead_mm": {},
+        "socket_frame_to_bead_mm": {
+          "A1": 0.2461,
+          "A2": 0.2461,
+          "HDMI": 0.396,
+          "TB1": 0.725,
+          "TB2": 0.75,
+          "RJ": 0.346,
+          "audio": 0.848,
+          "USB_A_vertical_bridge": 0.575,
+          "Audio_horizontal_bridge_and_shield": 0.4498,
+          "TB_shared_shield": 0.296,
+          "PD": 0.3241
+        },
+        "latch_to_bead_mm": {},
+        "signed_bead_coverage_of_mask_witness_mm": {}
+      }
+    },
+    "panel_first_layer_elephant_foot_compensation_mm": 0.1,
+    "mask_witness_caveat": "At separate PD the side rim is only 0.05 mm past the nominal aperture edge. First-layer compensation can uncover this specific witness; upper PD skin layers (layers 2-4 = 0.40 mm) are recorded separately. The seven Apple rim witnesses have complete programmed mask coverage for their 8 (0.80 mm) or 9 (0.90 mm) mask layers, and the recessed Ø5.00 mm audio collar clears all 26 layers.",
+    "scope": "Conservative convex silhouettes per axial deposited layer include closed-panel translation and tilt. Positive coverage denotes bead over the specific mask witness. PETG swell, elephant foot, adhesion, material strength, actual fit and force remain unmeasured."
+  },
+  "fit_report_sha256": "0fbabaa0cc93a765d233b4f3b1fabfc22c876dbd5472a55bc7711b170fc9af56",
+  "cad_report_sha256": "72136516a159cedb442a62976c4cbd5b4639dea1a38f94db097b526cf72cd95d"
+}

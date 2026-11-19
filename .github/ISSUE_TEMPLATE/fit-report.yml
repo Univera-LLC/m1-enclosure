@@ -1,0 +1,25 @@
+name: Report a physical fit
+description: Record what a printed part does on an unpowered board.
+title: "Fit: "
+body:
+  - type: input
+    id: parts
+    attributes:
+      label: CAD revision and printed parts
+      placeholder: "D2.6 · 02 rear panel · 06 board datum strip"
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Print setup
+      description: Printer, material, nozzle, first and later layer heights, orientation, and any supports.
+    validations:
+      required: true
+  - type: textarea
+    id: fit
+    attributes:
+      label: What happened?
+      description: Give the location, behavior with and without the panel, and the cable or plug if relevant. For a measurement, include units and method. Only share photos you intend to make public.
+    validations:
+      required: true

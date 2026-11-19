@@ -1,0 +1,440 @@
+{
+  "revision": "D2.6",
+  "failures": [],
+  "comparisons": 104,
+  "waypoints_xyz_mm": [
+    [
+      0.0,
+      -2.1,
+      38.0
+    ],
+    [
+      0.0,
+      -2.1,
+      0.27
+    ],
+    [
+      0.0,
+      0.0,
+      0.27
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "continuous_slab_covers": {
+    "1": {
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_MONO_BASE": {
+        "slabs": 1,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / Panel field: full lateral, vertical, depth and angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / Panel field: full lateral, vertical, depth and angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / Panel field: full lateral, vertical, depth and angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      }
+    },
+    "2": {
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_MONO_BASE": {
+        "slabs": 6,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D26_PROFILED_IO_PLATE": {
+        "slabs": 2,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / Panel field: full lateral, vertical, depth and angular reserve": {
+        "slabs": 2,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / Panel field: full lateral, vertical, depth and angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / Panel field: full lateral, vertical, depth and angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      }
+    },
+    "3": {
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_MONO_BASE": {
+        "slabs": 1,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D26_PROFILED_IO_PLATE": {
+        "slabs": 13,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "Registered owner Mac, 23 crests and seven photographed connector fronts / Panel field: full lateral, vertical, depth and angular reserve": {
+        "slabs": 20,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macwire__clipped-lead-exit / Panel field: full lateral, vertical, depth and angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "photo__loom__macinsulator__local-plug-outline / Panel field: full lateral, vertical, depth and angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      }
+    }
+  },
+  "board_supports": [
+    {
+      "axis_xy_mm": [
+        -52.0,
+        -34.35
+      ],
+      "bearing_underside_mm": 14.0,
+      "complete_360_deg_register_top_mm": 14.2,
+      "tall_forward_sector_top_mm": 14.7,
+      "clearance_over_complete_register_during_horizontal_feed_mm": 0.07,
+      "tall_sector_volume_above_full_ring_mm3": 0.9597
+    },
+    {
+      "axis_xy_mm": [
+        47.95,
+        -34.35
+      ],
+      "bearing_underside_mm": 14.0,
+      "complete_360_deg_register_top_mm": 14.2,
+      "tall_forward_sector_top_mm": 14.7,
+      "clearance_over_complete_register_during_horizontal_feed_mm": 0.07,
+      "tall_sector_volume_above_full_ring_mm3": 0.9597
+    }
+  ],
+  "counterexample_slide_without_lifting_overlap_mm3": 1.41535,
+  "moving": [
+    "Registered owner Mac, 23 crests and seven photographed connector fronts",
+    "photo__loom__macwire__clipped-lead-exit",
+    "photo__loom__macinsulator__local-plug-outline"
+  ],
+  "fixed": [
+    "D2_MONO_BASE",
+    "D26_PROFILED_IO_PLATE",
+    "D2_FRONT_BLANK",
+    "D2_ADHESIVE_FOOT_1",
+    "D2_ADHESIVE_FOOT_2",
+    "D2_ADHESIVE_FOOT_3",
+    "D2_ADHESIVE_FOOT_4",
+    "D2_BLANK_FIXING_LOW",
+    "D2_BLANK_FIXING_HIGH",
+    "Panel field: full lateral, vertical, depth and angular reserve"
+  ],
+  "scope": "Panel first; with lid off, hold both upper corners straight against the fixed outer guide faces. Drop level 2.10 mm forward, horizontal feed at +0.27, settle 0.27; only then fit both screws. Checks include the full closed-case field-motion reserve, not arbitrary lean of an unsupported open panel. Lid, power saddle and antennas absent. No part is rotated.",
+  "cad_report_sha256": "72136516a159cedb442a62976c4cbd5b4639dea1a38f94db097b526cf72cd95d",
+  "panel_glb_sha256": "3a1c4dc8ced91a2ac25cf7f4806b6d564f2f9f820ac45c346ae528078bfc74f5"
+}

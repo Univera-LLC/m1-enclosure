@@ -1,0 +1,31 @@
+{
+  "revision": "D2.6",
+  "units": "desk mm; intersection volumes in mm3",
+  "registered_board_overlap_mm3": {
+    "D2.5": 154.16525,
+    "D2.6": 0.0
+  },
+  "raw_SOURCE_20_total_overlap_mm3": 37.48917,
+  "raw_SOURCE_20_zone_overlap_mm3": {
+    "TB1 + TB2": 37.48917,
+    "USB-A + audio": 0.0,
+    "HDMI": 0.0,
+    "RJ": 0.0
+  },
+  "raw_SOURCE_20_overlap_bounds_mm": [
+    -39.35,
+    55.56000000000002,
+    17.4,
+    -13.25,
+    56.34999,
+    24.5
+  ],
+  "scope": "The original SnazzyLabs SOURCE_20 places more material in front of the TB pair than the photo-based D2.6 board. This is a disagreement between models, not an observed collision on the owner board. Check the shared TB shield in a cold fit before printing the full enclosure.",
+  "physical_fit": "NOT TESTED",
+  "inputs_sha256": {
+    "prototype-d26/print/02-flat-rear-panel.stl": "37944523e33fff7563e0741044d43aaa1b96849fa6ec029864daa712f50a0005",
+    "prototype-d25/print/02-flat-rear-panel.stl": "7ee4c1a46685895c6fe4078deb35bd6fb3bca93d8a7997e1553477c02d271dbe",
+    "prototype-d26/board-study/mac-board-reference.glb": "a5fb5ee5f7ab036a89470831b93f688aa2cac6a396a4a2de36990a7d12f12607",
+    "prototype-d26/board-study/registered-board.stl": "cd3a102334af9e3e4af906b90783a6be1faf5271056d733c543538e1e64f0031"
+  }
+}

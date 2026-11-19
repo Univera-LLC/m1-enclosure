@@ -1,0 +1,291 @@
+{
+  "revision": "D2.6",
+  "target": "https://dvaderfun.github.io/mac-mini-m1-case-prototype/",
+  "pages_commit": "bf7ed6792866e8523eaec3ae2603070908fee04c",
+  "pages_build": "https://github.com/Dvaderfun/mac-mini-m1-case-prototype/actions/runs/44562679528",
+  "physical_status": "NOT TESTED",
+  "files": {
+    "ATTRIBUTION.md": {
+      "source": "release/d2.6-site/ATTRIBUTION.md",
+      "bytes": 6430,
+      "sha256": "a43857301b99bd438e4bdd20d5fbf483ceaddc2a8d3fd8db91212fba3e84468d"
+    },
+    "README.md": {
+      "source": "release/d2.6-site/README.md",
+      "bytes": 3204,
+      "sha256": "4b2b83afe73c668f764fd894ccbf6cc1e01c83ace10a48336e32ee684e284928"
+    },
+    "accessories/index.html": {
+      "source": "release/d2.6-site/accessories/index.html",
+      "bytes": 2595452,
+      "sha256": "81d13506be9d9a749eb20e5fd866e7db16ce5f024bd1d04e07efe4c524d113cf"
+    },
+    "d2.5/d25-connector-section.svg": {
+      "source": "release/d2.6-site/d2.5/d25-connector-section.svg",
+      "bytes": 7446,
+      "sha256": "df328af1e6079d62778d5d3cc2977d868f7064557193e894b41d6700fb09b083"
+    },
+    "d2.5/d25-rear-assembly.jpg": {
+      "source": "release/d2.6-site/d2.5/d25-rear-assembly.jpg",
+      "bytes": 196973,
+      "sha256": "f003f86158ca51172ca745dad19d736e1671be36deafebaad2c8bb36d9ed2dd6"
+    },
+    "d2.5/index.html": {
+      "source": "release/d2.6-site/d2.5/index.html",
+      "bytes": 2884763,
+      "sha256": "d636504daee96ddfbf859b70dfce85955e553c5bdda11170db7eaed9dee2e314"
+    },
+    "d25-vs-d26-usb-audio-comparison.svg": {
+      "source": "cad/solidcraft-m1/prototype-d26/review/d25-vs-d26-usb-audio-comparison.svg",
+      "bytes": 47541,
+      "sha256": "f271cf04248531be7b8aa40e4cf9bfa6d6503eaf0488f47d7826a28f15b806f4"
+    },
+    "d26-connector-section.svg": {
+      "source": "cad/solidcraft-m1/prototype-d26/review/d26-connector-section.svg",
+      "bytes": 7709,
+      "sha256": "fdd64bbef38a92bd4806c71796aff95ad33aa0c4ced1d2140ae5f6b5f69208ab"
+    },
+    "d26-preview.jpg": {
+      "source": "cad/solidcraft-m1/prototype-d26/review/d26-preview.jpg",
+      "bytes": 56283,
+      "sha256": "0dd13e51203621ee60437f175f5b45f93adb64cb3737d8075699d07d626d6386"
+    },
+    "d26-rear-assembly.jpg": {
+      "source": "cad/solidcraft-m1/prototype-d26/review/d26-rear-assembly.jpg",
+      "bytes": 197345,
+      "sha256": "0359249bcd72f731c0646934ef545c243b32d1c9f31163a5bc6b4824a3be7e62"
+    },
+    "downloads/d2.6/CREDITS.txt": {
+      "source": "cad/solidcraft-m1/prototype-d26/CREDITS.txt",
+      "bytes": 3324,
+      "sha256": "bf4279fbddd3015503281708f2b3c6623b9a33765db84134284d7cea2049d650"
+    },
+    "downloads/d2.6/FIT-FIRST.md": {
+      "source": "cad/solidcraft-m1/prototype-d26/FIT-FIRST.md",
+      "bytes": 8186,
+      "sha256": "4e4fe778e50274f7923caa27198795bc1f849a4d33ef82354e898d8673144aad"
+    },
+    "downloads/d2.6/board-install-fit.json": {
+      "source": "cad/solidcraft-m1/prototype-d26/board-install-fit.json",
+      "bytes": 16178,
+      "sha256": "c1d379b0c997b45c114ab270d95a0af24be56f9273812aa795cc77ad9ea3cb4e"
+    },
+    "downloads/d2.6/cad-validation.json": {
+      "source": "cad/solidcraft-m1/prototype-d26/cad-validation.json",
+      "bytes": 12331,
+      "sha256": "72136516a159cedb442a62976c4cbd5b4639dea1a38f94db097b526cf72cd95d"
+    },
+    "downloads/d2.6/d2.6-cold-fit-kit.zip": {
+      "source": "cad/solidcraft-m1/prototype-d26/d2.6-cold-fit-kit.zip",
+      "bytes": 230526,
+      "sha256": "2c22fb7c2fc0818139c135f2803a2a7e8ea6a1e1a43115e235fe47283d43fca1"
+    },
+    "downloads/d2.6/d2.6-first-fit.zip": {
+      "source": "cad/solidcraft-m1/prototype-d26/d2.6-first-fit.zip",
+      "bytes": 97355,
+      "sha256": "a0d26877327309c74eafe6c38cd3a7ccf92e1af27e547acdd62526f4a1f4f104"
+    },
+    "downloads/d2.6/d26-assembly.step": {
+      "source": "cad/solidcraft-m1/prototype-d26/d26-assembly.step",
+      "bytes": 2642810,
+      "sha256": "e943c21c141de0201386be4c0b325ad52e054b6554bc070e7a04f1bc2725d53e"
+    },
+    "downloads/d2.6/d26-printable.step": {
+      "source": "cad/solidcraft-m1/prototype-d26/d26-printable.step",
+      "bytes": 2251660,
+      "sha256": "3807c9d9ba7e84f8074a9ca50ab938863f954dfc4336a08f77ad68dce8621dd7"
+    },
+    "downloads/d2.6/d26-workbench.sc": {
+      "source": "cad/solidcraft-m1/prototype-d26/d26-workbench.sc",
+      "bytes": 14872336,
+      "sha256": "7066b275cd2e6788a4d00fdd947e7d04a105beb5cb715da8f59c39c046a2f67f"
+    },
+    "downloads/d2.6/fascia-contract.json": {
+      "source": "cad/solidcraft-m1/prototype-d26/fascia-contract.json",
+      "bytes": 8284,
+      "sha256": "375bc712ec338c6d4bc0293bcb9301574baf500f449375c66dbd5c4c0f45a75b"
+    },
+    "downloads/d2.6/fit-validation.json": {
+      "source": "cad/solidcraft-m1/prototype-d26/fit-validation.json",
+      "bytes": 1217,
+      "sha256": "0fbabaa0cc93a765d233b4f3b1fabfc22c876dbd5472a55bc7711b170fc9af56"
+    },
+    "downloads/d2.6/ports-fit.json": {
+      "source": "cad/solidcraft-m1/prototype-d26/ports-fit.json",
+      "bytes": 41425,
+      "sha256": "c96f8bb6a63427768847b5d5c41848a2895da3b32229bbc9ebe06839d2c13c77"
+    },
+    "downloads/d2.6/power-fit.json": {
+      "source": "cad/solidcraft-m1/prototype-d26/power-fit.json",
+      "bytes": 65331,
+      "sha256": "2cc20dac17cacc6cbce9bc8e3d313bcbe5f8d7c77faed401a18ae45e42796bb1"
+    },
+    "downloads/d2.6/print/01-power-saddle.stl": {
+      "source": "cad/solidcraft-m1/prototype-d26/print/01-power-saddle.stl",
+      "bytes": 43584,
+      "sha256": "ff560947a9268b4e92dc8c951f757ac385a65f1aa4c5c54c7c950947d1bc06bd"
+    },
+    "downloads/d2.6/print/02-flat-rear-panel.stl": {
+      "source": "cad/solidcraft-m1/prototype-d26/print/02-flat-rear-panel.stl",
+      "bytes": 122284,
+      "sha256": "37944523e33fff7563e0741044d43aaa1b96849fa6ec029864daa712f50a0005"
+    },
+    "downloads/d2.6/print/03-monolithic-base.stl": {
+      "source": "cad/solidcraft-m1/prototype-d26/print/03-monolithic-base.stl",
+      "bytes": 386184,
+      "sha256": "750dcdd8855db52d23c65214012d4768ef0305b28a0f6d1c56d5dd3b7c143308"
+    },
+    "downloads/d2.6/print/04-vented-lid.stl": {
+      "source": "cad/solidcraft-m1/prototype-d26/print/04-vented-lid.stl",
+      "bytes": 252384,
+      "sha256": "3e15b4fa78903130c4d1a8f55f5d4aedeb160ab8b0557992acceea09721812cb"
+    },
+    "downloads/d2.6/print/05-front-blank.stl": {
+      "source": "cad/solidcraft-m1/prototype-d26/print/05-front-blank.stl",
+      "bytes": 167084,
+      "sha256": "7922c67bb8f6e4007ad3b858fad922fb646601dbfa01efe2ab68f50b38727e2e"
+    },
+    "downloads/d2.6/print/06-board-datum-strip.stl": {
+      "source": "cad/solidcraft-m1/prototype-d26/print/06-board-datum-strip.stl",
+      "bytes": 143584,
+      "sha256": "50ef502e8cf5fe77e68b32cabc237299ee40920468967856818f832b5cdcf0aa"
+    },
+    "downloads/d2.6/print/07-side-guide-sample.stl": {
+      "source": "cad/solidcraft-m1/prototype-d26/print/07-side-guide-sample.stl",
+      "bytes": 13584,
+      "sha256": "3ffe8d9ebb7e555bf582e604a8ccda6d81d71a94c7fda2258a0ed450c8da2d5d"
+    },
+    "downloads/d2.6/print/08-lid-stop-sample.stl": {
+      "source": "cad/solidcraft-m1/prototype-d26/print/08-lid-stop-sample.stl",
+      "bytes": 19084,
+      "sha256": "0c582b47bb4c160c0d6b19717cc686765ae087d88d4b7d709994bb91b2d3f992"
+    },
+    "downloads/d2.6/print/slice-checks.json": {
+      "source": "cad/solidcraft-m1/prototype-d26/print/slice-checks.json",
+      "bytes": 29820,
+      "sha256": "a6c89c0cf2c9e6f55e62aa388c615ba0aaa3048e7936ff01b2424a74e9a24630"
+    },
+    "downloads/d2.6/print/stl-checks.json": {
+      "source": "cad/solidcraft-m1/prototype-d26/print/stl-checks.json",
+      "bytes": 5586,
+      "sha256": "8fcd4675898d11f82ca59115d7c5601c745bdca2c847ead41db53fe4cede90d4"
+    },
+    "downloads/d2.6/reference-crosscheck.json": {
+      "source": "cad/solidcraft-m1/prototype-d26/reference-crosscheck.json",
+      "bytes": 1282,
+      "sha256": "a7134ae5a4156d2607ca6cc77ab448865d1e2c55b2da0b65de8d8d1186d18dba"
+    },
+    "index.html": {
+      "source": "cad/solidcraft-m1/prototype-d26/review/index.html",
+      "bytes": 2931735,
+      "sha256": "a237af1019dfcde9ca5afce624872aab2534c43bf4e5c9b682e0a93c3b25d152"
+    },
+    "reference/d2.6/mac-board-reference.glb": {
+      "source": "cad/solidcraft-m1/prototype-d26/board-study/mac-board-reference.glb",
+      "bytes": 889556,
+      "sha256": "a5fb5ee5f7ab036a89470831b93f688aa2cac6a396a4a2de36990a7d12f12607"
+    }
+  },
+  "companion_files": {
+    "accessories/models/compact.glb": {
+      "source": "release/d2.6-site/accessories/models/compact.glb",
+      "bytes": 957632,
+      "sha256": "e5cab8853fa496eb6305d31cddcb46d4820358fa465d3b497ecd09a09b0a758e"
+    },
+    "accessories/models/long.glb": {
+      "source": "release/d2.6-site/accessories/models/long.glb",
+      "bytes": 506840,
+      "sha256": "1257436b56254c2b71a265b39aa4dc1eaf77883fb1f3c32b0ad05046d387597c"
+    },
+    "accessories/models/round.glb": {
+      "source": "release/d2.6-site/accessories/models/round.glb",
+      "bytes": 1091496,
+      "sha256": "3fd072ef81f1589417d05b30accfc32f2ee63f5673bc11217c3c4e7d477376af"
+    },
+    "accessories/models/speaker.glb": {
+      "source": "release/d2.6-site/accessories/models/speaker.glb",
+      "bytes": 918800,
+      "sha256": "673e7eb77dac573c96a6d4dc7f3a0cd8d3790949a374c61669ea55c63d5edf66"
+    },
+    "accessories/previews/compact-back-body.webp": {
+      "source": "release/d2.6-site/accessories/previews/compact-back-body.webp",
+      "bytes": 12830,
+      "sha256": "d6531fa2d8f58794b56e4aaad6ed3bb739d6bd2d5e4375bf41b45ca7ead37c5a"
+    },
+    "accessories/previews/compact-back-whole.webp": {
+      "source": "release/d2.6-site/accessories/previews/compact-back-whole.webp",
+      "bytes": 8262,
+      "sha256": "2d1d33df077a68ed30b2fa919d591f994009b715b7cb01f482c39f5076842247"
+    },
+    "accessories/previews/compact-front-body.webp": {
+      "source": "release/d2.6-site/accessories/previews/compact-front-body.webp",
+      "bytes": 16080,
+      "sha256": "4ca1f9b76fcf9947cebdfb03445a70abd5ee302dc954b336d6b4f4a0503fee7e"
+    },
+    "accessories/previews/compact-front-whole.webp": {
+      "source": "release/d2.6-site/accessories/previews/compact-front-whole.webp",
+      "bytes": 13408,
+      "sha256": "3d8923d759c23288632b8ba58d83736ba8224303cd6f46f7bdf009ec8ddd6e8f"
+    },
+    "accessories/previews/long-back-body.webp": {
+      "source": "release/d2.6-site/accessories/previews/long-back-body.webp",
+      "bytes": 17168,
+      "sha256": "09bb7176591f91b50940488ffadf654fad6013ecfd462e0bdf13c3d6031a78ca"
+    },
+    "accessories/previews/long-back-whole.webp": {
+      "source": "release/d2.6-site/accessories/previews/long-back-whole.webp",
+      "bytes": 11276,
+      "sha256": "3b1d177b56192058d4b8be1bfe7bc65e8db62b7bd34034301276325c997a0759"
+    },
+    "accessories/previews/long-front-body.webp": {
+      "source": "release/d2.6-site/accessories/previews/long-front-body.webp",
+      "bytes": 15740,
+      "sha256": "44e69b3d2beb3ea7c3152b01b70f73fe7f88974988fa34539f9930affcf96911"
+    },
+    "accessories/previews/long-front-whole.webp": {
+      "source": "release/d2.6-site/accessories/previews/long-front-whole.webp",
+      "bytes": 8438,
+      "sha256": "89380ceb0a4f41956dc852c93a9d905fdcd2c34eb5bbb4bd2a4b26d5ffb49c60"
+    },
+    "accessories/previews/round-back-body.webp": {
+      "source": "release/d2.6-site/accessories/previews/round-back-body.webp",
+      "bytes": 11650,
+      "sha256": "a50913bce55d5866a30facc30f7c4eba088517da92dbcc44095eba7d8d414a36"
+    },
+    "accessories/previews/round-back-whole.webp": {
+      "source": "release/d2.6-site/accessories/previews/round-back-whole.webp",
+      "bytes": 6080,
+      "sha256": "a0df8ff3fccbf62cc35f531b9b8bbd71008046a9f3af94eb6fb7cac2a459a727"
+    },
+    "accessories/previews/round-front-body.webp": {
+      "source": "release/d2.6-site/accessories/previews/round-front-body.webp",
+      "bytes": 8286,
+      "sha256": "18bac5fe8114ec4175ca8e86120a1d5a3008d1bf86bf55d680acf2c1632c1015"
+    },
+    "accessories/previews/round-front-whole.webp": {
+      "source": "release/d2.6-site/accessories/previews/round-front-whole.webp",
+      "bytes": 5310,
+      "sha256": "8aee91733c173684f1bf564e9c762823e7c7e7c69b1901f6bc29216f81b65411"
+    },
+    "accessories/previews/speaker-back-body.webp": {
+      "source": "release/d2.6-site/accessories/previews/speaker-back-body.webp",
+      "bytes": 7046,
+      "sha256": "29b4408bee11deb95a023d8c43b8fcf23d6a448ca222dfe509ad96fe6c0077b7"
+    },
+    "accessories/previews/speaker-back-whole.webp": {
+      "source": "release/d2.6-site/accessories/previews/speaker-back-whole.webp",
+      "bytes": 7046,
+      "sha256": "29b4408bee11deb95a023d8c43b8fcf23d6a448ca222dfe509ad96fe6c0077b7"
+    },
+    "accessories/previews/speaker-front-body.webp": {
+      "source": "release/d2.6-site/accessories/previews/speaker-front-body.webp",
+      "bytes": 7988,
+      "sha256": "c7c73e99051b9c5f028fbf0613a3176e1441ee77f07982b76f9577a547d7752b"
+    },
+    "accessories/previews/speaker-front-whole.webp": {
+      "source": "release/d2.6-site/accessories/previews/speaker-front-whole.webp",
+      "bytes": 7988,
+      "sha256": "c7c73e99051b9c5f028fbf0613a3176e1441ee77f07982b76f9577a547d7752b"
+    }
+  }
+}

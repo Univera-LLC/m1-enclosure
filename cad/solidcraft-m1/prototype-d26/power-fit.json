@@ -1,0 +1,2091 @@
+{
+  "revision": "D2.6",
+  "failures": [],
+  "comparisons": 708,
+  "checks": {
+    "loaded sled continuous service": 486,
+    "no static contact: power items / chassis, fascia, lid": 32,
+    "solder and FR4 are still clear when metal ears first restrain withdrawal despite full panel field motion": 15,
+    "PCB and parts remain free on first metal insertion reaction": 15,
+    "electronic parts remain free at first vertical keeper": 8,
+    "photo-derived plated-ring exclusions": 6,
+    "Four insulated leads in corridors vs all actual installed items": 124,
+    "Insulated leads are separate": 6
+  },
+  "waypoints_xyz_mm": [
+    [
+      0.0,
+      -2.1,
+      49.0
+    ],
+    [
+      0.0,
+      -2.1,
+      0.27
+    ],
+    [
+      0.0,
+      0.0,
+      0.27
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "continuous_slab_covers": {
+    "1": {
+      "D2_POWER_SADDLE / D2_MONO_BASE": {
+        "slabs": 1,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      }
+    },
+    "2": {
+      "D2_POWER_SADDLE / D2_MONO_BASE": {
+        "slabs": 19,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D26_PROFILED_IO_PLATE": {
+        "slabs": 1,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / Panel field including upper angular reserve": {
+        "slabs": 1,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      }
+    },
+    "3": {
+      "D2_POWER_SADDLE / D2_MONO_BASE": {
+        "slabs": 1,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_POWER_SADDLE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_FR4_GAUGE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_FR4_GAUGE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / D26_PROFILED_IO_PLATE": {
+        "slabs": 6,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_USB_C_SHELL_GAUGE / Panel field including upper angular reserve": {
+        "slabs": 10,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_POPULATION_GAUGE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_POPULATION_GAUGE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_CMTPD_SOLDER_GAUGE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D2_MINI560_SOLDER_GAUGE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_MONO_BASE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_FRONT_BLANK": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_ADHESIVE_FOOT_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_ADHESIVE_FOOT_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_ADHESIVE_FOOT_3": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_ADHESIVE_FOOT_4": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_BOARD_FIXING_1": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_BOARD_FIXING_2": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_BLANK_FIXING_LOW": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D2_BLANK_FIXING_HIGH": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / D26_PROFILED_IO_PLATE": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / Registered owner Mac, 23 crests and seven photographed connector fronts": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / photo__loom__macwire__clipped-lead-exit": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / photo__loom__macinsulator__local-plug-outline": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / SOURCE_11": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / SOURCE_13": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / SOURCE_14": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      },
+      "D24_PD_DIELECTRIC_TONGUE / Panel field including upper angular reserve": {
+        "slabs": 0,
+        "overlap_bound_mm3": 0.0
+      }
+    }
+  },
+  "floor_pegs": [
+    {
+      "axis_xy_mm": [
+        -79.1,
+        -9.29
+      ],
+      "full_360_deg_height_mm": 0.2,
+      "high_sector_height_mm": 2.55,
+      "tall_sector_mm3": 19.154
+    },
+    {
+      "axis_xy_mm": [
+        -79.1,
+        35.71
+      ],
+      "full_360_deg_height_mm": 0.2,
+      "high_sector_height_mm": 2.55,
+      "tall_sector_mm3": 19.154
+    }
+  ],
+  "printed_power_parts": 1,
+  "hardware": "No power screws. Release both leads and disconnect before removal.",
+  "challenge_overlaps_mm3": {
+    "insertion load: metal rear face / plastic shoe": 1.03704,
+    "outside side metal shoe": 3.32785,
+    "lower metal shell support": 1.11766,
+    "upper metal stop": 0.55053,
+    "withdrawal on assumed upper metal ear": 0.0099,
+    "withdrawal on assumed lower metal ear": 0.02815,
+    "loaded sled axial reaction in plastic / -0.32": 0.34558,
+    "loaded sled axial reaction in plastic / 0.32": 0.34558,
+    "existing broad plastics restrain sled lift before laminate loading": 3.08825
+  },
+  "metal_ear_conditional": {
+    "exposed_contact_area_mm2": {
+      "upper": 0.0825,
+      "lower": 0.2346
+    },
+    "nominal_gap_mm": 0.1,
+    "physical_status": "Only tab presence is visible; accessible metal height above solder is ASSUMED. No positive withdrawal reaction for a smooth tabless shell."
+  },
+  "local_PD_reliefs": {
+    "exported_panel_wall_witnesses": {
+      "FR4 and backside solder": {
+        "probe_xz_mm": [
+          -76.12,
+          22.2
+        ],
+        "surface_y_mm": [
+          56.35,
+          57.36
+        ],
+        "wall_thickness_mm": 1.01
+      },
+      "floor-supported saddle foot": {
+        "probe_xz_mm": [
+          -80.65,
+          13.15
+        ],
+        "surface_y_mm": [
+          56.27,
+          57.36
+        ],
+        "wall_thickness_mm": 1.09
+      },
+      "narrow upper ear service track": {
+        "probe_xz_mm": [
+          -79.2,
+          36.4
+        ],
+        "surface_y_mm": [
+          55.95,
+          57.36
+        ],
+        "wall_thickness_mm": 1.41
+      },
+      "unrelieved beside PD": {
+        "probe_xz_mm": [
+          -82.55,
+          22.2
+        ],
+        "surface_y_mm": [
+          54.76,
+          57.36
+        ],
+        "wall_thickness_mm": 2.6
+      }
+    },
+    "clearance_at_first_ear_reaction_full_panel_field_mm": {
+      "D2_CMTPD_FR4_GAUGE": 0.105,
+      "D2_CMTPD_SOLDER_GAUGE": 0.105
+    },
+    "load_path": "Insertion: metal back into shoe. Withdrawal: two conditional metal ears. Both directions also meet a broad plastic sled pillar/closed-lid stops. The blind relief is a cosmetic clearance and is not designed as the cable thrust stop."
+  },
+  "installed_power_floor": {
+    "nominal_open_mm2": 311.758,
+    "open_after_fit_mm2": 227.944,
+    "open_fraction": 0.7312
+  },
+  "service": "With lid open, hold both upper corners of the installed panel on their rear datum. Sled enters level with both modules installed from outside, 2.10 mm forward; feed at Z+0.27, seat and fit lid; reverse to remove. Mac and screws can stay.",
+  "cad_report_sha256": "72136516a159cedb442a62976c4cbd5b4639dea1a38f94db097b526cf72cd95d",
+  "panel_glb_sha256": "3a1c4dc8ced91a2ac25cf7f4806b6d564f2f9f820ac45c346ae528078bfc74f5"
+}

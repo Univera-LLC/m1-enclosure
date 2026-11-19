@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="uk"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,follow"><meta name="theme-color" content="#f7f8f4">
+<title>Mac mini M1 · Атлас конструкції FDM __REV__</title>
+<meta name="description" content="Корпус Mac mini M1, плата та окремий огляд трьох антен і динаміка. Цифрові моделі за фото власника, файли STL, STEP та GLB.">
+<meta property="og:title" content="Mac mini M1 · Атлас конструкції"><meta property="og:type" content="website">
+<meta property="og:description" content="Вісім фасонних вікон Mac mini M1. У зібраному корпусі стінка прикриває обідки гнізд. Перегляд спереду, кишені зі звороту й розріз. FDM __REV__.">
+<meta property="og:url" content="https://dvaderfun.github.io/mac-mini-m1-case-prototype/"><meta property="og:image" content="https://dvaderfun.github.io/mac-mini-m1-case-prototype/d26-preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%231c3430'/%3E%3Cg stroke='%23bef1ce' stroke-width='3.4' stroke-linecap='round'%3E%3Cpath d='m8 25 5-12m1 14 6-15m1 15 6-15m0 14 5-12'/%3E%3C/g%3E%3C/svg%3E">
+<script>if(location.protocol!=='file:'){const p=new URLSearchParams(location.search);if(__LEGACY_MODES__.includes(p.get('mode')))location.replace('./h1/'+location.search+location.hash);else if(p.get('rev')==='d2.5')location.replace('./d2.5/'+location.search+location.hash);else if(p.get('rev')==='d2.4')location.replace('./d2.4/'+location.search+location.hash);else if(p.get('rev')==='d2.3')location.replace('./d2.3/'+location.search+location.hash);else if(p.get('rev')==='d2.2')location.replace('./d2.2/'+location.search+location.hash);else if(p.get('rev')==='d2.1')location.replace('./d2.1/'+location.search+location.hash);else if(p.get('rev')==='d1'||['tray','bottom','carrier','insert','sled','retainer'].includes(p.get('part')))location.replace('./d1/'+location.search+location.hash);}</script>
+<style>__CSS__</style></head><body>
+<svg class="sprites" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="i-cube" viewBox="0 0 24 24"><path d="m3 7 9-5 9 5v10l-9 5-9-5Z M3 7l9 5 9-5m-9 5v10"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24"><path d="m2 8 10-5 10 5-10 5Zm0 5 10 5 10-5M2 18l10 5 10-5"/></symbol>
+<symbol id="i-rear" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M5 11h5v3H5zm9 2h2m3-3v4"/></symbol>
+<symbol id="i-bolt" viewBox="0 0 24 24"><path d="m13.5 2-9 12h6l-.1 8 9.1-13h-6Z"/></symbol>
+<symbol id="i-foundation" viewBox="0 0 24 24"><path d="M3 16 12 21 21 16v-3l-9 5-9-5zm4-2V9m0 0c2 0 2-2 0-2S5 9 7 9zm10 0V4m0 0c2 0 2-2 0-2s-2 2 0 2z"/></symbol>
+<symbol id="i-board" viewBox="0 0 24 24"><path d="M3 6h12l2 2h4v10H3zM7 9h5v6H7zm8 1h3m-3 3h3"/><circle cx="5.2" cy="16" r=".55"/></symbol>
+<symbol id="i-chip" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 2v3m6-3v3M9 19v3m6-3v3M2 9h3m-3 6h3m14-6h3m-3 6h3m-12-5h4v4h-4z"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24"><path d="m10 13 4-4m-5 6-2 2a3.5 3.5 0 0 1-5-5l4-4a3.5 3.5 0 0 1 5 0m2 1 2-2a3.5 3.5 0 1 1 5 5l-4 4a3.5 3.5 0 0 1-5 0" transform="translate(1 -1)"/></symbol>
+<symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/></symbol>
+<symbol id="i-fit" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/><circle cx="12" cy="12" r="3.3"/></symbol>
+<symbol id="i-expand" viewBox="0 0 24 24"><path d="M14 3h7v7m0-7-7 7M10 21H3v-7m0 7 7-7"/></symbol>
+<symbol id="i-collapse" viewBox="0 0 24 24"><path d="M21 3l-7 7m0-6v6h6M3 21l7-7m0 6v-6H4"/></symbol>
+<symbol id="i-tag" viewBox="0 0 24 24"><circle cx="6" cy="17" r="2"/><path d="m7.5 15.5 5-6H21V4h-9v5.5"/></symbol>
+<symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14m-7-7v14"/></symbol>
+<symbol id="i-arrows" viewBox="0 0 24 24"><path d="m3 8 9-4 9 4-9 4Zm0 8 9 4 9-4M12 4V1m0 22v-3"/></symbol>
+<symbol id="i-orbit" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="5" transform="rotate(-25 12 12)"/><circle cx="12" cy="12" r="2.3"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h13m-5-5 5 5-5 5"/></symbol>
+<symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+<symbol id="i-focus" viewBox="0 0 24 24"><path d="m6 9 6-3 6 3v7l-6 3-6-3Z M6 9l6 3 6-3m-6 3v7"/></symbol>
+</defs></svg>
+<a href="#stage" class="skip">До моделі</a>
+<header class="mast"><div class="wrap mast-in">
+  <div class="identity"><span class="brandmark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="m6 25 5-12m2 14 6-15m1 15 6-15m1 14 5-12"/></svg></span>Майстерня M1</div>
+  <span class="series">АТЛАС КОНСТРУКЦІЇ <b>/</b> 02</span>
+  <div class="mast-actions"><a href="#about" class="sources-link">Про модель</a><a href="#downloads" class="downloads-jump" aria-label="Завантажити STL і STEP"><svg aria-hidden="true"><use href="#i-download"/></svg>STL і STEP</a><button id="share" class="share" type="button" aria-label="Поділитися видом"><svg aria-hidden="true"><use href="#i-link"/></svg><span>Поділитися видом</span></button></div>
+</div></header>
+<main class="wrap">
+  <div class="intro"><div><div class="eyebrow"><i></i> Цифровий прототип <span>/</span> FDM __REV__</div>
+    <h1>Mac mini M1<span>.</span></h1><p>Потовщена панель D2.6 ховає рамки обох USB‑A й аудіо у спільну Т-кишеню. Це комплект для першої холодної примірки; реальну посадку ще не перевірено. <a class="jump-rear" href="#assembled-front">Роздивитися гнізда спереду</a> · <a href="#assembly-guide">Порядок складання</a> · <a href="#port-fit">Розріз і посадка штекерів</a> · <a href="#panel-print">Сторона друку</a> · <a href="#antennas">Антени й динамік</a></p></div>
+    <div class="spec"><div class="micro">Габарит корпуса з ніжками</div><div class="dimension">__DIMENSIONS__ <small>мм</small></div><div class="spec-foot"><span class="rule"></span>Проєктний розмір за CAD</div></div>
+  </div>
+  <noscript><style>#loading{display:none}</style><div class="noscript">Порядок складання, таблиця портів, схема друку та файли нижче доступні без JavaScript. Увімкніть JavaScript для інтерактивного 3D-огляду.</div></noscript>
+  <div id="review">
+  <nav id="tabs" class="tabs" aria-label="Види моделі">__TABS__<a class="accessory-tab" href="accessories/index.html">Антени й динамік ↗</a></nav>
+  <div class="workbench">
+    <section class="figure" aria-label="Інтерактивна модель">
+      <div id="stage" class="stage" data-panel-travel="__PANEL_TRAVEL__" tabindex="0" aria-label="3D-модель. Стрілки обертають модель, плюс і мінус змінюють масштаб, клавіша 0 повертає початковий ракурс.">
+        <img id="poster" src="__POSTER__" alt="Зібраний корпус __REV__: задні порти, кут боковини та верхня решітка">
+        <div id="surface"></div><svg id="leaders" aria-hidden="true"></svg><div id="pins"></div>
+        <div class="stage-head"><span class="fig-code"><b></b><span id="figure-code">__REV__ / EXT</span></span><div class="stage-actions">
+          <button id="labels" class="label-toggle" type="button" aria-pressed="true"><svg><use href="#i-tag"/></svg>Мітки</button>
+          <button id="fullscreen" class="label-toggle" type="button" aria-controls="review" aria-expanded="false"><svg aria-hidden="true"><use href="#i-expand"/></svg><span>На весь екран</span></button>
+        </div></div>
+        <div id="loading" role="status">Готуємо модель…</div>
+        <div class="stage-foot"><span class="orbit-hint"><svg><use href="#i-orbit"/></svg><span id="gesture">Тягніть, щоб обертати</span></span><div class="toolstrip">
+          <button id="zoom-out" title="Віддалити (−)" aria-label="Віддалити"><svg><use href="#i-minus"/></svg></button>
+          <button id="zoom-in" title="Наблизити (+)" aria-label="Наблизити"><svg><use href="#i-plus"/></svg></button>
+          <button id="reset" title="Початковий ракурс (0)" aria-label="Початковий ракурс"><svg><use href="#i-fit"/></svg></button>
+        </div></div>
+      </div>
+      <div class="spread-tools">
+        <label for="spread"><svg><use href="#i-arrows"/></svg><span id="spread-label">Рознести деталі</span></label><input id="spread" type="range" min="0" max="100" value="0"><output id="amount" for="spread">0%</output>
+        <button type="button" id="mounts" hidden aria-pressed="false">Дно й кришка</button><button type="button" id="gauges" hidden aria-pressed="false">Габарити плат</button>
+        <button type="button" id="reference-antennas" hidden aria-pressed="false">Антени з референсу</button>
+      </div>
+      <div class="board-tools port-tools" id="port-tools" role="group" aria-label="Збільшення гнізд на зібраному тилі" hidden><span>Гнізда зблизька</span>__PORT_BUTTONS__</div>
+      <div class="board-tools service-tools" id="service-tools" role="group" aria-label="Етап розбирання" hidden><span>Показати стан</span><button type="button" data-state="0" aria-pressed="true">Зібрано</button><button type="button" data-state="36" aria-pressed="false">Без кришки</button><button type="button" data-state="71" aria-pressed="false">Плата над дном</button><button type="button" data-state="74" aria-pressed="false">Порти вільні</button><button type="button" data-state="100" aria-pressed="false">Панель знято</button></div>
+      <div class="board-tools" id="board-tools" role="group" aria-labelledby="side-label" hidden><span id="side-label">Ракурс плати</span><button type="button" id="side-top" aria-pressed="true">З боку радіатора</button><button type="button" id="side-back" aria-pressed="false">Зі звороту</button></div>
+      <div class="figure-caption"><span class="fig-index" id="fig-index">РИС. 01</span><span id="fig-title">Корпус у зборі</span><span class="fig-status" id="fig-status">FDM __REV__</span></div>
+    </section>
+    <aside id="guide" class="guide" aria-label="Пояснення до виду">
+      <div class="guide-meta"><span class="eyebrow" id="guide-kicker">Огляд збірки</span><span id="ordinal">01 / 07</span></div>
+      <h2 id="view-title">Зібраний корпус</h2><p id="view-copy">Дно й стінки утворюють одну деталь, а вентильована кришка відкриває доступ зверху.</p>
+      <div class="parts-head"><h3>Деталі у виді</h3><span>Оберіть для огляду</span></div><div id="part-list"></div>
+      <div id="inspection" hidden><div class="inspect-top"><span id="part-evidence"></span><button id="clear-part" type="button" aria-label="Зняти вибір" title="Зняти вибір">×</button></div><strong id="part-name"></strong><p id="part-copy"></p><button id="solo" type="button" aria-pressed="false"><svg><use href="#i-focus"/></svg><span>Лише ця деталь</span></button></div>
+      <p id="scene-note" class="scene-note"></p>
+      <div class="guide-links"><a id="to-fit" href="#port-fit" hidden>Розріз і посадка штекерів ↓</a><a id="to-panel-back" href="?view=rear&amp;part=panel&amp;solo=1&amp;side=back#stage" hidden>Повернути панель внутрішнім боком ↗</a><a id="to-print" href="#panel-print" hidden>Побачити сторону друку ↓</a><a id="to-board-file" href="#board-file" hidden>Завантажити модель плати ↓</a><a id="to-antennas" href="#antennas" hidden>Три антени й динамік ↓</a></div>
+    </aside>
+  </div>
+  </div>
+  <section id="assembly-guide" class="antenna-study assembly-guide" aria-labelledby="assembly-title" tabindex="-1">
+    <div class="study-heading"><div><span class="eyebrow">Складання / задня панель</span><h2 id="assembly-title">Панель — перед платою</h2></div><p>Під час складання панель уже має стояти у своїх пазах, коли гнізда підходять до отворів. За знятої кришки притримуйте її верхні кути біля задніх упорів.</p></div>
+    <ol class="assembly-steps">__ASSEMBLY_STEPS__</ol>
+    <p class="service-rule"><b>Щоб зняти панель:</b> від’єднайте кабелі, зніміть кришку та звільніть кріплення плати. Відведіть гнізда плати Mac і окремого PD IN від панелі. Лише тоді виведіть нижню крайку із посадок клинів і піднімайте панель у пазах.</p>
+    <details class="service-distances"><summary>На скільки зміщувати вузли в моделі?</summary>__ASSEMBLY_OFFSETS__</details>
+    <a class="study-action" href="d26-rear-assembly.jpg">Зберегти схему складання для майстерні ↗</a>
+  </section>
+  <section id="port-fit" class="antenna-study port-study" aria-labelledby="port-fit-title" tabindex="-1">
+    <div class="study-heading"><div><span class="eyebrow">Зібраний тил / гнізда спереду</span><h2 id="port-fit-title">Гнізда за лицьовою панеллю</h2></div><p>З боку кабелів видно робочі отвори: два USB‑A, аудіо, HDMI, два Thunderbolt, Ethernet і окремий вертикальний PD IN. Контур кожного вікна вирізано у пластику. На збільшеннях нижче показано зібраний корпус.</p></div>
+    <figure id="assembled-front" class="facade-front" tabindex="-1"><img src="__FACADE_POSTER__" alt="Зібраний тил прямо спереду: сім гнізд Mac і вертикальний вхід живлення PD IN."><figcaption>Зібраний корпус · ортогональний вид</figcaption></figure>
+    <div class="facade-families">__FACADE_FRAMES__</div>
+    <p class="fit-caption"><b>Два Thunderbolt / USB‑C.</b> __TB_NOTE__ Окремо приміряйте спільний екран двох TB: для панелі D2.6 модель плати за фото дає 0 мм³ перетину, а вихідний SOURCE_20 — 37,49 мм³ у цій зоні. <a href="__DOWNLOAD_DIR__/reference-crosscheck.json">Порівняння моделей</a>. <a href="?view=rear&amp;port=tb#stage">Побачити обидва зблизька ↗</a></p>
+    <figure class="front-compare"><div tabindex="0" role="region" aria-label="Порівняння панелей D2.5 та D2.6 біля USB‑A та аудіо; на вузькому екрані гортайте вбік"><img loading="lazy" src="__TB_COMPARISON__" width="__COMP_WIDTH__" height="__COMP_HEIGHT__" alt="Перерізи STL: окремі кишені D2.5 та спільна Т-кишеня D2.6 зі стінкою 0,80 мм."></div><figcaption>Перерізи обох STL з одним референсом плати, уточненим за фото. <a href="d25-vs-d26-usb-audio-comparison.svg">Збільшити порівняння ↗</a></figcaption></figure>
+    <figure class="panel-interior"><img loading="lazy" src="__PANEL_BACK__" alt="Тильний бік знятої панелі: ширші локальні кишені навколо наскрізних отворів."><figcaption><b>Зворот знятої панелі.</b> У товстій пластині вибрано місце під корпуси роз’ємів. На дні кожної кишені лишається тонка стінка з фасонним отвором. <a href="?view=rear&amp;part=panel&amp;solo=1&amp;side=back#stage">Обернути деталь у 3D ↗</a></figcaption></figure>
+    <div class="fit-notes"><article><span class="section-no">01 / ОРИГІНАЛ MAC</span><h3>Близько 1 мм перед пазом</h3><p>Оцінка власника для оригінальної панелі Apple: близько 4 мм загалом і близько 1 мм у пазу. Похибка невідома. Це не вимір відстані між торцем гнізда та зовнішнім лицем.</p></article><article><span class="section-no">02 / НОВИЙ КОРПУС · CAD</span><h3>Товщина пластини й положення гнізда</h3><p>__WALL_NOTE__ Відступ торця — це окрема осьова відстань, наведена для кожного гнізда в таблиці.</p></article></div>
+    <figure class="plug-cross"><img src="__PORT_SECTION__" width="__SECTION_WIDTH__" height="__SECTION_HEIGHT__" alt="Розріз D2.6: зовнішня площина, стінка пластини, торець гнізда та напрям під’єднання штекера.">
+      <figcaption><b>Шлях металевого наконечника.</b> Штекер проходить крізь тонку стінку до гнізда. Широку оболонку роз’єму прикриває панель; між ними потрібен зазор. Відстань під плечем конкретного кабелю перевіряють у знеструмленій примірці. <a href="d26-connector-section.svg">Відкрити розріз для збільшення ↗</a></figcaption></figure>
+    __PORT_TABLE__
+    <p class="fit-caption"><b>Короткі штекери.</b> У розрахунку широке плече торкається панелі, якщо в повністю вставленого штекера бракує виступу від гнізда: для TB потрібно понад 1,01 мм, для PD — 0,56 мм, для аудіо від буртика — 0,32 мм. Порівняйте ті самі кабелі з панеллю та без неї.</p>
+    <p class="fit-caption"><b>Окремий PD IN.</b> __PD_NOTE__ <a href="?view=rear&amp;port=pd#stage">Збільшити вхід живлення ↗</a></p>
+    <details class="service-distances fit-sources"><summary>Креслення роз’ємів і приклади кабелів</summary><p>USB‑A: <a href="https://www.usb.org/document-library/usb-31-legacy-cable-and-connector-revision-10">USB 3.1 Legacy, рис. 5‑27</a>. Прямий USB‑C: <a href="https://www.usb.org/document-library/usb-type-cr-cable-and-connector-specification-release-25">USB‑IF Type‑C R2.5, рис. 3‑3</a>. Обидва плечі конкретного кабелю: <a href="https://www.sameskydevices.com/product/resource/cbl-a31-c31.pdf">Same Sky CBL‑A31‑C31, арк. 2</a>.</p><p>HDMI: <a href="https://fpga.mit.edu/6205/_static/F23/common_files/week04/CEC_HDMI_Specification.pdf">HDMI 1.3, рис. 4‑3 (копія MIT)</a>; приклад плеча 20,83 × 10,92 мм REF — <a href="https://www.picwire.com/Files/Data-Cable-Assembly-Worksheets/11012-4946-HDMI-Cable-Assemblies.pdf">PIC Wire &amp; Cable, арк. 2</a>. Аудіо: <a href="https://downloads.lumberg.com/datenblaetter/en/1532_02.pdf">креслення Lumberg 1532 02</a>.</p></details>
+    <p class="fit-action"><b>Перша примірка, без живлення.</b> Почніть із малого комплекту D2.6: панель 02, тримач 01 та зразки 06–08. Перед друком дна 03 і кришки 04 перевірте на платі Т-кишеню, буртик аудіо та свої штекери. Вставте свої кабелі спочатку в плату поза корпусом, потім у ті самі гнізда з панеллю. Порівняйте глибину, зазор під плечем і відчуття фіксації. Для Ethernet окремо перевірте защіпання й доступ до засувки. Для USB‑C перевірте обидві орієнтації. Збережіть результат окремо для кожного кабелю.</p>
+  </section>
+  <section id="panel-print" class="antenna-study print-study" aria-labelledby="print-title" tabindex="-1">
+    <div class="study-heading"><div><span class="eyebrow">Друк / задня панель</span><h2 id="print-title">Зовнішньою стороною до столу</h2></div><p>Файл <b>02-flat-rear-panel.stl</b> уже зорієнтовано для друку. Покладіть долілиць пласку поверхню, яку буде видно на закритому корпусі. Внутрішні вибірки й посадки клинів дивляться вгору. Найвужча перемичка між отворами __MIN_WEB_NOTE__</p></div>
+    <div class="print-diagrams">
+      <figure class="print-card"><figcaption><span>01 / ЗВЕРХУ</span>Що торкається столу</figcaption><div class="print-bed-top">__PRINT_FACE__</div><p>Темне — справжній відбиток STL у площині столу. Вісім світлих отворів проходять крізь окрему пластину. Після складання там стоять вісім гнізд, показаних вище.</p></figure>
+      <figure class="print-card"><figcaption><span>02 / ЗБОКУ</span>Положення для друку</figcaption><svg class="print-section" role="img" aria-labelledby="print-edge-title" viewBox="0 0 320 102"><title id="print-edge-title">Пласка зовнішня поверхня спирається на стіл, внутрішній бік угорі</title><defs><pattern id="bed-hatch" width="7" height="7" patternUnits="userSpaceOnUse"><path d="M-1 2 2 -1m-2 8 7-7m-1 8 2-2" stroke="#9daea1" stroke-width="1"/></pattern></defs><text x="15" y="19">Внутрішній бік ↑</text><path d="M102 24v9" stroke="#647c6c"/><rect x="12" y="35" width="296" height="13" fill="#576c60"/><rect x="5" y="48" width="310" height="15" fill="url(#bed-hatch)"/><path d="M5 48h310" stroke="#216a4c" stroke-width="3"/><path d="M261 49v22h-31" fill="none" stroke="#216a4c"/><text x="14" y="83">Зовнішня сторона на столі</text></svg><p>Схема орієнтації без масштабу. Після друку перевірте край кожного отвору та перемички своїм зразком.</p></figure>
+    </div>
+  </section>
+  <section id="antennas" class="antenna-study" aria-labelledby="antenna-title" tabindex="-1">
+    <div class="study-heading"><div><span class="eyebrow">За фото власника / окремі деталі</span><h2 id="antenna-title">Три антени й динамік</h2></div><p>Кругла, компактна й видовжена антени та штатний динамік показані поза корпусом. Відкрийте предмет, щоб оглянути обидві сторони, збільшити деталі або побачити провід.</p></div>
+    <div class="accessory-grid">
+      <a href="accessories/index.html?part=round#item-round"><img loading="lazy" width="320" height="180" src="accessories/previews/round-front-body.webp" alt=""><span><small>01</small> Кругла антена ↗</span></a>
+      <a href="accessories/index.html?part=compact#item-compact"><img loading="lazy" width="320" height="180" src="accessories/previews/compact-front-body.webp" alt=""><span><small>02</small> Компактна антена ↗</span></a>
+      <a href="accessories/index.html?part=long#item-long"><img loading="lazy" width="320" height="180" src="accessories/previews/long-front-body.webp" alt=""><span><small>03</small> Видовжена антена ↗</span></a>
+      <a href="accessories/index.html?part=speaker#item-speaker"><img loading="lazy" width="320" height="180" src="accessories/previews/speaker-front-body.webp" alt=""><span><small>04</small> Динамік ↗</span></a>
+    </div>
+    <a class="study-action" href="accessories/index.html">Відкрити предметний атлас і моделі GLB ↗</a>
+    <details class="accessory-history"><summary>Попередні контурні рисунки двох бокових антен</summary><figure class="antenna-drawing">__ANTENNA_STUDY__<figcaption>Компактна антена (А) і видовжена (Б) показані без спільного масштабу. Три сітки SnazzyLabs у виді «Під кришкою» належать іншому джерелу. Монтаж реальних деталей ще не перевірено.</figcaption></figure></details>
+  </section>
+  <section id="downloads" class="downloads" aria-labelledby="files-title" tabindex="-1">
+    <div class="files-heading"><div><span class="eyebrow">Файли розробника / __REV__</span><h2 id="files-title">Завантажити STL і STEP</h2></div><a class="git-folder" href="https://github.com/Dvaderfun/mac-mini-m1-case-prototype/tree/main/__DOWNLOAD_DIR__">Відкрити файли в GitHub ↗</a></div>
+    <div class="files-grid">
+      <article><h3>STL для 3D-друку</h3><p>Почніть із малого комплекту: 01, 02 і 06–08. Панель 02 — лицем на стіл, шари 0,10 мм, без підтримок. Напрямні 03/04 і тримач 01 змінено; з D2.5 сумісна лише заглушка 05.</p>__KITS__</article>
+      <article><h3>STEP для CAD</h3><p>Збірка містить кріплення та габаритні моделі плат живлення. Сітки материнської плати Mac і радіатора до STEP не входять.</p>__STEPS__
+__NATIVE__</article>
+    </div>
+    <p><a href="__DOWNLOAD_DIR__/FIT-FIRST.md">Інструкція холодної примірки</a> · <a href="__DOWNLOAD_DIR__/ports-fit.json">Розрахунок зазорів</a> · <a href="__DOWNLOAD_DIR__/print/slice-checks.json">Звіт PrusaSlicer</a></p>
+    <details class="individual-files"><summary>Окремі STL: 5 деталей корпуса та 3 зразки для примірки</summary><div class="individual-list">__STLS__</div></details>
+    <div class="board-file" id="board-file" tabindex="-1">__BOARD_DOWNLOAD__<p>Довідкова модель плати з радіатором і без антен для 3D-перегляду. STL і STEP корпуса залишаються файлами ревізії __REV__.</p></div>
+  </section>
+  <section id="about" class="about"><div class="about-heading"><span class="eyebrow">ДОСЬЄ / 19.11.2026</span><h2>Як читати модель</h2></div>
+    <div class="about-grid"><article><span class="section-no">01 / ГЕОМЕТРІЯ</span><h3>Що показано точно</h3><p>Основа, кришка, панель і тримач перенесені з CAD-збірки __REV__. Позначка <b>SOURCE</b> вказує на геометрію з вихідної моделі Mac або файлу PCB.</p></article>
+    <article><span class="section-no">02 / КОМПОНЕНТИ</span><h3>Що видно на фото</h3><p>На радіаторі видно 23 поздовжні ребра та 22 канали. Габарит узято з SOURCE. Напрям джгута й вигляд трьох антен та динаміка відтворено за фото. <b>DOCUMENTED</b> — дані з джерел; <b>ASSUMED</b> — припущення про висоти й посадки.</p></article>
+    <article><span class="section-no">03 / ПРИМІРКА</span><h3>Що перевіряємо далі</h3><p>Звірте відстань між опорами плати, посадку модулів у тримачі, підведення портів до встановленої панелі та посадку реальних кабелів. <b>MEASURED:</b> натурних обмірів цих модулів поки немає. Живлення, тепло й RF ще не прийняті.</p></article></div>
+    <details><summary>Джерела та авторство</summary><div class="credits"><p>Шасі, панелі й тримач: SolidCraft, ревізія __REV__. Механічні референси плати Mac, радіатора, портів та антен — <a href="https://www.printables.com/model/139893-shrink-the-m1-mac-mini">SnazzyLabs, Shrink the M1 Mac mini! №139893</a>, Creative Commons Attribution Noncommercial (CC BY-NC; версію не вказано). До вихідних опорних положень прив’язано моделі відкритих гнізд із металевими обідками, темними вставками та контактами. Їхню внутрішню форму не вимірювали на платі власника.</p><p>Окрема PCB v1 — Yulii Maievskyi, контур із KiCad та габаритні тіла зі збірки C5R. Модулі __REV__: <a href="https://rozetka.com.ua/ua/483069554/p483069554/">CMTPD 483069554</a> та <a href="https://rozetka.com.ua/ua/398197737/p398197737/">Mini‑560 398197737</a>, Radio Construct / Rozetka. Розташування дрібних елементів ілюстративне. Перегляд — Three.js (MIT).</p></div></details>
+  </section>
+</main>
+<footer><div class="wrap"><span>Майстерня M1 <b>/</b> Цифровий прототип</span><span><a href="d26-rear-assembly.jpg">Схема складання</a> · Архів: <a data-archive href="d2.5/?view=rear">D2.5 ↗</a> · <a data-archive href="d2.4/?view=rear">D2.4 ↗</a> · <a data-archive href="d2.3/?view=rear">D2.3 ↗</a> · <a data-archive href="d2.2/?view=rear">D2.2 ↗</a> · <a data-archive href="d2.1/?view=rear">D2.1 ↗</a> · <a data-archive href="d2/?view=rear">D2 ↗</a> · <a data-archive href="d1/">D1 ↗</a> · <a data-archive href="h1/?mode=hybrid">H1 ↗</a></span></div></footer>
+<div id="notice" class="notice" role="status" hidden></div>
+<dialog id="share-dialog"><form method="dialog"><h2>Посилання на цей вид</h2><p>Скопіюйте адресу для колег.</p><input id="share-url" type="url" readonly aria-label="Посилання"><button type="submit">Готово</button></form></dialog>
+<script id="model-bytes" type="application/octet-stream">__MODEL__</script>
+<script id="port-data" type="application/json">__PORT_DATA__</script><script id="service-data" type="application/json">__SERVICE_DATA__</script><script id="posters" type="application/json">__POSTERS__</script>
+<script>__BUNDLE__</script></body></html>

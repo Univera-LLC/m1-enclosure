@@ -1,0 +1,514 @@
+{
+  "variant": "D2.1 / FDM cold fit",
+  "date": "2026-11-18",
+  "units": "desk mm",
+  "features": 279,
+  "warnings": [],
+  "operations_sha256": "e50be302bce10d859b3f57792333c4de5f7debb65a45c5e7445d588fe821a2af",
+  "groups": {
+    "base": [
+      "D2_MONO_BASE"
+    ],
+    "lid": [
+      "D2_TOP_COVER"
+    ],
+    "blank": [
+      "D2_FRONT_BLANK"
+    ],
+    "feet": [
+      "D2_ADHESIVE_FOOT_1",
+      "D2_ADHESIVE_FOOT_2",
+      "D2_ADHESIVE_FOOT_3",
+      "D2_ADHESIVE_FOOT_4"
+    ],
+    "lid_screws": [
+      "D2_LID_FIXING_1",
+      "D2_LID_FIXING_2",
+      "D2_LID_FIXING_3",
+      "D2_LID_FIXING_4"
+    ],
+    "pcb_screws": [
+      "D2_BOARD_FIXING_1",
+      "D2_BOARD_FIXING_2"
+    ],
+    "blank_screws": [
+      "D2_BLANK_FIXING_LOW",
+      "D2_BLANK_FIXING_HIGH"
+    ],
+    "panel": [
+      "D2_SLIDING_IO_PLATE"
+    ],
+    "saddle": [
+      "D2_POWER_SADDLE"
+    ],
+    "boards": [
+      "D2_CMTPD_FR4_GAUGE",
+      "D2_MINI560_FR4_GAUGE"
+    ],
+    "population": [
+      "D2_CMTPD_POPULATION_GAUGE",
+      "D2_MINI560_POPULATION_GAUGE",
+      "D2_CMTPD_SOLDER_GAUGE",
+      "D2_MINI560_SOLDER_GAUGE"
+    ],
+    "socket": [
+      "D2_USB_C_SHELL_GAUGE"
+    ]
+  },
+  "print_bodies": [
+    "D2_MONO_BASE",
+    "D2_TOP_COVER",
+    "D2_SLIDING_IO_PLATE",
+    "D2_POWER_SADDLE",
+    "D2_FRONT_BLANK"
+  ],
+  "source": {
+    "origin_sha256": "d93585b8f59bbc9dcba2eb2fcfe062c66db2236f68d472ef1aaae5cfc3df84d8",
+    "export_sha256": "aea88d1dfb4c62a826cc3dad1c1d399544b548e54dfd97a912c51f2420157b06",
+    "triangles": {
+      "20": 9680,
+      "11": 1266,
+      "13": 3642,
+      "14": 1066
+    }
+  },
+  "readback": {
+    "d2-printable.step": 5,
+    "d2-assembly.step": 24,
+    "d2-workbench.sc": 28
+  },
+  "bodies": {
+    "D2_MONO_BASE": {
+      "bbox": {
+        "max": [
+          77.5,
+          60.5,
+          43.600000000000016
+        ],
+        "min": [
+          -92.5,
+          -61.50000000000001,
+          5.999999999999999
+        ]
+      },
+      "closed": true,
+      "faces": 247,
+      "name": "D2_MONO_BASE",
+      "volume_mm3": 90209.31086897582
+    },
+    "D2_TOP_COVER": {
+      "bbox": {
+        "max": [
+          77.5,
+          60.50000000000002,
+          46.00000000000004
+        ],
+        "min": [
+          -92.50000000000001,
+          -61.50000000000001,
+          26.15
+        ]
+      },
+      "closed": true,
+      "faces": 248,
+      "name": "D2_TOP_COVER",
+      "volume_mm3": 48914.12956463335
+    },
+    "D2_ADHESIVE_FOOT_1": {
+      "bbox": {
+        "max": [
+          68.0,
+          -38.99999999999999,
+          6.000000000000001
+        ],
+        "min": [
+          55.99999999999999,
+          -50.99999999999999,
+          0.0
+        ]
+      },
+      "closed": true,
+      "faces": 4,
+      "name": "D2_ADHESIVE_FOOT_1",
+      "volume_mm3": 676.5990867262643
+    },
+    "D2_ADHESIVE_FOOT_2": {
+      "bbox": {
+        "max": [
+          -69.0,
+          -37.99999999999999,
+          6.000000000000001
+        ],
+        "min": [
+          -81.00000000000001,
+          -50.00000000000001,
+          0.0
+        ]
+      },
+      "closed": true,
+      "faces": 4,
+      "name": "D2_ADHESIVE_FOOT_2",
+      "volume_mm3": 676.599086726264
+    },
+    "D2_ADHESIVE_FOOT_3": {
+      "bbox": {
+        "max": [
+          58.00000000000001,
+          53.0,
+          6.000000000000001
+        ],
+        "min": [
+          46.0,
+          40.99999999999999,
+          0.0
+        ]
+      },
+      "closed": true,
+      "faces": 4,
+      "name": "D2_ADHESIVE_FOOT_3",
+      "volume_mm3": 676.5990867262644
+    },
+    "D2_ADHESIVE_FOOT_4": {
+      "bbox": {
+        "max": [
+          -66.0,
+          52.0,
+          6.000000000000001
+        ],
+        "min": [
+          -78.00000000000001,
+          40.0,
+          0.0
+        ]
+      },
+      "closed": true,
+      "faces": 4,
+      "name": "D2_ADHESIVE_FOOT_4",
+      "volume_mm3": 676.5990867262644
+    },
+    "D2_BOARD_FIXING_1": {
+      "bbox": {
+        "max": [
+          -49.0,
+          -31.349999999999994,
+          19.200000000000003
+        ],
+        "min": [
+          -55.0,
+          -37.35,
+          9.399999999999999
+        ]
+      },
+      "closed": true,
+      "faces": 9,
+      "name": "D2_BOARD_FIXING_1",
+      "volume_mm3": 91.07637952652568
+    },
+    "D2_BOARD_FIXING_2": {
+      "bbox": {
+        "max": [
+          50.95000000000001,
+          -31.35,
+          19.200000000000003
+        ],
+        "min": [
+          44.95,
+          -37.35,
+          9.4
+        ]
+      },
+      "closed": true,
+      "faces": 9,
+      "name": "D2_BOARD_FIXING_2",
+      "volume_mm3": 91.07637952652593
+    },
+    "D2_LID_FIXING_1": {
+      "bbox": {
+        "max": [
+          -59.24999999999998,
+          -52.25,
+          45.995
+        ],
+        "min": [
+          -64.75000000000003,
+          -57.75000000000004,
+          37.995
+        ]
+      },
+      "closed": true,
+      "faces": 9,
+      "name": "D2_LID_FIXING_1",
+      "volume_mm3": 53.5263304943817
+    },
+    "D2_LID_FIXING_2": {
+      "bbox": {
+        "max": [
+          64.75,
+          -52.25000000000001,
+          45.99500000000001
+        ],
+        "min": [
+          59.25,
+          -57.75,
+          37.995
+        ]
+      },
+      "closed": true,
+      "faces": 9,
+      "name": "D2_LID_FIXING_2",
+      "volume_mm3": 53.526330494381774
+    },
+    "D2_LID_FIXING_3": {
+      "bbox": {
+        "max": [
+          -84.89999999999999,
+          54.650000000000006,
+          45.995000000000005
+        ],
+        "min": [
+          -90.4,
+          49.15,
+          37.995
+        ]
+      },
+      "closed": true,
+      "faces": 9,
+      "name": "D2_LID_FIXING_3",
+      "volume_mm3": 53.526330494382435
+    },
+    "D2_LID_FIXING_4": {
+      "bbox": {
+        "max": [
+          75.25000000000001,
+          54.650000000000006,
+          45.995000000000005
+        ],
+        "min": [
+          69.75,
+          49.14999999999999,
+          37.995
+        ]
+      },
+      "closed": true,
+      "faces": 9,
+      "name": "D2_LID_FIXING_4",
+      "volume_mm3": 53.52633049438259
+    },
+    "D2_FRONT_BLANK": {
+      "bbox": {
+        "max": [
+          -76.44999999999999,
+          -51.63999999999999,
+          35.45
+        ],
+        "min": [
+          -86.55,
+          -61.360000000000014,
+          14.95
+        ]
+      },
+      "closed": true,
+      "faces": 13,
+      "name": "D2_FRONT_BLANK",
+      "volume_mm3": 720.2818880361353
+    },
+    "D2_BLANK_FIXING_LOW": {
+      "bbox": {
+        "max": [
+          -79.6,
+          -49.99999999999999,
+          19.400000000000002
+        ],
+        "min": [
+          -83.4,
+          -57.64,
+          15.599999999999996
+        ]
+      },
+      "closed": true,
+      "faces": 9,
+      "name": "D2_BLANK_FIXING_LOW",
+      "volume_mm3": 30.555051609472887
+    },
+    "D2_BLANK_FIXING_HIGH": {
+      "bbox": {
+        "max": [
+          -79.6,
+          -49.99999999999999,
+          34.8
+        ],
+        "min": [
+          -83.39999999999999,
+          -57.64,
+          30.999999999999996
+        ]
+      },
+      "closed": true,
+      "faces": 9,
+      "name": "D2_BLANK_FIXING_HIGH",
+      "volume_mm3": 30.555051609472862
+    },
+    "D2_SLIDING_IO_PLATE": {
+      "bbox": {
+        "max": [
+          76.95,
+          59.150000000000006,
+          41.2
+        ],
+        "min": [
+          -91.95,
+          57.349999999999994,
+          8.7
+        ]
+      },
+      "closed": true,
+      "faces": 208,
+      "name": "D2_SLIDING_IO_PLATE",
+      "volume_mm3": 8229.574894827545
+    },
+    "D2_POWER_SADDLE": {
+      "bbox": {
+        "max": [
+          -74.45,
+          53.65,
+          27.1
+        ],
+        "min": [
+          -85.65,
+          -33.6,
+          8.399999999999999
+        ]
+      },
+      "closed": true,
+      "faces": 121,
+      "name": "D2_POWER_SADDLE",
+      "volume_mm3": 3025.81014243205
+    },
+    "D2_CMTPD_FR4_GAUGE": {
+      "bbox": {
+        "max": [
+          -76.7,
+          56.35,
+          30.7
+        ],
+        "min": [
+          -78.3,
+          15.350000000000001,
+          13.7
+        ]
+      },
+      "closed": true,
+      "faces": 6,
+      "name": "D2_CMTPD_FR4_GAUGE",
+      "volume_mm3": 1115.1999999999955
+    },
+    "D2_MINI560_FR4_GAUGE": {
+      "bbox": {
+        "max": [
+          -76.7,
+          7.350000000000001,
+          31.2
+        ],
+        "min": [
+          -78.3,
+          -21.65,
+          13.2
+        ]
+      },
+      "closed": true,
+      "faces": 6,
+      "name": "D2_MINI560_FR4_GAUGE",
+      "volume_mm3": 835.1999999999969
+    },
+    "D2_USB_C_SHELL_GAUGE": {
+      "bbox": {
+        "max": [
+          -78.3,
+          57.09,
+          26.67
+        ],
+        "min": [
+          -81.55,
+          49.74,
+          17.73
+        ]
+      },
+      "closed": true,
+      "faces": 6,
+      "name": "D2_USB_C_SHELL_GAUGE",
+      "volume_mm3": 213.55425000000022
+    },
+    "D2_CMTPD_POPULATION_GAUGE": {
+      "bbox": {
+        "max": [
+          -78.3,
+          47.54,
+          30.7
+        ],
+        "min": [
+          -82.3,
+          16.0,
+          13.7
+        ]
+      },
+      "closed": true,
+      "faces": 14,
+      "name": "D2_CMTPD_POPULATION_GAUGE",
+      "volume_mm3": 2058.0319999999992
+    },
+    "D2_MINI560_POPULATION_GAUGE": {
+      "bbox": {
+        "max": [
+          -78.3,
+          7.350000000000001,
+          31.9
+        ],
+        "min": [
+          -82.1,
+          -21.65,
+          14.1
+        ]
+      },
+      "closed": true,
+      "faces": 10,
+      "name": "D2_MINI560_POPULATION_GAUGE",
+      "volume_mm3": 1939.6719999999991
+    },
+    "D2_CMTPD_SOLDER_GAUGE": {
+      "bbox": {
+        "max": [
+          -75.7,
+          56.35,
+          29.8
+        ],
+        "min": [
+          -76.7,
+          15.350000000000001,
+          14.6
+        ]
+      },
+      "closed": true,
+      "faces": 6,
+      "name": "D2_CMTPD_SOLDER_GAUGE",
+      "volume_mm3": 623.2000000000003
+    },
+    "D2_MINI560_SOLDER_GAUGE": {
+      "bbox": {
+        "max": [
+          -75.7,
+          7.350000000000001,
+          30.300000000000004
+        ],
+        "min": [
+          -76.7,
+          -21.65,
+          14.1
+        ]
+      },
+      "closed": true,
+      "faces": 6,
+      "name": "D2_MINI560_SOLDER_GAUGE",
+      "volume_mm3": 469.8000000000003
+    }
+  }
+}

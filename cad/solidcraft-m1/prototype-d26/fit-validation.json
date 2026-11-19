@@ -1,0 +1,33 @@
+{
+  "revision": "D2.6",
+  "status": "passed",
+  "checks": {
+    "All 25 physical native bodies": 300,
+    "Registered photographed Mac and both local harnesses against all native exports": 75,
+    "Three detached historical antenna candidates measured separately vs all native exports": 75,
+    "Closed lid releases vertically from assembled panel, sockets and chassis": 25,
+    "21 adapted convection channels vs current installed bodies": 2856
+  },
+  "specialized": {
+    "mount": 30,
+    "board-install": 104,
+    "ports": 732,
+    "base": 118,
+    "power": 708
+  },
+  "failures": [],
+  "cad_report_sha256": "72136516a159cedb442a62976c4cbd5b4639dea1a38f94db097b526cf72cd95d",
+  "fascia_contract_sha256": "375bc712ec338c6d4bc0293bcb9301574baf500f449375c66dbd5c4c0f45a75b",
+  "panel_glb_sha256": "3a1c4dc8ced91a2ac25cf7f4806b6d564f2f9f820ac45c346ae528078bfc74f5",
+  "owner_board_sha256": "a5fb5ee5f7ab036a89470831b93f688aa2cac6a396a4a2de36990a7d12f12607",
+  "fitted_antenna_references": 0,
+  "physical_status": "NOT TESTED",
+  "assembly_xyz_mm": [
+    170.0,
+    119.91,
+    46.0
+  ],
+  "comparisons": 3331,
+  "total_with_specialized_comparisons": 5023,
+  "adapted_air_gauges": 21
+}

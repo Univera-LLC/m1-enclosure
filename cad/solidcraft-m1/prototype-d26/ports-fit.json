@@ -1,0 +1,2030 @@
+{
+  "revision": "D2.6",
+  "comparisons": 732,
+  "failures": [],
+  "ports": {
+    "A1": {
+      "axis_xz_mm": [
+        49.9,
+        22.0
+      ],
+      "socket_lip_y_mm": 56.45,
+      "plug_shoulder_seat_y_mm": 56.45,
+      "face_y_mm": 57.36,
+      "signed_face_minus_lip_mm": 0.91,
+      "face_to_lip_with_locked_panel_range_mm": [
+        0.825,
+        0.912
+      ],
+      "aperture_xz_span_mm": [
+        13.12,
+        5.76
+      ],
+      "aperture_outline_xz_mm": [
+        [
+          43.677,
+          24.8451
+        ],
+        [
+          43.6686,
+          24.8435
+        ],
+        [
+          43.5,
+          24.7328
+        ],
+        [
+          43.4923,
+          24.7277
+        ],
+        [
+          43.3816,
+          24.5591
+        ],
+        [
+          43.3765,
+          24.5514
+        ],
+        [
+          43.3416,
+          24.3684
+        ],
+        [
+          43.34,
+          24.36
+        ],
+        [
+          43.34,
+          24.1535
+        ],
+        [
+          43.34,
+          19.64
+        ],
+        [
+          43.3749,
+          19.457
+        ],
+        [
+          43.3765,
+          19.4486
+        ],
+        [
+          43.4872,
+          19.28
+        ],
+        [
+          43.4923,
+          19.2723
+        ],
+        [
+          43.6609,
+          19.1616
+        ],
+        [
+          43.6686,
+          19.1565
+        ],
+        [
+          43.8516,
+          19.1216
+        ],
+        [
+          43.86,
+          19.12
+        ],
+        [
+          44.3885,
+          19.12
+        ],
+        [
+          55.94,
+          19.12
+        ],
+        [
+          56.123,
+          19.1549
+        ],
+        [
+          56.1314,
+          19.1565
+        ],
+        [
+          56.3,
+          19.2672
+        ],
+        [
+          56.3077,
+          19.2723
+        ],
+        [
+          56.4184,
+          19.4409
+        ],
+        [
+          56.4235,
+          19.4486
+        ],
+        [
+          56.4584,
+          19.6316
+        ],
+        [
+          56.46,
+          19.64
+        ],
+        [
+          56.46,
+          19.8465
+        ],
+        [
+          56.46,
+          24.36
+        ],
+        [
+          56.4251,
+          24.543
+        ],
+        [
+          56.4235,
+          24.5514
+        ],
+        [
+          56.3128,
+          24.72
+        ],
+        [
+          56.3077,
+          24.7277
+        ],
+        [
+          56.1391,
+          24.8384
+        ],
+        [
+          56.1314,
+          24.8435
+        ],
+        [
+          55.9484,
+          24.8784
+        ],
+        [
+          55.94,
+          24.88
+        ],
+        [
+          55.4115,
+          24.88
+        ],
+        [
+          43.86,
+          24.88
+        ]
+      ],
+      "aperture_profile": "rounded rectangle",
+      "masked_bezel_probe_xz_mm": [
+        57.0,
+        22.0
+      ],
+      "mask_back_y_mm": 56.56,
+      "mask_skin_thickness_mm": 0.8,
+      "nominal_axial_gap_mask_to_bezel_mm": 0.11,
+      "mask_to_bezel_axial_gap_conservative_min_mm": 0.025,
+      "field_witness_xz_mm": [
+        49.9,
+        29.0
+      ],
+      "field_thickness_mm": 2.6,
+      "exposed_entrance_probe_xz_mm": [
+        49.9,
+        19.98
+      ],
+      "exposed_entrance_board_hit_y_mm": 54.19,
+      "fraction_of_projected_surround_hidden_nominal": 0.8348,
+      "outer_bezel_xz_span_mm": [
+        15.6,
+        8.55
+      ],
+      "aperture_center_xz_mm": [
+        49.9,
+        22.0
+      ],
+      "aperture_area_outside_nominal_frame_outline_mm2": 0.0,
+      "aperture_below_nominal_frame_mm": 0.0,
+      "metal_nose_xz_mm": [
+        12.1,
+        4.6
+      ],
+      "nose_to_aperture_XZ_gap_after_rigid_movement_mm": 0.3147,
+      "modeled_shoulder_xz_mm": [
+        16.0,
+        8.0
+      ],
+      "modeled_L_from_socket_seat_mm": 2.67,
+      "shoulder_scenario_status": "DOCUMENTED mated pair; registered flange datum assumed",
+      "required_mated_L_for_positive_shoulder_to_fascia_clearance_mm": 0.912,
+      "scenario_shoulder_axial_clearance_mm": 1.758,
+      "counterexample_wide_shoulder_at_seat_overlap_mm3": 42.14614,
+      "cable_evidence": "USB 2.0 Fig 6-9; 6-7 and USB 3.1 Legacy 5-27 mated shoulder (DOCUMENTED)."
+    },
+    "A2": {
+      "axis_xz_mm": [
+        32.7,
+        22.0
+      ],
+      "socket_lip_y_mm": 56.45,
+      "plug_shoulder_seat_y_mm": 56.45,
+      "face_y_mm": 57.36,
+      "signed_face_minus_lip_mm": 0.91,
+      "face_to_lip_with_locked_panel_range_mm": [
+        0.825,
+        0.912
+      ],
+      "aperture_xz_span_mm": [
+        13.12,
+        5.76
+      ],
+      "aperture_outline_xz_mm": [
+        [
+          26.477,
+          24.8451
+        ],
+        [
+          26.4686,
+          24.8435
+        ],
+        [
+          26.3,
+          24.7328
+        ],
+        [
+          26.2923,
+          24.7277
+        ],
+        [
+          26.1816,
+          24.5591
+        ],
+        [
+          26.1765,
+          24.5514
+        ],
+        [
+          26.1416,
+          24.3684
+        ],
+        [
+          26.14,
+          24.36
+        ],
+        [
+          26.14,
+          24.1535
+        ],
+        [
+          26.14,
+          19.64
+        ],
+        [
+          26.1749,
+          19.457
+        ],
+        [
+          26.1765,
+          19.4486
+        ],
+        [
+          26.2872,
+          19.28
+        ],
+        [
+          26.2923,
+          19.2723
+        ],
+        [
+          26.4609,
+          19.1616
+        ],
+        [
+          26.4686,
+          19.1565
+        ],
+        [
+          26.6516,
+          19.1216
+        ],
+        [
+          26.66,
+          19.12
+        ],
+        [
+          27.1885,
+          19.12
+        ],
+        [
+          38.74,
+          19.12
+        ],
+        [
+          38.923,
+          19.1549
+        ],
+        [
+          38.9314,
+          19.1565
+        ],
+        [
+          39.1,
+          19.2672
+        ],
+        [
+          39.1077,
+          19.2723
+        ],
+        [
+          39.2184,
+          19.4409
+        ],
+        [
+          39.2235,
+          19.4486
+        ],
+        [
+          39.2584,
+          19.6316
+        ],
+        [
+          39.26,
+          19.64
+        ],
+        [
+          39.26,
+          19.8465
+        ],
+        [
+          39.26,
+          24.36
+        ],
+        [
+          39.2251,
+          24.543
+        ],
+        [
+          39.2235,
+          24.5514
+        ],
+        [
+          39.1128,
+          24.72
+        ],
+        [
+          39.1077,
+          24.7277
+        ],
+        [
+          38.9391,
+          24.8384
+        ],
+        [
+          38.9314,
+          24.8435
+        ],
+        [
+          38.7484,
+          24.8784
+        ],
+        [
+          38.74,
+          24.88
+        ],
+        [
+          38.2115,
+          24.88
+        ],
+        [
+          26.66,
+          24.88
+        ]
+      ],
+      "aperture_profile": "rounded rectangle",
+      "masked_bezel_probe_xz_mm": [
+        39.8,
+        22.0
+      ],
+      "mask_back_y_mm": 56.56,
+      "mask_skin_thickness_mm": 0.8,
+      "nominal_axial_gap_mask_to_bezel_mm": 0.11,
+      "mask_to_bezel_axial_gap_conservative_min_mm": 0.025,
+      "field_witness_xz_mm": [
+        32.7,
+        29.0
+      ],
+      "field_thickness_mm": 2.6,
+      "exposed_entrance_probe_xz_mm": [
+        32.7,
+        19.98
+      ],
+      "exposed_entrance_board_hit_y_mm": 54.19,
+      "fraction_of_projected_surround_hidden_nominal": 0.8348,
+      "outer_bezel_xz_span_mm": [
+        15.6,
+        8.55
+      ],
+      "aperture_center_xz_mm": [
+        32.7,
+        22.0
+      ],
+      "aperture_area_outside_nominal_frame_outline_mm2": 0.0,
+      "aperture_below_nominal_frame_mm": 0.0,
+      "metal_nose_xz_mm": [
+        12.1,
+        4.6
+      ],
+      "nose_to_aperture_XZ_gap_after_rigid_movement_mm": 0.3147,
+      "modeled_shoulder_xz_mm": [
+        16.0,
+        8.0
+      ],
+      "modeled_L_from_socket_seat_mm": 2.67,
+      "shoulder_scenario_status": "DOCUMENTED mated pair; registered flange datum assumed",
+      "required_mated_L_for_positive_shoulder_to_fascia_clearance_mm": 0.912,
+      "scenario_shoulder_axial_clearance_mm": 1.758,
+      "counterexample_wide_shoulder_at_seat_overlap_mm3": 42.14614,
+      "cable_evidence": "USB 2.0 Fig 6-9; 6-7 and USB 3.1 Legacy 5-27 mated shoulder (DOCUMENTED)."
+    },
+    "HDMI": {
+      "axis_xz_mm": [
+        -1.525,
+        22.1
+      ],
+      "socket_lip_y_mm": 56.45,
+      "plug_shoulder_seat_y_mm": 56.45,
+      "face_y_mm": 57.36,
+      "signed_face_minus_lip_mm": 0.91,
+      "face_to_lip_with_locked_panel_range_mm": [
+        0.825,
+        0.912
+      ],
+      "aperture_xz_span_mm": [
+        15.04,
+        5.6
+      ],
+      "aperture_outline_xz_mm": [
+        [
+          -7.8019,
+          24.8431
+        ],
+        [
+          -9.045,
+          23.6
+        ],
+        [
+          -9.045,
+          19.4881
+        ],
+        [
+          -9.045,
+          19.3
+        ],
+        [
+          -8.387,
+          19.3
+        ],
+        [
+          5.995,
+          19.3
+        ],
+        [
+          5.995,
+          19.4881
+        ],
+        [
+          5.995,
+          23.6
+        ],
+        [
+          4.7519,
+          24.8431
+        ],
+        [
+          4.695,
+          24.9
+        ],
+        [
+          4.1507,
+          24.9
+        ],
+        [
+          -7.745,
+          24.9
+        ]
+      ],
+      "aperture_profile": "two desk-upper chamfers",
+      "masked_bezel_probe_xz_mm": [
+        6.375,
+        22.1
+      ],
+      "mask_back_y_mm": 56.56,
+      "mask_skin_thickness_mm": 0.8,
+      "nominal_axial_gap_mask_to_bezel_mm": 0.11,
+      "mask_to_bezel_axial_gap_conservative_min_mm": 0.025,
+      "field_witness_xz_mm": [
+        -1.525,
+        28.0
+      ],
+      "field_thickness_mm": 2.6,
+      "exposed_entrance_probe_xz_mm": [
+        -1.525,
+        20.165
+      ],
+      "exposed_entrance_board_hit_y_mm": 54.19,
+      "fraction_of_projected_surround_hidden_nominal": 0.8087,
+      "outer_bezel_xz_span_mm": [
+        16.6,
+        8.2
+      ],
+      "aperture_center_xz_mm": [
+        -1.525,
+        22.1
+      ],
+      "aperture_area_outside_nominal_frame_outline_mm2": 0.0,
+      "aperture_below_nominal_frame_mm": 0.0,
+      "metal_nose_xz_mm": [
+        13.94,
+        4.49
+      ],
+      "nose_to_aperture_XZ_gap_after_rigid_movement_mm": 0.2814,
+      "modeled_shoulder_xz_mm": [
+        21.0,
+        11.0
+      ],
+      "modeled_L_from_socket_seat_mm": 2.0,
+      "shoulder_scenario_status": "DOCUMENTED mated pair; registered flange datum assumed",
+      "required_mated_L_for_positive_shoulder_to_fascia_clearance_mm": 0.912,
+      "scenario_shoulder_axial_clearance_mm": 1.088,
+      "counterexample_wide_shoulder_at_seat_overlap_mm3": 125.58016,
+      "cable_evidence": "HDMI 1.3 Figs 4-2 / 4-3; outer W/H and mated shoulder (DOCUMENTED). Chamfer gauge 0.72 mm cuts the two desk-upper corners (modeled)."
+    },
+    "TB1": {
+      "axis_xz_mm": [
+        -19.05,
+        22.0
+      ],
+      "socket_lip_y_mm": 56.35,
+      "plug_shoulder_seat_y_mm": 56.35,
+      "face_y_mm": 57.36,
+      "signed_face_minus_lip_mm": 1.01,
+      "face_to_lip_with_locked_panel_range_mm": [
+        0.925,
+        1.012
+      ],
+      "aperture_xz_span_mm": [
+        9.0952,
+        3.3
+      ],
+      "aperture_outline_xz_mm": [
+        [
+          -22.3421,
+          23.6008
+        ],
+        [
+          -22.3579,
+          23.5988
+        ],
+        [
+          -22.7223,
+          23.4559
+        ],
+        [
+          -22.7371,
+          23.4502
+        ],
+        [
+          -23.0442,
+          23.2327
+        ],
+        [
+          -23.0566,
+          23.2239
+        ],
+        [
+          -23.29,
+          22.9601
+        ],
+        [
+          -23.2995,
+          22.9494
+        ],
+        [
+          -23.4897,
+          22.5874
+        ],
+        [
+          -23.4974,
+          22.5728
+        ],
+        [
+          -23.5913,
+          22.1438
+        ],
+        [
+          -23.5952,
+          22.1264
+        ],
+        [
+          -23.5646,
+          21.6727
+        ],
+        [
+          -23.5634,
+          21.6543
+        ],
+        [
+          -23.4065,
+          21.2301
+        ],
+        [
+          -23.4002,
+          21.2129
+        ],
+        [
+          -23.1441,
+          20.8646
+        ],
+        [
+          -23.1337,
+          20.8506
+        ],
+        [
+          -22.8195,
+          20.6
+        ],
+        [
+          -22.8068,
+          20.5899
+        ],
+        [
+          -22.4239,
+          20.4218
+        ],
+        [
+          -22.4084,
+          20.415
+        ],
+        [
+          -21.9678,
+          20.3525
+        ],
+        [
+          -21.95,
+          20.35
+        ],
+        [
+          -21.7244,
+          20.35
+        ],
+        [
+          -16.15,
+          20.35
+        ],
+        [
+          -15.8246,
+          20.3837
+        ],
+        [
+          -15.8114,
+          20.3851
+        ],
+        [
+          -15.5009,
+          20.4845
+        ],
+        [
+          -15.4883,
+          20.4885
+        ],
+        [
+          -14.9801,
+          20.8431
+        ],
+        [
+          -14.9596,
+          20.8575
+        ],
+        [
+          -14.6422,
+          21.34
+        ],
+        [
+          -14.6294,
+          21.3596
+        ],
+        [
+          -14.505,
+          21.9751
+        ],
+        [
+          -14.5,
+          22.0
+        ],
+        [
+          -14.5337,
+          22.3254
+        ],
+        [
+          -14.5351,
+          22.3386
+        ],
+        [
+          -14.6345,
+          22.6491
+        ],
+        [
+          -14.6385,
+          22.6617
+        ],
+        [
+          -14.9931,
+          23.1699
+        ],
+        [
+          -15.0074,
+          23.1904
+        ],
+        [
+          -15.49,
+          23.5078
+        ],
+        [
+          -15.5096,
+          23.5206
+        ],
+        [
+          -16.1251,
+          23.645
+        ],
+        [
+          -16.15,
+          23.65
+        ],
+        [
+          -16.3756,
+          23.65
+        ],
+        [
+          -21.95,
+          23.65
+        ]
+      ],
+      "aperture_profile": "capsule",
+      "masked_bezel_probe_xz_mm": [
+        -19.05,
+        24.25
+      ],
+      "mask_back_y_mm": 56.46,
+      "mask_skin_thickness_mm": 0.9,
+      "nominal_axial_gap_mask_to_bezel_mm": 0.11,
+      "mask_to_bezel_axial_gap_conservative_min_mm": 0.025,
+      "field_witness_xz_mm": [
+        -19.05,
+        27.5
+      ],
+      "field_thickness_mm": 2.6,
+      "exposed_entrance_probe_xz_mm": [
+        -19.05,
+        21.24
+      ],
+      "exposed_entrance_board_hit_y_mm": 55.11,
+      "fraction_of_projected_surround_hidden_nominal": 0.8278,
+      "outer_bezel_xz_span_mm": [
+        11.55,
+        5.4
+      ],
+      "aperture_center_xz_mm": [
+        -19.05,
+        22.0
+      ],
+      "aperture_area_outside_nominal_frame_outline_mm2": 0.0,
+      "aperture_below_nominal_frame_mm": 0.0,
+      "metal_nose_xz_mm": [
+        8.28,
+        2.43
+      ],
+      "nose_to_aperture_XZ_gap_after_rigid_movement_mm": 0.1503,
+      "modeled_shoulder_xz_mm": [
+        12.85,
+        7.0
+      ],
+      "modeled_L_from_socket_seat_mm": 1.2,
+      "shoulder_scenario_status": "illustrative compatible cable only",
+      "required_mated_L_for_positive_shoulder_to_fascia_clearance_mm": 1.012,
+      "scenario_shoulder_axial_clearance_mm": 0.188,
+      "counterexample_wide_shoulder_at_seat_overlap_mm3": 57.13958,
+      "cable_evidence": "USB Type-C 2.5 Fig 3-3 metal maximum and straight overmold maximum (DOCUMENTED). Apple OEM fascia has ~1.0 mm wall ahead of TB bezel (owner photo 2026-11-19)."
+    },
+    "TB2": {
+      "axis_xz_mm": [
+        -33.7,
+        22.0
+      ],
+      "socket_lip_y_mm": 56.35,
+      "plug_shoulder_seat_y_mm": 56.35,
+      "face_y_mm": 57.36,
+      "signed_face_minus_lip_mm": 1.01,
+      "face_to_lip_with_locked_panel_range_mm": [
+        0.925,
+        1.012
+      ],
+      "aperture_xz_span_mm": [
+        9.0952,
+        3.3
+      ],
+      "aperture_outline_xz_mm": [
+        [
+          -36.9921,
+          23.6008
+        ],
+        [
+          -37.0079,
+          23.5988
+        ],
+        [
+          -37.3723,
+          23.4559
+        ],
+        [
+          -37.3871,
+          23.4502
+        ],
+        [
+          -37.6942,
+          23.2327
+        ],
+        [
+          -37.7066,
+          23.2239
+        ],
+        [
+          -37.94,
+          22.9601
+        ],
+        [
+          -37.9495,
+          22.9494
+        ],
+        [
+          -38.1397,
+          22.5874
+        ],
+        [
+          -38.1474,
+          22.5728
+        ],
+        [
+          -38.2413,
+          22.1438
+        ],
+        [
+          -38.2451,
+          22.1264
+        ],
+        [
+          -38.2146,
+          21.6727
+        ],
+        [
+          -38.2134,
+          21.6543
+        ],
+        [
+          -38.0565,
+          21.2301
+        ],
+        [
+          -38.0502,
+          21.2129
+        ],
+        [
+          -37.7941,
+          20.8646
+        ],
+        [
+          -37.7837,
+          20.8506
+        ],
+        [
+          -37.4695,
+          20.6
+        ],
+        [
+          -37.4568,
+          20.5899
+        ],
+        [
+          -37.0739,
+          20.4218
+        ],
+        [
+          -37.0584,
+          20.415
+        ],
+        [
+          -36.6178,
+          20.3525
+        ],
+        [
+          -36.6,
+          20.35
+        ],
+        [
+          -36.3744,
+          20.35
+        ],
+        [
+          -30.8,
+          20.35
+        ],
+        [
+          -30.4746,
+          20.3837
+        ],
+        [
+          -30.4614,
+          20.3851
+        ],
+        [
+          -30.1509,
+          20.4845
+        ],
+        [
+          -30.1383,
+          20.4885
+        ],
+        [
+          -29.6301,
+          20.8431
+        ],
+        [
+          -29.6096,
+          20.8575
+        ],
+        [
+          -29.2922,
+          21.34
+        ],
+        [
+          -29.2794,
+          21.3596
+        ],
+        [
+          -29.155,
+          21.9751
+        ],
+        [
+          -29.15,
+          22.0
+        ],
+        [
+          -29.1837,
+          22.3254
+        ],
+        [
+          -29.1851,
+          22.3386
+        ],
+        [
+          -29.2845,
+          22.6491
+        ],
+        [
+          -29.2885,
+          22.6617
+        ],
+        [
+          -29.6431,
+          23.1699
+        ],
+        [
+          -29.6575,
+          23.1904
+        ],
+        [
+          -30.14,
+          23.5078
+        ],
+        [
+          -30.1596,
+          23.5206
+        ],
+        [
+          -30.7751,
+          23.645
+        ],
+        [
+          -30.8,
+          23.65
+        ],
+        [
+          -36.3744,
+          23.65
+        ],
+        [
+          -36.6,
+          23.65
+        ]
+      ],
+      "aperture_profile": "capsule",
+      "masked_bezel_probe_xz_mm": [
+        -33.7,
+        24.25
+      ],
+      "mask_back_y_mm": 56.46,
+      "mask_skin_thickness_mm": 0.9,
+      "nominal_axial_gap_mask_to_bezel_mm": 0.11,
+      "mask_to_bezel_axial_gap_conservative_min_mm": 0.025,
+      "field_witness_xz_mm": [
+        -33.7,
+        27.5
+      ],
+      "field_thickness_mm": 2.6,
+      "exposed_entrance_probe_xz_mm": [
+        -33.7,
+        21.24
+      ],
+      "exposed_entrance_board_hit_y_mm": 55.11,
+      "fraction_of_projected_surround_hidden_nominal": 0.8278,
+      "outer_bezel_xz_span_mm": [
+        11.55,
+        5.4
+      ],
+      "aperture_center_xz_mm": [
+        -33.7,
+        22.0
+      ],
+      "aperture_area_outside_nominal_frame_outline_mm2": 0.0,
+      "aperture_below_nominal_frame_mm": 0.0,
+      "metal_nose_xz_mm": [
+        8.28,
+        2.43
+      ],
+      "nose_to_aperture_XZ_gap_after_rigid_movement_mm": 0.1503,
+      "modeled_shoulder_xz_mm": [
+        12.85,
+        7.0
+      ],
+      "modeled_L_from_socket_seat_mm": 1.2,
+      "shoulder_scenario_status": "illustrative compatible cable only",
+      "required_mated_L_for_positive_shoulder_to_fascia_clearance_mm": 1.012,
+      "scenario_shoulder_axial_clearance_mm": 0.188,
+      "counterexample_wide_shoulder_at_seat_overlap_mm3": 57.13959,
+      "cable_evidence": "USB Type-C 2.5 Fig 3-3 metal maximum and straight overmold maximum (DOCUMENTED). Apple OEM fascia has ~1.0 mm wall ahead of TB bezel (owner photo 2026-11-19)."
+    },
+    "RJ": {
+      "axis_xz_mm": [
+        -64.65,
+        23.0
+      ],
+      "socket_lip_y_mm": 56.45,
+      "plug_shoulder_seat_y_mm": 56.45,
+      "face_y_mm": 57.36,
+      "signed_face_minus_lip_mm": 0.91,
+      "face_to_lip_with_locked_panel_range_mm": [
+        0.825,
+        0.912
+      ],
+      "aperture_xz_span_mm": [
+        13.2,
+        10.37
+      ],
+      "aperture_outline_xz_mm": [
+        [
+          -70.913,
+          27.0851
+        ],
+        [
+          -70.9214,
+          27.0835
+        ],
+        [
+          -71.09,
+          26.9728
+        ],
+        [
+          -71.0977,
+          26.9677
+        ],
+        [
+          -71.2084,
+          26.7991
+        ],
+        [
+          -71.2135,
+          26.7914
+        ],
+        [
+          -71.2484,
+          26.6084
+        ],
+        [
+          -71.25,
+          26.6
+        ],
+        [
+          -71.25,
+          26.2448
+        ],
+        [
+          -71.25,
+          18.48
+        ],
+        [
+          -71.2151,
+          18.297
+        ],
+        [
+          -71.2135,
+          18.2886
+        ],
+        [
+          -71.1028,
+          18.12
+        ],
+        [
+          -71.0977,
+          18.1123
+        ],
+        [
+          -70.9291,
+          18.0016
+        ],
+        [
+          -70.9214,
+          17.9965
+        ],
+        [
+          -70.7384,
+          17.9616
+        ],
+        [
+          -70.73,
+          17.96
+        ],
+        [
+          -70.6226,
+          17.96
+        ],
+        [
+          -68.275,
+          17.96
+        ],
+        [
+          -68.275,
+          17.9211
+        ],
+        [
+          -68.275,
+          17.07
+        ],
+        [
+          -68.1854,
+          16.8536
+        ],
+        [
+          -68.1813,
+          16.8437
+        ],
+        [
+          -67.9649,
+          16.7541
+        ],
+        [
+          -67.955,
+          16.75
+        ],
+        [
+          -67.6658,
+          16.75
+        ],
+        [
+          -61.345,
+          16.75
+        ],
+        [
+          -61.1286,
+          16.8396
+        ],
+        [
+          -61.1187,
+          16.8437
+        ],
+        [
+          -61.0291,
+          17.0601
+        ],
+        [
+          -61.025,
+          17.07
+        ],
+        [
+          -61.025,
+          17.1089
+        ],
+        [
+          -61.025,
+          17.96
+        ],
+        [
+          -60.9176,
+          17.96
+        ],
+        [
+          -58.57,
+          17.96
+        ],
+        [
+          -58.387,
+          17.9949
+        ],
+        [
+          -58.3786,
+          17.9965
+        ],
+        [
+          -58.21,
+          18.1072
+        ],
+        [
+          -58.2023,
+          18.1123
+        ],
+        [
+          -58.0916,
+          18.2809
+        ],
+        [
+          -58.0865,
+          18.2886
+        ],
+        [
+          -58.0516,
+          18.4716
+        ],
+        [
+          -58.05,
+          18.48
+        ],
+        [
+          -58.05,
+          18.8352
+        ],
+        [
+          -58.05,
+          26.6
+        ],
+        [
+          -58.0849,
+          26.783
+        ],
+        [
+          -58.0865,
+          26.7914
+        ],
+        [
+          -58.1972,
+          26.96
+        ],
+        [
+          -58.2023,
+          26.9677
+        ],
+        [
+          -58.3709,
+          27.0784
+        ],
+        [
+          -58.3786,
+          27.0835
+        ],
+        [
+          -58.5616,
+          27.1184
+        ],
+        [
+          -58.57,
+          27.12
+        ],
+        [
+          -59.102,
+          27.12
+        ],
+        [
+          -70.73,
+          27.12
+        ]
+      ],
+      "aperture_profile": "wide body, narrower lower latch passage",
+      "masked_bezel_probe_xz_mm": [
+        -57.4,
+        23.0
+      ],
+      "mask_back_y_mm": 56.56,
+      "mask_skin_thickness_mm": 0.8,
+      "nominal_axial_gap_mask_to_bezel_mm": 0.11,
+      "mask_to_bezel_axial_gap_conservative_min_mm": 0.025,
+      "field_witness_xz_mm": [
+        -64.65,
+        30.5
+      ],
+      "field_thickness_mm": 2.6,
+      "exposed_entrance_probe_xz_mm": [
+        -64.65,
+        17.72
+      ],
+      "exposed_entrance_board_hit_y_mm": 54.19,
+      "fraction_of_projected_surround_hidden_nominal": 0.6738,
+      "outer_bezel_xz_span_mm": [
+        15.84,
+        11.6
+      ],
+      "aperture_center_xz_mm": [
+        -64.65,
+        23.0
+      ],
+      "aperture_area_outside_nominal_frame_outline_mm2": 0.0,
+      "aperture_below_nominal_frame_mm": 0.0,
+      "metal_nose_xz_mm": [
+        11.8,
+        6.75
+      ],
+      "nose_to_aperture_XZ_gap_after_rigid_movement_mm": 0.575,
+      "modeled_shoulder_xz_mm": [
+        16.8,
+        15.0
+      ],
+      "modeled_L_from_socket_seat_mm": 1.2,
+      "shoulder_scenario_status": "illustrative compatible cable only",
+      "required_mated_L_for_positive_shoulder_to_fascia_clearance_mm": 0.912,
+      "scenario_shoulder_axial_clearance_mm": 0.288,
+      "counterexample_wide_shoulder_at_seat_overlap_mm3": 101.82872,
+      "cable_evidence": "FCC 47 CFR 68.500 Fig (c)(2)(ii): 11.684 x 6.604 body REF; example 11.80 x 6.75. No universal cable boot or release finger envelope."
+    },
+    "audio": {
+      "axis_xz_mm": [
+        41.3,
+        32.1
+      ],
+      "socket_lip_y_mm": 56.45,
+      "plug_shoulder_seat_y_mm": 57.04,
+      "face_y_mm": 57.36,
+      "signed_face_minus_lip_mm": 0.91,
+      "face_to_lip_with_locked_panel_range_mm": [
+        0.825,
+        0.912
+      ],
+      "aperture_xz_span_mm": [
+        5.8966,
+        5.8966
+      ],
+      "aperture_outline_xz_mm": [
+        [
+          40.8208,
+          35.0082
+        ],
+        [
+          40.7942,
+          35.0063
+        ],
+        [
+          40.235,
+          34.8482
+        ],
+        [
+          40.2094,
+          34.841
+        ],
+        [
+          39.7046,
+          34.5784
+        ],
+        [
+          39.6815,
+          34.5664
+        ],
+        [
+          39.2559,
+          34.2238
+        ],
+        [
+          39.2364,
+          34.2081
+        ],
+        [
+          38.9026,
+          33.8154
+        ],
+        [
+          38.8873,
+          33.7974
+        ],
+        [
+          38.6304,
+          33.3505
+        ],
+        [
+          38.6187,
+          33.3301
+        ],
+        [
+          38.44,
+          32.8138
+        ],
+        [
+          38.4319,
+          32.7902
+        ],
+        [
+          38.3552,
+          32.2263
+        ],
+        [
+          38.3517,
+          32.2005
+        ],
+        [
+          38.3918,
+          31.6208
+        ],
+        [
+          38.3937,
+          31.5942
+        ],
+        [
+          38.5518,
+          31.035
+        ],
+        [
+          38.559,
+          31.0094
+        ],
+        [
+          38.8216,
+          30.5046
+        ],
+        [
+          38.8336,
+          30.4815
+        ],
+        [
+          39.1762,
+          30.0559
+        ],
+        [
+          39.1919,
+          30.0364
+        ],
+        [
+          39.5846,
+          29.7026
+        ],
+        [
+          39.6025,
+          29.6873
+        ],
+        [
+          40.0495,
+          29.4305
+        ],
+        [
+          40.0699,
+          29.4187
+        ],
+        [
+          40.5862,
+          29.24
+        ],
+        [
+          40.6098,
+          29.2319
+        ],
+        [
+          41.1737,
+          29.1552
+        ],
+        [
+          41.1995,
+          29.1517
+        ],
+        [
+          41.7792,
+          29.1918
+        ],
+        [
+          41.8058,
+          29.1937
+        ],
+        [
+          42.365,
+          29.3518
+        ],
+        [
+          42.3906,
+          29.359
+        ],
+        [
+          42.8954,
+          29.6216
+        ],
+        [
+          42.9185,
+          29.6336
+        ],
+        [
+          43.3441,
+          29.9762
+        ],
+        [
+          43.3636,
+          29.9919
+        ],
+        [
+          43.6974,
+          30.3846
+        ],
+        [
+          43.7127,
+          30.4025
+        ],
+        [
+          43.9695,
+          30.8495
+        ],
+        [
+          43.9813,
+          30.8699
+        ],
+        [
+          44.16,
+          31.3862
+        ],
+        [
+          44.1681,
+          31.4098
+        ],
+        [
+          44.2448,
+          31.9737
+        ],
+        [
+          44.2483,
+          31.9995
+        ],
+        [
+          44.2082,
+          32.5792
+        ],
+        [
+          44.2063,
+          32.6058
+        ],
+        [
+          44.0483,
+          33.165
+        ],
+        [
+          44.041,
+          33.1906
+        ],
+        [
+          43.7784,
+          33.6954
+        ],
+        [
+          43.7664,
+          33.7185
+        ],
+        [
+          43.4238,
+          34.1441
+        ],
+        [
+          43.4081,
+          34.1636
+        ],
+        [
+          43.0154,
+          34.4974
+        ],
+        [
+          42.9975,
+          34.5127
+        ],
+        [
+          42.5505,
+          34.7695
+        ],
+        [
+          42.5301,
+          34.7813
+        ],
+        [
+          42.0138,
+          34.96
+        ],
+        [
+          41.9902,
+          34.9681
+        ],
+        [
+          41.4263,
+          35.0448
+        ],
+        [
+          41.4005,
+          35.0483
+        ]
+      ],
+      "aperture_profile": "circle (clears protruding Ø5.00 collar)",
+      "masked_bezel_probe_xz_mm": [
+        45.4,
+        32.1
+      ],
+      "mask_back_y_mm": 56.56,
+      "mask_skin_thickness_mm": 0.8,
+      "nominal_axial_gap_mask_to_bezel_mm": 0.11,
+      "mask_to_bezel_axial_gap_conservative_min_mm": 0.025,
+      "field_witness_xz_mm": [
+        49.5,
+        32.2
+      ],
+      "field_thickness_mm": 2.6,
+      "exposed_entrance_probe_xz_mm": [
+        41.3,
+        32.1
+      ],
+      "exposed_entrance_board_hit_y_mm": 54.19,
+      "fraction_of_projected_surround_hidden_nominal": 0.6675,
+      "outer_bezel_xz_span_mm": [
+        10.0,
+        6.2
+      ],
+      "aperture_center_xz_mm": [
+        41.3,
+        32.1
+      ],
+      "aperture_area_outside_nominal_frame_outline_mm2": 0.0,
+      "aperture_below_nominal_frame_mm": 0.0,
+      "metal_nose_xz_mm": [
+        3.55,
+        3.55
+      ],
+      "nose_to_aperture_XZ_gap_after_rigid_movement_mm": 0.9217,
+      "modeled_shoulder_xz_mm": [
+        11.4,
+        11.4
+      ],
+      "modeled_L_from_socket_seat_mm": 0.55,
+      "shoulder_scenario_status": "illustrative compatible cable only",
+      "required_mated_L_for_positive_shoulder_to_fascia_clearance_mm": 0.322,
+      "scenario_shoulder_axial_clearance_mm": 0.228,
+      "counterexample_wide_shoulder_at_seat_overlap_mm3": 23.94694,
+      "cable_evidence": "Same Sky SP-3530 first shaft max 3.55, first collar max 9.1 (DOCUMENTED). Protruding Ø5.00 Apple collar sits 0.32 mm recessed behind 0.80 mm wall.",
+      "protruding_collar_od_mm": 5.0,
+      "protruding_collar_tip_y_mm": 57.04,
+      "collar_recess_behind_exterior_mm": 0.32,
+      "collar_to_aperture_XZ_gap_after_rigid_movement_mm": 0.1969
+    },
+    "PD": {
+      "axis_xz_mm": [
+        -79.925,
+        22.2
+      ],
+      "socket_lip_y_mm": 56.8,
+      "plug_shoulder_seat_y_mm": 56.8,
+      "face_y_mm": 57.36,
+      "signed_face_minus_lip_mm": 0.56,
+      "face_to_lip_with_locked_panel_range_mm": [
+        0.475,
+        0.562
+      ],
+      "aperture_xz_span_mm": [
+        3.05,
+        8.87
+      ],
+      "aperture_outline_xz_mm": [
+        [
+          -80.3842,
+          26.4572
+        ],
+        [
+          -80.4276,
+          26.4498
+        ],
+        [
+          -80.8207,
+          26.2364
+        ],
+        [
+          -80.8584,
+          26.216
+        ],
+        [
+          -81.1448,
+          25.9162
+        ],
+        [
+          -81.1723,
+          25.8875
+        ],
+        [
+          -81.3558,
+          25.5221
+        ],
+        [
+          -81.3734,
+          25.4871
+        ],
+        [
+          -81.4433,
+          25.0517
+        ],
+        [
+          -81.45,
+          25.01
+        ],
+        [
+          -81.45,
+          19.6992
+        ],
+        [
+          -81.45,
+          19.19
+        ],
+        [
+          -81.3332,
+          18.632
+        ],
+        [
+          -81.322,
+          18.5785
+        ],
+        [
+          -81.0108,
+          18.1325
+        ],
+        [
+          -80.981,
+          18.0898
+        ],
+        [
+          -80.5575,
+          17.8113
+        ],
+        [
+          -80.5169,
+          17.7846
+        ],
+        [
+          -79.9768,
+          17.6755
+        ],
+        [
+          -79.925,
+          17.665
+        ],
+        [
+          -79.367,
+          17.7818
+        ],
+        [
+          -79.3135,
+          17.793
+        ],
+        [
+          -78.8675,
+          18.1042
+        ],
+        [
+          -78.8248,
+          18.134
+        ],
+        [
+          -78.5463,
+          18.5575
+        ],
+        [
+          -78.5196,
+          18.5981
+        ],
+        [
+          -78.4105,
+          19.1382
+        ],
+        [
+          -78.4,
+          19.19
+        ],
+        [
+          -78.4,
+          24.5007
+        ],
+        [
+          -78.4,
+          25.01
+        ],
+        [
+          -78.4758,
+          25.4629
+        ],
+        [
+          -78.483,
+          25.5063
+        ],
+        [
+          -78.6948,
+          25.9006
+        ],
+        [
+          -78.7151,
+          25.9384
+        ],
+        [
+          -79.0141,
+          26.2263
+        ],
+        [
+          -79.0428,
+          26.2539
+        ],
+        [
+          -79.4124,
+          26.4405
+        ],
+        [
+          -79.4479,
+          26.4584
+        ],
+        [
+          -79.8893,
+          26.5283
+        ],
+        [
+          -79.9317,
+          26.535
+        ]
+      ],
+      "aperture_profile": "vertical capsule",
+      "masked_bezel_probe_xz_mm": [
+        -78.35,
+        22.2
+      ],
+      "mask_back_y_mm": 56.96,
+      "mask_skin_thickness_mm": 0.4,
+      "nominal_axial_gap_mask_to_bezel_mm": 0.16,
+      "mask_to_bezel_axial_gap_conservative_min_mm": 0.075,
+      "field_witness_xz_mm": [
+        -83.8,
+        22.2
+      ],
+      "field_thickness_mm": 2.6,
+      "exposed_entrance_probe_xz_mm": [
+        -78.905,
+        22.2
+      ],
+      "exposed_entrance_board_hit_y_mm": 54.44,
+      "fraction_of_projected_surround_hidden_nominal": 0.3178,
+      "outer_bezel_xz_span_mm": [
+        3.25,
+        8.94
+      ],
+      "aperture_center_xz_mm": [
+        -79.925,
+        22.099999999999998
+      ],
+      "aperture_area_outside_nominal_frame_outline_mm2": 0.07417,
+      "aperture_below_nominal_frame_mm": 0.065,
+      "metal_nose_xz_mm": [
+        2.43,
+        8.28
+      ],
+      "nose_to_aperture_XZ_gap_after_rigid_movement_mm": 0.1103,
+      "modeled_shoulder_xz_mm": [
+        7.0,
+        12.85
+      ],
+      "modeled_L_from_socket_seat_mm": 0.65,
+      "shoulder_scenario_status": "illustrative compatible cable only",
+      "required_mated_L_for_positive_shoulder_to_fascia_clearance_mm": 0.562,
+      "scenario_shoulder_axial_clearance_mm": 0.088,
+      "counterexample_wide_shoulder_at_seat_overlap_mm3": 34.09662,
+      "cable_evidence": "USB Type-C 2.5 Fig 3-3 rotated 90 degrees. CMTPD shifted +0.40 mm so 0.56 mm setback keeps 0.65 mm cable scenario clear."
+    }
+  },
+  "checks": {
+    "Centered metal noses cover 0.30 mm of the actual shallow entrance and extend through the entire printed mask": 224,
+    "Noses against all allowed local panel poses": 8,
+    "Supported example shoulder stations against all installed bodies and full rigid panel play": 232,
+    "Eight distinct cables occupied simultaneously at tabulated shoulder stations": 112,
+    "Photographed board connectors & bridges against full rigid panel motion field": 1,
+    "Raw SOURCE_20 USB-A/Audio, HDMI, and RJ zones vs D2.6 panel": 3,
+    "RJ central latch, narrow nose, independent external press tab and finger with PD inserted and a relieved boot": 152
+  },
+  "face_y_mm": 57.36,
+  "facade_through_holes": 8,
+  "field_motion_conservative_xyz_mm": [
+    [
+      -0.125,
+      -0.085,
+      -0.002
+    ],
+    [
+      0.125,
+      0.002,
+      0.204
+    ]
+  ],
+  "minimum_web_mm": 4.08,
+  "webs_face_mm": {
+    "RJ/PD": 7.15,
+    "RJ/A2": 84.19,
+    "RJ/A1": 101.39,
+    "RJ/HDMI": 49.005,
+    "RJ/TB2": 19.8048,
+    "RJ/TB1": 34.4548,
+    "RJ/audio": 96.5643,
+    "PD/A2": 104.54,
+    "PD/A1": 121.74,
+    "PD/HDMI": 69.355,
+    "PD/TB2": 40.1548,
+    "PD/TB1": 54.8048,
+    "PD/audio": 116.9729,
+    "A2/A1": 4.08,
+    "A2/HDMI": 20.145,
+    "A2/TB2": 55.29,
+    "A2/TB1": 40.64,
+    "A2/audio": 4.696,
+    "A1/HDMI": 37.345,
+    "A1/TB2": 72.49,
+    "A1/TB1": 57.84,
+    "A1/audio": 4.6929,
+    "HDMI/TB2": 20.105,
+    "HDMI/TB1": 5.455,
+    "HDMI/audio": 33.3704,
+    "TB2/TB1": 5.5563,
+    "TB2/audio": 68.2097,
+    "TB1/audio": 53.732
+  },
+  "raw_source20_zone_overlaps_mm3": {
+    "SOURCE_20 USB-A + Audio zone": 0.0,
+    "SOURCE_20 HDMI zone": 0.0,
+    "SOURCE_20 RJ-45 zone": 0.0
+  },
+  "large_HDMI_to_TB1_shoulder_gap_mm": 0.6,
+  "illustrative_short_shoulder_scenarios": {
+    "TB1 / L 1.20": {
+      "setback_from_socket_seat_mm": 1.2,
+      "worst_axial_clearance_mm": 0.188,
+      "overlap_with_fascia_field_mm3": 0.0,
+      "result": "clear in CAD"
+    },
+    "TB2 / L 0.85": {
+      "setback_from_socket_seat_mm": 0.85,
+      "worst_axial_clearance_mm": -0.162,
+      "overlap_with_fascia_field_mm3": 10.536,
+      "result": "blocked by printed mask in this scenario"
+    },
+    "PD / L 0.65": {
+      "setback_from_socket_seat_mm": 0.65,
+      "worst_axial_clearance_mm": 0.088,
+      "overlap_with_fascia_field_mm3": 0.0,
+      "result": "clear in CAD"
+    },
+    "PD / L 0.45": {
+      "setback_from_socket_seat_mm": 0.45,
+      "worst_axial_clearance_mm": -0.112,
+      "overlap_with_fascia_field_mm3": 7.59754,
+      "result": "blocked by printed mask in this scenario"
+    },
+    "audio / L 0.55": {
+      "setback_from_socket_seat_mm": 0.55,
+      "worst_axial_clearance_mm": 0.228,
+      "overlap_with_fascia_field_mm3": 0.0,
+      "result": "clear in CAD"
+    },
+    "audio / L 0.10": {
+      "setback_from_socket_seat_mm": 0.1,
+      "worst_axial_clearance_mm": -0.222,
+      "overlap_with_fascia_field_mm3": 8.98248,
+      "result": "blocked by printed mask in this scenario"
+    }
+  },
+  "RJ_release": {
+    "central_spring_width_mm": 6.18,
+    "terminal_width_mm": 3.38,
+    "finger_width_mm": 13.0,
+    "relieved_boot_required": true
+  },
+  "scope": "Actual thickened 2.60 mm cable-side mask (0.80/0.90/0.40 mm pocket walls), unified USB-A/audio T-pocket, recessed Ø5.00 audio collar passage, and photographed board reference. Positive computed clearance excludes printer/board tolerances. FDM and cold assembly remain physical gates.",
+  "cad_report_sha256": "72136516a159cedb442a62976c4cbd5b4639dea1a38f94db097b526cf72cd95d",
+  "panel_glb_sha256": "3a1c4dc8ced91a2ac25cf7f4806b6d564f2f9f820ac45c346ae528078bfc74f5"
+}

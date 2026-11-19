@@ -1,0 +1,14 @@
+[project]
+name = "mac-mini-m1-cad"
+version = "0.1.0"
+description = "Offline geometry validation for the Mac mini M1 enclosure"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "manifold3d==3.5.5",
+    "numpy==2.5.4",
+    "scipy==1.18.1",
+    "trimesh==5.2.1",
+]
+
+[tool.uv]
+package = false

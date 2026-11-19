@@ -1,0 +1,13 @@
+* text=auto eol=lf
+# Source data, publication receipts, and kit contents have byte-level hashes.
+# Keep the original bytes on every platform, including Windows checkouts.
+cad/** -text
+release/** -text
+*.stl binary
+*.glb binary
+*.sc binary
+*.step binary
+*.zip binary
+*.jpg binary
+*.png binary
+*.webp binary

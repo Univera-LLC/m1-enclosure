@@ -1,0 +1,24 @@
+{
+  "revision": "D2.6",
+  "kits": {
+    "d2.6-cold-fit-kit.zip": "Корпус · 5 деталей",
+    "d2.6-first-fit.zip": "Перша примірка · 2 деталі та 3 зразки"
+  },
+  "step": {
+    "d26-assembly.step": "Збірка з кріпленням і модулями",
+    "d26-printable.step": "П’ять друкованих деталей"
+  },
+  "stl": {
+    "print/01-power-saddle.stl": "Тримач PD trigger і Mini‑560",
+    "print/02-flat-rear-panel.stl": "Задня панель",
+    "print/03-monolithic-base.stl": "Дно з боковинами й опорами плати",
+    "print/04-vented-lid.stl": "Верхня кришка",
+    "print/05-front-blank.stl": "Передня заглушка",
+    "print/06-board-datum-strip.stl": "Зразок опор материнської плати",
+    "print/07-side-guide-sample.stl": "Лівий кут · бічна напрямна й виступ полиці",
+    "print/08-lid-stop-sample.stl": "Лівий кут · упор кришки"
+  },
+  "native": {
+    "d26-workbench.sc": "Редагована збірка SolidCraft"
+  }
+}

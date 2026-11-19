@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="antphoto-shapes" viewBox="0 0 400 484" data-panel-a="0 0 400 239" data-panel-b="0 245 400 239" role="img" aria-labelledby="antphoto-title antphoto-desc" font-family="system-ui, Segoe UI, Arial, sans-serif">
+  <title id="antphoto-title">Два зняті антенні вузли: A — компактний, Б — видовжений</title>
+  <desc id="antphoto-desc">Ручні обриси з фотографій без масштабу. У A показано лицьову ділянку, чорні накладки та вушко. У Б видно зворотний бік, вигнутий край, вихід кабелю й кінцевий відгин. Ракурси та збільшення різні; це не розгортки і не посадкові креслення.</desc>
+
+  <rect x="1" y="1" width="398" height="237" rx="12" fill="#f3f5f0" stroke="#bdc7bd"/>
+  <rect x="1" y="246" width="398" height="237" rx="12" fill="#f3f5f0" stroke="#bdc7bd"/>
+  <g font-size="19" font-weight="650" fill="#243531">
+    <text x="18" y="30">A</text><text x="50" y="30">Компактний вузол</text>
+    <text x="18" y="276">Б</text><text x="50" y="276">Видовжений вузол</text>
+  </g>
+
+  <!-- Hand trace of the compact item, patterned face toward the camera.
+       Visible marks only. Paired strokes at the top interrupt the cable. -->
+  <g transform="translate(26 37) scale(.275)" stroke="#37453f" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M420 99 Q434 70 443 41" fill="none" stroke="#273331" stroke-width="11"/>
+    <path d="M440 25 l10 -7 M444 32 l10 -7" stroke="#69766e" stroke-width="4"/>
+    <path d="M319 124 L352 69 Q372 39 383 61 Q394 81 378 119 L360 142 Z M349 110 Q357 82 366 74 Q376 76 371 98 L365 111 Z" fill="#b7c1ba" fill-rule="evenodd"/>
+    <path d="M113 207 L175 158 Q197 142 227 139 L335 126 L464 121 Q505 126 532 149 L566 215 L579 255 L617 391 L397 619 L349 578 L318 389 L138 380 Z" fill="#c4cdc7"/>
+    <path d="M364 223 Q432 188 531 149 M392 618 L372 441 L581 259 M375 448 L584 254" fill="none" stroke="#7e8f87"/>
+    <path d="M325 186 Q361 201 382 210 M271 180 Q288 168 306 170" fill="none" stroke="#919f96" stroke-width="4"/>
+    <ellipse cx="292" cy="178" rx="18" ry="6.6" transform="rotate(-9 292 178)" fill="#3d4943" stroke="none"/>
+    <path d="M112 392 Q111 439 134 452 Q153 465 168 447 L173 425 Q165 414 149 425 L143 435 Q131 438 132 418 L135 395 Z" fill="#b8c4bb"/>
+    <path d="M351 596 Q370 604 390 614 Q435 624 451 649 Q480 697 437 680 L390 660 Q367 650 356 632 Z M405 638 Q410 625 423 635 Q440 648 438 660 Q433 671 420 659 Q405 646 405 638 Z" fill="#c1cbc3" fill-rule="evenodd"/>
+    <path d="M565 215 Q580 212 583 223 Q590 237 574 248 L373 445 L363 437 L563 235 Q572 226 565 215 Z" fill="#dbe1db" stroke="#87958b" stroke-width="4"/>
+    <path d="M96 211 Q102 186 124 186 L206 199 Q233 231 259 213 L274 205 L351 224 Q375 229 378 248 L365 399 Q364 454 380 548 L392 621 Q380 633 353 617 L324 606 Q311 600 306 577 L274 480 Q269 452 248 446 L120 411 Q91 402 91 372 Z" fill="#ad8557"/>
+    <path d="M349 307 L128 259 Q116 257 116 268 L113 377 L282 423 L308 451 L334 568 L357 582 L339 416" fill="none" stroke="#4e674d" stroke-width="19" stroke-linecap="butt"/>
+    <g fill="#283330" stroke="#1d2825" stroke-width="5">
+      <path d="M183 136 Q181 104 208 78 Q243 51 304 72 Q327 80 331 103 Q290 124 242 159 L190 154 Z"/>
+      <path d="M362 167 Q361 130 394 98 Q439 68 497 94 Q517 105 522 130 L447 186 Q408 180 367 178 Z"/>
+      <path d="M387 280 Q392 263 413 254 L498 207 Q512 208 519 233 L530 288 Q531 311 506 327 L429 363 Q409 369 402 349 Z"/>
+      <path d="M389 445 Q389 428 410 414 L492 369 Q504 365 509 387 L529 457 Q528 475 507 488 L442 523 Q421 529 409 511 Z"/>
+    </g>
+  </g>
+  <g fill="none" stroke="#687c70" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M165 120 L201 104 H221"/>
+    <path d="M149 218 L202 196 H221"/>
+  </g>
+  <g fill="#30483d" font-size="15">
+    <text x="228" y="109">Чорні накладки</text>
+    <text x="228" y="201">Вушко з отвором</text>
+  </g>
+
+  <!-- Rear of the long item. The unobscured overview is rotated in the page
+       plane. The oval end hole is clear in other views; it is not drawn on
+       a face from which it cannot be seen. The cable stub ends in a break. -->
+  <g transform="translate(-42 274) scale(.44)" stroke="#37453f" stroke-width="4.4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M303 302 Q281 310 283 353 Q287 382 275 404" fill="none" stroke="#293431" stroke-width="11"/>
+    <path d="M266 410 l14 -1 M264 417 l14 -1" stroke="#69766e" stroke-width="3.6"/>
+    <path d="M302 305 Q332 301 385 302 L467 298 Q452 316 414 315 L300 321 Z" fill="#4b554f"/>
+    <path d="M237 143 L203 144 L177 147 L202 151 L222 150 L228 155 L229 294 L238 307 L306 307 L312 294 L247 291 Z" fill="#b4c0b8"/>
+    <path d="M236 121 L497 122 Q633 122 699 157 Q756 176 797 218 L850 254 L851 284 L775 298 L599 299 L248 296 Q240 295 238 287 Z" fill="#c8d2ca"/>
+    <path d="M244 126 L501 129 Q613 129 684 155 Q752 178 794 220 M248 292 L598 294 Q680 297 718 291" fill="none" stroke="#8c9c91"/>
+    <path d="M660 178 L714 210 L746 196 L809 244 L731 291 L636 240 Q623 234 631 220 Z" fill="#a8b6ad"/>
+    <g fill="#788980" stroke="none"><circle cx="671" cy="200" r="5"/><circle cx="652" cy="232" r="5"/><circle cx="707" cy="267" r="5"/><circle cx="738" cy="246" r="4"/></g>
+    <path d="M692 198 L714 206 L730 189 Q737 182 750 194 L841 251 L841 260 L818 272 L789 264 L764 268 L750 276 L727 278 L657 230 Z" fill="#83948a"/>
+    <path d="M763 211 L806 244 M779 216 L822 248" fill="none" stroke="#dce3dc"/>
+    <path d="M848 293 Q883 297 885 334 Q886 366 868 379 L850 380 Z" fill="#273330"/>
+    <path d="M776 272 L825 252 L851 256 L854 380 Q855 395 850 397 L787 398 L781 387 Z" fill="#acbab0"/>
+    <path d="M783 281 L786 348" fill="none" stroke="#75887a"/>
+  </g>
+  <g fill="none" stroke="#687c70" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M318 393 L353 350 V316 H293"/>
+    <path d="M80 442 L107 455 H126"/>
+  </g>
+  <g fill="#30483d" font-size="15">
+    <text x="170" y="319">Кінцевий відгин</text>
+    <text x="133" y="460">Вихід кабелю</text>
+  </g>
+</svg>

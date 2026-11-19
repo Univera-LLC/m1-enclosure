@@ -1,0 +1,26 @@
+name: Check the enclosure release
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python tools/check_public_tree.py
+      - run: python tools/test_release.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: cad/solidcraft-m1/viewer/package-lock.json
+      - working-directory: cad/solidcraft-m1/viewer
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+      - run: pwsh -NoProfile -File ./project.ps1 check

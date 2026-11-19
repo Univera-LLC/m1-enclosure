@@ -1,0 +1,215 @@
+{
+  "evidence": "Owner component-side photos, 2026-11-18. Appearance and inventory only. No owner dimensions measured.",
+  "calibration": {
+    "upright_display_px": [
+      1640,
+      923
+    ],
+    "controls_px_to_SOURCE_xy_mm": [
+      [
+        [
+          418.3,
+          768.0
+        ],
+        [
+          -52.0,
+          -34.35
+        ]
+      ],
+      [
+        [
+          1125.1,
+          784.4
+        ],
+        [
+          47.95,
+          -34.35
+        ]
+      ],
+      [
+        [
+          412.0,
+          326.0
+        ],
+        [
+          -55.0,
+          28.85
+        ]
+      ],
+      [
+        [
+          953.0,
+          336.9
+        ],
+        [
+          22.0,
+          28.85
+        ]
+      ]
+    ],
+    "holdout_px_and_SOURCE_xy_mm": [
+      [
+        [
+          403.0,
+          633.8
+        ],
+        [
+          -55.0,
+          -15.15
+        ]
+      ],
+      [
+        [
+          946.8,
+          645.8
+        ],
+        [
+          22.2,
+          -15.15
+        ]
+      ]
+    ],
+    "held_out_error_px": [
+      1.575,
+      1.096
+    ],
+    "scope": "A 2D registration on the board plane, not a tolerance or 3D reconstruction."
+  },
+  "coax": {
+    "source_axes_xy_mm": [
+      [
+        51.4,
+        -12.15
+      ],
+      [
+        60.4,
+        -12.15
+      ],
+      [
+        69.4,
+        -12.15
+      ]
+    ],
+    "source_top_z_mm": 18.4,
+    "independent_photo_error_px": [
+      2.546,
+      2.392,
+      2.365
+    ],
+    "assignment_to_antennas": null
+  },
+  "sleeves": {
+    "owner_base_clicks_px": [
+      [
+        1131,
+        369
+      ],
+      [
+        1252,
+        570
+      ]
+    ],
+    "approx_xy_photo_to_SOURCE_mm": [
+      [
+        47.3,
+        24.8
+      ],
+      [
+        65.1,
+        -3.5
+      ]
+    ],
+    "physical_height_mm": null,
+    "representation": "Two planar location marks on verified flat SOURCE faces; unknown OD, thread, function and top Z."
+  },
+  "source_face_groups": {
+    "SOURCE_20_coax_maccontact_d2": 444,
+    "SOURCE_20_coax_macsolder_d2": 30,
+    "SOURCE_20_logic_maccomponent_d2": 876,
+    "SOURCE_20_logic_maccomponent_oem": 64,
+    "SOURCE_20_logic_macfr4_d2": 4074,
+    "SOURCE_20_logic_macfr4_oem": 270,
+    "SOURCE_20_logic_macinsulator_d2": 66,
+    "SOURCE_20_logic_macmetal_d2": 70,
+    "SOURCE_20_logic_macsolder_d2": 55,
+    "SOURCE_20_ports_macmetal_oem": 233
+  },
+  "unchanged_source_triangles": 6182,
+  "original_source_triangles": 9680,
+  "fins": {
+    "SOURCE_original_total_crests_including_two_outer_walls": 22,
+    "DOCUMENTED_photo_total_crests_including_two_outer_walls": 23,
+    "DOCUMENTED_photo_interior_crests": 21,
+    "DOCUMENTED_photo_open_channels": 22,
+    "SOURCE_and_reconstructed_field_bounds_xyz_mm": [
+      [
+        -51.8,
+        -20.15,
+        17.4
+      ],
+      [
+        18.2,
+        31.35,
+        36.9
+      ]
+    ],
+    "SOURCE_root_and_crest_z_mm": [
+      24.9,
+      36.9
+    ],
+    "SOURCE_endpoint_crest_centres_x_mm": [
+      -51.3,
+      17.7009
+    ],
+    "ASSUMED_reconstruction_centres_x_mm": [
+      -51.3,
+      -48.1636,
+      -45.0272,
+      -41.89079,
+      -38.75439,
+      -35.61798,
+      -32.48158,
+      -29.34517,
+      -26.20877,
+      -23.07236,
+      -19.93596,
+      -16.79955,
+      -13.66315,
+      -10.52674,
+      -7.39034,
+      -4.25393,
+      -1.11753,
+      2.01888,
+      5.15528,
+      8.29169,
+      11.42809,
+      14.5645,
+      17.7009
+    ],
+    "ASSUMED_uniform_pitch_mm": 3.136405,
+    "SOURCE_flat_flank_thickness_at_z26_mm": 1.0,
+    "copied_SOURCE_inner_tooth": "translated unscaled (curved feet and crown preserved)",
+    "replaced_source_triangle_count": 3498,
+    "unchanged_source_triangle_count": 6182,
+    "replacement_patch_triangles": 3658,
+    "exact_board_interface_edges": 60,
+    "status": "REFERENCE ONLY. The count/direction are visible in photos; all metric data come from SOURCE or its reconstruction. No measured dimensions, fit, airflow, or thermal result."
+  },
+  "board_markings": "Two case rings, four radiator tabs and three open socket faces; render-only ink, clipped to the respective SOURCE faces.",
+  "reverse": "SOURCE only. No owner photo of the opposite face.",
+  "antenna_state": "Detached. Two photographed separately, no physical assignment to any of the three source references.",
+  "download": {
+    "file": "mac-board-reference.glb",
+    "bytes": 326156,
+    "sha256": "4e028a484ba1431b01917ea941af4a3d0e559b6bc8d4dbbb1893a1b692575e94",
+    "meshes": 24,
+    "materials": 8,
+    "textures": 0,
+    "units": "glTF m; source mm transformed once",
+    "closed_connected_mechanical_reference": true,
+    "readback_fin_strips_at_z_mm": {
+      "26.0": 23,
+      "34.0": 23
+    }
+  }
+}

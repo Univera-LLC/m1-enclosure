@@ -1,0 +1,54 @@
+# This working directory may also contain a private engineering archive.
+# Publish only the reviewed source and release inputs; do not import the archive.
+/*
+!/.gitignore
+!/.gitattributes
+!/.github/
+!/README.md
+!/CONTRIBUTING.md
+!/THIRD_PARTY.md
+!/NOTICE.md
+!/LICENSE
+!/LICENSES/
+!/AGENTS.md
+!/project.ps1
+!/project.json
+!/pyproject.toml
+!/uv.lock
+!/.python-version
+!/tools/
+!/release/
+!/docs/
+/docs/*
+!/docs/assets/
+!/docs/CAD-BUILD.md
+!/docs/VIEWER.md
+
+# Historical CAD folders mix source, privately supplied material and generated
+# files. Their reviewed inputs are explicitly tracked; edits to them show as
+# normal Git changes. For a new input, see CONTRIBUTING.md.
+!/cad/
+/cad/*
+!/cad/solidcraft-m1/
+/cad/solidcraft-m1/*
+!/cad/solidcraft-m1/prototype-d26/
+/cad/solidcraft-m1/prototype-d26/*
+!/cad/solidcraft-m1/prototype-d26/*.py
+!/cad/solidcraft-m1/viewer/
+/cad/solidcraft-m1/viewer/*
+!/cad/solidcraft-m1/viewer/d26/
+/cad/solidcraft-m1/viewer/d26/*
+!/cad/solidcraft-m1/viewer/d26/*.js
+!/cad/solidcraft-m1/viewer/d26/*.mjs
+!/cad/solidcraft-m1/viewer/d26/*.py
+# One-off preparation scripts for the historical Pages checkout.
+/cad/solidcraft-m1/viewer/d26/stage.py
+/cad/solidcraft-m1/viewer/d26/make_graphic.py
+**/__pycache__/
+*.py[cod]
+node_modules/
+.venv/
+.env
+.env.*
+.DS_Store
+Thumbs.db

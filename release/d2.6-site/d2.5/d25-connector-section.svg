@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="930" height="610" viewBox="0 0 930 610" role="img" aria-labelledby="d25secTitle d25secDesc">
+<title id="d25secTitle">D2.5: справжній розріз через капсулу Thunderbolt</title>
+<desc id="d25secDesc">Пластик перекриває широкий чорний обідок. Експортовані панель і гніздо розрізані в одній площині; носик і плече кабелю показані як окремий приклад.</desc>
+<defs><style>text{font-family:'Segoe UI',Arial,sans-serif;fill:#20392e}.ey{font-size:12px;font-weight:650;letter-spacing:1.3px}.head{font-size:29px;font-weight:650}.sub{font-size:15px}.lab{font-size:16px;font-weight:650}.tiny{font-size:13px}.hi{fill:#37634f;font-weight:650}</style>
+<pattern id="d25hatch" width="7" height="7" patternUnits="userSpaceOnUse"><rect width="7" height="7" fill="#e6c28b"/><path d="M-1 1 1-1 M0 7 7 0 M6 8 8 6" stroke="#bd965f" stroke-width="1"/></pattern>
+<clipPath id="d25clip"><rect x="33" y="130" width="477" height="324" rx="5"/></clipPath></defs>
+<rect width="930" height="610" rx="12" fill="#f9f9f3"/>
+<text x="27" y="30" class="ey" text-anchor="start">D2.5   /   ЗАДНЯ ПАНЕЛЬ   /   РОЗРІЗ ЧЕРЕЗ ВІСЬ THUNDERBOLT 1</text>
+<text x="27" y="69" class="head" text-anchor="start">Пластик закриває широкий обідок гнізда</text>
+<text x="27" y="95" class="sub" text-anchor="start">Розріз друкованої панелі 02 і моделі плати в одному масштабі. Вид збоку; кабель заходить праворуч.</text>
+<path d="M27 111H903" stroke="#acbcb1"/><rect x="27" y="123" width="489" height="338" rx="8" fill="#edf1e8"/>
+<g clip-path="url(#d25clip)">
+<path d="M203.47,449.94 L203.47,415.10 L206.48,415.10 L209.49,415.10 L255.93,415.10 L302.37,415.10 L302.37,381.38 L302.37,381.38 L302.37,381.25 L302.37,381.23 L302.37,380.95 L302.37,380.93 L302.37,361.78 L300.65,361.78 L298.93,361.78 L298.93,358.34 L298.93,354.90 L254.21,354.90 L209.49,354.90 L209.49,334.66 L209.49,313.41 L234.56,313.41 L236.13,313.41 L237.44,313.41 L252.92,313.41 L268.40,313.41 L268.66,313.41 L268.98,313.41 L269.38,313.41 L269.62,313.41 L269.93,313.41 L273.99,313.41 L273.99,310.61 L273.99,307.85 L273.99,306.93 L273.99,304.19 L273.99,301.93 L273.99,299.00 L273.99,296.07 L273.99,293.81 L273.99,291.07 L273.99,290.15 L273.99,287.39 L273.99,284.59 L269.93,284.59 L269.62,284.59 L269.38,284.59 L268.98,284.59 L268.66,284.59 L268.40,284.59 L252.92,284.59 L237.44,284.59 L236.13,284.59 L234.56,284.59 L209.49,284.59 L209.49,263.34 L209.49,243.10 L254.21,243.10 L298.93,243.10 L298.93,239.66 L298.93,236.22 L300.65,236.22 L302.37,236.22 L302.37,217.07 L302.37,217.05 L302.37,216.77 L302.37,216.75 L302.37,216.62 L302.37,216.62 L302.37,182.90 L255.93,182.90 L209.49,182.90 L206.48,182.90 L203.47,182.90 L203.47,185.28 L203.47,187.03 L203.47,187.75 L203.47,189.65 L203.47,191.50 L57.55,191.50 L55.55,191.50 L55.55,481.75 L203.47,481.75 Z" fill="#475c52" stroke="#34473c" stroke-width="1" fill-rule="evenodd"/>
+<path d="M320.00,116.25 L234.00,116.25 L234.00,129.15 L247.35,129.15 L251.20,129.15 L251.20,145.22 L251.20,159.25 L279.15,159.25 L307.10,159.25 L307.10,203.34 L307.10,228.05 L313.55,228.05 L320.00,228.05 Z M320.00,472.57 L320.00,424.49 L320.00,421.88 L320.00,393.77 L320.00,369.95 L313.55,369.95 L307.10,369.95 L307.10,394.66 L307.10,438.75 L279.15,438.75 L251.20,438.75 L251.20,452.78 L251.20,457.26 L251.20,468.85 L237.85,468.85 L234.00,468.85 L234.00,476.65 L234.00,478.25 L234.00,481.75 L320.00,481.75 Z" fill="url(#d25hatch)" stroke="#9a784a" stroke-width="1" fill-rule="evenodd"/>
+<rect x="252.49" y="246.75" width="77.83" height="6.88" fill="#9fbeb3" stroke="#506e63" stroke-width="1"/><rect x="252.49" y="344.37" width="77.83" height="6.88" fill="#9fbeb3" stroke="#506e63" stroke-width="1"/><path d="M330.32 148.50 h79 q16 0 16 17 v267 q0 17 -16 17 h-79 Z" fill="#c7ddcf" stroke="#6d8b7c" stroke-width="1.5"/><path d="M425.32 299 h110" fill="none" stroke="#a5bfb1" stroke-width="30"/>
+<path d="M320,120 V461" stroke="#197b56" stroke-width="1.5" stroke-dasharray="5 4"/>
+<path d="M52,299 H493" stroke="#64796d" stroke-width=".8" stroke-dasharray="4 5" opacity=".75"/>
+<path d="M286.37 202.25 H328.00" stroke="#a1412d" stroke-width="1.6" stroke-dasharray="3 2"/>
+</g>
+<text x="43" y="145" class="ey" text-anchor="start">УСЕРЕДИНІ</text><text x="499" y="145" class="ey" text-anchor="end">ЗОВНІ</text>
+<text x="541" y="150" class="lab" text-anchor="start">Пластик — штрихування</text>
+<text x="541" y="174" class="tiny" text-anchor="start">Відкритою лишається капсула 9,10 × 3,30 мм.</text>
+<text x="541" y="194" class="tiny" text-anchor="start">Перед рамкою TB — 0,30 мм пластику;</text>
+<text x="541" y="214" class="tiny" text-anchor="start">товщина суцільного поля — 2,00 мм.</text>
+<text x="541" y="253" class="lab" text-anchor="start">Гніздо — темно-зеленим</text>
+<text x="541" y="277" class="tiny" text-anchor="start">Широка рамка заходить у задню кишеню.</text>
+<text x="541" y="297" class="tiny" text-anchor="start">Між рамкою та пластиком номінально 0,11 мм.</text>
+<text x="541" y="317" class="tiny" text-anchor="start">Пунктир показує зовнішню площину панелі.</text>
+<text x="541" y="355" class="lab" text-anchor="start">Кабель — світло-зеленим, приклад</text>
+<text x="541" y="379" class="tiny" text-anchor="start">За шийки 0,65 мм широке плече лишається</text>
+<text x="541" y="399" class="tiny" text-anchor="start">на 0,24 мм перед лицем. Якщо шийка 0,45 мм,</text>
+<text x="541" y="419" class="tiny" text-anchor="start">розрахунковий запас становить лише 0,04 мм.</text>
+<path d="M27 476H903" stroke="#acbcb1"/>
+<text x="27" y="500" class="ey" text-anchor="start">ЗБІЛЬШЕНО ВЗДОВЖ ОСІ   /   ЧЕРВОНИЙ ШТРИХ НА РОЗРІЗІ</text>
+<rect x="51" y="520" width="116.00" height="20" fill="#475c52"/>
+<rect x="167" y="520" width="34.10" height="20" fill="#f9f9f3" stroke="#96a89b"/>
+<rect x="201.10" y="520" width="93.00" height="20" fill="url(#d25hatch)" stroke="#9a784a"/>
+<path d="M294.10 511v39" stroke="#197b56" stroke-width="1.6" stroke-dasharray="4 3"/>
+<text x="51" y="560" class="tiny" text-anchor="start">Рамка</text><text x="155" y="560" class="tiny" text-anchor="start">Повітря</text><text x="221" y="560" class="tiny" text-anchor="start">Пластик</text>
+<text x="352" y="530" class="lab" text-anchor="start">Торець TB → лице: 0,11 + 0,30 = 0,41 мм</text>
+<text x="352" y="552" class="tiny" text-anchor="start">Це номінали CAD; розмір шийки реального штекера слід виміряти.</text>
+<text x="27" y="588" class="tiny" text-anchor="start">Базис: X = −19,05 мм. Гніздо: зареєстрована модель, а не обмір Apple. Друк, міцність і фізичну посадку ще не перевірено.</text>
+</svg>
