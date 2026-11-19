@@ -1,0 +1,125 @@
+{
+  "tilt_report": {
+    "all_port_fields_within_guard": true,
+    "actual_union_xyz_mm": [
+      [
+        -0.10863,
+        -0.07408,
+        -0.00109
+      ],
+      [
+        0.10897,
+        0.00066,
+        0.20248
+      ]
+    ],
+    "guard_xyz_mm": [
+      [
+        -0.125,
+        -0.085,
+        -0.002
+      ],
+      [
+        0.125,
+        0.002,
+        0.204
+      ]
+    ],
+    "verified_contact_faces": 34
+  },
+  "revision": "D2.7",
+  "comparisons": 30,
+  "failures": [],
+  "waypoints_xyz_mm": [
+    [
+      0.0,
+      -0.14,
+      36.0
+    ],
+    [
+      0.0,
+      -0.14,
+      0.8
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "continuous_travel": {
+    "enclosing swept field and edge slabs / D2_MONO_BASE": 0.0,
+    "enclosing swept field and edge slabs / D2_FRONT_BLANK": 0.0,
+    "enclosing swept field and edge slabs / D2_BLANK_FIXING_LOW": 0.0,
+    "enclosing swept field and edge slabs / D2_BLANK_FIXING_HIGH": 0.0,
+    "enclosing swept field and edge slabs / D2_ADHESIVE_FOOT_1": 0.0,
+    "enclosing swept field and edge slabs / D2_ADHESIVE_FOOT_2": 0.0,
+    "enclosing swept field and edge slabs / D2_ADHESIVE_FOOT_3": 0.0,
+    "enclosing swept field and edge slabs / D2_ADHESIVE_FOOT_4": 0.0,
+    "inverse continuous cam 0/1": 0.0,
+    "inverse continuous cam 0/2": 0.0,
+    "inverse continuous cam 1/1": 0.0,
+    "inverse continuous cam 1/2": 0.0
+  },
+  "positive_stop_challenge_mm3": {
+    "outward": 12.95399,
+    "inward at bottom": 2.202,
+    "lift above cap": 37.32482,
+    "downward": 37.48084,
+    "left lower locator": 0.1449,
+    "right lower locator": 0.1449
+  },
+  "locked_translation_bounds_xyz_mm": [
+    [
+      -0.075,
+      -0.04,
+      0.0
+    ],
+    [
+      0.075,
+      0.0,
+      0.2
+    ]
+  ],
+  "linked_lower_limit": "0 <= Z <= 0.20; -0.20*Z <= Y <= 0; fitted lower X +/-0.075.",
+  "upper_and_lower_seats": [
+    {
+      "x_mm": -85.82,
+      "upper_y_gap_mm": 0.08,
+      "lower_y_gap_seated_mm": 0.0,
+      "lower_y_gap_at_max_lift_mm": 0.04
+    },
+    {
+      "x_mm": 69.5,
+      "upper_y_gap_mm": 0.08,
+      "lower_y_gap_seated_mm": 0.0,
+      "lower_y_gap_at_max_lift_mm": 0.04
+    }
+  ],
+  "field_motion_conservative_xyz_mm": [
+    [
+      -0.125,
+      -0.085,
+      -0.002
+    ],
+    [
+      0.125,
+      0.002,
+      0.204
+    ]
+  ],
+  "rigid_tilt_geometric_bounds_deg": {
+    "yaw": 0.0295,
+    "pitch": 0.1481,
+    "roll": 0.0738
+  },
+  "station_probe_z_mm": [
+    9.1,
+    40.05
+  ],
+  "side_guide_width_mm": 2.62,
+  "nominal_groove_cut_width_mm": 2.62,
+  "drop_mm": 36.0,
+  "scope": "Rigid small-angle geometry, extreme local field excursions conservatively included in connector and service checks. Print error, flex/warp, force and actual clearance unmeasured.",
+  "cad_report_sha256": "b0ef5a778919c972527981ed4183497bc9091e45e2f13ebc525abd388ce50c4d"
+}

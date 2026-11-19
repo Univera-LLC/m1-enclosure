@@ -1,4 +1,4 @@
-"""Read back D2.6 panel/assembly GLBs, with the board reference with photo-based D2.6 port geometry."""
+"""Pack checked D2.6 or D2.7 assembly meshes and the shared board reference."""
 import argparse
 import base64
 import gzip
@@ -79,7 +79,7 @@ def load_board_and_rf():
     owner["prior_photo_study_mesh_counts_D2_3"]={k:owner.pop(k) for k in ("source_face_groups","unchanged_source_triangles","original_source_triangles")}
     owner["prior_photo_study_mesh_counts_D2_3"]["scope"]="Historical counts before socket interiors were modelled in D2.4."
     owner["board_markings"]="Two case rings, four radiator tabs and visible faces on three coax sockets; original photo-registered finish on SOURCE."
-    report["owner_topside"]["download"]={"file":BOARD.name,"bytes":len(data),"sha256":digest(BOARD),"meshes":len(board),"materials":len(tree.get("materials",[])),"material_names":[m["name"] for m in tree["materials"]],"textures":0,"units":"glTF m; same CAD datum","versioned_url":"reference/d2.6/mac-board-reference.glb"}
+    report["owner_topside"]["download"]={"file":BOARD.name,"bytes":len(data),"sha256":digest(BOARD),"meshes":len(board),"materials":len(tree.get("materials",[])),"material_names":[m["name"] for m in tree["materials"]],"textures":0,"units":"glTF m; same CAD datum","versioned_url":f"reference/{report['revision'].lower()}/mac-board-reference.glb"}
     return board
 
 def rear_panel(bodies,mount,ports):
@@ -147,7 +147,9 @@ def add_illustrations(cad):
     for match,g,key in (("CMTPD","boards","trigger"),("MINI560","boards","buck"),("USB_C","socket","socket")):
         diff=box(cad,g,match)-box(old,g,match)
         deltas[key]=diff.mean(axis=0)
-        if key=="socket":deltas[key][1]=diff[1,1]
+        # Keep the illustrations next to the station at the USB-C end. A
+        # longer PD clearance gauge changes only the opposite end of the PCB.
+        if key in ("socket", "trigger"):deltas[key][1]=diff[1,1]
     group_count={"v1":0,"rf":0,"look":0}
     for key,m in read_glb(io.BytesIO(packed)):
         layer,part,finish,name=key.split("__",3)
@@ -265,15 +267,22 @@ def face_rows(ports,contract,geom,face,bodies,cad):
 def main(dest):
     reports={n:read(OUT/n) for n in ("cad-validation.json","fit-validation.json","ports-fit.json","mount-fit.json","board-install-fit.json","power-fit.json")}
     checked=reports["fit-validation.json"];cad=reports["cad-validation.json"]
+    rev=cad["revision"]
+    assert rev in ("D2.6","D2.7")
     assert checked["status"]=="passed" and checked["cad_report_sha256"]==digest(OUT/"cad-validation.json")
-    assert all(reports[n].get("revision")=="D2.6" and not reports[n].get("failures") for n in ("fit-validation.json","mount-fit.json","ports-fit.json","board-install-fit.json"))
+    assert all(r.get("revision")==rev and not r.get("failures") for r in reports.values())
+    if rev=="D2.7":
+        ledger=read(OUT/"verified.json")
+        assert ledger["revision"]==rev and ledger["status"]=="passed"
+        inputs=[*reports, *(f"geometry/{g}.glb" for g in cad["groups"]), "board-study/port-contract.json", "board-study/mac-board-reference.glb"]
+        assert all(ledger["sha256"][n]==digest(OUT/n) for n in inputs)
     power_fit=reports["power-fit.json"];paths=power_fit["waypoints_xyz_mm"]
     assert not power_fit["failures"] and power_fit["comparisons"]==checked["specialized"]["power"] and paths[-1]==[0,0,0]
     assert len(paths)>1 and all(len(q)==3 for q in paths)
     mount=reports["mount-fit.json"];ports=reports["ports-fit.json"];board_fit=reports["board-install-fit.json"]
     assert len(board_fit["waypoints_xyz_mm"])>=3 and np.allclose(board_fit["waypoints_xyz_mm"][-1],[0,0,0])
     assert mount["waypoints_xyz_mm"][-1]==[0,0,0] and np.isclose(mount["waypoints_xyz_mm"][0][2],mount["drop_mm"]) and mount["continuous_travel"] and mount["comparisons"]>0 and ports["comparisons"]>0
-    report.update(revision="D2.6",variant="D2.6-FDM")
+    report.update(revision=rev,variant=rev+"-FDM")
     load_native(cad)
     reference=load_board_and_rf()
     sections(cad);report["module_appearance_deltas_mm"]=add_illustrations(cad)
@@ -290,7 +299,7 @@ def main(dest):
     assert report["native"][panel_name]["group"]=="panel" and set(native)==set(report["native"])
     rear=rear_panel(reader,mount,ports)
     contract=read(STUDY/"port-contract.json")
-    assert contract["revision"]==cad["revision"]=="D2.6"
+    assert contract["revision"]=="D2.6"  # The board and panel stations are shared.
     assert digest(BOARD)==cad["owner_board_sha256"]==checked["owner_board_sha256"]
     assert digest(STUDY/"port-contract.json")==cad["port_contract_sha256"]
     assert set(contract["ports"])==set(ports["ports"])-{"PD"}
@@ -317,7 +326,7 @@ if __name__=="__main__":
     if not __debug__:
         raise SystemExit("Geometry packing requires Python assertions; run without -O or PYTHONOPTIMIZE.")
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--cad-dir",type=Path,required=True,help="verified prototype-d26 from the CAD build")
+    parser.add_argument("--cad-dir",type=Path,required=True,help="verified D2.6 or D2.7 CAD build output")
     parser.add_argument("--output",type=Path,default=ROOT/"build/d26-packed",help="new directory")
     args=parser.parse_args()
     OUT=args.cad_dir.resolve();STUDY=OUT/"board-study";BOARD=STUDY/"mac-board-reference.glb"

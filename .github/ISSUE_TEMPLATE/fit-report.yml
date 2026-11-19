@@ -6,7 +6,7 @@ body:
     id: parts
     attributes:
       label: CAD revision and printed parts
-      placeholder: "D2.6 · 02 rear panel · 06 board datum strip"
+      placeholder: "D2.7 · 01 power carrier · 06 flat support strip"
     validations:
       required: true
   - type: textarea

@@ -1,6 +1,6 @@
-# First fit: print and check D2.6
+# First fit: print and check D2.7
 
-Start with the [five-piece first-fit kit](https://univera-llc.github.io/m1-enclosure/downloads/d2.6/d2.6-first-fit.zip). It lets you try the rear panel, power holder and board supports before printing the full base and lid. **Keep the board unpowered throughout.** The D2.6 parts passed digital checks; their fit on a physical board remains unverified.
+Start with the [five-piece first-fit kit](https://univera-llc.github.io/m1-enclosure/downloads/d2.7/d2.7-first-fit.zip). It lets you try the rear panel, power carrier and flat board supports before printing the full base and lid. **Keep the board unpowered throughout.** D2.7 passed digital checks; the full physical assembly remains unverified.
 
 ## 1. Check your printer's scale
 
@@ -10,7 +10,7 @@ Let the print cool. Measure each axis in three places on the flat faces, away fr
 
 ## 2. Print the small kit
 
-Use the supplied orientations, millimetres, 100% scale and no supports. The [verified slice](../../cad/solidcraft-m1/prototype-d26/print/slice-checks.json) used PrusaSlicer 2.9.7, an Ender-3 Pro profile, a 0.4 mm nozzle and Generic PETG.
+Use the supplied orientations, millimetres, 100% scale and no supports. The [verified slice](../../cad/solidcraft-m1/prototype-d27/print/slice-checks.json) used PrusaSlicer 2.9.7, an Ender-3 Pro profile, a 0.4 mm nozzle and Generic PETG.
 
 | Part | Slice settings |
 | --- | --- |
@@ -23,12 +23,12 @@ Use loose cables with their far ends disconnected. Leave the original board and 
 
 1. **Panel:** Check for bow before and after placing 02 against the bare board. The connector housings should sit inside their rear pockets, including the silver bridge in the shared USB-A/audio pocket. The audio collar should enter the round opening without rubbing. Pay particular attention to the metal **between the two Thunderbolt sockets**: the two digital board references disagree here. The panel should sit flat without pressure or rocking.
 2. **Plugs:** Compare insertion with and without the panel. Try both USB-A plugs together, HDMI, 3.5 mm audio, and both Thunderbolt sockets with a USB-C plug in both orientations. Include your shortest exposed USB-C tip. Check that Ethernet latches **and releases**. Try the separate USB-C power inlet in its holder with a disconnected cable.
-3. **Mounts:** Check both board mounting points on strip 06. Try the CMTPD and Mini-560 modules in holder 01. Slide the panel into side guide 07 and check it against lid stop 08. Stop at any interference; record where it touches before filing or changing anything.
+3. **Mounts:** Both board rings should rest flat on strip 06 without rocking. Try the CMTPD and Mini-560 modules in carrier 01, with the grooves on bare laminate edges. Check the PD board edge and solder in the recess beside the inlet. Slide the panel into side guide 07 and check it against lid stop 08. Record any interference before filing or changing a part.
 
 ## 4. Move to the full case only if the small kit fits
 
-Print **03** base, **04** lid and **05** front blank from the [full D2.6 kit](https://univera-llc.github.io/m1-enclosure/downloads/d2.6/d2.6-cold-fit-kit.zip). Keep 01–04 and samples 06–08 on D2.6; only blank 05 is unchanged from D2.5.
+Print **03** base, **04** lid and **05** front blank from the [full D2.7 kit](https://univera-llc.github.io/m1-enclosure/downloads/d2.7/d2.7-cold-fit-kit.zip). Use D2.7 editions of 01, 03, 04, 06 and 08. If you already printed D2.6 parts 02, 05 or 07, their files are unchanged.
 
-Lower panel 02 into the base guides from above. Lower the board slightly forward of its final position so the audio collar follows the inside groove. Slide the board back into the pockets while it is still above the supports; then lower it onto both supports and fit the two board screws. The CAD path starts **2.10 mm forward** and slides back **0.27 mm above the seated height**. Fit holder 01 with the same sequence. Try lid 04 without force. Leave the antennas out and the power disconnected for this first assembly.
+Lower panel 02 into the base guides from above. Lower the board slightly forward of its final position so the audio collar follows the inside groove. Slide the board back into the pockets while it is still above the supports; then lower it onto both flat supports. Check the ports before tightening the two screws. The CAD path starts **2.10 mm forward** and slides back **0.27 mm above the seated height**. Fit carrier 01 onto both pins with the same sequence. Try lid 04 without force, then try the disconnected PD cable. Check that the stops meet the connector's metal and the lid does not press on either board. Leave the antennas out for this first assembly.
 
-[Report a fit result](https://github.com/Univera-LLC/m1-enclosure/issues/new?template=fit-report.yml) with the part numbers, print setup and what changed with and without the panel. Include units and method for measurements; a photo with a ruler helps if you want to share it. The [original Ukrainian fit sheet](../../cad/solidcraft-m1/prototype-d26/FIT-FIRST.md) ships unchanged in both print kits.
+[Report a fit result](https://github.com/Univera-LLC/m1-enclosure/issues/new?template=fit-report.yml) with the part numbers, print setup and what changed with and without the panel. Include units and method for measurements; a photo with a ruler helps if you want to share it. The [Ukrainian fit sheet](../../cad/solidcraft-m1/prototype-d27/FIT-FIRST.md) ships in both print kits.

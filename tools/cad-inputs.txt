@@ -1,5 +1,8 @@
 # D2.6 build inputs, relative to cad/solidcraft-m1. One file per line.
 # Only these sources are copied into a fresh build workspace; never copy former D2.6 outputs.
+# D2.7 starts with the verified outputs from this list. Its next stage uses
+# prototype-d27/build_d27.py, geometry.py, check_d27.py, FIT-FIRST.md and CREDITS.txt;
+# the ZIPs also carry the root LICENSE and THIRD_PARTY.md.
 compact-v2/build_compact.py
 compact-v2/check_layout.py
 compact-v3/build_c3.py

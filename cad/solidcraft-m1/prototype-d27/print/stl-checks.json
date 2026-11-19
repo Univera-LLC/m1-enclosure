@@ -1,0 +1,217 @@
+{
+  "revision": "D2.7",
+  "physical_status": "NOT TESTED",
+  "cad_report_sha256": "b0ef5a778919c972527981ed4183497bc9091e45e2f13ebc525abd388ce50c4d",
+  "fit_report_sha256": "554890b0f164d711594b859d7fcef2f86259d7b81e50bb8bb68caaae840f1c02",
+  "parts": {
+    "01-power-saddle.stl": {
+      "body": "D2_POWER_SADDLE",
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "crop_desk_mm": null,
+      "closed_shells": 1,
+      "size_xyz_mm": [
+        11.2,
+        89.79,
+        18.7
+      ],
+      "volume_mm3": 2066.861,
+      "baseline_volume_mm3": 3111.244,
+      "identical_d26_stl": false,
+      "sha256": "4b1b940fc21ad843a2963a5a2cdc0a1ed4b77e033bb95e4a73a905989f6512fb"
+    },
+    "02-flat-rear-panel.stl": {
+      "body": "D26_PROFILED_IO_PLATE",
+      "rotation_xyz_deg": [
+        -90,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        163.2,
+        32.5,
+        2.6
+      ],
+      "volume_mm3": 10981.663,
+      "closed_shells": 1,
+      "crop_desk_mm": null,
+      "bed_contact_area_at_z_0_1_mm2": 4833.82,
+      "sample_layer_height_mm": 0.1,
+      "unsupported_new_islands": [],
+      "sha256": "37944523e33fff7563e0741044d43aaa1b96849fa6ec029864daa712f50a0005",
+      "bed_face": {
+        "side": "exterior",
+        "desk_y_mm": 57.36,
+        "outward_normal_print": [
+          0,
+          0,
+          -1
+        ],
+        "print_xy": "desk X and +Z, translated onto bed",
+        "area_of_CAD_exterior_mm2": 4833.82,
+        "area_of_downward_STL_triangles_at_Z0_mm2": 4833.82,
+        "islands_on_first_section": 1,
+        "openings_on_first_section": 8,
+        "first_to_largest_layer_area_ratio": 1.0
+      },
+      "baseline_volume_mm3": 10981.663,
+      "identical_d26_stl": true
+    },
+    "03-monolithic-base.stl": {
+      "body": "D2_MONO_BASE",
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "crop_desk_mm": null,
+      "closed_shells": 1,
+      "size_xyz_mm": [
+        170.0,
+        119.91,
+        37.6
+      ],
+      "volume_mm3": 87864.527,
+      "baseline_volume_mm3": 87868.008,
+      "identical_d26_stl": false,
+      "sha256": "a7f014434e45497cd436a746edfe3636a126674226fa38cc5bfb393eef2ac0bb"
+    },
+    "04-vented-lid.stl": {
+      "body": "D2_TOP_COVER",
+      "rotation_xyz_deg": [
+        180,
+        0,
+        0
+      ],
+      "crop_desk_mm": null,
+      "closed_shells": 1,
+      "size_xyz_mm": [
+        170.0,
+        119.91,
+        20.45
+      ],
+      "volume_mm3": 45198.009,
+      "baseline_volume_mm3": 46668.99,
+      "identical_d26_stl": false,
+      "sha256": "167e8c7c86581a488589252c956dca6dca5eb2dee7993a056557ab3c34f69400"
+    },
+    "05-front-blank.stl": {
+      "body": "D2_FRONT_BLANK",
+      "rotation_xyz_deg": [
+        -90,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        10.099,
+        20.5,
+        9.72
+      ],
+      "volume_mm3": 719.98,
+      "closed_shells": 1,
+      "crop_desk_mm": null,
+      "bed_contact_area_at_z_0_1_mm2": 164.84,
+      "sample_layer_height_mm": 0.2,
+      "unsupported_new_islands": [],
+      "sha256": "7922c67bb8f6e4007ad3b858fad922fb646601dbfa01efe2ab68f50b38727e2e",
+      "baseline_volume_mm3": 719.98,
+      "identical_d26_stl": true
+    },
+    "06-board-datum-strip.stl": {
+      "body": "D2_MONO_BASE",
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "crop_desk_mm": [
+        [
+          -57.4,
+          -39.75,
+          5.95
+        ],
+        [
+          53.35,
+          -27.6,
+          14.9
+        ]
+      ],
+      "closed_shells": 1,
+      "size_xyz_mm": [
+        110.75,
+        12.15,
+        8.0
+      ],
+      "volume_mm3": 3000.642,
+      "baseline_volume_mm3": 3004.144,
+      "identical_d26_stl": false,
+      "sha256": "775426b779a805c2dd899561ab0737bc00b9df4d3a80cdeba0e41d9226bd9d93"
+    },
+    "07-side-guide-sample.stl": {
+      "body": "D2_MONO_BASE",
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "size_xyz_mm": [
+        19.0,
+        10.41,
+        37.6
+      ],
+      "volume_mm3": 2257.265,
+      "closed_shells": 1,
+      "crop_desk_mm": [
+        [
+          -92.54,
+          48.0,
+          5.95
+        ],
+        [
+          -73.5,
+          58.54,
+          43.62
+        ]
+      ],
+      "bed_contact_area_at_z_0_1_mm2": 193.34,
+      "sample_layer_height_mm": 0.2,
+      "unsupported_new_islands": [],
+      "sha256": "3ffe8d9ebb7e555bf582e604a8ccda6d81d71a94c7fda2258a0ed450c8da2d5d",
+      "baseline_volume_mm3": 2257.265,
+      "identical_d26_stl": true
+    },
+    "08-lid-stop-sample.stl": {
+      "body": "D2_TOP_COVER",
+      "rotation_xyz_deg": [
+        180,
+        0,
+        0
+      ],
+      "crop_desk_mm": [
+        [
+          -92.54,
+          48.0,
+          40.95
+        ],
+        [
+          -73.5,
+          58.54,
+          46.05
+        ]
+      ],
+      "closed_shells": 1,
+      "size_xyz_mm": [
+        19.0,
+        10.41,
+        5.05
+      ],
+      "volume_mm3": 592.725,
+      "baseline_volume_mm3": 646.069,
+      "identical_d26_stl": false,
+      "sha256": "58aeb461eb7ac18716aee6ca3a4238b4a78ec52ad16d7950ac5be84bd5136023"
+    }
+  }
+}

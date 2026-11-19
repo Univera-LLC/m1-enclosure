@@ -25,7 +25,11 @@ if ($OutputPath) { $runPath = $ExecutionContext.SessionState.Path.GetUnresolvedP
 elseif ($Task -eq 'build') {
     $runPath = Join-Path $PSScriptRoot ('build/' + $project.revision.ToLowerInvariant() + '-' + [DateTime]::UtcNow.ToString('yyyyMMddTHHmmssfffffffZ'))
 }
-if ($Task -eq 'build') { $cadArgs += @('--output', $runPath) }
+if ($Task -eq 'build') {
+    $baselinePath = if ($project.revision -eq 'D2.7') { Join-Path $runPath 'baseline' } else { $runPath }
+    if (Test-Path -LiteralPath $runPath) { throw 'Choose a new build output directory.' }
+    $cadArgs += @('--output', $baselinePath)
+}
 if ($OutputPath -and $Task -ne 'build') { throw '-OutputPath applies to build.' }
 if (($InputsPath -or $Assembly) -and $Task -ne 'build' -and !($Task -eq 'doctor' -and $ToolProfile -eq 'cad')) { throw 'Reference inputs apply to build or doctor -Profile cad.' }
 
@@ -61,7 +65,15 @@ try {
             $node = Get-ViewerNode
             & $uv run --locked python tools/cad_build.py @cadArgs
             if ($LASTEXITCODE) { exit $LASTEXITCODE }
-            $generated = Join-Path $runPath "workspace/$($project.cad)"
+            $nativeReceipt = 'verified.json'
+            if ($project.revision -eq 'D2.7') {
+                $generated = Join-Path $runPath 'cad'
+                & $uv run --locked python "$($project.cad)/build_d27.py" --baseline $baselinePath --output $generated
+                if ($LASTEXITCODE) { exit $LASTEXITCODE }
+                $nativeReceipt = 'cad/verified.json'
+            } else {
+                $generated = Join-Path $runPath "workspace/$($project.cad)"
+            }
             $packed = Join-Path $runPath 'packed'
             $site = Join-Path $runPath 'viewer'
             & $uv run --locked python "$($project.viewer)/pack_model.py" --cad-dir $generated --output $packed
@@ -70,7 +82,7 @@ try {
             if ($LASTEXITCODE) { exit $LASTEXITCODE }
             & $node "$($project.viewer)/browser.mjs" --engineering $site
             if ($LASTEXITCODE) { exit $LASTEXITCODE }
-            [ordered]@{revision=$project.revision; digital='passed'; physical='NOT TESTED'; native='verified.json'; viewer='viewer/'} |
+            [ordered]@{revision=$project.revision; digital='passed'; physical='NOT TESTED'; native=$nativeReceipt; viewer='viewer/'} |
                 ConvertTo-Json | Set-Content -LiteralPath (Join-Path $runPath 'candidate.json') -Encoding utf8NoBOM
             Write-Output "Verified rebuilt CAD, print kits and browser candidate: $runPath"
         }

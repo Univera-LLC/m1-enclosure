@@ -1,0 +1,9 @@
+Mac mini M1 · Enclosure Lab · FDM D2.7 · Univera LLC
+
+D2.7 replaces the Mac board locating collars with flat seating rings and simplifies the two-pin carrier for CMTPD and Mini-560. The D2.6 rear panel, front blank and side guide sample are unchanged. The kit is for unpowered fitting; physical assembly, powered use, cooling, button operation and wireless performance remain unverified. Print only the supplied STLs. The STEP and SolidCraft files are editable CAD, and the board GLB is a spatial reference.
+
+Logic board, heatsink and antenna reference source: Quinn Nelson / SnazzyLabs, “Shrink the M1 Mac mini!”, Printables 139893, https://www.printables.com/model/139893-shrink-the-m1-mac-mini . Creative Commons Attribution Noncommercial (CC BY-NC; version not specified in the source metadata). D2.7 reuses the D2.6 reference derived from component 20, with photo-informed port geometry. It does not represent measured Apple production geometry. The detached accessory studies use components 11, 12, 13 and 14 as references. Preserve upstream credit and noncommercial terms. Owner photographs and Apple images are not distributed with the kits.
+
+Connector dimensions and plug examples: USB Implementers Forum, HDMI Licensing, IEC/FCC, and drawings from Same Sky, Lumberg, PIC Wire & Cable and VPI. Power modules: Radio Construct / Rozetka, CMTPD 483069554 and Mini-560 398197737. The plastic carrier works with modeled board and solder envelopes; verify the actual modules. The separate PCB v1 comparison is credited to Yulii Maievskyi. The viewer uses Three.js under the MIT license.
+
+See LICENSE and THIRD_PARTY.md for the project license and separate third-party terms.

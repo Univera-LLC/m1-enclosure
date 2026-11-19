@@ -6,13 +6,13 @@
 
 - [Project overview and first print](README.md)
 - [Revision selector](project.json): JSON with the active CAD, viewer, first-fit archive and published manifest paths. Resolve these paths from the repository root.
-- [Frozen release receipt](release/d2.6-manifest.json): SHA-256 hashes for the published D2.6 files.
+- [Current release receipt](release/d2.7-manifest.json): SHA-256 hashes for the published D2.7 files. The [D2.6 receipt](release/d2.6-manifest.json) covers the previous release.
 - [Project license](LICENSE): conditions for noncommercial use of independently authored material.
 - [Third-party sources and rights](THIRD_PARTY.md): separate conditions for the board and other references.
 
 ## Working with this repository
 
-- [First-fit guide](docs/guides/first-fit.md): English instructions for checking printer scale, fitting D2.6 without power and reporting observations. The [original Ukrainian instructions](cad/solidcraft-m1/prototype-d26/FIT-FIRST.md) are included unchanged in the kits.
+- [First-fit guide](docs/guides/first-fit.md): English instructions for checking printer scale, fitting D2.7 without power and reporting observations. The [Ukrainian instructions](cad/solidcraft-m1/prototype-d27/FIT-FIRST.md) are included in both kits.
 - [CAD build](docs/CAD-BUILD.md): required external reference, pinned tools and build commands.
 - [Viewer](docs/VIEWER.md): local preview, downloads and browser checks.
 - [Contributing](CONTRIBUTING.md): reporting results and distinguishing source geometry, assumptions and physical measurements.

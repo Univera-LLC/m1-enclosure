@@ -1,0 +1,36 @@
+{
+  "revision": "D2.7",
+  "comparisons": 118,
+  "failures": [],
+  "source_board_axes_xy_mm": [
+    [
+      -52.0,
+      -34.35
+    ],
+    [
+      47.95,
+      -34.35
+    ]
+  ],
+  "ring_load_challenges": {
+    "1": {
+      "down_0_04_mm3": 0.92432,
+      "up_0_12_against_screw_mm3": 1.57616
+    },
+    "2": {
+      "down_0_04_mm3": 0.92432,
+      "up_0_12_against_screw_mm3": 1.57616
+    }
+  },
+  "unthreaded_anti_tip_gap_mm": 0.3,
+  "vent_areas_mm2": {
+    "floor": 1003.4,
+    "lid": 2075.41
+  },
+  "checks": {
+    "lid screw access": 96,
+    "Mac screw access after seating board": 12
+  },
+  "scope": "Registered board and unchanged two mounting axes; the profiled top of each locating collar is confirmed in the separate insertion report.",
+  "cad_report_sha256": "b0ef5a778919c972527981ed4183497bc9091e45e2f13ebc525abd388ce50c4d"
+}

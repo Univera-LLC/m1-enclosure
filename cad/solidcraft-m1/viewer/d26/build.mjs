@@ -5,13 +5,18 @@ import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {basename,dirname,join,resolve} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {parseArgs} from 'node:util';
-import {views,viewKeys,portViews,revision} from './catalog.js';
+import {views,viewKeys,portViews} from './catalog.js';
 const here=dirname(fileURLToPath(import.meta.url)), viewer=dirname(here), cad=dirname(viewer), root=resolve(cad,'../..');
-const {values:args}=parseArgs({options:{draft:{type:'boolean'},packed:{type:'string'},'cad-dir':{type:'string'},output:{type:'string'}}});
+const {values:args}=parseArgs({options:{draft:{type:'boolean'},packed:{type:'string'},'cad-dir':{type:'string'},output:{type:'string'},'release-page':{type:'boolean'}}});
 if(Boolean(args.packed)!==Boolean(args['cad-dir']))throw Error('Provide both --packed PATH and --cad-dir PATH (relative to the project root).');
 if(args.output&&!args.packed)throw Error('--output requires --packed and --cad-dir');
-const draft=args.draft, frozen=join(cad,'prototype-d26'), prototype=args.packed?resolve(root,args['cad-dir']):frozen;
-const packed=args.packed?resolve(root,args.packed):null, dst=args.output?resolve(root,args.output):join(root,draft?'build/d26-draft':packed?'build/d26-engineering-viewer':'build/d26-viewer');
+const project=JSON.parse(await readFile(join(root,'project.json'),'utf8'));
+const draft=args.draft, frozen=join(cad,'prototype-d26'), prototype=resolve(root,args['cad-dir']||project.cad);
+const cadReport=JSON.parse(await readFile(join(prototype,'cad-validation.json'),'utf8'));
+const revision=cadReport.revision;
+if(!['D2.6','D2.7'].includes(revision)||(!args.packed&&revision!==project.revision))throw Error('Unexpected CAD revision: '+revision);
+const newer=revision==='D2.7', slug=newer?'d27':'d26', versionDir=join(viewer,slug);
+const packed=args.packed?resolve(root,args.packed):null, dst=args.output?resolve(root,args.output):join(root,'build',slug+(draft?'-draft':packed?'-engineering-viewer':'-viewer'));
 await mkdir(dirname(dst),{recursive:true});await mkdir(dst,{recursive:!packed});
 const study=join(cad,'prototype-d2','photo-study');
 async function releaseInput(path,encoding){try{return await readFile(path,encoding);}catch(err){if(draft&&err.code==='ENOENT')return null;throw err;}}
@@ -21,21 +26,20 @@ async function assembly(){
   // The geometry hash check below also applies to a newly packed CAD build.
   const html=await readFile(join(prototype,'review/index.html'),'utf8');
   const bytes=html.match(/<script id="model-bytes" type="application\/octet-stream">([A-Za-z0-9+/=]+)<\/script>/);
-  if(!bytes)throw Error('Missing embedded assembly in the published D2.6 atlas.');
+  if(!bytes)throw Error('Missing embedded assembly in the published '+revision+' atlas.');
   return gunzipSync(Buffer.from(bytes[1],'base64'));
 }
 const [glb,template,css,license,oldContent,bundled]=await Promise.all([
   assembly(),readFile(join(here,'page.html'),'utf8'),Promise.all([readFile(join(viewer,'d1/style.css'),'utf8'),readFile(join(here,'style.css'),'utf8')]).then(parts=>parts.join('\n')),
   readFile(join(viewer,'node_modules/three/LICENSE'),'utf8'),readFile(join(viewer,'content.json'),'utf8'),
-  build({entryPoints:[join(here,'app.js')],bundle:true,write:false,format:'iife',target:['es2020'],minify:true,legalComments:'inline'})]);
+  build({entryPoints:[join(here,'app.js')],define:{__FDM_REVISION__:JSON.stringify(revision)},bundle:true,write:false,format:'iife',target:['es2020'],minify:true,legalComments:'inline'})]);
 const poster={};
 for(const key of [...viewKeys,'board-back','panel-back','rear-lid','rear-feed','rear-clear','rear-open',...Object.keys(portViews).filter(k=>k!=='all').map(k=>'rear-'+k)]){
-  const data=await releaseInput(join(here,'posters',key+'.webp'));
+  const data=await releaseInput(join(versionDir,'posters',key+'.webp'));
   poster[key]=data?'data:image/webp;base64,'+data.toString('base64'):'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 1"%3E%3C/svg%3E'.replaceAll('"','%22');
 }
 const tabs=viewKeys.map((k,i)=>'<a href="?view='+k+'" data-view="'+k+'"'+(!i?' aria-current="page"':'')+'><svg aria-hidden="true"><use href="#i-'+views[k].icon+'"/></svg>'+views[k].tab+'</a>').join('');
-const cadReport=JSON.parse(await readFile(join(prototype,'cad-validation.json'),'utf8'));
-const verified=JSON.parse(await readFile(join(packed||here,'geometry-check.json'),'utf8'));
+const verified=JSON.parse(await readFile(join(packed||versionDir,'geometry-check.json'),'utf8'));
 if(verified.revision!==revision||verified.rear_panel?.openings.length!==8||createHash('sha256').update(glb).digest('hex')!==verified.sha256){throw Error('Viewer needs the verified '+revision+' panel and the current packed assembly');}
 const mount=verified.rear_panel.mount;
 if(mount?.axis?.join(',')!=='0,0,1'||!(mount.travel_mm>30)||verified.rear_panel.print_face!=='exterior')throw Error('CAD must verify top entry, vertical release and the exterior print face');
@@ -43,7 +47,9 @@ if(!draft&&!verified.owner_topside)throw Error('No evidence for the photo-based 
 const boxes=Object.values(cadReport.bodies).map(b=>b.bbox);
 const mm=new Intl.NumberFormat('uk-UA',{maximumFractionDigits:2});
 const dimensions=[0,1,2].map(i=>mm.format(Math.max(...boxes.map(b=>b.max[i]))-Math.min(...boxes.map(b=>b.min[i])))).join(' <i>×</i> ');
-const release=JSON.parse(await readFile(join(here,'downloads.json'),'utf8'));
+const baselineLinks=JSON.parse(await readFile(join(here,'downloads.json'),'utf8'));
+const release={revision,...Object.fromEntries(['kits','step','stl','native'].map(k=>[k,Object.fromEntries(
+  Object.entries(baselineLinks[k]).map(([file,label])=>[newer?file.replace(/^d2\.6-/,'d2.7-').replace(/^d26-/,'d27-'):file,label]))]))};
 const stls=JSON.parse(await readFile(join(prototype,'print/stl-checks.json'),'utf8'));
 if(release.revision!==revision||stls.revision!==revision)throw Error('Download catalog does not match '+revision);
 if(!draft){
@@ -125,7 +131,7 @@ for(const [name,sha] of Object.entries(verified.reports_sha256)){
 const lengths=new Intl.NumberFormat('uk-UA',{minimumFractionDigits:2,maximumFractionDigits:2}),L=n=>lengths.format(n);
 const mac=service.board_install_xyz_mm,pd=[...service.pd_remove_xyz_mm].reverse();
 const pathFacts=(points)=>points.map(p=>'('+p.map(n=>mm.format(n)).join('; ')+')').join(' → ');
-const offsets='<p><b>Панель.</b> Опустіть згори в пази порожнього шасі. На останніх '+mm.format(service.panel_remove_xyz_mm[1][2])+' мм опускання клини зміщують її на '+mm.format(Math.abs(service.panel_remove_xyz_mm[1][1]))+' мм до задніх упорів. За відкритої кришки під час заведення плат притримуйте обидва верхні кути біля цих упорів.</p><p><b>Плата Mac.</b> Після встановлення панелі опустіть плату перед опорами, підведіть торці гнізд до вузьких отворів і посадіть монтажні кільця. Зсуви від кінцевої посадки (X; Y; Z), мм: '+pathFacts(mac)+'.</p><p><b>PD і Mini‑560.</b> Обидва модулі спочатку ставлять у тримач. Установлення вузла з уже закріпленою платою Mac, мм: '+pathFacts(pd)+'. Для зняття пройдіть точки у зворотному порядку. Це положення CAD; реальні деталі ще не приміряли.</p>';
+const offsets='<p><b>Панель.</b> Опустіть згори в пази порожнього шасі. На останніх '+mm.format(service.panel_remove_xyz_mm[1][2])+' мм опускання клини зміщують її на '+mm.format(Math.abs(service.panel_remove_xyz_mm[1][1]))+' мм до задніх упорів. За відкритої кришки під час заведення плат притримуйте обидва верхні кути біля цих упорів.</p><p><b>Плата Mac.</b> Після встановлення панелі опустіть плату перед опорами, підведіть торці гнізд до вузьких отворів і посадіть монтажні кільця. '+(newer?'На плоских опорах виставте плату по портах перед затягуванням. ':'')+'Зсуви від кінцевої посадки (X; Y; Z), мм: '+pathFacts(mac)+'.</p><p><b>PD і Mini‑560.</b> Обидва модулі спочатку ставлять у тримач. Установлення вузла з уже закріпленою платою Mac, мм: '+pathFacts(pd)+'. Для зняття пройдіть точки у зворотному порядку. Це положення CAD; повну фізичну посадку не підтверджено.</p>';
 const ports={A1:'USB‑A 1',A2:'USB‑A 2',HDMI:'HDMI',TB1:'TB / USB‑C 1',TB2:'TB / USB‑C 2',audio:'Аудіо',RJ:'Ethernet',PD:'PD IN'};
 const rows=fit.ports.map(o=>{
   if(!Object.hasOwn(ports,o.id)||!(o.skin_mm>0&&o.axial_clearance_mm>0)||Math.abs(o.skin_mm+o.axial_clearance_mm-o.recess_mm)>.008||!o.probes?.masked_bezel?.with_panel_removed||!o.probes?.open_to_back)throw Error('Missing recessed mask geometry: '+o.id);
@@ -173,21 +179,31 @@ const slots={REV:revision,PANEL_BACK:poster['panel-back'],MIN_WEB_NOTE:webNote,W
 slots.TB_NOTE=tbNote;
 slots.PD_NOTE=pdNote;
 slots.TB_COMPARISON='data:image/svg+xml;base64,'+comparison.toString('base64');slots.COMP_WIDTH=compBox[2];slots.COMP_HEIGHT=compBox[3];
+slots.INTRO=newer?'Плоскі опори плати й простіший тримач живлення на двох штифтах. Задня панель від D2.6.':'Потовщена панель D2.6 ховає рамки обох USB‑A й аудіо у спільну Т-кишеню.';
+slots.KIT_NOTE=newer?'Оновлені 01, 03, 04, 06 та 08 беріть з D2.7. Панель 02, заглушка 05 та зразок 07 збігаються з D2.6.':'Напрямні 03/04 і тримач 01 змінено; з D2.5 сумісна лише заглушка 05.';
+slots.CAD_FOLDER='prototype-'+slug;
+slots.SOCIAL_IMAGE=newer?'d27-mounts.webp':'enclosure-lab.jpg';
+slots.ASSEMBLY_IMAGE=newer?'d27-mounts.webp':'d26-rear-assembly.jpg';
+slots.ASSEMBLY_IMAGE_LABEL=newer?'Опори й тримач: до і після':'Схема складання';
+slots.ARCHIVE=newer?'<a data-archive href="d2.6/?view=rear">D2.6 ↗</a> · ':'';
+slots.CHANGES=newer?'<figure class="panel-interior"><a href="d27-mounts.webp"><img loading="lazy" src="d27-mounts.webp" width="1580" height="1000" alt="D2.6 поруч із D2.7: плоска опора Mac і вузький тримач на двох штифтах."></a><figcaption>Опори плати без буртиків, вузький тримач на тих самих штифтах. <a href="?view=power#stage">Вузол живлення в 3D ↗</a></figcaption></figure>':'';
+slots.EXPERIMENT=newer?'<p><a href="redline/">Експеримент Redline R2 ↗</a></p>':'<!-- PAGES_EXPERIMENT -->';
 let html=template.replace(/__([A-Z_]+)__/g,(_,k)=>{if(!Object.hasOwn(slots,k))throw Error('Unknown template slot: '+k);return slots[k];});
-if(packed)html=html.replace('<body>','<body><aside style="padding:.75rem;background:#fff1c2;color:#352a09;text-align:center">Інженерна збірка: 3D і файли з поточного CAD. Статичні ілюстрації та фото-орієнтири — з опублікованої D2.6. Фізична примірка не підтверджена.</aside>');
+if(packed&&!args['release-page'])html=html.replace('<body>','<body><aside style="padding:.75rem;background:#fff1c2;color:#352a09;text-align:center">Інженерна збірка: 3D і файли з поточного CAD. Фізична примірка не підтверджена.</aside>');
 html=html.replace('</head>',()=>'<!-- Three.js MIT licence\n'+license+'\n-->\n</head>');
 // Use the same bytes offline that GitHub Pages publishes from the Git blob.
 html=html.replace(/\r\n/g,'\n');
 if(/(?:[A-Za-z]:[\\/]Users[\\/]|file:\/\/\/)/i.test(html))throw Error('Local path in public bundle');
 const out=join(dst,'index.html');await writeFile(out,html);
 if(!draft){
-  for(const name of ['d26-preview.jpg','d26-rear-assembly.jpg'])await writeFile(join(dst,name),await readFile(join(frozen,'review',name)));
+  if(newer)await writeFile(join(dst,'d27-mounts.webp'),await readFile(join(root,'docs/assets/d27-mounts.webp')));
+  else for(const name of ['d26-preview.jpg','d26-rear-assembly.jpg'])await writeFile(join(dst,name),await readFile(join(frozen,'review',name)));
   if(packed){
     // Copy the report/assembly notes linked by the page from the selected CAD run.
     for(const name of ['FIT-FIRST.md','CREDITS.txt','ports-fit.json','reference-crosscheck.json','fascia-contract.json','cad-validation.json','fit-validation.json','power-fit.json','board-install-fit.json','print/stl-checks.json','print/slice-checks.json'])
       await writeFile(join(dst,downloadDir,name),await readFile(join(prototype,name)));
-    await writeFile(join(dst,'engineering-check.json'),JSON.stringify({revision,source_reports:verified.reports_sha256,
-      model_sha256:verified.sha256,ports:verified.port_fit.ports,download_sha256:downloadHashes},null,2)+'\n');
   }
 }
+if(packed)await writeFile(join(dst,'engineering-check.json'),JSON.stringify({revision,source_reports:verified.reports_sha256,
+  model_sha256:verified.sha256,ports:verified.port_fit.ports,download_sha256:downloadHashes},null,2)+'\n');
 console.log((draft?'Draft':'Review')+' '+out+' · '+Buffer.byteLength(html)+' bytes · '+createHash('sha256').update(html).digest('hex'));

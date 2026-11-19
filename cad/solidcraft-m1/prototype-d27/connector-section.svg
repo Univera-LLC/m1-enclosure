@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="930" height="610" viewBox="0 0 930 610" role="img" aria-labelledby="d26secTitle d26secDesc">
+<title id="d26secTitle">D2.6: справжній розріз через капсулу Thunderbolt (потовщена стінка 0,90 мм)</title>
+<desc id="d26secDesc">Пластик перекриває широкий чорний обідок стінкою 0,90 мм (сумарний відступ 1,01 мм — як у заводській кришці Apple ~1,0 мм), а задній спільний паз TB поглиблено до Y=55,56 мм.</desc>
+<defs><style>text{font-family:'Segoe UI',Arial,sans-serif;fill:#20392e}.ey{font-size:12px;font-weight:650;letter-spacing:1.3px}.head{font-size:29px;font-weight:650}.sub{font-size:15px}.lab{font-size:16px;font-weight:650}.tiny{font-size:13px}</style>
+<pattern id="d26hatch" width="7" height="7" patternUnits="userSpaceOnUse"><rect width="7" height="7" fill="#e6c28b"/><path d="M-1 1 1-1 M0 7 7 0 M6 8 8 6" stroke="#bd965f" stroke-width="1"/></pattern>
+<clipPath id="d26clip"><rect x="33" y="130" width="477" height="324" rx="5"/></clipPath></defs>
+<rect width="930" height="610" rx="12" fill="#f9f9f3"/>
+<text x="27" y="30" class="ey" text-anchor="start">D2.6   /   ПОТОВЩЕНА ЗАДНЯ ПАНЕЛЬ (+0,60 ММ)   /   РОЗРІЗ ЧЕРЕЗ THUNDERBOLT 1</text>
+<text x="27" y="69" class="head" text-anchor="start">Міцна стінка 0,90 мм перед TB — рівень заводської Apple</text>
+<text x="27" y="95" class="sub" text-anchor="start">Розріз друкованої панелі 02 (поле 2,60 мм) і оновленої моделі плати. Кабель заходить праворуч.</text>
+<path d="M27 111H903" stroke="#acbcb1"/><rect x="27" y="123" width="489" height="338" rx="8" fill="#edf1e8"/>
+<g clip-path="url(#d26clip)">
+<path d="M223.25,466.66 L223.25,456.44 L223.25,455.65 L223.25,446.53 L223.25,415.10 L249.91,415.10 L276.57,415.10 L276.57,381.38 L276.57,381.38 L276.57,381.25 L276.57,381.23 L276.57,380.95 L276.57,380.93 L276.57,361.78 L274.85,361.78 L273.13,361.78 L273.13,358.34 L273.13,354.90 L248.19,354.90 L223.25,354.90 L223.25,329.38 L223.25,328.45 L223.25,327.58 L223.25,326.23 L223.25,325.19 L223.25,323.94 L223.25,322.20 L223.25,321.00 L223.25,319.18 L223.25,316.84 L223.25,315.45 L223.25,314.14 L223.25,313.41 L232.93,313.41 L242.60,313.41 L242.86,313.41 L243.18,313.41 L243.58,313.41 L243.82,313.41 L244.13,313.41 L248.19,313.41 L248.19,310.61 L248.19,307.85 L248.19,306.93 L248.19,304.19 L248.19,301.93 L248.19,299.00 L248.19,296.07 L248.19,293.81 L248.19,291.07 L248.19,290.15 L248.19,287.39 L248.19,284.59 L244.13,284.59 L243.82,284.59 L243.58,284.59 L243.18,284.59 L242.86,284.59 L242.60,284.59 L232.93,284.59 L223.25,284.59 L223.25,283.86 L223.25,283.13 L223.25,278.57 L223.25,273.89 L223.25,268.80 L223.25,266.25 L223.25,263.98 L223.25,263.25 L223.25,261.65 L223.25,259.67 L223.25,258.57 L223.25,257.68 L223.25,257.17 L223.25,256.37 L223.25,256.05 L223.25,243.10 L248.19,243.10 L273.13,243.10 L273.13,239.66 L273.13,236.22 L274.85,236.22 L276.57,236.22 L276.57,217.07 L276.57,217.05 L276.57,216.77 L276.57,216.75 L276.57,216.62 L276.57,216.62 L276.57,182.90 L230.13,182.90 L183.69,182.90 L180.68,182.90 L177.67,182.90 L177.67,185.28 L177.67,187.03 L177.67,187.75 L177.67,189.65 L177.67,191.50 L38.35,191.50 L38.35,481.75 L223.25,481.75 Z" fill="#475c52" stroke="#34473c" stroke-width="1" fill-rule="evenodd"/>
+<path d="M320.00,116.25 L208.20,116.25 L208.20,118.96 L208.20,122.11 L208.20,127.00 L234.91,127.00 L242.60,127.00 L242.60,144.22 L242.60,159.25 L261.95,159.25 L281.30,159.25 L281.30,203.34 L281.30,228.05 L300.65,228.05 L320.00,228.05 Z M320.00,472.57 L320.00,424.49 L320.00,421.88 L320.00,393.77 L320.00,369.95 L300.65,369.95 L281.30,369.95 L281.30,394.66 L281.30,438.75 L261.95,438.75 L242.60,438.75 L242.60,475.82 L242.60,481.75 L320.00,481.75 Z" fill="url(#d26hatch)" stroke="#9a784a" stroke-width="1" fill-rule="evenodd"/>
+<rect x="226.69" y="246.75" width="101.48" height="6.88" fill="#9fbeb3" stroke="#506e63" stroke-width="1"/><rect x="226.69" y="344.37" width="101.48" height="6.88" fill="#9fbeb3" stroke="#506e63" stroke-width="1"/><path d="M328.17 148.50 h79 q16 0 16 17 v267 q0 17 -16 17 h-79 Z" fill="#c7ddcf" stroke="#6d8b7c" stroke-width="1.5"/><path d="M423.17 299 h110" fill="none" stroke="#a5bfb1" stroke-width="30"/>
+<path d="M320,120 V461" stroke="#197b56" stroke-width="1.5" stroke-dasharray="5 4"/>
+<path d="M52,299 H493" stroke="#64796d" stroke-width=".8" stroke-dasharray="4 5" opacity=".75"/>
+<path d="M260.57 202.25 H328.00" stroke="#a1412d" stroke-width="1.6" stroke-dasharray="3 2"/>
+</g>
+<text x="43" y="145" class="ey" text-anchor="start">УСЕРЕДИНІ</text><text x="499" y="145" class="ey" text-anchor="end">ЗОВНІ</text>
+<text x="541" y="150" class="lab" text-anchor="start">Пластик — штрихування</text>
+<text x="541" y="174" class="tiny" text-anchor="start">Капсула 9,10 × 3,30 мм; стінка перед TB — 0,90 мм.</text>
+<text x="541" y="194" class="tiny" text-anchor="start">Спільний паз TB поглиблено до Y = 55,56 мм</text>
+<text x="541" y="214" class="tiny" text-anchor="start">(стінка 1,80 мм; суцільне поле — 2,60 мм).</text>
+<text x="541" y="253" class="lab" text-anchor="start">Гніздо й екран — темно-зеленим</text>
+<text x="541" y="277" class="tiny" text-anchor="start">Широка рамка TB заходить у глибоку кишеню,</text>
+<text x="541" y="297" class="tiny" text-anchor="start">а задній екран (Y = 55,11) має +0,45 мм запасу.</text>
+<text x="541" y="317" class="tiny" text-anchor="start">Номінальне повітря перед TB: 0,11 мм.</text>
+<text x="541" y="355" class="lab" text-anchor="start">Кабель — світло-зеленим, приклад</text>
+<text x="541" y="379" class="tiny" text-anchor="start">За шийки 1,20 мм широке плече лишається</text>
+<text x="541" y="399" class="tiny" text-anchor="start">на 0,19 мм перед лицем. Заводський Apple має</text>
+<text x="541" y="419" class="tiny" text-anchor="start">~1,0 мм стінку — стандартні TB-кабелі стають штатно.</text>
+<path d="M27 476H903" stroke="#acbcb1"/>
+<text x="27" y="500" class="ey" text-anchor="start">ЗБІЛЬШЕНО ВЗДОВЖ ОСІ   /   ЧЕРВОНИЙ ШТРИХ НА РОЗРІЗІ</text>
+<rect x="51" y="520" width="99.00" height="20" fill="#475c52"/>
+<rect x="150" y="520" width="19.80" height="20" fill="#f9f9f3" stroke="#96a89b"/>
+<rect x="169.80" y="520" width="162.00" height="20" fill="url(#d26hatch)" stroke="#9a784a"/>
+<path d="M331.80 511v39" stroke="#197b56" stroke-width="1.6" stroke-dasharray="4 3"/>
+<text x="51" y="560" class="tiny" text-anchor="start">Рамка</text><text x="142" y="560" class="tiny" text-anchor="start">Повітря</text><text x="218" y="560" class="tiny" text-anchor="start">Пластик 0,90 мм</text>
+<text x="368" y="530" class="lab" text-anchor="start">Торець TB → лице: 0,11 + 0,90 = 1,01 мм</text>
+<text x="368" y="552" class="tiny" text-anchor="start">Номінали CAD (9 шарів по 0,10 мм); перевіряється приміркою.</text>
+<text x="27" y="588" class="tiny" text-anchor="start">Базис: X = −19,05 мм, фасад Y = 57,36 мм. Фізичний друк D2.6 ще не виконано й не прийнято.</text>
+</svg>

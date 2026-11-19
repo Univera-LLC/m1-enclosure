@@ -1,0 +1,201 @@
+{
+  "revision": "D2.7",
+  "physical_status": "NOT TESTED",
+  "cad_report_sha256": "b0ef5a778919c972527981ed4183497bc9091e45e2f13ebc525abd388ce50c4d",
+  "fit_report_sha256": "554890b0f164d711594b859d7fcef2f86259d7b81e50bb8bb68caaae840f1c02",
+  "presets": {
+    "printer": "Creality Ender-3 Pro (0.4 mm nozzle)",
+    "print": "0.20 mm NORMAL (0.4 mm nozzle) @CREALITY",
+    "filament": "Generic PETG @CREALITY"
+  },
+  "vendor_ini_sha256": "79992570253bcde938819785e9c5fa7226b88f74188b3efa11c6e2d556a74040",
+  "panel_layer_height_mm": 0.1,
+  "panel_first_layer_height_mm": 0.1,
+  "scope": "Five updated STLs sliced at 0.20 mm; three exact D2.6 STLs retain their verified slices. No supports.",
+  "parts": {
+    "01-power-saddle.stl": {
+      "layers": 94,
+      "first_last_z_mm": [
+        0.2,
+        18.8
+      ],
+      "types": [
+        "Bridge infill",
+        "Custom",
+        "External perimeter",
+        "Internal infill",
+        "Perimeter",
+        "Solid infill",
+        "Top solid infill"
+      ],
+      "seam_position": "nearest",
+      "perimeter_generator": "arachne",
+      "bridge_regions": 3,
+      "warnings": [],
+      "toolpath_sha256": "20f972096f0142c9062c1a6f25053cb593f01f90621e0f3184358b3643a0980a",
+      "input_sha256": "4b1b940fc21ad843a2963a5a2cdc0a1ed4b77e033bb95e4a73a905989f6512fb",
+      "reused_d26_toolpath_check": false
+    },
+    "02-flat-rear-panel.stl": {
+      "layers": 26,
+      "first_last_z_mm": [
+        0.1,
+        2.6
+      ],
+      "types": [
+        "Custom",
+        "External perimeter",
+        "Gap fill",
+        "Internal infill",
+        "Perimeter",
+        "Solid infill",
+        "Top solid infill"
+      ],
+      "seam_position": "nearest",
+      "perimeter_generator": "classic",
+      "bridge_regions": 0,
+      "warnings": [],
+      "toolpath_sha256": "5c4c42f40ed96b4b45f3313b58e60bb074cb6b0a3c1767839b9022f9f22ef6cb",
+      "input_sha256": "37944523e33fff7563e0741044d43aaa1b96849fa6ec029864daa712f50a0005",
+      "reused_d26_toolpath_check": true
+    },
+    "03-monolithic-base.stl": {
+      "layers": 188,
+      "first_last_z_mm": [
+        0.2,
+        37.6
+      ],
+      "types": [
+        "Bridge infill",
+        "Custom",
+        "External perimeter",
+        "Internal infill",
+        "Perimeter",
+        "Solid infill",
+        "Top solid infill"
+      ],
+      "seam_position": "nearest",
+      "perimeter_generator": "arachne",
+      "bridge_regions": 17,
+      "warnings": [],
+      "toolpath_sha256": "ecb0c0e6d9e8dc2d5ceddfa17d035009d94b886aa6e302e757ad1971a6a42667",
+      "input_sha256": "a7f014434e45497cd436a746edfe3636a126674226fa38cc5bfb393eef2ac0bb",
+      "reused_d26_toolpath_check": false
+    },
+    "04-vented-lid.stl": {
+      "layers": 102,
+      "first_last_z_mm": [
+        0.2,
+        20.4
+      ],
+      "types": [
+        "Bridge infill",
+        "Custom",
+        "External perimeter",
+        "Internal infill",
+        "Perimeter",
+        "Solid infill",
+        "Top solid infill"
+      ],
+      "seam_position": "nearest",
+      "perimeter_generator": "arachne",
+      "bridge_regions": 1,
+      "warnings": [],
+      "toolpath_sha256": "b45151d526af7078b9f25e1244434e8a3fadc0872cd8c0186d97921ddbeb5ed1",
+      "input_sha256": "167e8c7c86581a488589252c956dca6dca5eb2dee7993a056557ab3c34f69400",
+      "reused_d26_toolpath_check": false
+    },
+    "05-front-blank.stl": {
+      "layers": 49,
+      "first_last_z_mm": [
+        0.2,
+        9.8
+      ],
+      "types": [
+        "Bridge infill",
+        "Custom",
+        "External perimeter",
+        "Internal infill",
+        "Perimeter",
+        "Solid infill",
+        "Top solid infill"
+      ],
+      "seam_position": "nearest",
+      "perimeter_generator": "arachne",
+      "bridge_regions": 1,
+      "warnings": [],
+      "toolpath_sha256": "7ae7756b659ea9978313720383c7f818f3d0858d53eab35eeeca67a7cee11348",
+      "input_sha256": "7922c67bb8f6e4007ad3b858fad922fb646601dbfa01efe2ab68f50b38727e2e",
+      "reused_d26_toolpath_check": true
+    },
+    "06-board-datum-strip.stl": {
+      "layers": 40,
+      "first_last_z_mm": [
+        0.2,
+        8.0
+      ],
+      "types": [
+        "Bridge infill",
+        "Custom",
+        "External perimeter",
+        "Internal infill",
+        "Perimeter",
+        "Solid infill",
+        "Top solid infill"
+      ],
+      "seam_position": "nearest",
+      "perimeter_generator": "arachne",
+      "bridge_regions": 3,
+      "warnings": [],
+      "toolpath_sha256": "8f8f884a49c66a402d393d9c97ddf7a4d74714210c2a6187b84d647507f68564",
+      "input_sha256": "775426b779a805c2dd899561ab0737bc00b9df4d3a80cdeba0e41d9226bd9d93",
+      "reused_d26_toolpath_check": false
+    },
+    "07-side-guide-sample.stl": {
+      "layers": 188,
+      "first_last_z_mm": [
+        0.2,
+        37.6
+      ],
+      "types": [
+        "Bridge infill",
+        "Custom",
+        "External perimeter",
+        "Internal infill",
+        "Perimeter",
+        "Solid infill",
+        "Top solid infill"
+      ],
+      "seam_position": "nearest",
+      "perimeter_generator": "arachne",
+      "bridge_regions": 2,
+      "warnings": [],
+      "toolpath_sha256": "8ec64cb95a732d07ef0fe0876f4a1754dc1a09db893fbb477a7f78ce18467f00",
+      "input_sha256": "3ffe8d9ebb7e555bf582e604a8ccda6d81d71a94c7fda2258a0ed450c8da2d5d",
+      "reused_d26_toolpath_check": true
+    },
+    "08-lid-stop-sample.stl": {
+      "layers": 25,
+      "first_last_z_mm": [
+        0.2,
+        5.0
+      ],
+      "types": [
+        "Bridge infill",
+        "Custom",
+        "External perimeter",
+        "Internal infill",
+        "Perimeter",
+        "Solid infill",
+        "Top solid infill"
+      ],
+      "seam_position": "nearest",
+      "perimeter_generator": "arachne",
+      "bridge_regions": 1,
+      "warnings": [],
+      "toolpath_sha256": "2dd21fa7f449484bfbdd179b1ff1d4f572676d78d3bb1123347d4305445e6054",
+      "input_sha256": "58aeb461eb7ac18716aee6ca3a4238b4a78ec52ad16d7950ac5be84bd5136023",
+      "reused_d26_toolpath_check": false
+    }
+  }
+}

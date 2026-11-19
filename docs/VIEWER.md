@@ -1,63 +1,49 @@
-# Preview and verify the D2.6 release
+# Preview and verify the enclosure release
 
-From the project root, run `python tools/verify_release.py`. This read-only check uses Python's standard library. It compares file bytes with the published receipt, checks the CAD and slicer report hashes, and opens both kits to compare every member against the individual release files. It does not run CAD or repeat slicing.
-
-The [manifest](../release/d2.6-manifest.json) separates 36 files from the original HTTPS check from 20 accessory assets taken from the same [Pages commit](https://github.com/Dvaderfun/mac-mini-m1-case-prototype/commit/bf7ed6792866e8523eaec3ae2603070908fee04c). `project.json` points to this published receipt even if a later working revision is under development. A passed check establishes digital identity; the recorded physical fit status is **NOT TESTED**.
+From the project root, run `python tools/verify_release.py`. It checks the active [D2.7 receipt](../release/d2.7-manifest.json), including the frozen viewer page, CAD readback, STL and slicing hashes, and the contents of both print kits. It uses Python's standard library and does not run CAD. For the previous release, run `python tools/verify_release.py --manifest release/d2.6-manifest.json`. Both releases are digital prototypes for unpowered fitting; passing these checks does not establish physical fit.
 
 ## Local viewer
 
 ```sh
 npm ci --prefix cad/solidcraft-m1/viewer
-npm --prefix cad/solidcraft-m1/viewer/d26 run preview
+./project.ps1 viewer
 ```
 
-Open http://127.0.0.1:8000/ in your browser. To use another port, append `-- --port 8001` to the preview command. Stop the server with Ctrl+C. On Windows, use `npm.cmd` if PowerShell blocks the npm script.
+Open http://127.0.0.1:8000/. To choose a different port, run `npm --prefix cad/solidcraft-m1/viewer/d26 run preview -- --port 8001`. Stop with Ctrl+C. On Windows, use `npm.cmd` if PowerShell blocks the npm script.
 
-The preview rebuilds the UI from its JavaScript, templates, styles and the verified model embedded in the published D2.6 HTML. It writes to `build/d26-viewer/`. The model, 14 downloads, accessory models and posters, and D2.5 archive viewer work offline. Earlier revision pages and old manufacturing downloads open the existing GitHub Pages site and require a connection. The preview only serves specified files and listens on loopback.
+The D2.7 and D2.6 viewers share the UI source in `viewer/d26/`; `project.json` selects the CAD and publication receipt. D2.7 has its own model evidence and fallback images. The local server listens on loopback and serves the built site. The D2.6 and D2.5 viewers, current downloads, and accessory atlas work offline once the dependencies are installed. Older manufacturing archives link to the original Pages site.
 
 ## Univera LLC GitHub Pages
 
-The [organization viewer](https://univera-llc.github.io/m1-enclosure/) uses the current UI source with the frozen D2.6 manufacturing files. To prepare the same static site in a **new** directory, install the dependencies above, then run:
+The [organization home](https://univera-llc.github.io/m1-enclosure/) shows D2.7. The [D2.6 archive](https://univera-llc.github.io/m1-enclosure/d2.6/) retains the earlier scene and versioned downloads. The [Redline R2 experiment](https://univera-llc.github.io/m1-enclosure/redline/) is a separate visual preview.
+
+To stage the same site in a **new** directory and test the Pages URL prefix:
 
 ```sh
 python tools/prepare_pages.py --output build/pages-artifact/m1-enclosure
 python -m http.server 8000 --bind 127.0.0.1 --directory build/pages-artifact
 ```
 
-Open **http://127.0.0.1:8000/m1-enclosure/**. To exercise this exact site, run `node cad/solidcraft-m1/viewer/d26/browser.mjs http://127.0.0.1:8000/m1-enclosure/` in a second terminal after installing a browser as described below.
+Open **http://127.0.0.1:8000/m1-enclosure/**. With the server running, check it with `node cad/solidcraft-m1/viewer/d26/browser.mjs http://127.0.0.1:8000/m1-enclosure/`.
 
-Packaging verifies the original release receipt, rebuilds the home page, verifies all 14 downloadable files against their SHA-256 hashes, and checks the HTML routes under the same URL prefix as Pages. The D2.5 viewer and accessory models are included. Older archives and D2.5 manufacturing downloads point to their original host. The site carries the current Univera license, source and dependency notices and the machine-readable navigation index. The published ZIPs remain byte-for-byte identical to the original D2.6 release.
+Packaging verifies both receipts and checks that the rebuilt D2.7 page matches the frozen release page. It verifies all 14 D2.7 downloads, all 14 D2.6 download routes, and links from the D2.5, accessory and Redline pages. The archive page relocates D2.6's links; its CAD and print downloads keep the original bytes. The site includes licensing, source notices and the plain-text index.
 
-The organization site also links to the separate [Redline R2 experiment](https://univera-llc.github.io/m1-enclosure/redline/). The [preview snapshot](../release/redline-r2-site/) contains its self-contained 3D view and three CAD renders. Redline is a visual preview for an unpowered fit prototype; D2.6 remains the revision for the site's print kits.
+The [workflow](../.github/workflows/check.yml) tests the actual static artifact on pull requests and pushes. Only a successful run on the organization's `main` branch deploys to `github-pages`. The repository's Pages source is **GitHub Actions**.
 
-The [workflow](../.github/workflows/check.yml) tests the actual static artifact on pull requests and branch pushes. Only a successful push or manual run on the organization's `main` branch uploads and deploys it to the `github-pages` environment. The repository's Pages source must be **GitHub Actions**. The raw directory in `release/d2.6-site/` is a set of frozen inputs with their original navigation; use a materialized site for browsing.
+## Browser and geometry checks
 
-## Browser and release checks
+Use `./project.ps1 check` to verify the model hash, saved camera, rear-panel motion, 16 port probes, the base and carrier views, archive navigation and all current downloads. The check writes screenshots and a JSON receipt to a new temporary directory. It does not deploy.
 
-```sh
-npm --prefix cad/solidcraft-m1/viewer/d26 run check
-npm --prefix cad/solidcraft-m1/viewer/d26 run check -- --published
-```
+The smoke test uses Microsoft Edge when installed at its standard Windows path, otherwise Playwright Chromium. Install Chromium with `npx playwright install chromium` from `cad/solidcraft-m1/viewer` (use `--with-deps` on a minimal Linux runner).
 
-The first command checks the rebuilt UI. The second checks the unchanged published HTML and does not run the build. Both start a local server and exercise the saved camera, the exploded rear panel, 16 port probes, the inside view, all 14 downloaded files by hash, and the D2.5 archive viewer. The commands print the path to their screenshots and JSON receipt in a new temporary directory. They do not change historical verification records or deploy anything.
-
-The smoke test uses Microsoft Edge when installed at its standard Windows path, otherwise Playwright Chromium. To install the browser, run `npx playwright install chromium` from `cad/solidcraft-m1/viewer`; on a minimal Linux runner use `npx playwright install --with-deps chromium`. Node dependencies and the browser require an initial download; local verification, builds, and checks then run offline.
-
-For a standalone copy, run `python tools/verify_release.py --site-dir build/d26-site`. The target must not yet exist. This writes the 36 verified routes and 20 companion assets with the original bytes; it is a snapshot of this release, not a mirror of older manufacturing archives. To verify another checkout from an existing installation, pass `--root PATH`. Links inside the frozen `release/d2.6-site/README.md` use the published URL layout; use the local preview or materialize the site before following them.
-
-## Maintainer notes
-
-`npm --prefix cad/solidcraft-m1/viewer/d26 run build` rebuilds the viewer from the frozen D2.6 model; it does not re-run CAD. To see geometry from a new [verified CAD build](CAD-BUILD.md), run these commands from the project root. Replace `build/d26-first` with that build's directory:
+For an engineering preview, start with a [verified CAD build](CAD-BUILD.md) such as `build/d27-first` and run:
 
 ```sh
-uv run --locked python tools/cad_build.py --verify --output build/d26-first
-uv run --locked python cad/solidcraft-m1/viewer/d26/pack_model.py --cad-dir build/d26-first/workspace/cad/solidcraft-m1/prototype-d26 --output build/d26-packed
-npm --prefix cad/solidcraft-m1/viewer/d26 run build -- --packed build/d26-packed --cad-dir build/d26-first/workspace/cad/solidcraft-m1/prototype-d26 --output build/d26-first/viewer
-npm --prefix cad/solidcraft-m1/viewer/d26 run check -- --engineering build/d26-first/viewer
+uv run --locked python cad/solidcraft-m1/viewer/d26/pack_model.py --cad-dir build/d27-first --output build/d27-packed
+node cad/solidcraft-m1/viewer/d26/build.mjs --packed build/d27-packed --cad-dir build/d27-first --output build/d27-engineering-viewer
+node cad/solidcraft-m1/viewer/d26/browser.mjs --engineering build/d27-engineering-viewer
 ```
 
-The packer requires a new output directory. It builds the native bodies, cutaways and registered board from the selected CAD; it rechecks native bounds, the eight through profiles and the port probes after reading back its GLB. It reuses the three historical RF reference pieces, the alternative PCB display and 17 cosmetic landmarks from the published model. These are illustrative meshes; their original private inputs are not needed. The output GLB and its fresh `geometry-check.json` stay together. The tool targets the D2.6 part names and fit contract and fails if a new design no longer satisfies them.
+The packer checks the native mesh and CAD report hashes, reopens the packed GLB, and verifies the eight through-profiles and port probes. The board and the shared rear panel retain their D2.6 basis. The three historical RF meshes, the alternative PCB display and small component illustrations are reference geometry. Engineering previews use the published stills unless they are rendered again from the candidate.
 
-Open `build/d26-first/viewer/index.html` to inspect the engineering preview. Both the packer and the engineering UI build require new output directories. The browser smoke reads the candidate's model hash and port probes and checks 14 actual downloads against that build's inputs; STEP, SC and ZIP bytes can legitimately differ from those in the older published snapshot. Screenshots and a JSON receipt go into a new `browser-check-*` directory under the candidate. Static workshop pictures, explanatory text and poster frames still describe the published D2.6; review and update them for a different design before release. Neither the packer nor the UI build updates the published receipt.
-
-Asset provenance and redistribution conditions are in [THIRD_PARTY.md](../THIRD_PARTY.md) and the [original release attribution](../release/d2.6-site/ATTRIBUTION.md).
+To regenerate stills, build with `--draft --packed … --cad-dir … --output …` and run `node cad/solidcraft-m1/viewer/d26/browser.mjs --posters SITE OUT` with that draft directory and a new image directory. Rendered site files should match the release model in `geometry-check.json`.

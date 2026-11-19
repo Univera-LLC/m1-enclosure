@@ -12,17 +12,22 @@ import {manifest,root,startPreview} from './preview.mjs';
 const here=dirname(fileURLToPath(import.meta.url));
 const arg=process.argv[2],posters=arg==='--posters',published=arg==='--published',engineering=arg==='--engineering';
 const base=posters||published||engineering?undefined:arg;
-if((engineering&&!process.argv[3])||(base&&!/^https?:\/\//.test(base)))throw Error('Usage: node browser.mjs [http(s)://host/path/ | --published | --posters | --engineering PATH]');
+if((engineering&&!process.argv[3])||(base&&!/^https?:\/\//.test(base)))throw Error('Usage: node browser.mjs [http(s)://host/path/ | --published | --posters [SITE OUT] | --engineering PATH]');
 const engineeringDir=engineering?resolve(root,process.argv[3]):null;
-const candidate=engineering?JSON.parse(await readFile(join(engineeringDir,'engineering-check.json'),'utf8')):null;
-if(candidate)assert.equal(candidate.revision,'D2.6');
-const out=await mkdtemp(engineering?join(engineeringDir,'browser-check-'):join(tmpdir(),base&&!posters?'d26-url-smoke-':'d26-local-smoke-'));
-assert.equal(manifest.revision,'D2.6','This viewer checks the D2.6 release.');
-const geom=candidate?{sha256:candidate.model_sha256,port_fit:{ports:candidate.ports}}:JSON.parse(await readFile(join(here,'geometry-check.json'),'utf8'));
+const posterSite=posters&&process.argv[3]?resolve(root,process.argv[3]):null;
+const candidateDir=engineeringDir||posterSite;
+const candidate=candidateDir?JSON.parse(await readFile(join(candidateDir,'engineering-check.json'),'utf8')):null;
+const revision=candidate?.revision||manifest.revision;
+assert(['D2.6','D2.7'].includes(revision));
+if(engineering)assert.equal(revision,manifest.revision,'The engineering preview must use the active release.');
+const slug=revision.toLowerCase().replace('.','');
+const posterOutput=resolve(root,process.argv[4]||join('build',slug+'-posters'));
+const out=await mkdtemp(engineering?join(engineeringDir,'browser-check-'):join(tmpdir(),slug+(base?'-url-smoke-':'-local-smoke-')));
+const geom=candidate?{sha256:candidate.model_sha256,port_fit:{ports:candidate.ports}}:JSON.parse(await readFile(join(here,'..',slug,'geometry-check.json'),'utf8'));
 assert.deepEqual(geom.port_fit.ports.map(p=>p.id).sort(),['A1','A2','HDMI','PD','RJ','TB1','TB2','audio']);
 if(candidate)assert.equal(Object.keys(candidate.download_sha256).length,14);
 const hash=b=>createHash('sha256').update(b).digest('hex');
-let url=posters?pathToFileURL(join(root,'build/d26-draft/index.html')).href:base;
+let url=posters?pathToFileURL(join(posterSite||join(root,'build',slug+'-draft'),'index.html')).href:base;
 let server,browser;
 const exact='?view=rear&spread=96&cam=0.8822%2C0.2619%2C0.3914%2C-7.5%2C56.76%2C23%2C1';
 const edge='C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe';
@@ -43,7 +48,7 @@ try{
   const painted=()=>page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));
   await ready();await painted();
   const model_sha256=hash(gunzipSync(Buffer.from(await page.locator('#model-bytes').textContent(),'base64')));
-  assert.equal(model_sha256,geom.sha256);assert.equal((await state()).revision,'D2.6');
+  assert.equal(model_sha256,geom.sha256);assert.equal((await state()).revision,revision);
   async function capture(key){
     await painted();
     const style=await page.addStyleTag({content:'#pins,#leaders,.stage-head,.stage-foot,#poster{visibility:hidden!important}#stage:focus{outline:none!important;box-shadow:none!important}'});
@@ -55,11 +60,11 @@ try{
         return c.toDataURL('image/webp',.87).split(',')[1];
       },png.toString('base64'));
       const frame=Buffer.from(encoded,'base64');assert(frame.length>2000,key);
-      await writeFile(join(root,'build/d26-posters',key+'.webp'),frame);
+      await writeFile(join(posterOutput,key+'.webp'),frame);
     }finally{await style.evaluate(e=>e.remove());}
   }
   if(posters){
-    await mkdir(join(root,'build/d26-posters'),{recursive:true});
+    await mkdir(posterOutput,{recursive:true});
     for(const view of viewKeys){
       await page.locator('#tabs [data-view="'+view+'"]').click();assert.equal((await state()).view,view);
       await capture(view);
@@ -96,13 +101,35 @@ try{
     }
     await page.locator('#to-panel-back').click();await ready();assert.deepEqual((await state()).visible,['panel']);assert.equal((await state()).side,'back');
     await page.locator('#stage').screenshot({path:join(out,'panel-back.png')});
+    const archives=['D2.5'];
+    if(revision==='D2.7'){
+      for(const [view,part] of [['base','chassis'],['power','saddle']]){
+        await page.locator('#tabs [data-view="'+view+'"]').click();await painted();
+        assert.equal((await state()).view,view);assert((await state()).visible.includes(part));
+        await page.locator('#stage').screenshot({path:join(out,view+'.png')});
+      }
+      const image=await page.request.get(new URL('d27-mounts.webp',url).href);
+      try{assert.equal(image.status(),200);assert.equal(hash(await image.body()),manifest.files['d27-mounts.webp'].sha256);}
+      finally{await image.dispose();}
+      await page.goto(url+'?rev=d2.6&view=rear');await ready();
+      assert.equal((await state()).revision,'D2.6');assert(new URL(page.url()).pathname.endsWith('/d2.6/'));
+      const old=JSON.parse(await readFile(join(root,'release/d2.6-manifest.json'),'utf8'));
+      const oldLinks=await page.locator('#downloads a[download]').evaluateAll(links=>links.map(a=>a.getAttribute('href')));
+      assert.equal(new Set(oldLinks).size,14);
+      assert(oldLinks.every(h=>h.startsWith('../')&&old.files[h.slice(3)]));
+      const href='downloads/d2.6/d2.6-first-fit.zip';
+      const response=await page.request.get(new URL('../'+href,page.url()).href);
+      try{assert.equal(response.status(),200);assert.equal(hash(await response.body()),old.files[href].sha256);}
+      finally{await response.dispose();}
+      archives.push('D2.6');
+    }
     const previous=new URL('d2.5/?view=rear',url).href;await page.goto(previous);await ready();assert.equal((await state()).revision,'D2.5');
     const archivedFiles=await page.locator('#downloads a[download]').evaluateAll(links=>links.map(a=>a.getAttribute('href')));
-    const archivedPrefix=new URL('downloads/d2.5/',manifest.target).href;
+    const archivedPrefix=new URL('downloads/d2.5/','https://dvaderfun.github.io/mac-mini-m1-case-prototype/').href;
     assert.equal(new Set(archivedFiles.filter(h=>h.startsWith('../downloads/d2.5/')||h.startsWith(archivedPrefix))).size,12);
     assert.deepEqual(errors,[]);
-    await writeFile(join(out,'browser.json'),JSON.stringify({scope:engineering?'engineering':base?'url':published?'published':'candidate',url:url+exact,published_baseline:manifest.pages_commit,model_sha256,view:entry.view,spread:entry.spread,pose:entry.pose,mesh_probes:probes.length,archive:'D2.5',downloads:hrefs,errors},null,2)+'\n');
+    await writeFile(join(out,'browser.json'),JSON.stringify({scope:engineering?'engineering':base?'url':published?'published':'candidate',revision,url:url+exact,model_sha256,view:entry.view,spread:entry.spread,pose:entry.pose,mesh_probes:probes.length,archives,downloads:hrefs,errors},null,2)+'\n');
   }
-  assert.deepEqual(errors,[]);console.log(posters?'Rendered 19 D2.6 fallback views.':'Verified camera, exploded panel, 16 mesh probes, inside view, 14 downloaded files and D2.5 archive. Receipt: '+join(out,'browser.json'));
+  assert.deepEqual(errors,[]);console.log(posters?'Rendered 19 '+revision+' fallback views: '+posterOutput:'Verified '+revision+' camera, exploded panel, 16 mesh probes, 14 downloads and archives. Receipt: '+join(out,'browser.json'));
 }finally{await browser?.close();if(server)server.close();}
 

@@ -1,0 +1,2709 @@
+{
+  "units": "CAD desk mm",
+  "native": {
+    "D2_MONO_BASE": {
+      "group": "chassis",
+      "max_bbox_delta_mm": 2e-06
+    },
+    "D2_TOP_COVER": {
+      "group": "lid",
+      "max_bbox_delta_mm": 1e-06
+    },
+    "D2_FRONT_BLANK": {
+      "group": "blank",
+      "max_bbox_delta_mm": 0.000752
+    },
+    "D2_ADHESIVE_FOOT_4": {
+      "group": "feet",
+      "max_bbox_delta_mm": 0.000896
+    },
+    "D2_ADHESIVE_FOOT_3": {
+      "group": "feet",
+      "max_bbox_delta_mm": 0.000896
+    },
+    "D2_ADHESIVE_FOOT_2": {
+      "group": "feet",
+      "max_bbox_delta_mm": 0.000896
+    },
+    "D2_ADHESIVE_FOOT_1": {
+      "group": "feet",
+      "max_bbox_delta_mm": 0.000896
+    },
+    "D2_LID_FIXING_4": {
+      "group": "lidscrews",
+      "max_bbox_delta_mm": 0.000412
+    },
+    "D2_LID_FIXING_3": {
+      "group": "lidscrews",
+      "max_bbox_delta_mm": 0.000414
+    },
+    "D2_LID_FIXING_2": {
+      "group": "lidscrews",
+      "max_bbox_delta_mm": 0.000412
+    },
+    "D2_LID_FIXING_1": {
+      "group": "lidscrews",
+      "max_bbox_delta_mm": 0.000412
+    },
+    "D2_BOARD_FIXING_2": {
+      "group": "pcbscrews",
+      "max_bbox_delta_mm": 0.000449
+    },
+    "D2_BOARD_FIXING_1": {
+      "group": "pcbscrews",
+      "max_bbox_delta_mm": 0.000449
+    },
+    "D2_BLANK_FIXING_HIGH": {
+      "group": "blank",
+      "max_bbox_delta_mm": 0.000284
+    },
+    "D2_BLANK_FIXING_LOW": {
+      "group": "blank",
+      "max_bbox_delta_mm": 0.000285
+    },
+    "D26_PROFILED_IO_PLATE": {
+      "group": "panel",
+      "max_bbox_delta_mm": 2e-06
+    },
+    "D2_POWER_SADDLE": {
+      "group": "saddle",
+      "max_bbox_delta_mm": 3e-06
+    },
+    "D2_MINI560_FR4_GAUGE": {
+      "group": "buck",
+      "max_bbox_delta_mm": 3e-06
+    },
+    "D2_CMTPD_FR4_GAUGE": {
+      "group": "trigger",
+      "max_bbox_delta_mm": 3e-06
+    },
+    "D2_MINI560_SOLDER_GAUGE": {
+      "group": "buck",
+      "max_bbox_delta_mm": 3e-06
+    },
+    "D2_CMTPD_SOLDER_GAUGE": {
+      "group": "trigger",
+      "max_bbox_delta_mm": 3e-06
+    },
+    "D2_MINI560_POPULATION_GAUGE": {
+      "group": "buck",
+      "max_bbox_delta_mm": 3e-06
+    },
+    "D2_CMTPD_POPULATION_GAUGE": {
+      "group": "trigger",
+      "max_bbox_delta_mm": 3e-06
+    },
+    "D2_USB_C_SHELL_GAUGE": {
+      "group": "socket",
+      "max_bbox_delta_mm": 3e-06
+    },
+    "D24_PD_DIELECTRIC_TONGUE": {
+      "group": "socket",
+      "max_bbox_delta_mm": 3e-06
+    }
+  },
+  "source": {
+    "14": {
+      "triangles": 1066,
+      "unique_vertices": 533
+    },
+    "13": {
+      "triangles": 3642,
+      "unique_vertices": 1817
+    },
+    "11": {
+      "triangles": 1266,
+      "unique_vertices": 633
+    }
+  },
+  "comparison": {
+    "J1_FAB_PROXY": [
+      [
+        -81.55,
+        49.739,
+        17.73
+      ],
+      [
+        -78.3,
+        57.089,
+        26.67
+      ]
+    ],
+    "C2_FOOTPRINT_PROXY": [
+      [
+        -86.0,
+        30.45,
+        23.8
+      ],
+      [
+        -78.3,
+        36.75,
+        30.1
+      ]
+    ],
+    "L1_PACKAGE_PROXY": [
+      [
+        -82.3,
+        20.03,
+        23.36
+      ],
+      [
+        -78.3,
+        28.67,
+        31.54
+      ]
+    ],
+    "U3_PACKAGE_PROXY": [
+      [
+        -79.5,
+        26.85,
+        17.85
+      ],
+      [
+        -78.3,
+        29.85,
+        20.85
+      ]
+    ],
+    "FAB_C1": [
+      [
+        -79.65,
+        46.175,
+        17.15
+      ],
+      [
+        -78.3,
+        47.525,
+        19.25
+      ]
+    ],
+    "FAB_C10": [
+      [
+        -80.8,
+        17.2,
+        16.15
+      ],
+      [
+        -78.3,
+        20.5,
+        18.75
+      ]
+    ],
+    "FAB_C11": [
+      [
+        -79.2,
+        42.0,
+        26.5
+      ],
+      [
+        -78.3,
+        43.7,
+        27.4
+      ]
+    ],
+    "FAB_C3": [
+      [
+        -80.8,
+        30.8,
+        15.3
+      ],
+      [
+        -78.3,
+        33.4,
+        18.6
+      ]
+    ],
+    "FAB_C4": [
+      [
+        -80.8,
+        34.05,
+        15.3
+      ],
+      [
+        -78.3,
+        36.65,
+        18.6
+      ]
+    ],
+    "FAB_C5": [
+      [
+        -79.2,
+        29.15,
+        14.85
+      ],
+      [
+        -78.3,
+        30.05,
+        16.55
+      ]
+    ],
+    "FAB_C6": [
+      [
+        -79.2,
+        28.75,
+        21.75
+      ],
+      [
+        -78.3,
+        30.45,
+        22.65
+      ]
+    ],
+    "FAB_C7": [
+      [
+        -80.8,
+        17.2,
+        19.4
+      ],
+      [
+        -78.3,
+        20.5,
+        22.0
+      ]
+    ],
+    "FAB_C8": [
+      [
+        -80.8,
+        17.2,
+        12.9
+      ],
+      [
+        -78.3,
+        20.5,
+        15.5
+      ]
+    ],
+    "FAB_C9": [
+      [
+        -79.2,
+        23.65,
+        14.718
+      ],
+      [
+        -78.3,
+        24.55,
+        16.418
+      ]
+    ],
+    "FAB_D1": [
+      [
+        -80.65,
+        44.55,
+        25.6
+      ],
+      [
+        -78.3,
+        47.65,
+        30.3
+      ]
+    ],
+    "FAB_D2": [
+      [
+        -80.65,
+        12.8,
+        19.85
+      ],
+      [
+        -78.3,
+        15.9,
+        24.55
+      ]
+    ],
+    "FAB_D3": [
+      [
+        -79.3,
+        13.0,
+        29.5
+      ],
+      [
+        -78.3,
+        14.7,
+        30.4
+      ]
+    ],
+    "FAB_F1": [
+      [
+        -79.5,
+        16.5,
+        23.8
+      ],
+      [
+        -78.3,
+        18.2,
+        27.1
+      ]
+    ],
+    "FAB_Q1": [
+      [
+        -80.1,
+        38.85,
+        19.2
+      ],
+      [
+        -78.3,
+        42.85,
+        24.2
+      ]
+    ],
+    "FAB_R1": [
+      [
+        -78.85,
+        25.138,
+        18.35
+      ],
+      [
+        -78.3,
+        26.062,
+        20.05
+      ]
+    ],
+    "FAB_R10": [
+      [
+        -78.85,
+        34.75,
+        13.238
+      ],
+      [
+        -78.3,
+        36.45,
+        14.163
+      ]
+    ],
+    "FAB_R11": [
+      [
+        -78.85,
+        42.004,
+        24.993
+      ],
+      [
+        -78.3,
+        43.704,
+        25.918
+      ]
+    ],
+    "FAB_R12": [
+      [
+        -78.85,
+        40.137,
+        25.35
+      ],
+      [
+        -78.3,
+        41.063,
+        27.05
+      ]
+    ],
+    "FAB_R13": [
+      [
+        -78.85,
+        12.637,
+        26.85
+      ],
+      [
+        -78.3,
+        13.562,
+        28.55
+      ]
+    ],
+    "FAB_R2": [
+      [
+        -78.85,
+        26.0,
+        14.237
+      ],
+      [
+        -78.3,
+        27.7,
+        15.163
+      ]
+    ],
+    "FAB_R3": [
+      [
+        -78.85,
+        26.0,
+        15.738
+      ],
+      [
+        -78.3,
+        27.7,
+        16.663
+      ]
+    ],
+    "FAB_R6": [
+      [
+        -78.85,
+        21.887,
+        17.968
+      ],
+      [
+        -78.3,
+        22.813,
+        19.668
+      ]
+    ],
+    "FAB_R7": [
+      [
+        -78.85,
+        23.638,
+        18.35
+      ],
+      [
+        -78.3,
+        24.563,
+        20.05
+      ]
+    ],
+    "FAB_R8": [
+      [
+        -78.85,
+        21.887,
+        14.718
+      ],
+      [
+        -78.3,
+        22.813,
+        16.418
+      ]
+    ],
+    "FAB_U2": [
+      [
+        -80.0,
+        39.85,
+        13.45
+      ],
+      [
+        -78.3,
+        43.85,
+        18.45
+      ]
+    ],
+    "PD_V1_EDGE_CUTS": [
+      [
+        -78.3,
+        7.85,
+        12.2
+      ],
+      [
+        -76.7,
+        56.35,
+        32.2
+      ]
+    ]
+  },
+  "revision": "D2.7",
+  "variant": "D2.7-FDM",
+  "owner_topside": {
+    "evidence": "Owner component-side photos, 2026-11-18. Appearance and inventory only. No owner dimensions measured.",
+    "calibration": {
+      "upright_display_px": [
+        1640,
+        923
+      ],
+      "controls_px_to_SOURCE_xy_mm": [
+        [
+          [
+            418.3,
+            768.0
+          ],
+          [
+            -52.0,
+            -34.35
+          ]
+        ],
+        [
+          [
+            1125.1,
+            784.4
+          ],
+          [
+            47.95,
+            -34.35
+          ]
+        ],
+        [
+          [
+            412.0,
+            326.0
+          ],
+          [
+            -55.0,
+            28.85
+          ]
+        ],
+        [
+          [
+            953.0,
+            336.9
+          ],
+          [
+            22.0,
+            28.85
+          ]
+        ]
+      ],
+      "holdout_px_and_SOURCE_xy_mm": [
+        [
+          [
+            403.0,
+            633.8
+          ],
+          [
+            -55.0,
+            -15.15
+          ]
+        ],
+        [
+          [
+            946.8,
+            645.8
+          ],
+          [
+            22.2,
+            -15.15
+          ]
+        ]
+      ],
+      "held_out_error_px": [
+        1.575,
+        1.096
+      ],
+      "scope": "A 2D registration on the board plane, not a tolerance or 3D reconstruction."
+    },
+    "coax": {
+      "source_axes_xy_mm": [
+        [
+          51.4,
+          -12.15
+        ],
+        [
+          60.4,
+          -12.15
+        ],
+        [
+          69.4,
+          -12.15
+        ]
+      ],
+      "source_top_z_mm": 18.4,
+      "independent_photo_error_px": [
+        2.546,
+        2.392,
+        2.365
+      ],
+      "assignment_to_antennas": null
+    },
+    "sleeves": {
+      "owner_base_clicks_px": [
+        [
+          1131,
+          369
+        ],
+        [
+          1252,
+          570
+        ]
+      ],
+      "approx_xy_photo_to_SOURCE_mm": [
+        [
+          47.3,
+          24.8
+        ],
+        [
+          65.1,
+          -3.5
+        ]
+      ],
+      "physical_height_mm": null,
+      "representation": "Two planar location marks on verified flat SOURCE faces; unknown OD, thread, function and top Z."
+    },
+    "fins": {
+      "SOURCE_original_total_crests_including_two_outer_walls": 22,
+      "DOCUMENTED_photo_total_crests_including_two_outer_walls": 23,
+      "DOCUMENTED_photo_interior_crests": 21,
+      "DOCUMENTED_photo_open_channels": 22,
+      "SOURCE_and_reconstructed_field_bounds_xyz_mm": [
+        [
+          -51.8,
+          -20.15,
+          17.4
+        ],
+        [
+          18.2,
+          31.35,
+          36.9
+        ]
+      ],
+      "SOURCE_root_and_crest_z_mm": [
+        24.9,
+        36.9
+      ],
+      "SOURCE_endpoint_crest_centres_x_mm": [
+        -51.3,
+        17.7009
+      ],
+      "ASSUMED_reconstruction_centres_x_mm": [
+        -51.3,
+        -48.1636,
+        -45.0272,
+        -41.89079,
+        -38.75439,
+        -35.61798,
+        -32.48158,
+        -29.34517,
+        -26.20877,
+        -23.07236,
+        -19.93596,
+        -16.79955,
+        -13.66315,
+        -10.52674,
+        -7.39034,
+        -4.25393,
+        -1.11753,
+        2.01888,
+        5.15528,
+        8.29169,
+        11.42809,
+        14.5645,
+        17.7009
+      ],
+      "ASSUMED_uniform_pitch_mm": 3.136405,
+      "SOURCE_flat_flank_thickness_at_z26_mm": 1.0,
+      "copied_SOURCE_inner_tooth": "translated unscaled (curved feet and crown preserved)",
+      "replaced_source_triangle_count": 3498,
+      "unchanged_source_triangle_count": 6182,
+      "replacement_patch_triangles": 3658,
+      "exact_board_interface_edges": 60,
+      "status": "REFERENCE ONLY. The count/direction are visible in photos; all metric data come from SOURCE or its reconstruction. No measured dimensions, fit, airflow, or thermal result."
+    },
+    "board_markings": "Two case rings, four radiator tabs and visible faces on three coax sockets; original photo-registered finish on SOURCE.",
+    "reverse": "SOURCE only. No owner photo of the opposite face.",
+    "antenna_state": "Detached. Two photographed separately, no physical assignment to any of the three source references.",
+    "download": {
+      "file": "mac-board-reference.glb",
+      "bytes": 889556,
+      "sha256": "a5fb5ee5f7ab036a89470831b93f688aa2cac6a396a4a2de36990a7d12f12607",
+      "meshes": 61,
+      "materials": 8,
+      "material_names": [
+        "maccontact",
+        "macsolder",
+        "maccomponent",
+        "macfr4",
+        "macinsulator",
+        "macmetal",
+        "macwire",
+        "macsink"
+      ],
+      "textures": 0,
+      "units": "glTF m; same CAD datum",
+      "versioned_url": "reference/d2.7/mac-board-reference.glb"
+    },
+    "prior_photo_study_mesh_counts_D2_3": {
+      "source_face_groups": {
+        "SOURCE_20_coax_maccontact_d2": 444,
+        "SOURCE_20_coax_macsolder_d2": 30,
+        "SOURCE_20_logic_maccomponent_d2": 876,
+        "SOURCE_20_logic_maccomponent_oem": 64,
+        "SOURCE_20_logic_macfr4_d2": 4074,
+        "SOURCE_20_logic_macfr4_oem": 270,
+        "SOURCE_20_logic_macinsulator_d2": 66,
+        "SOURCE_20_logic_macmetal_d2": 70,
+        "SOURCE_20_logic_macsolder_d2": 55,
+        "SOURCE_20_ports_macmetal_oem": 233
+      },
+      "unchanged_source_triangles": 6182,
+      "original_source_triangles": 9680,
+      "scope": "Historical counts before socket interiors were modelled in D2.4."
+    },
+    "registered_board_basis": {
+      "source": "prototype-d26/board-study/port-contract.json",
+      "mesh_nodes": 61,
+      "open_port_faces": 7
+    }
+  },
+  "power_view_sections": {
+    "D2_MONO_BASE": {
+      "box_mm": [
+        [
+          -88.7,
+          -30,
+          5.95
+        ],
+        [
+          -72,
+          58.41,
+          16
+        ]
+      ],
+      "volume_mm3": 3018.5038
+    },
+    "D2_TOP_COVER": {
+      "box_mm": [
+        [
+          -89,
+          -30,
+          8
+        ],
+        [
+          -72.5,
+          58.41,
+          46.05
+        ]
+      ],
+      "volume_mm3": 3689.3334
+    }
+  },
+  "illustration_source": {
+    "assembly_sha256": "37b9df5d6d085a08b15bb6a5a715a4a3f8828dea2e1829f5ba7b02b1388e368f",
+    "retained": {
+      "v1": 31,
+      "rf": 3,
+      "look": 17
+    }
+  },
+  "module_appearance_deltas_mm": {
+    "trigger": [
+      0.0,
+      -0.29,
+      0.0
+    ],
+    "buck": [
+      0.0,
+      -0.29,
+      0.0
+    ],
+    "socket": [
+      0.0,
+      -0.29,
+      0.0
+    ]
+  },
+  "board_port_study": {
+    "contract_sha256": "7e8c11cb8ca249f470bda1ee7412917e8549f7689c86ee70be8f652306a65769",
+    "board_sha256": "a5fb5ee5f7ab036a89470831b93f688aa2cac6a396a4a2de36990a7d12f12607"
+  },
+  "meshes": 139,
+  "size_bytes": 3456860,
+  "sha256": "51ada32a0474d4913b9ef21d84acf99f38faa97db18aaf178912b2889152106b",
+  "rear_panel": {
+    "wall_sections": {
+      "A1": {
+        "probe_xz_mm": [
+          57.0,
+          22.0
+        ],
+        "material_y_span_mm": [
+          56.56,
+          57.36
+        ],
+        "thickness_mm": 0.8
+      },
+      "A2": {
+        "probe_xz_mm": [
+          39.8,
+          22.0
+        ],
+        "material_y_span_mm": [
+          56.56,
+          57.36
+        ],
+        "thickness_mm": 0.8
+      },
+      "audio": {
+        "probe_xz_mm": [
+          45.4,
+          32.1
+        ],
+        "material_y_span_mm": [
+          56.56,
+          57.36
+        ],
+        "thickness_mm": 0.8
+      },
+      "HDMI": {
+        "probe_xz_mm": [
+          6.375,
+          22.1
+        ],
+        "material_y_span_mm": [
+          56.56,
+          57.36
+        ],
+        "thickness_mm": 0.8
+      },
+      "TB1": {
+        "probe_xz_mm": [
+          -19.05,
+          24.25
+        ],
+        "material_y_span_mm": [
+          56.46,
+          57.36
+        ],
+        "thickness_mm": 0.9
+      },
+      "TB2": {
+        "probe_xz_mm": [
+          -33.7,
+          24.25
+        ],
+        "material_y_span_mm": [
+          56.46,
+          57.36
+        ],
+        "thickness_mm": 0.9
+      },
+      "RJ": {
+        "probe_xz_mm": [
+          -57.4,
+          23.0
+        ],
+        "material_y_span_mm": [
+          56.56,
+          57.36
+        ],
+        "thickness_mm": 0.8
+      },
+      "PD": {
+        "probe_xz_mm": [
+          -78.35,
+          22.2
+        ],
+        "material_y_span_mm": [
+          56.96,
+          57.36
+        ],
+        "thickness_mm": 0.4
+      }
+    },
+    "field": {
+      "probe_xz_mm": [
+        49.9,
+        29.0
+      ],
+      "material_y_span_mm": [
+        54.76,
+        57.36
+      ],
+      "thickness_mm": 2.6
+    },
+    "field_stations": {
+      "A1": {
+        "probe_xz_mm": [
+          49.9,
+          29.0
+        ],
+        "material_y_span_mm": [
+          54.76,
+          57.36
+        ],
+        "thickness_mm": 2.6
+      },
+      "A2": {
+        "probe_xz_mm": [
+          32.7,
+          29.0
+        ],
+        "material_y_span_mm": [
+          54.76,
+          57.36
+        ],
+        "thickness_mm": 2.6
+      },
+      "audio": {
+        "probe_xz_mm": [
+          49.5,
+          32.2
+        ],
+        "material_y_span_mm": [
+          54.76,
+          57.36
+        ],
+        "thickness_mm": 2.6
+      },
+      "HDMI": {
+        "probe_xz_mm": [
+          -1.525,
+          28.0
+        ],
+        "material_y_span_mm": [
+          54.76,
+          57.36
+        ],
+        "thickness_mm": 2.6
+      },
+      "TB1": {
+        "probe_xz_mm": [
+          -19.05,
+          27.5
+        ],
+        "material_y_span_mm": [
+          54.76,
+          57.36
+        ],
+        "thickness_mm": 2.6
+      },
+      "TB2": {
+        "probe_xz_mm": [
+          -33.7,
+          27.5
+        ],
+        "material_y_span_mm": [
+          54.76,
+          57.36
+        ],
+        "thickness_mm": 2.6
+      },
+      "RJ": {
+        "probe_xz_mm": [
+          -64.65,
+          30.5
+        ],
+        "material_y_span_mm": [
+          54.76,
+          57.36
+        ],
+        "thickness_mm": 2.6
+      },
+      "PD": {
+        "probe_xz_mm": [
+          -83.8,
+          22.2
+        ],
+        "material_y_span_mm": [
+          54.76,
+          57.36
+        ],
+        "thickness_mm": 2.6
+      }
+    },
+    "projection_bounds_xz_mm": [
+      [
+        -89.1,
+        8.7
+      ],
+      [
+        74.1,
+        41.2
+      ]
+    ],
+    "openings": [
+      {
+        "id": "usb-a-1",
+        "probe_xz_mm": [
+          49.9,
+          22.0
+        ],
+        "bounds_xz_mm": [
+          [
+            43.34,
+            19.12
+          ],
+          [
+            56.46,
+            24.88
+          ]
+        ],
+        "outline_xz_mm": [
+          [
+            43.66859,
+            24.84349
+          ],
+          [
+            43.49231,
+            24.72769
+          ],
+          [
+            43.37651,
+            24.55141
+          ],
+          [
+            43.34,
+            24.36
+          ],
+          [
+            43.34,
+            19.64
+          ],
+          [
+            43.37651,
+            19.44859
+          ],
+          [
+            43.49231,
+            19.27231
+          ],
+          [
+            43.66859,
+            19.15651
+          ],
+          [
+            43.86,
+            19.12
+          ],
+          [
+            55.94,
+            19.12
+          ],
+          [
+            56.13141,
+            19.15651
+          ],
+          [
+            56.3077,
+            19.27231
+          ],
+          [
+            56.42349,
+            19.44859
+          ],
+          [
+            56.46,
+            19.64
+          ],
+          [
+            56.46,
+            24.36
+          ],
+          [
+            56.42349,
+            24.55141
+          ],
+          [
+            56.3077,
+            24.72769
+          ],
+          [
+            56.13141,
+            24.84349
+          ],
+          [
+            55.94,
+            24.88
+          ],
+          [
+            43.86,
+            24.88
+          ]
+        ],
+        "through_area_mm2": 75.317
+      },
+      {
+        "id": "usb-a-2",
+        "probe_xz_mm": [
+          32.7,
+          22.0
+        ],
+        "bounds_xz_mm": [
+          [
+            26.14,
+            19.12
+          ],
+          [
+            39.26,
+            24.88
+          ]
+        ],
+        "outline_xz_mm": [
+          [
+            26.46859,
+            24.84349
+          ],
+          [
+            26.29231,
+            24.72769
+          ],
+          [
+            26.17651,
+            24.55141
+          ],
+          [
+            26.14,
+            24.36
+          ],
+          [
+            26.14,
+            19.64
+          ],
+          [
+            26.17651,
+            19.44859
+          ],
+          [
+            26.29231,
+            19.27231
+          ],
+          [
+            26.46859,
+            19.15651
+          ],
+          [
+            26.66,
+            19.12
+          ],
+          [
+            38.74,
+            19.12
+          ],
+          [
+            38.93141,
+            19.15651
+          ],
+          [
+            39.1077,
+            19.27231
+          ],
+          [
+            39.22349,
+            19.44859
+          ],
+          [
+            39.26,
+            19.64
+          ],
+          [
+            39.26,
+            24.36
+          ],
+          [
+            39.22349,
+            24.55141
+          ],
+          [
+            39.1077,
+            24.72769
+          ],
+          [
+            38.93141,
+            24.84349
+          ],
+          [
+            38.74,
+            24.88
+          ],
+          [
+            26.66,
+            24.88
+          ]
+        ],
+        "through_area_mm2": 75.317
+      },
+      {
+        "id": "audio",
+        "probe_xz_mm": [
+          41.3,
+          32.1
+        ],
+        "bounds_xz_mm": [
+          [
+            38.352,
+            29.152
+          ],
+          [
+            44.248,
+            35.048
+          ]
+        ],
+        "outline_xz_mm": [
+          [
+            40.79423,
+            35.00632
+          ],
+          [
+            40.20943,
+            34.84102
+          ],
+          [
+            39.68151,
+            34.56637
+          ],
+          [
+            39.23644,
+            34.20813
+          ],
+          [
+            38.88729,
+            33.79745
+          ],
+          [
+            38.61869,
+            33.33009
+          ],
+          [
+            38.43187,
+            32.79016
+          ],
+          [
+            38.35171,
+            32.2005
+          ],
+          [
+            38.39368,
+            31.59423
+          ],
+          [
+            38.55899,
+            31.00943
+          ],
+          [
+            38.83363,
+            30.48151
+          ],
+          [
+            39.19187,
+            30.03644
+          ],
+          [
+            39.60256,
+            29.68729
+          ],
+          [
+            40.06992,
+            29.4187
+          ],
+          [
+            40.60984,
+            29.23187
+          ],
+          [
+            41.19951,
+            29.15171
+          ],
+          [
+            41.80577,
+            29.19368
+          ],
+          [
+            42.39057,
+            29.35899
+          ],
+          [
+            42.91849,
+            29.63363
+          ],
+          [
+            43.36356,
+            29.99187
+          ],
+          [
+            43.71271,
+            30.40255
+          ],
+          [
+            43.9813,
+            30.86992
+          ],
+          [
+            44.16813,
+            31.40984
+          ],
+          [
+            44.24829,
+            31.9995
+          ],
+          [
+            44.20632,
+            32.60577
+          ],
+          [
+            44.04102,
+            33.19057
+          ],
+          [
+            43.76637,
+            33.71849
+          ],
+          [
+            43.40813,
+            34.16356
+          ],
+          [
+            42.99745,
+            34.51271
+          ],
+          [
+            42.53008,
+            34.7813
+          ],
+          [
+            41.99016,
+            34.96813
+          ],
+          [
+            41.4005,
+            35.04829
+          ]
+        ],
+        "through_area_mm2": 27.163
+      },
+      {
+        "id": "hdmi",
+        "probe_xz_mm": [
+          -1.525,
+          22.1
+        ],
+        "bounds_xz_mm": [
+          [
+            -9.045,
+            19.3
+          ],
+          [
+            5.995,
+            24.9
+          ]
+        ],
+        "outline_xz_mm": [
+          [
+            -9.045,
+            23.6
+          ],
+          [
+            -9.045,
+            19.3
+          ],
+          [
+            5.995,
+            19.3
+          ],
+          [
+            5.995,
+            23.6
+          ],
+          [
+            4.695,
+            24.9
+          ],
+          [
+            -7.745,
+            24.9
+          ]
+        ],
+        "through_area_mm2": 82.534
+      },
+      {
+        "id": "tb-1",
+        "probe_xz_mm": [
+          -19.05,
+          22.0
+        ],
+        "bounds_xz_mm": [
+          [
+            -23.595,
+            20.35
+          ],
+          [
+            -14.5,
+            23.65
+          ]
+        ],
+        "outline_xz_mm": [
+          [
+            -22.35793,
+            23.59878
+          ],
+          [
+            -22.73708,
+            23.45017
+          ],
+          [
+            -23.05659,
+            23.22391
+          ],
+          [
+            -23.29948,
+            22.94942
+          ],
+          [
+            -23.49739,
+            22.57279
+          ],
+          [
+            -23.59515,
+            22.12642
+          ],
+          [
+            -23.56338,
+            21.65431
+          ],
+          [
+            -23.40017,
+            21.21292
+          ],
+          [
+            -23.13375,
+            20.85055
+          ],
+          [
+            -22.8068,
+            20.5899
+          ],
+          [
+            -22.40843,
+            20.41497
+          ],
+          [
+            -21.95,
+            20.35
+          ],
+          [
+            -16.15,
+            20.35
+          ],
+          [
+            -15.81141,
+            20.38511
+          ],
+          [
+            -15.48833,
+            20.48848
+          ],
+          [
+            -14.95958,
+            20.85746
+          ],
+          [
+            -14.62936,
+            21.35957
+          ],
+          [
+            -14.5,
+            22.0
+          ],
+          [
+            -14.53511,
+            22.33859
+          ],
+          [
+            -14.63848,
+            22.66167
+          ],
+          [
+            -15.00745,
+            23.19042
+          ],
+          [
+            -15.50957,
+            23.52064
+          ],
+          [
+            -16.15,
+            23.65
+          ],
+          [
+            -21.95,
+            23.65
+          ]
+        ],
+        "through_area_mm2": 27.557
+      },
+      {
+        "id": "tb-2",
+        "probe_xz_mm": [
+          -33.7,
+          22.0
+        ],
+        "bounds_xz_mm": [
+          [
+            -38.245,
+            20.35
+          ],
+          [
+            -29.15,
+            23.65
+          ]
+        ],
+        "outline_xz_mm": [
+          [
+            -37.00793,
+            23.59878
+          ],
+          [
+            -37.38708,
+            23.45017
+          ],
+          [
+            -37.70658,
+            23.22391
+          ],
+          [
+            -37.94948,
+            22.94942
+          ],
+          [
+            -38.14739,
+            22.57279
+          ],
+          [
+            -38.24515,
+            22.12642
+          ],
+          [
+            -38.21338,
+            21.65431
+          ],
+          [
+            -38.05017,
+            21.21292
+          ],
+          [
+            -37.78375,
+            20.85055
+          ],
+          [
+            -37.4568,
+            20.5899
+          ],
+          [
+            -37.05844,
+            20.41497
+          ],
+          [
+            -36.6,
+            20.35
+          ],
+          [
+            -30.8,
+            20.35
+          ],
+          [
+            -30.46141,
+            20.38511
+          ],
+          [
+            -30.13833,
+            20.48848
+          ],
+          [
+            -29.60959,
+            20.85746
+          ],
+          [
+            -29.27936,
+            21.35957
+          ],
+          [
+            -29.15,
+            22.0
+          ],
+          [
+            -29.18511,
+            22.33859
+          ],
+          [
+            -29.28848,
+            22.66167
+          ],
+          [
+            -29.65746,
+            23.19042
+          ],
+          [
+            -30.15957,
+            23.52064
+          ],
+          [
+            -30.8,
+            23.65
+          ],
+          [
+            -36.6,
+            23.65
+          ]
+        ],
+        "through_area_mm2": 27.557
+      },
+      {
+        "id": "ethernet",
+        "probe_xz_mm": [
+          -64.65,
+          23.0
+        ],
+        "bounds_xz_mm": [
+          [
+            -71.25,
+            16.75
+          ],
+          [
+            -58.05,
+            27.12
+          ]
+        ],
+        "outline_xz_mm": [
+          [
+            -70.92141,
+            27.08349
+          ],
+          [
+            -71.09769,
+            26.96769
+          ],
+          [
+            -71.21349,
+            26.79141
+          ],
+          [
+            -71.25,
+            26.6
+          ],
+          [
+            -71.25,
+            18.48
+          ],
+          [
+            -71.21349,
+            18.28859
+          ],
+          [
+            -71.09769,
+            18.11231
+          ],
+          [
+            -70.92141,
+            17.99651
+          ],
+          [
+            -70.73,
+            17.96
+          ],
+          [
+            -68.275,
+            17.96
+          ],
+          [
+            -68.275,
+            17.07
+          ],
+          [
+            -68.18128,
+            16.84372
+          ],
+          [
+            -67.955,
+            16.75
+          ],
+          [
+            -61.345,
+            16.75
+          ],
+          [
+            -61.11873,
+            16.84372
+          ],
+          [
+            -61.025,
+            17.07
+          ],
+          [
+            -61.025,
+            17.96
+          ],
+          [
+            -58.57,
+            17.96
+          ],
+          [
+            -58.37859,
+            17.99651
+          ],
+          [
+            -58.2023,
+            18.11231
+          ],
+          [
+            -58.08651,
+            18.28859
+          ],
+          [
+            -58.05,
+            18.48
+          ],
+          [
+            -58.05,
+            26.6
+          ],
+          [
+            -58.08651,
+            26.79141
+          ],
+          [
+            -58.2023,
+            26.96769
+          ],
+          [
+            -58.37859,
+            27.08349
+          ],
+          [
+            -58.57,
+            27.12
+          ],
+          [
+            -70.73,
+            27.12
+          ]
+        ],
+        "through_area_mm2": 129.371
+      },
+      {
+        "id": "pd-in",
+        "probe_xz_mm": [
+          -79.925,
+          22.2
+        ],
+        "bounds_xz_mm": [
+          [
+            -81.45,
+            17.665
+          ],
+          [
+            -78.4,
+            26.535
+          ]
+        ],
+        "outline_xz_mm": [
+          [
+            -80.4276,
+            26.44979
+          ],
+          [
+            -80.85838,
+            26.21599
+          ],
+          [
+            -81.17225,
+            25.88749
+          ],
+          [
+            -81.37345,
+            25.48711
+          ],
+          [
+            -81.45,
+            25.01
+          ],
+          [
+            -81.45,
+            19.19
+          ],
+          [
+            -81.32201,
+            18.57845
+          ],
+          [
+            -80.98099,
+            18.08977
+          ],
+          [
+            -80.51691,
+            17.78456
+          ],
+          [
+            -79.925,
+            17.665
+          ],
+          [
+            -79.31346,
+            17.79299
+          ],
+          [
+            -78.82477,
+            18.13401
+          ],
+          [
+            -78.51956,
+            18.59809
+          ],
+          [
+            -78.4,
+            19.19
+          ],
+          [
+            -78.4,
+            25.01
+          ],
+          [
+            -78.48302,
+            25.50631
+          ],
+          [
+            -78.71514,
+            25.93837
+          ],
+          [
+            -79.04282,
+            26.25394
+          ],
+          [
+            -79.44789,
+            26.45844
+          ],
+          [
+            -79.93166,
+            26.53498
+          ]
+        ],
+        "through_area_mm2": 24.903
+      }
+    ],
+    "print_face": "exterior",
+    "print_rotation_xyz_deg": [
+      -90,
+      0,
+      0
+    ],
+    "mount": {
+      "travel_mm": 36.0,
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "installation_axis": [
+        0,
+        0,
+        -1
+      ],
+      "side_slots": 2,
+      "installation_xyz_mm": [
+        [
+          0.0,
+          -0.14,
+          36.0
+        ],
+        [
+          0.0,
+          -0.14,
+          0.8
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "roof_z_mm": 41.4,
+      "sill_z_mm": 8.7,
+      "locked_translation_bounds_xyz_mm": [
+        [
+          -0.075,
+          -0.04,
+          0.0
+        ],
+        [
+          0.075,
+          0.0,
+          0.2
+        ]
+      ]
+    },
+    "scope": "Through profiles and solid front wall stations of the packed panel only. Vertical travel in an empty chassis after unplugging and removing both assemblies and the lid."
+  },
+  "port_fit": {
+    "face_y_mm": 57.360000000000014,
+    "ports": [
+      {
+        "id": "A1",
+        "lip_y_mm": 56.45,
+        "recess_mm": 0.91,
+        "axis_xz_mm": [
+          49.9,
+          22.0
+        ],
+        "skin_mm": 0.8,
+        "axial_clearance_mm": 0.11,
+        "front_overlap": {
+          "front_area_mm2": 61.089,
+          "bounds_xz_mm": [
+            [
+              42.1,
+              17.9
+            ],
+            [
+              57.7,
+              26.45
+            ]
+          ],
+          "visible_through_aperture_mm2": 3.3015,
+          "covered_mm2": 57.7875,
+          "fraction_covered": 0.94596
+        },
+        "outer_bezel_xz_span_mm": [
+          15.6,
+          8.55
+        ],
+        "masked_x_margin_mm": null,
+        "opening_center_xz_mm": [
+          49.9,
+          22.0
+        ],
+        "aperture_below_lip_mm": null,
+        "opening_xz_mm": [
+          13.12,
+          5.76
+        ],
+        "bounds_xz_mm": [
+          [
+            43.34,
+            19.12
+          ],
+          [
+            56.46,
+            24.88
+          ]
+        ],
+        "probes": {
+          "masked_bezel": {
+            "xz_mm": [
+              57.0,
+              22.0
+            ],
+            "first_mesh": "d2__panel__faceplate__D26_PROFILED_IO_PLATE",
+            "y_mm": 57.36,
+            "depth_from_lip_mm": -0.91,
+            "with_panel_removed": {
+              "first_mesh": "oem__ports__maccomponent__D26_A1_lip",
+              "y_mm": 56.45
+            }
+          },
+          "open_to_back": {
+            "xz_mm": [
+              49.9,
+              19.98
+            ],
+            "first_mesh": "oem__ports__macinsulator__D26_A1_back",
+            "y_mm": 54.19,
+            "depth_from_lip_mm": 2.26
+          },
+          "tongue": {
+            "xz_mm": [
+              49.9,
+              23.03
+            ],
+            "first_mesh": "oem__ports__maccomponent__D26_A1_tongue",
+            "y_mm": 55.79,
+            "depth_from_lip_mm": 0.66
+          }
+        }
+      },
+      {
+        "id": "A2",
+        "lip_y_mm": 56.45,
+        "recess_mm": 0.91,
+        "axis_xz_mm": [
+          32.7,
+          22.0
+        ],
+        "skin_mm": 0.8,
+        "axial_clearance_mm": 0.11,
+        "front_overlap": {
+          "front_area_mm2": 61.089,
+          "bounds_xz_mm": [
+            [
+              24.9,
+              17.9
+            ],
+            [
+              40.5,
+              26.45
+            ]
+          ],
+          "visible_through_aperture_mm2": 3.3015,
+          "covered_mm2": 57.7875,
+          "fraction_covered": 0.94596
+        },
+        "outer_bezel_xz_span_mm": [
+          15.6,
+          8.55
+        ],
+        "masked_x_margin_mm": null,
+        "opening_center_xz_mm": [
+          32.7,
+          22.0
+        ],
+        "aperture_below_lip_mm": null,
+        "opening_xz_mm": [
+          13.12,
+          5.76
+        ],
+        "bounds_xz_mm": [
+          [
+            26.14,
+            19.12
+          ],
+          [
+            39.26,
+            24.88
+          ]
+        ],
+        "probes": {
+          "masked_bezel": {
+            "xz_mm": [
+              39.8,
+              22.0
+            ],
+            "first_mesh": "d2__panel__faceplate__D26_PROFILED_IO_PLATE",
+            "y_mm": 57.36,
+            "depth_from_lip_mm": -0.91,
+            "with_panel_removed": {
+              "first_mesh": "oem__ports__maccomponent__D26_A2_lip",
+              "y_mm": 56.45
+            }
+          },
+          "open_to_back": {
+            "xz_mm": [
+              32.7,
+              19.98
+            ],
+            "first_mesh": "oem__ports__macinsulator__D26_A2_back",
+            "y_mm": 54.19,
+            "depth_from_lip_mm": 2.26
+          },
+          "tongue": {
+            "xz_mm": [
+              32.7,
+              23.03
+            ],
+            "first_mesh": "oem__ports__maccomponent__D26_A2_tongue",
+            "y_mm": 55.79,
+            "depth_from_lip_mm": 0.66
+          }
+        }
+      },
+      {
+        "id": "audio",
+        "lip_y_mm": 56.45,
+        "recess_mm": 0.91,
+        "axis_xz_mm": [
+          41.3,
+          32.1
+        ],
+        "skin_mm": 0.8,
+        "axial_clearance_mm": 0.11,
+        "front_overlap": {
+          "front_area_mm2": 42.2191,
+          "bounds_xz_mm": [
+            [
+              36.3,
+              29.0
+            ],
+            [
+              46.3,
+              35.2
+            ]
+          ],
+          "visible_through_aperture_mm2": 7.5424,
+          "covered_mm2": 34.6767,
+          "fraction_covered": 0.82135
+        },
+        "outer_bezel_xz_span_mm": [
+          10.0,
+          6.2
+        ],
+        "masked_x_margin_mm": null,
+        "opening_center_xz_mm": [
+          41.3,
+          32.1
+        ],
+        "aperture_below_lip_mm": null,
+        "opening_xz_mm": [
+          5.8966,
+          5.8966
+        ],
+        "bounds_xz_mm": [
+          [
+            38.352,
+            29.152
+          ],
+          [
+            44.248,
+            35.048
+          ]
+        ],
+        "probes": {
+          "masked_bezel": {
+            "xz_mm": [
+              45.4,
+              32.1
+            ],
+            "first_mesh": "d2__panel__faceplate__D26_PROFILED_IO_PLATE",
+            "y_mm": 57.36,
+            "depth_from_lip_mm": -0.91,
+            "with_panel_removed": {
+              "first_mesh": "oem__ports__maccomponent__D26_audio_lip",
+              "y_mm": 56.45
+            }
+          },
+          "open_to_back": {
+            "xz_mm": [
+              41.3,
+              32.1
+            ],
+            "first_mesh": "oem__ports__macinsulator__D26_audio_back",
+            "y_mm": 54.19,
+            "depth_from_lip_mm": 2.26
+          }
+        }
+      },
+      {
+        "id": "HDMI",
+        "lip_y_mm": 56.45,
+        "recess_mm": 0.91,
+        "axis_xz_mm": [
+          -1.525,
+          22.1
+        ],
+        "skin_mm": 0.8,
+        "axial_clearance_mm": 0.11,
+        "front_overlap": {
+          "front_area_mm2": 58.323,
+          "bounds_xz_mm": [
+            [
+              -9.825,
+              17.4
+            ],
+            [
+              6.775,
+              25.6
+            ]
+          ],
+          "visible_through_aperture_mm2": 5.0122,
+          "covered_mm2": 53.3108,
+          "fraction_covered": 0.91406
+        },
+        "outer_bezel_xz_span_mm": [
+          16.6,
+          8.2
+        ],
+        "masked_x_margin_mm": null,
+        "opening_center_xz_mm": [
+          -1.525,
+          22.1
+        ],
+        "aperture_below_lip_mm": null,
+        "opening_xz_mm": [
+          15.04,
+          5.6
+        ],
+        "bounds_xz_mm": [
+          [
+            -9.045,
+            19.3
+          ],
+          [
+            5.995,
+            24.9
+          ]
+        ],
+        "probes": {
+          "masked_bezel": {
+            "xz_mm": [
+              6.375,
+              22.1
+            ],
+            "first_mesh": "d2__panel__faceplate__D26_PROFILED_IO_PLATE",
+            "y_mm": 57.36,
+            "depth_from_lip_mm": -0.91,
+            "with_panel_removed": {
+              "first_mesh": "oem__ports__maccomponent__D26_HDMI_lip",
+              "y_mm": 56.45
+            }
+          },
+          "open_to_back": {
+            "xz_mm": [
+              -1.525,
+              20.165
+            ],
+            "first_mesh": "oem__ports__macinsulator__D26_HDMI_back",
+            "y_mm": 54.19,
+            "depth_from_lip_mm": 2.26
+          },
+          "tongue": {
+            "xz_mm": [
+              -1.525,
+              22.18
+            ],
+            "first_mesh": "oem__ports__maccomponent__D26_HDMI_tongue",
+            "y_mm": 55.73,
+            "depth_from_lip_mm": 0.72
+          }
+        }
+      },
+      {
+        "id": "TB1",
+        "lip_y_mm": 56.35,
+        "recess_mm": 1.01,
+        "axis_xz_mm": [
+          -19.05,
+          22.0
+        ],
+        "skin_mm": 0.9,
+        "axial_clearance_mm": 0.11,
+        "front_overlap": {
+          "front_area_mm2": 38.4139,
+          "bounds_xz_mm": [
+            [
+              -24.825,
+              19.3
+            ],
+            [
+              -13.275,
+              24.7
+            ]
+          ],
+          "visible_through_aperture_mm2": 3.929,
+          "covered_mm2": 34.485,
+          "fraction_covered": 0.89772
+        },
+        "outer_bezel_xz_span_mm": [
+          11.55,
+          5.4
+        ],
+        "masked_x_margin_mm": [
+          1.23,
+          1.225
+        ],
+        "opening_center_xz_mm": [
+          -19.0475,
+          22.0
+        ],
+        "aperture_below_lip_mm": null,
+        "opening_xz_mm": [
+          9.0952,
+          3.3
+        ],
+        "bounds_xz_mm": [
+          [
+            -23.595,
+            20.35
+          ],
+          [
+            -14.5,
+            23.65
+          ]
+        ],
+        "probes": {
+          "masked_bezel": {
+            "xz_mm": [
+              -19.05,
+              24.25
+            ],
+            "first_mesh": "d2__panel__faceplate__D26_PROFILED_IO_PLATE",
+            "y_mm": 57.36,
+            "depth_from_lip_mm": -1.01,
+            "with_panel_removed": {
+              "first_mesh": "oem__ports__maccomponent__D26_TB1_lip",
+              "y_mm": 56.35
+            }
+          },
+          "open_to_back": {
+            "xz_mm": [
+              -19.05,
+              21.24
+            ],
+            "first_mesh": "oem__ports__macmetal__D26_tb_shared_shield",
+            "y_mm": 55.11,
+            "depth_from_lip_mm": 1.24
+          },
+          "tongue": {
+            "xz_mm": [
+              -19.05,
+              22.0
+            ],
+            "first_mesh": "oem__ports__maccomponent__D26_TB1_tongue",
+            "y_mm": 55.69,
+            "depth_from_lip_mm": 0.66
+          }
+        }
+      },
+      {
+        "id": "TB2",
+        "lip_y_mm": 56.35,
+        "recess_mm": 1.01,
+        "axis_xz_mm": [
+          -33.7,
+          22.0
+        ],
+        "skin_mm": 0.9,
+        "axial_clearance_mm": 0.11,
+        "front_overlap": {
+          "front_area_mm2": 38.4139,
+          "bounds_xz_mm": [
+            [
+              -39.475,
+              19.3
+            ],
+            [
+              -27.925,
+              24.7
+            ]
+          ],
+          "visible_through_aperture_mm2": 3.929,
+          "covered_mm2": 34.485,
+          "fraction_covered": 0.89772
+        },
+        "outer_bezel_xz_span_mm": [
+          11.55,
+          5.4
+        ],
+        "masked_x_margin_mm": [
+          1.23,
+          1.225
+        ],
+        "opening_center_xz_mm": [
+          -33.6975,
+          22.0
+        ],
+        "aperture_below_lip_mm": null,
+        "opening_xz_mm": [
+          9.0952,
+          3.3
+        ],
+        "bounds_xz_mm": [
+          [
+            -38.245,
+            20.35
+          ],
+          [
+            -29.15,
+            23.65
+          ]
+        ],
+        "probes": {
+          "masked_bezel": {
+            "xz_mm": [
+              -33.7,
+              24.25
+            ],
+            "first_mesh": "d2__panel__faceplate__D26_PROFILED_IO_PLATE",
+            "y_mm": 57.36,
+            "depth_from_lip_mm": -1.01,
+            "with_panel_removed": {
+              "first_mesh": "oem__ports__maccomponent__D26_TB2_lip",
+              "y_mm": 56.35
+            }
+          },
+          "open_to_back": {
+            "xz_mm": [
+              -33.7,
+              21.24
+            ],
+            "first_mesh": "oem__ports__macmetal__D26_tb_shared_shield",
+            "y_mm": 55.11,
+            "depth_from_lip_mm": 1.24
+          },
+          "tongue": {
+            "xz_mm": [
+              -33.7,
+              22.0
+            ],
+            "first_mesh": "oem__ports__maccomponent__D26_TB2_tongue",
+            "y_mm": 55.69,
+            "depth_from_lip_mm": 0.66
+          }
+        }
+      },
+      {
+        "id": "RJ",
+        "lip_y_mm": 56.45,
+        "recess_mm": 0.91,
+        "axis_xz_mm": [
+          -64.65,
+          23.0
+        ],
+        "skin_mm": 0.8,
+        "axial_clearance_mm": 0.11,
+        "front_overlap": {
+          "front_area_mm2": 71.6221,
+          "bounds_xz_mm": [
+            [
+              -72.57,
+              16.4
+            ],
+            [
+              -56.73,
+              28.0
+            ]
+          ],
+          "visible_through_aperture_mm2": 17.5239,
+          "covered_mm2": 54.0982,
+          "fraction_covered": 0.75533
+        },
+        "outer_bezel_xz_span_mm": [
+          15.84,
+          11.6
+        ],
+        "masked_x_margin_mm": null,
+        "opening_center_xz_mm": [
+          -64.65,
+          21.935
+        ],
+        "aperture_below_lip_mm": null,
+        "opening_xz_mm": [
+          13.2,
+          10.37
+        ],
+        "bounds_xz_mm": [
+          [
+            -71.25,
+            16.75
+          ],
+          [
+            -58.05,
+            27.12
+          ]
+        ],
+        "probes": {
+          "masked_bezel": {
+            "xz_mm": [
+              -57.4,
+              23.0
+            ],
+            "first_mesh": "d2__panel__faceplate__D26_PROFILED_IO_PLATE",
+            "y_mm": 57.36,
+            "depth_from_lip_mm": -0.91,
+            "with_panel_removed": {
+              "first_mesh": "oem__ports__maccomponent__D26_RJ_lip",
+              "y_mm": 56.45
+            }
+          },
+          "open_to_back": {
+            "xz_mm": [
+              -64.65,
+              17.72
+            ],
+            "first_mesh": "oem__ports__macinsulator__D26_RJ_back",
+            "y_mm": 54.19,
+            "depth_from_lip_mm": 2.26
+          }
+        }
+      },
+      {
+        "id": "PD",
+        "lip_y_mm": 56.8,
+        "recess_mm": 0.56,
+        "axis_xz_mm": [
+          -79.925,
+          22.2
+        ],
+        "skin_mm": 0.4,
+        "axial_clearance_mm": 0.16,
+        "front_overlap": {
+          "front_area_mm2": 6.1447,
+          "bounds_xz_mm": [
+            [
+              -81.55,
+              17.73
+            ],
+            [
+              -78.3,
+              26.67
+            ]
+          ],
+          "visible_through_aperture_mm2": 4.1947,
+          "covered_mm2": 1.9499,
+          "fraction_covered": 0.31734
+        },
+        "outer_bezel_xz_span_mm": [
+          3.25,
+          8.94
+        ],
+        "masked_x_margin_mm": null,
+        "opening_center_xz_mm": [
+          -79.925,
+          22.1
+        ],
+        "aperture_below_lip_mm": 0.065,
+        "opening_xz_mm": [
+          3.05,
+          8.87
+        ],
+        "bounds_xz_mm": [
+          [
+            -81.45,
+            17.665
+          ],
+          [
+            -78.4,
+            26.535
+          ]
+        ],
+        "probes": {
+          "masked_bezel": {
+            "xz_mm": [
+              -78.35,
+              22.2
+            ],
+            "first_mesh": "d2__panel__faceplate__D26_PROFILED_IO_PLATE",
+            "y_mm": 57.36,
+            "depth_from_lip_mm": -0.56,
+            "with_panel_removed": {
+              "first_mesh": "d2__socket__macmetal__D2_USB_C_SHELL_GAUGE",
+              "y_mm": 56.8
+            }
+          },
+          "open_to_back": {
+            "xz_mm": [
+              -78.905,
+              22.2
+            ],
+            "first_mesh": "d2__socket__macmetal__D2_USB_C_SHELL_GAUGE",
+            "y_mm": 54.44,
+            "depth_from_lip_mm": 2.36
+          },
+          "tongue": {
+            "xz_mm": [
+              -79.925,
+              22.2
+            ],
+            "first_mesh": "d2__socket__macinsulator__D24_PD_DIELECTRIC_TONGUE",
+            "y_mm": 56.2,
+            "depth_from_lip_mm": 0.6
+          }
+        }
+      }
+    ],
+    "minimum_web_mm": 4.08,
+    "webs_face_mm": {
+      "RJ/PD": 7.15,
+      "RJ/A2": 84.19,
+      "RJ/A1": 101.39,
+      "RJ/HDMI": 49.005,
+      "RJ/TB2": 19.8048,
+      "RJ/TB1": 34.4548,
+      "RJ/audio": 96.5643,
+      "PD/A2": 104.54,
+      "PD/A1": 121.74,
+      "PD/HDMI": 69.355,
+      "PD/TB2": 40.1548,
+      "PD/TB1": 54.8048,
+      "PD/audio": 116.9729,
+      "A2/A1": 4.08,
+      "A2/HDMI": 20.145,
+      "A2/TB2": 55.29,
+      "A2/TB1": 40.64,
+      "A2/audio": 4.696,
+      "A1/HDMI": 37.345,
+      "A1/TB2": 72.49,
+      "A1/TB1": 57.84,
+      "A1/audio": 4.6929,
+      "HDMI/TB2": 20.105,
+      "HDMI/TB1": 5.455,
+      "HDMI/audio": 33.3704,
+      "TB2/TB1": 5.5563,
+      "TB2/audio": 68.2097,
+      "TB1/audio": 53.732
+    },
+    "scope": "Each positive recess consists of solid front mask plus air gap to the wider lip. Digital model only."
+  },
+  "service": {
+    "panel_remove_xyz_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.14,
+        0.8
+      ],
+      [
+        0.0,
+        -0.14,
+        36.0
+      ]
+    ],
+    "board_install_xyz_mm": [
+      [
+        0.0,
+        -2.1,
+        38.0
+      ],
+      [
+        0.0,
+        -2.1,
+        0.27
+      ],
+      [
+        0.0,
+        0.0,
+        0.27
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "pd_remove_xyz_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.27
+      ],
+      [
+        0.0,
+        -2.1,
+        0.27
+      ],
+      [
+        0.0,
+        -2.1,
+        49.0
+      ]
+    ],
+    "power_scope": "The loaded saddle, both modules and USB-C socket follow the checked removal path with the Mac and the panel seated.",
+    "board_remove_stops_pct": [
+      54,
+      60,
+      65,
+      74
+    ],
+    "panel_remove_stops_pct": [
+      74.0,
+      74.57778,
+      100.0
+    ],
+    "pd_detail_stops_pct": [
+      40,
+      60,
+      76,
+      100
+    ],
+    "power_datum_offsets_xyz_mm": {
+      "trigger": [
+        0.0,
+        -0.29,
+        0.0
+      ],
+      "buck": [
+        0.0,
+        -0.29,
+        0.0
+      ],
+      "socket": [
+        0.0,
+        -0.29,
+        0.0
+      ],
+      "saddle": [
+        0.0,
+        -0.29,
+        0.0
+      ]
+    }
+  },
+  "reports_sha256": {
+    "cad-validation.json": "b0ef5a778919c972527981ed4183497bc9091e45e2f13ebc525abd388ce50c4d",
+    "fit-validation.json": "554890b0f164d711594b859d7fcef2f86259d7b81e50bb8bb68caaae840f1c02",
+    "ports-fit.json": "7b496dc47ebb751ae35f64769d3982f95bb0ea3d051fad672484bfef367d2085",
+    "mount-fit.json": "21693e4894282d39b37310345f54919da0cbfa11952bfd7df5771168c7979568",
+    "board-install-fit.json": "5ae988853732b8cfbbf173b2412a380a73c6d3936f5ebe8cb044ca39444506d5",
+    "power-fit.json": "d9a3e402a44243d99e75a931b3784a407b627e885b2369ea5c8a6f7531d61dfe"
+  }
+}

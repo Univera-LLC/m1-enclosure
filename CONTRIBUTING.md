@@ -1,6 +1,6 @@
 # Contributing
 
-There are two useful ways to contribute: make an engineering change that can be checked against the D2.6 reference, or report what a printed part does on a real board. Keep those kinds of evidence separate. The published D2.6 files remain a reference for both.
+There are two useful ways to contribute: make an engineering change that can be checked against the published D2.7 release, or report what a printed part does on a real board. Keep those kinds of evidence separate and name the revision you used.
 
 ## Work from a checkout
 
@@ -23,7 +23,7 @@ The browser check uses an installed Edge or Playwright Chromium; the [viewer gui
 ## Submit an engineering change
 
 1. Identify the revision, affected parts, and the observation that motivates the change. For a port or mounting change, record the coordinate basis, units, and whether a figure came from a reference model, a specification, a measurement or an assumption.
-2. Make the smallest coherent change. If a panel change also affects the base, lid or holder, name the matching parts. Give a changed printable design its own revision; keep the recorded D2.6 files intact.
+2. Make the smallest coherent change. If a panel change also affects the base, lid or holder, name the matching parts. Give a changed printable design its own revision; keep the recorded release files intact.
 3. Report the commands you ran, what they verified and what remains open. For a geometry change, include a comparable before/after view or a dimensional result. For a viewer change, check the relevant interaction as well as the rendered page.
 
 Use **SOURCE** for geometry taken from a reference; **DOCUMENTED** for a specification or drawing; **MEASURED** for a physical measurement; and **ASSUMED** for an unverified input. Record a CAD or slicer result as calculated, with its input revision. A successful slice does not establish printed fit, electrical behavior or temperature.
@@ -48,10 +48,10 @@ This is permission to use your work, not an assignment of ownership or a patent 
 
 ## Report a fit result
 
-Start with the [D2.6 first-fit kit](cad/solidcraft-m1/prototype-d26/d2.6-first-fit.zip) on an unpowered board. A useful report can be short:
+Start with the [D2.7 first-fit kit](cad/solidcraft-m1/prototype-d27/d2.7-first-fit.zip) on an unpowered board. A useful report can be short:
 
 - **Setup:** revision, part numbers, printer, material, nozzle size, first and subsequent layer heights, orientation, and whether supports were enabled.
 - **Observation:** exact location, whether the part sat freely, and any difference with and without the panel. Identify the plug or cable where relevant.
 - **Evidence:** measured value, units and measuring method, or a description if no measurement was taken. A detail photo with a scale is useful if you own it and intend to publish it.
 
-For D2.6, the shared Thunderbolt shield and the USB-A/audio area are especially useful checks. The [fit sheet](cad/solidcraft-m1/prototype-d26/FIT-FIRST.md) lists the rest. Do not include private owner photographs or republish supplier files; cite the source instead.
+For D2.7, report how the board sits on both flat supports and how the modules fit the carrier. The shared Thunderbolt shield and USB-A/audio area still deserve a check. The [fit sheet](cad/solidcraft-m1/prototype-d27/FIT-FIRST.md) lists the rest. Do not include private owner photographs or republish supplier files; cite the source instead.

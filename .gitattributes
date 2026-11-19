@@ -4,6 +4,11 @@
 cad/** -text
 # Frozen CAD reports may use CRLF; keep checking for whitespace before the line ending.
 cad/**/*.json whitespace=trailing-space,space-before-tab,cr-at-eol
+# The same frozen D2.6 drawings are reused in D2.7, including their CRLF endings.
+cad/solidcraft-m1/prototype-d27/connector-section.svg whitespace=trailing-space,space-before-tab,cr-at-eol
+cad/solidcraft-m1/prototype-d27/d25-vs-d26-usb-audio-comparison.svg whitespace=trailing-space,space-before-tab,cr-at-eol
+# The bundled viewer is generated; review the UI source and its release hash.
+cad/solidcraft-m1/prototype-d27/review/index.html -diff
 release/** -text
 *.stl binary
 *.glb binary

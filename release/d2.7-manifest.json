@@ -1,0 +1,181 @@
+{
+  "revision": "D2.7",
+  "target": "https://univera-llc.github.io/m1-enclosure/",
+  "physical_status": "NOT TESTED",
+  "kit_notices": [
+    "LICENSE",
+    "THIRD_PARTY.md"
+  ],
+  "files": {
+    "d25-vs-d26-usb-audio-comparison.svg": {
+      "source": "cad/solidcraft-m1/prototype-d27/d25-vs-d26-usb-audio-comparison.svg",
+      "bytes": 47541,
+      "sha256": "f271cf04248531be7b8aa40e4cf9bfa6d6503eaf0488f47d7826a28f15b806f4"
+    },
+    "d26-connector-section.svg": {
+      "source": "cad/solidcraft-m1/prototype-d27/connector-section.svg",
+      "bytes": 7709,
+      "sha256": "fdd64bbef38a92bd4806c71796aff95ad33aa0c4ced1d2140ae5f6b5f69208ab"
+    },
+    "d27-mounts.webp": {
+      "source": "docs/assets/d27-mounts.webp",
+      "bytes": 69802,
+      "sha256": "83f0d6349fc156a07c7cdec77b8483f80d2e6e5e835687c8d77018b1173009f3"
+    },
+    "downloads/d2.7/CREDITS.txt": {
+      "source": "cad/solidcraft-m1/prototype-d27/CREDITS.txt",
+      "bytes": 1685,
+      "sha256": "0c4b7e69554108765e63819f39ce4372e72e56e2d346c513b23a9039305537cf"
+    },
+    "downloads/d2.7/FIT-FIRST.md": {
+      "source": "cad/solidcraft-m1/prototype-d27/FIT-FIRST.md",
+      "bytes": 3337,
+      "sha256": "c7621dfe458135c5b020df4467e4e4e7ca49e37c0559bd5000e3e212277d2bbf"
+    },
+    "downloads/d2.7/base-fit.json": {
+      "source": "cad/solidcraft-m1/prototype-d27/base-fit.json",
+      "bytes": 873,
+      "sha256": "bc8f66dc073ea39a1099c91b782fae13677dfb02b8645b8bcc0250f0e24602ee"
+    },
+    "downloads/d2.7/board-install-fit.json": {
+      "source": "cad/solidcraft-m1/prototype-d27/board-install-fit.json",
+      "bytes": 14547,
+      "sha256": "5ae988853732b8cfbbf173b2412a380a73c6d3936f5ebe8cb044ca39444506d5"
+    },
+    "downloads/d2.7/cad-validation.json": {
+      "source": "cad/solidcraft-m1/prototype-d27/cad-validation.json",
+      "bytes": 11787,
+      "sha256": "b0ef5a778919c972527981ed4183497bc9091e45e2f13ebc525abd388ce50c4d"
+    },
+    "downloads/d2.7/d2.7-cold-fit-kit.zip": {
+      "source": "cad/solidcraft-m1/prototype-d27/d2.7-cold-fit-kit.zip",
+      "bytes": 207637,
+      "sha256": "bb48971878b810deed7d9cfeaed0d9843d568d8606a90d59d2ee2d65876d398d"
+    },
+    "downloads/d2.7/d2.7-first-fit.zip": {
+      "source": "cad/solidcraft-m1/prototype-d27/d2.7-first-fit.zip",
+      "bytes": 75000,
+      "sha256": "1083a3f243a3e2ab374d407b58fbd0cb12ecc1a5092c86d719213e8c29a22acf"
+    },
+    "downloads/d2.7/d27-assembly.step": {
+      "source": "cad/solidcraft-m1/prototype-d27/d27-assembly.step",
+      "bytes": 2468171,
+      "sha256": "5a0f2114b1f4f25410a772ef7195f37cba93d4c265474994b03b076091151fc8"
+    },
+    "downloads/d2.7/d27-printable.step": {
+      "source": "cad/solidcraft-m1/prototype-d27/d27-printable.step",
+      "bytes": 2078912,
+      "sha256": "dd49cb0124cd8d0d9cb60543c3875be5831bf43832af23c3eb11037b0b5f2ec3"
+    },
+    "downloads/d2.7/d27-workbench.sc": {
+      "source": "cad/solidcraft-m1/prototype-d27/d27-workbench.sc",
+      "bytes": 12939323,
+      "sha256": "44942d3b9b64907ef1401ff217456aea281d3feb532686608b1726cec57e6a05"
+    },
+    "downloads/d2.7/fascia-contract.json": {
+      "source": "cad/solidcraft-m1/prototype-d27/fascia-contract.json",
+      "bytes": 8284,
+      "sha256": "375bc712ec338c6d4bc0293bcb9301574baf500f449375c66dbd5c4c0f45a75b"
+    },
+    "downloads/d2.7/fit-validation.json": {
+      "source": "cad/solidcraft-m1/prototype-d27/fit-validation.json",
+      "bytes": 145183,
+      "sha256": "554890b0f164d711594b859d7fcef2f86259d7b81e50bb8bb68caaae840f1c02"
+    },
+    "downloads/d2.7/geometry-check.json": {
+      "source": "cad/solidcraft-m1/viewer/d27/geometry-check.json",
+      "bytes": 51379,
+      "sha256": "a296bd9632b9ab68b20ca394bd0be5d2bc599bb48e4fc77fd3c369f147cf109e"
+    },
+    "downloads/d2.7/mount-fit.json": {
+      "source": "cad/solidcraft-m1/prototype-d27/mount-fit.json",
+      "bytes": 2959,
+      "sha256": "21693e4894282d39b37310345f54919da0cbfa11952bfd7df5771168c7979568"
+    },
+    "downloads/d2.7/notices/LICENSE": {
+      "source": "cad/solidcraft-m1/prototype-d27/LICENSE",
+      "bytes": 4015,
+      "sha256": "c49383449c55aef876c0791577802b500a2a031e658b1be44b6efc8714f2bf76"
+    },
+    "downloads/d2.7/notices/THIRD_PARTY.md": {
+      "source": "cad/solidcraft-m1/prototype-d27/THIRD_PARTY.md",
+      "bytes": 5083,
+      "sha256": "688b41f960e114e4e3f698d79782c755ad28549b59c95422d068625e9cc288a9"
+    },
+    "downloads/d2.7/ports-fit.json": {
+      "source": "cad/solidcraft-m1/prototype-d27/ports-fit.json",
+      "bytes": 41334,
+      "sha256": "7b496dc47ebb751ae35f64769d3982f95bb0ea3d051fad672484bfef367d2085"
+    },
+    "downloads/d2.7/power-fit.json": {
+      "source": "cad/solidcraft-m1/prototype-d27/power-fit.json",
+      "bytes": 65239,
+      "sha256": "d9a3e402a44243d99e75a931b3784a407b627e885b2369ea5c8a6f7531d61dfe"
+    },
+    "downloads/d2.7/print/01-power-saddle.stl": {
+      "source": "cad/solidcraft-m1/prototype-d27/print/01-power-saddle.stl",
+      "bytes": 52384,
+      "sha256": "4b1b940fc21ad843a2963a5a2cdc0a1ed4b77e033bb95e4a73a905989f6512fb"
+    },
+    "downloads/d2.7/print/02-flat-rear-panel.stl": {
+      "source": "cad/solidcraft-m1/prototype-d27/print/02-flat-rear-panel.stl",
+      "bytes": 122284,
+      "sha256": "37944523e33fff7563e0741044d43aaa1b96849fa6ec029864daa712f50a0005"
+    },
+    "downloads/d2.7/print/03-monolithic-base.stl": {
+      "source": "cad/solidcraft-m1/prototype-d27/print/03-monolithic-base.stl",
+      "bytes": 335384,
+      "sha256": "a7f014434e45497cd436a746edfe3636a126674226fa38cc5bfb393eef2ac0bb"
+    },
+    "downloads/d2.7/print/04-vented-lid.stl": {
+      "source": "cad/solidcraft-m1/prototype-d27/print/04-vented-lid.stl",
+      "bytes": 246984,
+      "sha256": "167e8c7c86581a488589252c956dca6dca5eb2dee7993a056557ab3c34f69400"
+    },
+    "downloads/d2.7/print/05-front-blank.stl": {
+      "source": "cad/solidcraft-m1/prototype-d27/print/05-front-blank.stl",
+      "bytes": 167084,
+      "sha256": "7922c67bb8f6e4007ad3b858fad922fb646601dbfa01efe2ab68f50b38727e2e"
+    },
+    "downloads/d2.7/print/06-board-datum-strip.stl": {
+      "source": "cad/solidcraft-m1/prototype-d27/print/06-board-datum-strip.stl",
+      "bytes": 92784,
+      "sha256": "775426b779a805c2dd899561ab0737bc00b9df4d3a80cdeba0e41d9226bd9d93"
+    },
+    "downloads/d2.7/print/07-side-guide-sample.stl": {
+      "source": "cad/solidcraft-m1/prototype-d27/print/07-side-guide-sample.stl",
+      "bytes": 13584,
+      "sha256": "3ffe8d9ebb7e555bf582e604a8ccda6d81d71a94c7fda2258a0ed450c8da2d5d"
+    },
+    "downloads/d2.7/print/08-lid-stop-sample.stl": {
+      "source": "cad/solidcraft-m1/prototype-d27/print/08-lid-stop-sample.stl",
+      "bytes": 17484,
+      "sha256": "58aeb461eb7ac18716aee6ca3a4238b4a78ec52ad16d7950ac5be84bd5136023"
+    },
+    "downloads/d2.7/print/slice-checks.json": {
+      "source": "cad/solidcraft-m1/prototype-d27/print/slice-checks.json",
+      "bytes": 6222,
+      "sha256": "6e55d91aa5d268fbd8d14a534861345017615f69c6aa00c6cc227d20633d7d6c"
+    },
+    "downloads/d2.7/print/stl-checks.json": {
+      "source": "cad/solidcraft-m1/prototype-d27/print/stl-checks.json",
+      "bytes": 5369,
+      "sha256": "54939d570963896e11b22ed3550dff00615d0926f2b0ba9b835911f963f3b5da"
+    },
+    "downloads/d2.7/reference-crosscheck.json": {
+      "source": "cad/solidcraft-m1/prototype-d27/reference-crosscheck.json",
+      "bytes": 1604,
+      "sha256": "d7238ce9afc2ed684e3935a6bac91737f018c0455bbda18bfcfe95b779df7ac3"
+    },
+    "index.html": {
+      "source": "cad/solidcraft-m1/prototype-d27/review/index.html",
+      "bytes": 2908342,
+      "sha256": "2b1f3319ab88593d943d21dac3404a215410fed9eb05908a1201acb8b6396a19"
+    },
+    "reference/d2.7/mac-board-reference.glb": {
+      "source": "cad/solidcraft-m1/prototype-d27/board-study/mac-board-reference.glb",
+      "bytes": 889556,
+      "sha256": "a5fb5ee5f7ab036a89470831b93f688aa2cac6a396a4a2de36990a7d12f12607"
+    }
+  }
+}

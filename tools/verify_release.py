@@ -29,9 +29,9 @@ def load(path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def verify(root):
+def verify(root, manifest_path=None):
     project = load(root / "project.json")
-    manifest = load(inside(root, project["published_manifest"]))
+    manifest = load(inside(root, manifest_path or project["published_manifest"]))
     rev = manifest["revision"]
     prefix = f"downloads/{rev.lower()}/"
     receipts, companions = manifest["files"], manifest.get("companion_files", {})
@@ -86,6 +86,9 @@ def verify(root):
         require({part[:2] for part in members} == ids and len(members) == len(ids), f"wrong part IDs: {name}")
         members.update({p: prefix + p for p in ("CREDITS.txt", "FIT-FIRST.md")})
         members.update({p: prefix + "print/" + p for p in ("slice-checks.json", "stl-checks.json")})
+        for name_notice in manifest.get("kit_notices", []):
+            require(name_notice in ("LICENSE", "THIRD_PARTY.md"), "unexpected kit notice")
+            members[name_notice] = prefix + "notices/" + name_notice
         with ZipFile(paths[prefix + name]) as kit:
             require(sorted(kit.namelist()) == sorted(members), f"wrong or duplicate ZIP entries: {name}")
             for member, route in members.items():
@@ -96,10 +99,11 @@ def verify(root):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=ROOT, help="source checkout (default: this script's checkout)")
+    parser.add_argument("--manifest", help="verify a specific receipt path relative to the checkout")
     parser.add_argument("--site-dir", type=Path, help="copy the verified release routes into a NEW directory")
     args = parser.parse_args()
     try:
-        manifest, paths = verify(args.root.resolve())
+        manifest, paths = verify(args.root.resolve(), args.manifest)
         if args.site_dir:
             dest = args.site_dir.resolve()
             dest.mkdir(parents=True, exist_ok=False)
@@ -107,9 +111,10 @@ def main():
                 target = inside(dest, route)
                 target.parent.mkdir(parents=True, exist_ok=True)
                 target.write_bytes(path.read_bytes())
-        print(f"Verified {manifest['revision']}: {len(manifest['files'])} published files, "
+        receipt = "Pages " + manifest["pages_commit"][:12] if "pages_commit" in manifest else "pinned release receipt"
+        print(f"Verified {manifest['revision']}: {len(manifest['files'])} release files, "
               f"{len(manifest.get('companion_files', {}))} companion assets, 8 sliced STL files and both kits; "
-              f"Pages {manifest['pages_commit'][:12]}; physical fit: {manifest['physical_status']}.")
+              f"{receipt}; physical fit: {manifest['physical_status']}.")
     except (OSError, ValueError, KeyError, BadZipFile) as err:
         print(f"Release verification failed: {err}", file=sys.stderr)
         return 1

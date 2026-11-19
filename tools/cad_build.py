@@ -45,9 +45,7 @@ def binary(env, names, *installed):
 
 
 def source_files():
-    project = json.loads((ROOT/"project.json").read_text(encoding="utf8"))
-    if project.get("revision") != "D2.6" or project.get("cad") != ACTIVE.as_posix():
-        raise ValueError("CAD build supports D2.6 only; project.json must select D2.6 and " + ACTIVE.as_posix())
+    # This runner is always the reproducible D2.6 base for later CAD stages.
     paths = [Path(s) for s in INPUTS.read_text(encoding="utf8").splitlines() if s and not s.startswith("#")]
     for p in paths:
         if p.is_absolute() or ".." in p.parts or not (ROOT/CAD/p).is_file():
@@ -106,10 +104,7 @@ def published_prints(active, manifest_path):
 
 
 def selected_manifest():
-    project = json.loads((ROOT/"project.json").read_text(encoding="utf8"))
-    path = (ROOT/project["published_manifest"]).resolve()
-    if not path.is_relative_to(ROOT): raise ValueError("Published manifest path must stay within the project")
-    return path
+    return ROOT/"release/d2.6-manifest.json"
 
 
 def make_arrays(stl, target):
