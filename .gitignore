@@ -5,6 +5,7 @@
 !/.gitattributes
 !/.github/
 !/README.md
+!/llms.txt
 !/CONTRIBUTING.md
 !/THIRD_PARTY.md
 !/NOTICE.md

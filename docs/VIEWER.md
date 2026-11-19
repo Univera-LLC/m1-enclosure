@@ -15,6 +15,21 @@ Open http://127.0.0.1:8000/ in your browser. To use another port, append `-- --p
 
 The preview rebuilds the UI from its JavaScript, templates, styles and the verified model embedded in the published D2.6 HTML. It writes to `build/d26-viewer/`. The model, 14 downloads, accessory models and posters, and D2.5 archive viewer work offline. Earlier revision pages and old manufacturing downloads open the existing GitHub Pages site and require a connection. The preview only serves specified files and listens on loopback.
 
+## Univera LLC GitHub Pages
+
+The [organization viewer](https://univera-llc.github.io/m1-enclosure/) uses the current UI source with the frozen D2.6 manufacturing files. To prepare the same static site in a **new** directory, install the dependencies above, then run:
+
+```sh
+python tools/prepare_pages.py --output build/pages-artifact/m1-enclosure
+python -m http.server 8000 --bind 127.0.0.1 --directory build/pages-artifact
+```
+
+Open **http://127.0.0.1:8000/m1-enclosure/**. To exercise this exact site, run `node cad/solidcraft-m1/viewer/d26/browser.mjs http://127.0.0.1:8000/m1-enclosure/` in a second terminal after installing a browser as described below.
+
+Packaging verifies the original release receipt, rebuilds the home page, verifies all 14 downloadable files against their SHA-256 hashes, and checks the HTML routes under the same URL prefix as Pages. The D2.5 viewer and accessory models are included. Older archives and D2.5 manufacturing downloads point to their original host. The site carries the current Univera license, source and dependency notices and the machine-readable navigation index. The published ZIPs remain byte-for-byte identical to the original D2.6 release.
+
+The [workflow](../.github/workflows/check.yml) tests the actual static artifact on pull requests and branch pushes. Only a successful push or manual run on the organization's `main` branch uploads and deploys it to the `github-pages` environment. The repository's Pages source must be **GitHub Actions**. The raw directory in `release/d2.6-site/` is a set of frozen inputs with their original navigation; use a materialized site for browsing.
+
 ## Browser and release checks
 
 ```sh

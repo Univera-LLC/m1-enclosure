@@ -1,0 +1,18 @@
+# Enclosure Lab — Univera LLC
+
+> Source and design files for an FDM enclosure prototype intended for the logic board from Mac mini (M1, 2020). The released design is a digital prototype for unpowered fit checks; digital checks do not establish physical fit, electrical operation, cooling or wireless performance.
+
+## Read first
+
+- [Project overview and first print](README.md)
+- [Revision selector](project.json): JSON with the active CAD, viewer, first-fit archive and published manifest paths. Resolve these paths from the repository root.
+- [Frozen release receipt](release/d2.6-manifest.json): SHA-256 hashes for the published D2.6 files.
+- [Project license](LICENSE): conditions for noncommercial use of independently authored material.
+- [Third-party sources and rights](THIRD_PARTY.md): separate conditions for the board and other references.
+
+## Working with this repository
+
+- [First-fit procedure](cad/solidcraft-m1/prototype-d26/FIT-FIRST.md): D2.6 assembly and checks, in Ukrainian.
+- [CAD build](docs/CAD-BUILD.md): required external reference, pinned tools and build commands.
+- [Viewer](docs/VIEWER.md): local preview, downloads and browser checks.
+- [Contributing](CONTRIBUTING.md): reporting results and distinguishing source geometry, assumptions and physical measurements.

@@ -96,7 +96,10 @@ try{
     }
     await page.locator('#to-panel-back').click();await ready();assert.deepEqual((await state()).visible,['panel']);assert.equal((await state()).side,'back');
     await page.locator('#stage').screenshot({path:join(out,'panel-back.png')});
-    const previous=new URL('d2.5/?view=rear',url).href;await page.goto(previous);await ready();assert.equal((await state()).revision,'D2.5');assert.equal(await page.locator('#downloads a[href^="../downloads/d2.5/"]').count(),12);
+    const previous=new URL('d2.5/?view=rear',url).href;await page.goto(previous);await ready();assert.equal((await state()).revision,'D2.5');
+    const archivedFiles=await page.locator('#downloads a[download]').evaluateAll(links=>links.map(a=>a.getAttribute('href')));
+    const archivedPrefix=new URL('downloads/d2.5/',manifest.target).href;
+    assert.equal(new Set(archivedFiles.filter(h=>h.startsWith('../downloads/d2.5/')||h.startsWith(archivedPrefix))).size,12);
     assert.deepEqual(errors,[]);
     await writeFile(join(out,'browser.json'),JSON.stringify({scope:engineering?'engineering':base?'url':published?'published':'candidate',url:url+exact,published_baseline:manifest.pages_commit,model_sha256,view:entry.view,spread:entry.spread,pose:entry.pose,mesh_probes:probes.length,archive:'D2.5',downloads:hrefs,errors},null,2)+'\n');
   }

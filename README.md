@@ -1,42 +1,46 @@
-# Mac mini M1 enclosure
+# Enclosure Lab
 
-[![Univera LLC · D2.6 enclosure study. CAD render of the graphite case, with a vented lid and eight openings in the rear panel.](docs/assets/d26-enclosure.jpg)](https://dvaderfun.github.io/mac-mini-m1-case-prototype/?view=rear)
+**A printable enclosure study for Mac mini (M1, 2020) · Univera LLC**
 
-An FDM enclosure for the **2020 Mac mini M1 logic board and its original heatsink**, developed by **Univera LLC**. The design explores passive cooling in a **170.00 × 119.91 × 46.00 mm** case with a removable rear panel and a separate USB-C power inlet. Those dimensions describe the CAD model.
+![Exploded CAD rendering of the D2.6 enclosure. The vented lid lifts above the base; the removable rear panel is highlighted in orange.](docs/assets/d26-enclosure.jpg)
 
-**[Explore the case in 3D](https://dvaderfun.github.io/mac-mini-m1-case-prototype/?view=rear)** · **[Download the first-fit STL kit](cad/solidcraft-m1/prototype-d26/d2.6-first-fit.zip)** · **[Browse all CAD downloads](https://dvaderfun.github.io/mac-mini-m1-case-prototype/#downloads)**
+Keep the original logic board and heatsink. Print the parts around them. D2.6 is a **170 × 119.91 × 46 mm** enclosure with a removable lid, a separate USB-C power inlet and an eight-opening rear panel. The small first-fit kit lets you check the hardest part—the fit around your own sockets and plugs—before committing to the whole case.
 
-## What D2.6 changes
+**[Explore the 3D model](https://univera-llc.github.io/m1-enclosure/)** &nbsp;·&nbsp; **[Download the first-fit kit · ZIP](https://univera-llc.github.io/m1-enclosure/downloads/d2.6/d2.6-first-fit.zip)** &nbsp;·&nbsp; **[Open the editable CAD](cad/solidcraft-m1/prototype-d26/d26-workbench.sc)**
 
-The first printed D2.5 rear panel bowed near the USB-A ports and audio jack. D2.6 gives those three sockets one shared pocket behind the face and moves the face outward by 0.60 mm. The extra depth lets the panel hide the metal housings while leaving the plug openings accessible.
+[View the model offline](docs/VIEWER.md#local-viewer)
 
-[![Two D2.6 CAD views: the original board and heatsink in the open case, and the separate rear panel seen from inside.](docs/assets/d26-detail-views.jpg)](https://dvaderfun.github.io/mac-mini-m1-case-prototype/?view=inside)
+**Current status:** D2.6 passed digital geometry and slicing checks. The printed D2.6 parts have **not** been accepted on a physical board. This release is for an **unpowered fit check**. Power, button operation, passive cooling and wireless performance remain unverified.
 
-The board sits on two supports. The rear panel slides into the empty base **before** the board goes in; the lid comes off independently. [Inspect the inner face of the panel](https://dvaderfun.github.io/mac-mini-m1-case-prototype/?view=rear&part=panel&solo=1&side=back) or [compare the D2.5 and D2.6 sections](https://dvaderfun.github.io/mac-mini-m1-case-prototype/d25-vs-d26-usb-audio-comparison.svg).
+## Print the small kit first
 
-## Before printing
+1. **Unzip the [first-fit kit](cad/solidcraft-m1/prototype-d26/d2.6-first-fit.zip).** It contains a power holder (**01**), rear panel (**02**) and three little pieces (**06–08**) that stand in for the board supports, side guide and lid stop. Leave the full base and lid for later.
+2. **Print the supplied STL orientations at 100%, in millimetres.** The checked Ender 3 Pro setup uses PETG, a 0.4 mm nozzle and no supports. Use **0.10 mm for every layer of the panel**, including the first. Its smooth outside face is already on the bed. The holder and samples use 0.20 mm layers.
+3. **Try the parts without power.** Set the panel against the bare board. It should sit flat without pressing on the metal between the two Thunderbolt sockets. Compare each plug with and without the panel; try both USB-A plugs together and check that the Ethernet latch releases. Check the holder, guides and board supports before printing the [five-part case](cad/solidcraft-m1/prototype-d26/d2.6-cold-fit-kit.zip).
 
-**D2.6 is ready for an unpowered fit check. Physical fit, powered operation, passive cooling and wireless performance have not been accepted.** The published CAD, STL and simulated toolpaths were checked. One detail still needs the real board: two reference models disagree about clearance at the shared Thunderbolt shield.
+[Full fit procedure (Ukrainian)](cad/solidcraft-m1/prototype-d26/FIT-FIRST.md) · [How to report a fit result](CONTRIBUTING.md#report-a-fit-result)
 
-1. Start with the [small kit in this repository](cad/solidcraft-m1/prototype-d26/d2.6-first-fit.zip): rear panel **02**, power holder **01**, and samples **06–08**. For the panel, the checked PETG setup uses a 0.4 mm nozzle, 0.10 mm layers including the first, and no supports. The exterior face is already oriented toward the bed.
-2. Fit the panel to the **unpowered** board. Check that it rests freely around the joined Thunderbolt shield and the audio jack. Compare each cable’s seating with and without the panel; try both USB-A plugs together and check that the Ethernet latch releases.
-3. Print the full base and lid only after the panel, samples and board supports fit. Keep parts **01–04** and samples **06–08** together as one D2.6 revision. The [illustrated assembly view](https://dvaderfun.github.io/mac-mini-m1-case-prototype/d26-rear-assembly.jpg) and [detailed fit sheet, in Ukrainian](cad/solidcraft-m1/prototype-d26/FIT-FIRST.md), show the sequence.
+## Why this panel looks different
 
-## Select a file
+The first D2.5 panel bowed near the USB-A ports and audio jack. Here is the back of its D2.6 replacement, the side you can’t see once the board is installed:
 
-| If you want to… | Use |
+![Inside face of panel 02. From left to right, the modeled face walls are 0.40 mm at the USB-C power opening, 0.90 mm at Thunderbolt and 0.80 mm at the shared USB-A and audio pocket.](docs/assets/d26-detail-views.jpg)
+
+The outer face moved **0.60 mm** outward. A shared T-shaped recess now clears the USB-A and audio housings in the photo-registered model while leaving **0.80 mm** of plastic in front of them. The Thunderbolt region deserves its own fit check: two digital references disagree about the common metal shield. [Compare D2.5 and D2.6](cad/solidcraft-m1/prototype-d26/d25-vs-d26-usb-audio-comparison.svg) or [read the numerical comparison](cad/solidcraft-m1/prototype-d26/reference-crosscheck.json).
+
+## Choose a file
+
+| To… | Open |
 | --- | --- |
-| Print the five enclosure parts after the first fit | [Full D2.6 STL kit](cad/solidcraft-m1/prototype-d26/d2.6-cold-fit-kit.zip) |
-| Inspect solids in another CAD tool | [Printable parts · STEP](cad/solidcraft-m1/prototype-d26/d26-printable.step) or [mechanical assembly · STEP](cad/solidcraft-m1/prototype-d26/d26-assembly.step) |
-| Edit the native design | [SolidCraft workbench](cad/solidcraft-m1/prototype-d26/d26-workbench.sc) |
-| Inspect the board and heatsink reference | [GLB model](cad/solidcraft-m1/prototype-d26/board-study/mac-board-reference.glb). These meshes are in the GLB and native workbench; they are absent from the STEP files. |
+| Print the entire case after the first fit | [D2.6 full STL kit](cad/solidcraft-m1/prototype-d26/d2.6-cold-fit-kit.zip). Keep 01–04 and samples 06–08 from the same revision. |
+| Modify the design in CAD | [SolidCraft workbench](cad/solidcraft-m1/prototype-d26/d26-workbench.sc) · [printable parts STEP](cad/solidcraft-m1/prototype-d26/d26-printable.step) · [mechanical assembly STEP](cad/solidcraft-m1/prototype-d26/d26-assembly.step) |
+| Inspect the board and heatsink | [Board reference · GLB](cad/solidcraft-m1/prototype-d26/board-study/mac-board-reference.glb). The STEP files contain mechanical solids; the board mesh is in the GLB and native workbench. |
+| Reproduce a change | [CAD toolchain](docs/CAD-BUILD.md) · [viewer and browser checks](docs/VIEWER.md) · [contributor guide](CONTRIBUTING.md) |
 
-## Work on the project
+To compare the files in your checkout with the published release, run `python tools/verify_release.py`. No CAD software is required for that check. For scripts and other tools: [current revision and paths](project.json) · [published file hashes](release/d2.6-manifest.json) · [plain-text index](llms.txt).
 
-From a checkout, verify the frozen D2.6 files against their recorded hashes with Python:
+## Use and attribution
 
-```sh
-python tools/verify_release.py
-```
+You can print your own case, adapt the design and share it free of charge under the [noncommercial project license](LICENSE). **Selling kits or cases, paid printing (even at cost) and other commercial uses require separate prior written permission from Univera LLC.** The logic-board and other third-party references retain their own [attribution and license terms](THIRD_PARTY.md).
 
-For engineering work, start in PowerShell 7 with `./project.ps1 doctor`. The [contributor guide](CONTRIBUTING.md) explains the checks and how to report a physical fit result. See the [source and license notices](THIRD_PARTY.md) before reusing board geometry or images.
+Mac and Mac mini are trademarks of Apple Inc. Their use here identifies the intended hardware. Enclosure Lab is an independent project and is not affiliated with, sponsored by or endorsed by Apple.

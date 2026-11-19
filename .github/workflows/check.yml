@@ -1,18 +1,22 @@
 name: Check the enclosure release
 on: [push, pull_request, workflow_dispatch]
-permissions:
-  contents: read
+permissions: {}
 jobs:
   release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v4
         with:
+          fetch-depth: 0
           persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
       - run: python tools/check_public_tree.py
+      - run: python tools/test_public_audit.py
+      - run: python tools/audit_public_history.py --history
       - run: python tools/test_release.py
       - uses: actions/setup-node@v4
         with:
@@ -24,3 +28,37 @@ jobs:
           npm ci
           npx playwright install --with-deps chromium
       - run: pwsh -NoProfile -File ./project.ps1 check
+      - name: Prepare the organization site
+        run: python tools/prepare_pages.py --output build/pages-artifact/m1-enclosure
+      - name: Test the artifact at its Pages URL path
+        shell: bash
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 --directory build/pages-artifact > "$RUNNER_TEMP/pages-http.log" 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          url=http://127.0.0.1:8765/m1-enclosure/
+          curl --fail --silent --retry 8 --retry-connrefused --retry-delay 1 "$url" -o /dev/null
+          node cad/solidcraft-m1/viewer/d26/browser.mjs "$url"
+      - name: Upload the checked Pages site
+        if: github.repository == 'Univera-LLC/m1-enclosure' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/pages-artifact/m1-enclosure
+
+  deploy:
+    if: github.repository == 'Univera-LLC/m1-enclosure' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: release
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    concurrency:
+      group: enclosure-lab-pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy the verified artifact
+        id: deployment
+        uses: actions/deploy-pages@v4

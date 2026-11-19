@@ -1,0 +1,74 @@
+Univera Noncommercial Project License
+Version 1.0 — 19 November 2026
+
+Copyright © 2026 Univera LLC in its original project material.
+Contributors and third parties retain rights in their own work.
+
+1. What is covered
+
+“Project Material” means the original enclosure designs, CAD source, drawings,
+STL/STEP exports, software, documentation and illustrations in this project,
+but only to the extent that Univera LLC owns the applicable rights or has
+permission to grant this license. A file can contain both Project Material and
+third-party material. Separately licensed components, reference meshes and
+other third-party material remain subject to their own terms (see
+THIRD_PARTY.md). A copy of this license alongside a file does not transfer
+ownership of that file or change an existing third-party grant.
+
+2. What you may do
+
+Univera grants you a worldwide, nonexclusive, royalty-free permission to read,
+run, copy, fork, modify and display Project Material for noncommercial purposes;
+to make physical items from the original or modified designs for those purposes;
+and to share files, modifications and physical items free of charge. You may,
+for example, print a case for your own Mac, improve its design, publish a free
+fork, or give a printed part to a friend.
+
+Keep this license, the copyright and attribution notices and the applicable
+third-party notices with copies you share. Identify your modifications and do
+not imply Univera or an upstream author approved them. For a physical item, an
+accompanying note or link identifying the project, this license, applicable
+credits and any changes is sufficient; engraving the part is not required.
+Recipients have the same public permissions for the Project Material you used.
+
+3. Sales, paid printing and other commercial uses
+
+This public license does not authorize commercial use of Project Material or
+using an adaptation of it to sell a product or service. In particular, without
+separate prior written permission from Univera, you may not:
+
+- make, offer for sale, sell or fulfill orders for cases, parts or kits made
+  from these designs or adaptations for compensation, including at cost;
+- commission or supply a paid print, fabrication or assembly service for these
+  designs, even for one personal case or reimbursement of materials only; or
+- sell, rent or commercially distribute the files, adaptations, code or
+  documentation, or include them or resulting cases in a paid product,
+  subscription or reward.
+
+Buying filament or paying an ordinary fee to use equipment you operate
+yourself is permitted for a personal noncommercial print. Paying someone else
+to make the part for you is not covered. A free download or giveaway used to
+promote a commercial case or service is not a noncommercial use.
+
+Univera reserves the ability to make commercial use of its own material and
+to grant separate written commercial licenses, but only for rights it holds.
+This public license gives no one else permission to sell the case. Univera
+itself must obtain any third-party rights needed for what it sells. Neither a
+repository fork nor public access constitutes commercial permission.
+
+4. Rights outside this license
+
+Nothing here limits a right you already have under another license or under
+applicable law, including fair use, fair dealing, exhaustion, or lawful study,
+repair and reverse engineering. This license does not claim exclusive rights
+in facts, measurements, functional features or independently created designs.
+It grants no patent or trademark license. Names used to identify compatible
+hardware do not imply endorsement. No rights of Apple or any other third
+party are granted by Univera.
+
+5. Warranty and liability
+
+Project Material is provided “as is,” without warranties of any kind, including
+fitness for a particular purpose or noninfringement. To the extent permitted
+by law, the rights holders are not liable for damage arising from its use.
+This does not waive rights that applicable law does not permit you to waive.

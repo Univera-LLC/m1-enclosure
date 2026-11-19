@@ -30,6 +30,16 @@ The public Git tree is a selection from a larger engineering workspace. If a bui
 
 Use **SOURCE** for geometry taken from a reference; **DOCUMENTED** for a specification or drawing; **MEASURED** for a physical measurement; and **ASSUMED** for an unverified input. Record a CAD or slicer result as calculated, with its input revision. A successful slice does not establish printed fit, electrical behavior or temperature.
 
+## Rights in new contributions
+
+You keep ownership of your original contribution. For a new contribution that you intend us to publish or merge, we ask for two permissions: make that contribution available to the public under the [project’s noncommercial license](LICENSE), and give **Univera LLC a separate commercial license**. The second permission allows Univera to use your contribution in products it sells and to authorize manufacturers, distributors and customers. Public recipients do not receive that commercial grant.
+
+To agree, include the following in your pull request or other written submission. Identify any exceptions or third-party content separately, with its source, notices and terms. We can agree on different terms in writing before accepting the contribution.
+
+> For my original contribution in this submission, I agree to the Univera Noncommercial Project License and grant Univera LLC a nonexclusive, worldwide, perpetual, royalty-free license, irrevocable to the extent permitted by law, to use, reproduce, modify, publish, distribute, manufacture, have manufactured, sell and sublicense my contribution, including commercially. I own the rights I am granting or am authorized by their holder to grant them. I have identified any third-party material and applicable terms separately.
+
+This is permission to use your work, not an assignment of ownership or a patent or trademark license. You can license your own contribution elsewhere; that does not grant rights in anyone else’s underlying case design. The grant does not cover third-party material, earlier submissions or unrelated work. A fork, issue, bug report, fit measurement or silence does not give Univera additional commercial rights. If we want to reuse previously contributed work beyond its existing terms, we must obtain permission from its rights holder.
+
 ## Report a fit result
 
 Start with the [D2.6 first-fit kit](cad/solidcraft-m1/prototype-d26/d2.6-first-fit.zip) on an unpowered board. A useful report can be short:
