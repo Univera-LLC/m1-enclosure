@@ -1,15 +1,20 @@
 """Build the organization Pages artifact with the active release and its archives."""
 import argparse
+import base64
 import hashlib
+from html import escape
 from html.parser import HTMLParser
+import json
 from pathlib import Path
 import re
 import shutil
+from string import Template
 import subprocess
 import sys
+from tempfile import TemporaryDirectory
 from urllib.parse import quote, unquote, urljoin, urlsplit
 
-from verify_release import ROOT, inside, require, verify
+from verify_release import ROOT, inside, load, require, verify
 
 PAGES = "https://univera-llc.github.io/m1-enclosure/"
 RAW = "https://raw.githubusercontent.com/Univera-LLC/m1-enclosure/main/"
@@ -19,6 +24,19 @@ OLDER = re.compile(r"""(?P<q>["'])\.\./(?P<route>(?:downloads/d2\.5|reference/d2
 ARCHIVE_ASSETS = re.compile(r"""(?P<q>["'])(?:\./)?(?P<route>(?:downloads/d2\.6|reference/d2\.6|accessories|d2\.5)/|d26-connector-section\.svg|d26-rear-assembly\.jpg|d25-vs-d26-usb-audio-comparison\.svg)""")
 ARCHIVE_OLDER = re.compile(r"""(?P<q>["'])(?:\./)?(?P<route>(?:d1|d2(?:\.[1-4])?|h1)/)""")
 MARKDOWN_LINK = re.compile(r"(\]\()([^()\s]+)(\))")
+COMPARE_NAV = re.compile(r'(<nav\b[^>]*\bid="tabs"[^>]*>.*?)(</nav>)', re.S)
+COMPARE_TAB = ('<a class="compare-tab" href="compare/index.html"><svg aria-hidden="true" viewBox="0 0 24 24">'
+               '<path d="M2.5 7h19v10h-19zM7 7v4m5-4v6m5-6v4"/></svg>Порівняння</a>')
+COMPARE_TAB_STYLE = """<style>
+#tabs:has(>.compare-tab){grid-template-columns:repeat(9,minmax(0,1fr))}
+#tabs:has(>.compare-tab) a{text-align:center;line-height:1.16}
+#tabs>.compare-tab{background:#dbeade;color:#25543f}
+#tabs>.compare-tab:hover{background:#f2f8ef}
+@media(max-width:980px){
+  #tabs:has(>.compare-tab){grid-template-columns:repeat(3,minmax(0,1fr))}
+  #tabs:has(>.compare-tab) a{grid-column:span 1}
+}
+</style>"""
 
 
 class Links(HTMLParser):
@@ -66,6 +84,61 @@ def check_html(dest, page):
     return links
 
 
+def uk_number(value, places=2):
+    return f"{value:.{places}f}".rstrip("0").rstrip(".").replace(".", ",")
+
+
+def stage_comparison(dest, viewer, revision, routes):
+    """Add a comparison using the released shell, without editing the frozen atlas."""
+    source = viewer.parent / "compare"
+    catalog = load(source / "catalog.json")
+    photo = (source / "assets/zelensky-a4.jpg").read_bytes()
+    next(item for item in catalog["objects"] if item["id"] == "portrait")["photo"] = (
+        "data:image/jpeg;base64," + base64.b64encode(photo).decode("ascii"))
+    report = f"downloads/{revision.lower()}/fit-validation.json"
+    case_size = load(routes[report])["assembled_size_xyz_mm"]
+    catalog["enclosure"] = {"id": "enclosure", "name": revision, "size": case_size,
+                            "basis": "Габарит складання за CAD, з ніжками", "url": "../" + report}
+    mac_size = catalog["mac"]["size"]
+    case_area, mac_area = case_size[0] * case_size[1], mac_size[0] * mac_size[1]
+
+    rows = []
+    for axis, a, b in zip(("Ширина", "Глибина", "Висота"), case_size, mac_size):
+        delta = ("−" if a < b else "+" if a > b else "") + uk_number(abs(a - b))
+        rows.append(f'<tr><th scope="row">{axis}</th><td>{uk_number(a)}</td><td>{uk_number(b)}</td><td>{delta}</td></tr>')
+    choices = ''.join(
+        f'<button type="button" data-item="{escape(item["id"])}" aria-pressed="false">{escape(item["name"])}</button>'
+        for item in catalog["objects"])
+    sources = []
+    for item in (catalog["enclosure"], catalog["mac"], *catalog["objects"]):
+        title = escape(item["name"])
+        name = f'<a href="{escape(item["url"])}">{title}</a>' if "url" in item else title
+        size = ("≈ " if item.get("approx") else "") + ' × '.join(map(uk_number, item["size"]))
+        sources.append(f'<li>{name} · {size} мм. {escape(item["basis"])}.</li>')
+    bundle = json.loads(subprocess.check_output(["node", str(source / "build.mjs"), str(routes["index.html"])],
+                                                cwd=ROOT, encoding="utf-8"))
+    page = Template((source / "page.html").read_text(encoding="utf-8")).substitute(
+        revision=revision, canonical=PAGES + "compare/", rows=''.join(rows), choices=choices,
+        sources=''.join(sources), case_area=uk_number(case_area / 100), mac_area=uk_number(mac_area / 100),
+        depth_delta=uk_number(mac_size[1] - case_size[1]), height_delta=uk_number(case_size[2] - mac_size[2]),
+        area_delta=uk_number(100 * (1 - case_area / mac_area), places=1),
+        shared_css=(viewer.parent / "d1/style.css").read_text(encoding="utf-8"),
+        css=(source / "style.css").read_text(encoding="utf-8"),
+        three_license=(ROOT / "LICENSES/three-js.txt").read_text(encoding="utf-8"),
+        script=bundle["script"],
+        data=json.dumps(catalog, ensure_ascii=False).replace("<", "\\u003c"))
+    page = page.replace("__MODEL__", json.dumps(bundle["models"], separators=(",", ":")), 1)
+    (dest / "compare").mkdir()
+    (dest / "compare/index.html").write_text(page, encoding="utf-8", newline="\n")
+
+    home_path = dest / "index.html"
+    home = home_path.read_text(encoding="utf-8")
+    home, slots = COMPARE_NAV.subn(lambda match: match[1] + COMPARE_TAB + match[2], home)
+    require(slots == 1 and home.count("</head>") == 1, "missing comparison navigation slot")
+    home_path.write_text(home.replace("</head>", COMPARE_TAB_STYLE + "</head>", 1),
+                         encoding="utf-8", newline="\n")
+
+
 def package(dest):
     require(not dest.exists(), f"destination already exists; choose a new directory: {dest}")
     manifest, routes = verify(ROOT)
@@ -74,16 +147,21 @@ def package(dest):
     newer = rev == "D2.7"
     older, archived = verify(ROOT, "release/d2.6-manifest.json") if newer else (manifest, routes)
     viewer = ROOT / "cad/solidcraft-m1/viewer/d26"
-    subprocess.run(["node", str(viewer / "build.mjs")], cwd=ROOT, check=True)
-    built = ROOT / ("build/" + rev.lower().replace(".", "") + "-viewer")
-    if newer:
-        require((built / "index.html").read_bytes() == routes["index.html"].read_bytes(),
-                "D2.7 viewer differs from the frozen release page")
-    dest.mkdir(parents=True, exist_ok=False)
-    for route, source in {**archived, **routes}.items():
-        target = inside(dest, route)
-        target.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(built / "index.html" if route == "index.html" else source, target)
+    expected = download_routes(routes, rev)
+    with TemporaryDirectory(prefix="enclosure-viewer-") as temp:
+        built = Path(temp) / "viewer"
+        subprocess.run(["node", str(viewer / "build.mjs"), "--output", str(built)], cwd=ROOT, check=True)
+        if newer:
+            require((built / "index.html").read_bytes() == routes["index.html"].read_bytes(),
+                    "D2.7 viewer differs from the frozen release page")
+        for route in expected:
+            require(hashlib.sha256((built / route).read_bytes()).hexdigest() == manifest["files"][route]["sha256"],
+                    f"rebuilt download differs from release: {route}")
+        dest.mkdir(parents=True, exist_ok=False)
+        for route, source in {**archived, **routes}.items():
+            target = inside(dest, route)
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(built / "index.html" if route == "index.html" else source, target)
 
     archive = dest / "d2.5/index.html"
     previous = older["target"].rstrip("/") + "/"
@@ -126,16 +204,17 @@ def package(dest):
         require(home_source.count(marker) == 1, "missing Redline navigation slot")
         home_path.write_text(home_source.replace(marker, '<p><a href="redline/">Експеримент Redline R2 ↗</a></p>'),
                              encoding="utf-8", newline="\n")
+    else:
+        stage_comparison(dest, viewer, rev, routes)
+        check_html(dest, "compare/index.html")
 
     home = check_html(dest, "index.html")
     for route in ("d2.5/index.html", "accessories/index.html", "redline/index.html"):
         check_html(dest, route)
-    expected = download_routes(routes, rev)
     require(len(expected) == 14 and home.downloads == expected, "organization viewer download set differs")
     for route in expected:
-        for base in (built, dest):
-            actual = hashlib.sha256((base / route).read_bytes()).hexdigest()
-            require(actual == manifest["files"][route]["sha256"], f"download differs from release: {route}")
+        actual = hashlib.sha256((dest / route).read_bytes()).hexdigest()
+        require(actual == manifest["files"][route]["sha256"], f"download differs from release: {route}")
     if newer:
         archive_links = check_html(dest, "d2.6/index.html")
         expected_old = download_routes(archived, "D2.6")

@@ -31,6 +31,112 @@ let url=posters?pathToFileURL(join(posterSite||join(root,'build',slug+'-draft'),
 let server,browser;
 const exact='?view=rear&spread=96&cam=0.8822%2C0.2619%2C0.3914%2C-7.5%2C56.76%2C23%2C1';
 const edge='C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe';
+
+async function checkComparison(page, url) {
+  await page.locator('#tabs .compare-tab').click();
+  assert.equal(page.url(),new URL('compare/index.html',url).href);
+  const stage=page.locator('#compare-stage[data-render="3d"]');
+  await stage.waitFor();
+  const inspect=()=>page.evaluate(()=>window.m1Comparison.inspect());
+  const close=(a,b)=>Math.abs(a-b)<.02;
+  const assets=join(here,'..','compare','assets');
+  const embedded=JSON.parse(await page.locator('#glbs').textContent());
+  assert.equal(hash(gunzipSync(Buffer.from(embedded.mac,'base64'))),
+    hash(await readFile(join(assets,'mac-mini-datsketch.glb'))),'the credited Mac mini mesh is embedded');
+  const benchmarks=JSON.parse(await page.locator('#compare-data').textContent()).objects;
+  const photo=benchmarks.find(o=>o.id==='portrait').photo;
+  assert.equal(hash(Buffer.from(photo.split(',')[1],'base64')),
+    hash(await readFile(join(assets,'zelensky-a4.jpg'))),'the portrait photograph is embedded');
+  assert.equal(await page.locator('.compare-credits a').count(),4);
+  const orbitRulers=page.locator('#compare-orbit-rulers');
+  const diagramRulers=page.locator('#compare-plots');
+  const rulers=(scope,id)=>scope.locator('[data-rulers-for="'+id+'"] [data-ruler]')
+    .evaluateAll(nodes=>Object.fromEntries(nodes.map(n=>[n.dataset.ruler,Number(n.dataset.lengthMm)])));
+  const entry=await inspect();
+  assert.deepEqual(entry.objects.map(o=>o.id),['enclosure','mac']);
+  assert(entry.objects.every((o,i)=>o.size.every((n,j)=>close(n,[[170,119.91,46],[197,197,36]][i][j]))));
+  assert(entry.objects.every(o=>close(o.ground,0)&&close(o.front,0)));
+  assert(entry.objects[0].right<entry.objects[1].left,'both cases stand side by side');
+  await orbitRulers.locator('[data-ruler="width"]').first().waitFor();
+  assert.deepEqual(await rulers(orbitRulers,'enclosure'),{width:170,depth:119.91});
+  assert.deepEqual(await rulers(orbitRulers,'mac'),{width:197,depth:197});
+  assert(await orbitRulers.locator('[data-centimeters="10"]').count()>0);
+  assert(await orbitRulers.locator('[data-interval-mm="1"] .ticks-0').count()>0);
+  await page.screenshot({path:join(out,'comparison.png'),fullPage:true});
+
+  const surface=stage.locator('canvas'),box=await surface.boundingBox();
+  await page.mouse.move(box.x+box.width*.48,box.y+box.height*.43);
+  await page.mouse.down();
+  await page.mouse.move(box.x+box.width*.58,box.y+box.height*.60,{steps:7});
+  await page.mouse.up();
+  assert.notDeepEqual((await inspect()).camera,entry.camera,'drag orbits the shared camera');
+  await page.locator('#compare-in').click();
+  assert((await inspect()).zoom>entry.zoom);
+  await stage.press('0');
+  assert((await inspect()).camera.every((n,i)=>close(n,entry.camera[i])));
+  await page.locator('[data-angle="rear"]').click();
+  assert((await inspect()).camera[2]<0);
+  await orbitRulers.locator('[data-rulers-for="enclosure"] [data-ruler="height"]').waitFor();
+  assert.deepEqual(await rulers(orbitRulers,'enclosure'),{width:170,height:46});
+  await stage.screenshot({path:join(out,'comparison-rear.png')});
+  const ruler=page.locator('#compare-ruler');
+  await ruler.click();assert.equal((await inspect()).ruler,false);
+  assert.equal(await orbitRulers.locator('[data-ruler]').count(),0);
+  await ruler.click();assert.equal((await inspect()).ruler,true);
+
+  const objects=['aa','portrait','pixel','berserk','thrones','cola','nuc'];
+  assert.equal(await page.locator('#compare-choices button').count(),objects.length+1);
+  for(const id of objects){
+    const choice=page.locator('[data-item="'+id+'"]');
+    await choice.click();
+    assert.equal(await choice.getAttribute('aria-pressed'),'true');
+    assert.equal(await page.locator('#compare-orbit-name').textContent(),await choice.textContent());
+    const rendered=(await inspect()).objects;
+    assert.deepEqual(rendered.map(o=>o.id),['enclosure','mac',id]);
+    const size=benchmarks.find(o=>o.id===id).size;
+    assert(rendered.at(-1).size.every((n,i)=>close(n,size[i])),id+' matches its stated envelope');
+  }
+  await page.locator('[data-item="none"]').click();
+  assert.equal((await inspect()).objects.length,2);
+  await page.locator('[data-item="portrait"]').click();
+  const portrait=(await inspect()).objects.at(-1);
+  assert(portrait.size.every((n,i)=>close(n,[210,297,.3][i])),'the paper envelope is A4');
+  await page.locator('[data-angle="top"]').click();
+  await orbitRulers.locator('[data-rulers-for="portrait"] [data-ruler="depth"]').waitFor();
+  assert.deepEqual(await rulers(orbitRulers,'portrait'),{width:210,depth:297});
+  await page.locator('[data-mode="diagram"]').click();
+  assert.equal(await page.locator('#compare-object-name').textContent(),'Портрет Зеленського · A4');
+  const angles=page.locator('#compare-angles button:visible');
+  assert.deepEqual(await angles.evaluateAll(buttons=>buttons.map(b=>b.dataset.angle)),['iso','top','front','side']);
+
+  const plots=page.locator('[data-profile]');
+  for(const [angle,expected] of Object.entries({
+    top:[[170,119.91],[197,197]],front:[[170,46],[197,36]],side:[[119.91,46],[197,36]],
+  })){
+    await page.locator('[data-angle="'+angle+'"]').press('Enter');
+    const boxes=await plots.evaluateAll(nodes=>nodes.map(node=>{const b=node.getBBox();return [b.width,b.height];}));
+    assert(expected.every((dims,i)=>dims.every((n,j)=>Math.abs(n-boxes[i][j])<.02)),angle+' profile bounds');
+  }
+  await ruler.click();assert.equal(await diagramRulers.locator('[data-ruler]').count(),0);
+  await ruler.click();assert.deepEqual(await rulers(diagramRulers,'mac'),{depth:197,height:36});
+
+  const viewport=page.viewportSize();
+  await page.setViewportSize({width:390,height:844});
+  await page.locator('[data-angle="top"]').click();
+  assert.deepEqual(await rulers(diagramRulers,'portrait'),{width:210,depth:297});
+  const scales=await plots.evaluateAll(ns=>ns.map(n=>n.getScreenCTM().a));
+  assert(Math.max(...scales)-Math.min(...scales)<.001,'panels use the same scale at mobile width');
+  await page.locator('[data-mode="orbit"]').click();
+  await page.locator('[data-angle="top"]').click();
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth===document.documentElement.clientWidth),'comparison fits the viewport');
+  await page.screenshot({path:join(out,'comparison-mobile.png'),fullPage:true});
+  await page.setViewportSize(viewport);
+  await page.locator('.compare-nav a[href="../index.html#stage"]').click();
+  assert.equal(page.url(),new URL('index.html#stage',url).href);
+  return {orbit:true,angles:4,objects:objects.length,reference_assets:['DatSketch GLB','President.gov.ua portrait'],
+    portrait_mm:[210,297],ruler_minor_tick_mm:1,mobile_width:390};
+}
+
 try{
   if(!url){
     ({server,url}=await startPreview(0,false,!published&&!engineering,engineeringDir));
@@ -102,6 +208,7 @@ try{
     await page.locator('#to-panel-back').click();await ready();assert.deepEqual((await state()).visible,['panel']);assert.equal((await state()).side,'back');
     await page.locator('#stage').screenshot({path:join(out,'panel-back.png')});
     const archives=['D2.5'];
+    let comparison;
     if(revision==='D2.7'){
       for(const [view,part] of [['base','chassis'],['power','saddle']]){
         await page.locator('#tabs [data-view="'+view+'"]').click();await painted();
@@ -111,6 +218,7 @@ try{
       const image=await page.request.get(new URL('d27-mounts.webp',url).href);
       try{assert.equal(image.status(),200);assert.equal(hash(await image.body()),manifest.files['d27-mounts.webp'].sha256);}
       finally{await image.dispose();}
+      if(!engineering)comparison=await checkComparison(page,url);
       await page.goto(url+'?rev=d2.6&view=rear');await ready();
       assert.equal((await state()).revision,'D2.6');assert(new URL(page.url()).pathname.endsWith('/d2.6/'));
       const old=JSON.parse(await readFile(join(root,'release/d2.6-manifest.json'),'utf8'));
@@ -128,8 +236,9 @@ try{
     const archivedPrefix=new URL('downloads/d2.5/','https://dvaderfun.github.io/mac-mini-m1-case-prototype/').href;
     assert.equal(new Set(archivedFiles.filter(h=>h.startsWith('../downloads/d2.5/')||h.startsWith(archivedPrefix))).size,12);
     assert.deepEqual(errors,[]);
-    await writeFile(join(out,'browser.json'),JSON.stringify({scope:engineering?'engineering':base?'url':published?'published':'candidate',revision,url:url+exact,model_sha256,view:entry.view,spread:entry.spread,pose:entry.pose,mesh_probes:probes.length,archives,downloads:hrefs,errors},null,2)+'\n');
+    await writeFile(join(out,'browser.json'),JSON.stringify({scope:engineering?'engineering':base?'url':published?'published':'candidate',revision,url:url+exact,model_sha256,view:entry.view,spread:entry.spread,pose:entry.pose,mesh_probes:probes.length,comparison,archives,downloads:hrefs,errors},null,2)+'\n');
   }
-  assert.deepEqual(errors,[]);console.log(posters?'Rendered 19 '+revision+' fallback views: '+posterOutput:'Verified '+revision+' camera, exploded panel, 16 mesh probes, 14 downloads and archives. Receipt: '+join(out,'browser.json'));
+  const comparisonNote=revision==='D2.7'&&!engineering?', size comparison':'';
+  assert.deepEqual(errors,[]);console.log(posters?'Rendered 19 '+revision+' fallback views: '+posterOutput:'Verified '+revision+' camera, exploded panel, 16 mesh probes, 14 downloads'+comparisonNote+' and archives. Receipt: '+join(out,'browser.json'));
 }finally{await browser?.close();if(server)server.close();}
 

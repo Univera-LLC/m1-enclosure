@@ -9,7 +9,6 @@ import {views,viewKeys,portViews} from './catalog.js';
 const here=dirname(fileURLToPath(import.meta.url)), viewer=dirname(here), cad=dirname(viewer), root=resolve(cad,'../..');
 const {values:args}=parseArgs({options:{draft:{type:'boolean'},packed:{type:'string'},'cad-dir':{type:'string'},output:{type:'string'},'release-page':{type:'boolean'}}});
 if(Boolean(args.packed)!==Boolean(args['cad-dir']))throw Error('Provide both --packed PATH and --cad-dir PATH (relative to the project root).');
-if(args.output&&!args.packed)throw Error('--output requires --packed and --cad-dir');
 const project=JSON.parse(await readFile(join(root,'project.json'),'utf8'));
 const draft=args.draft, frozen=join(cad,'prototype-d26'), prototype=resolve(root,args['cad-dir']||project.cad);
 const cadReport=JSON.parse(await readFile(join(prototype,'cad-validation.json'),'utf8'));
@@ -17,7 +16,7 @@ const revision=cadReport.revision;
 if(!['D2.6','D2.7'].includes(revision)||(!args.packed&&revision!==project.revision))throw Error('Unexpected CAD revision: '+revision);
 const newer=revision==='D2.7', slug=newer?'d27':'d26', versionDir=join(viewer,slug);
 const packed=args.packed?resolve(root,args.packed):null, dst=args.output?resolve(root,args.output):join(root,'build',slug+(draft?'-draft':packed?'-engineering-viewer':'-viewer'));
-await mkdir(dirname(dst),{recursive:true});await mkdir(dst,{recursive:!packed});
+await mkdir(dirname(dst),{recursive:true});await mkdir(dst,{recursive:!packed&&!args.output});
 const study=join(cad,'prototype-d2','photo-study');
 async function releaseInput(path,encoding){try{return await readFile(path,encoding);}catch(err){if(draft&&err.code==='ENOENT')return null;throw err;}}
 async function assembly(){

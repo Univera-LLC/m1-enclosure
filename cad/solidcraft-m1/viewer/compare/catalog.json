@@ -1,0 +1,51 @@
+{
+  "mac": {
+    "id": "mac", "name": "Mac mini M1", "size": [197, 197, 36],
+    "basis": "Специфікація Apple · модель 2020 року",
+    "url": "https://support.apple.com/en-us/111894"
+  },
+  "objects": [
+    {
+      "id": "aa", "name": "Батарейка AA", "size": [14.5, 14.5, 50.5], "round": true,
+      "caption": "Для пульта вистачить. Тут вона працює лінійкою.",
+      "basis": "Максимальний габарит формату AA",
+      "url": "https://en.wikipedia.org/wiki/AA_battery#Dimensions"
+    },
+    {
+      "id": "portrait", "name": "Портрет Зеленського · A4", "size": [210, 297, 0.3],
+      "caption": "Формат A4. Кабінет у комплект не входить.",
+      "basis": "Формат A4 (210 × 297 мм) без рамки; товщина 0,3 мм умовна",
+      "url": "https://uk.wikipedia.org/wiki/Файл:Volodymyr_Zelensky_Official_portrait.jpg"
+    },
+    {
+      "id": "pixel", "name": "Google Pixel 10 Pro", "size": [72, 152.8, 8.6],
+      "caption": "Кишеньковий еталон. Чохол у порівняння не ввійшов.",
+      "basis": "Google Store · габарит телефона за специфікацією",
+      "url": "https://store.google.com/gb/product/pixel_10_pro_specs?hl=en-GB"
+    },
+    {
+      "id": "berserk", "name": "Берсерк · том 1", "size": [131, 183, 18], "approx": true,
+      "caption": "Меч великий, перший том — цілком кишеньковий.",
+      "basis": "Dark Horse, м’яка обкладинка, ISBN 9781593070205 · габарит з каталогу, округлений до мм",
+      "url": "https://www.amazon.com/dp/1593070209"
+    },
+    {
+      "id": "thrones", "name": "Гра престолів · книга 1", "size": [105, 172, 35], "approx": true,
+      "caption": "Зима близько. Уся перша книга Мартіна — теж.",
+      "basis": "Bantam, м’яка обкладинка, ISBN 9780553593716 · габарит з каталогу, округлений до мм",
+      "url": "https://www.amazon.com/dp/0553593714"
+    },
+    {
+      "id": "cola", "name": "Coca-Cola · 330 мл", "size": [66, 66, 115], "round": true, "approx": true,
+      "caption": "Єдиний предмет тут, який відкривається з «пшш».",
+      "basis": "Приблизний габарит стандартної банки 330 мл; вузькі банки відрізняються",
+      "url": "https://www.crowncork.com/beverage-packaging/products/beverage-cans/113oz-330ml-standard"
+    },
+    {
+      "id": "nuc", "name": "ASUS NUC 13 Pro", "size": [117, 112, 37],
+      "caption": "Міні-ПК у версії Slim. На одному столі з Mac — без суперечки про ОС.",
+      "basis": "ASUS NUC 13 Pro · низький корпус 37 мм (Slim)",
+      "url": "https://www.asus.com/displays-desktops/nucs/nuc-mini-pcs/asus-nuc-13-pro/techspec/"
+    }
+  ]
+}

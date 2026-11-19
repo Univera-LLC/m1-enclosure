@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="uk"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f8f4">
+<meta name="description" content="Корпус Enclosure Lab $revision та оригінальний Mac mini M1 поруч у 3D: спільний масштаб, лінійка і сім знайомих предметів.">
+<title>Порівняння розмірів · Enclosure Lab</title>
+<link rel="canonical" href="$canonical">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%231c3430'/%3E%3Cpath stroke='%23bef1ce' stroke-width='3.4' stroke-linecap='round' d='m8 25 5-12m1 14 6-15m1 15 6-15m0 14 5-12'/%3E%3C/svg%3E">
+<style>$shared_css
+$css</style>
+<!-- Three.js MIT licence
+$three_license
+-->
+</head><body>
+<a href="#compare-main" class="skip">До порівняння</a>
+<header class="mast"><div class="wrap mast-in">
+  <a class="identity compare-brand" href="../index.html"><span class="brandmark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="m6 25 5-12m2 14 6-15m1 15 6-15m1 14 5-12"/></svg></span>Univera LLC</a>
+  <span class="series">АТЛАС КОНСТРУКЦІЇ <b>/</b> 02</span>
+  <div class="mast-actions"><a class="compare-download" href="../index.html#downloads"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/></svg>STL і STEP</a></div>
+</div></header>
+<main class="wrap compare-main" id="compare-main">
+  <div class="intro compare-intro">
+    <div><div class="eyebrow"><i></i> Цифровий прототип <span>/</span> FDM $revision</div>
+      <h1>Порівняння розмірів<span>.</span></h1>
+      <p>Наш корпус і Mac mini (M1, 2020) поруч у 3D. Покрутіть їх разом або додайте знайому річ для масштабу.</p>
+    </div>
+    <div class="spec"><div class="micro">Слід на столі</div><div class="dimension">−$area_delta<small>%</small></div><div class="spec-foot"><span class="rule"></span>Площа за шириною × глибиною</div></div>
+  </div>
+  <div class="compare-navrow">
+    <nav class="tabs compare-nav" aria-label="Розділи атласу">
+      <a href="../index.html#stage">‹ Атлас</a><a href="index.html" aria-current="page">Порівняння</a>
+    </nav>
+    <a href="#differences">Що змінилося ↓</a>
+  </div>
+  <noscript><p>Таблиця габаритів доступна нижче. Для перемикання ракурсів та предметів увімкніть JavaScript.</p></noscript>
+  <section id="compare-workbench" class="figure compare-workbench" aria-label="Інтерактивне порівняння" hidden>
+    <div class="compare-toolbar">
+      <div class="compare-view-tools">
+        <div id="compare-modes" role="group" aria-label="Спосіб перегляду">
+          <button type="button" data-mode="orbit" aria-pressed="true"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m3 7 9-5 9 5v10l-9 5-9-5Zm0 0 9 5 9-5m-9 5v10"/></svg>3D поруч</button>
+          <button type="button" data-mode="diagram" aria-pressed="false">Креслення</button>
+        </div>
+        <button id="compare-ruler" type="button" aria-pressed="true"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M2.5 7h19v10h-19zM7 7v4m5-4v6m5-6v4"/></svg>Лінійка</button>
+      </div>
+      <div id="compare-angles" role="group" aria-label="Ракурс">
+        <span class="micro">Ракурс</span>
+        <button type="button" data-angle="iso" aria-pressed="true">Під кутом</button>
+        <button type="button" data-angle="top" aria-pressed="false">Зверху</button>
+        <button type="button" data-angle="front" aria-pressed="false">Спереду</button>
+        <button type="button" data-angle="rear" aria-pressed="false">Ззаду</button>
+        <button type="button" data-angle="side" aria-pressed="false" hidden>Збоку</button>
+      </div>
+    </div>
+    <p id="compare-orbit-unavailable" class="compare-orbit-unavailable" role="status" hidden>3D не запустилося в цьому браузері. Креслення з тим самим масштабом доступні нижче.</p>
+    <div id="compare-orbit">
+      <div class="compare-orbit-legend">
+        <div class="compare-orbit-label"><span class="compare-dot"></span><div><b>Enclosure $revision</b><small id="compare-orbit-case" class="compare-size"></small></div></div>
+        <div class="compare-orbit-label compare-mac"><span class="compare-dot"></span><div><b>Mac mini M1</b><small id="compare-orbit-mac" class="compare-size"></small></div></div>
+        <div class="compare-orbit-label compare-object" id="compare-orbit-reference" hidden><span class="compare-dot"></span><div><b id="compare-orbit-name"></b><small id="compare-orbit-size" class="compare-size"></small></div></div>
+      </div>
+      <div id="compare-stage" tabindex="0" aria-label="3D-порівняння. Стрілки обертають, плюс і мінус змінюють масштаб, 0 повертає початковий ракурс.">
+        <div id="compare-surface" aria-hidden="true"></div>
+        <svg id="compare-orbit-rulers" aria-hidden="true"></svg>
+        <p class="compare-loading" id="compare-loading" role="status">Готуємо 3D…</p>
+        <div class="toolstrip compare-orbit-tools" id="compare-orbit-tools" hidden>
+          <button id="compare-out" type="button" aria-label="Віддалити" title="Віддалити (−)"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14"/></svg></button>
+          <button id="compare-in" type="button" aria-label="Наблизити" title="Наблизити (+)"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-7-7v14"/></svg></button>
+          <button id="compare-reset" type="button" aria-label="Початковий ракурс" title="Початковий ракурс (0)"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/><circle cx="12" cy="12" r="3.3"/></svg></button>
+        </div>
+      </div>
+      <div class="compare-key"><span class="micro">Спільний масштаб</span><span class="compare-ruler-note">Цифри — см, дрібні поділки — 1 мм</span><span>Тягніть, щоб обертати. Колесо або щипок — щоб наблизити.</span></div>
+    </div>
+    <div class="compare-plots" id="compare-plots" hidden>
+      <figure class="compare-item compare-case">
+        <figcaption><span class="micro"><i></i> 01 / Наш корпус</span><strong>Enclosure $revision</strong><span class="compare-size"></span></figcaption>
+        <svg class="compare-diagram" viewBox="-150 -122 300 249" aria-hidden="true"></svg>
+      </figure>
+      <figure class="compare-item compare-mac">
+        <figcaption><span class="micro"><i></i> 02 / Оригінал</span><strong>Mac mini M1</strong><span class="compare-size"></span></figcaption>
+        <svg class="compare-diagram" viewBox="-150 -122 300 249" aria-hidden="true"></svg>
+      </figure>
+      <figure class="compare-item compare-object">
+        <figcaption><span class="micro"><i></i> 03 / Для масштабу</span><strong id="compare-object-name"></strong><span class="compare-size"></span></figcaption>
+        <svg class="compare-diagram" viewBox="-150 -122 300 249" aria-hidden="true"></svg>
+      </figure>
+      <div class="compare-key">
+        <span class="micro">Спільний масштаб</span>
+        <span class="compare-ruler-note">Цифри — см, дрібні поділки — 1 мм</span>
+        <strong id="compare-axes" aria-live="polite"></strong>
+      </div>
+    </div>
+    <div class="compare-bench">
+      <div class="compare-bench-head"><h2>Що покладемо поруч?</h2><a id="compare-bench-source" href="#compare-sources">Джерела й ліцензії ↓</a></div>
+      <div id="compare-choices" role="group" aria-label="Предмет для масштабу"><button type="button" data-item="none" aria-pressed="true">Лише корпуси</button>$choices</div>
+      <p class="compare-object-note" id="compare-object-note" aria-live="polite"></p>
+    </div>
+  </section>
+  <section class="compare-details" id="differences" aria-labelledby="differences-title">
+    <div class="compare-measures">
+      <span class="eyebrow">01 / Габарити</span>
+      <h2 id="differences-title">Менше місця на столі</h2>
+      <table>
+        <thead><tr><th scope="col">У мм</th><th scope="col">$revision</th><th scope="col">Mac mini</th><th scope="col">Різниця</th></tr></thead>
+        <tbody>$rows</tbody>
+      </table>
+      <p>Площа за шириною й глибиною: <b>$case_area см²</b> проти <b>$mac_area см²</b>. Без урахування заокруглень і місця для кабелів.</p>
+    </div>
+    <div class="compare-advantages">
+      <span class="eyebrow">02 / Конструкція</span>
+      <h2>Що дає $revision</h2>
+      <ul>
+        <li><strong>Більше місця за корпусом.</strong> D2.7 на $depth_delta мм менший у глибину й на $height_delta мм вищий.</li>
+        <li><strong>Окремий вхід USB‑C PD.</strong> Замість мережевого входу Mac mini в конструкції передбачено живлення від зовнішнього USB‑C блока.</li>
+        <li><strong>Деталі можна передрукувати.</strong> Кришка й задня панель знімні. STL і редаговані CAD-файли <a href="../index.html#downloads">доступні для завантаження</a>.</li>
+      </ul>
+      <p class="compare-prototype">Цифровий прототип для примірки без живлення. Роботу під живленням, охолодження й бездротовий зв’язок ще не перевірено.</p>
+    </div>
+  </section>
+  <details class="compare-sources" id="compare-sources">
+    <summary>Джерела, розміри й ліцензії</summary>
+    <p>У 3D показано корпус $revision із роз’ємами та радіатором з атласу збірки. Mac mini — модель DatSketch, відмасштабована до розмірів зі специфікації Apple. Креслення показують схематичні контури. Телефон, книжки й портрет лежать плазом; банка й батарейка стоять.</p>
+    <ul>$sources</ul>
+  </details>
+  <p class="compare-credits">
+    <a href="https://sketchfab.com/3d-models/apple-mac-mini-m1-79f1f864089d423fb06d220fe2085c71">Модель Mac mini — DatSketch</a> (формат GLB, масштаб адаптовано) ·
+    <a href="https://commons.wikimedia.org/wiki/File:Volodymyr_Zelensky_Official_portrait.jpg">Портрет — President.gov.ua</a> (масштабовано й доповнено полями A4) ·
+    <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><br>
+    Референс плати $revision (видимі роз’єми й радіатор) — <a href="https://www.printables.com/model/139893-shrink-the-m1-mac-mini">Quinn Nelson / SnazzyLabs</a>, CC BY-NC.
+  </p>
+</main>
+<footer><div class="wrap"><span>Enclosure Lab <b>·</b> Univera LLC</span><span><a href="../LICENSE.txt">Ліцензія</a> <b>·</b> <a href="../THIRD_PARTY.md">Джерела</a></span></div></footer>
+<script type="application/json" id="compare-data">$data</script>
+<script type="application/json" id="glbs">__MODEL__</script>
+<script>$script</script>
+</body></html>

@@ -1,0 +1,112 @@
+.compare-brand{color:var(--ink);text-decoration:none}
+.compare-download{display:flex;align-items:center;gap:7px;padding:7px 11px;border:1px solid #aec5b6;border-radius:6px;background:#eef4ec;color:#29543e;text-decoration:none;font-size:13px;font-weight:650;white-space:nowrap}
+.compare-download svg{width:16px;height:16px}
+.compare-download:hover{background:#e1ecdf}
+.compare-intro{padding-block:clamp(22px,2.2vw,36px) clamp(17px,1.7vw,25px)}
+.compare-intro p{max-width:60ch}
+.compare-intro .dimension{font-size:clamp(32px,3.4vw,54px);line-height:1.15;color:var(--accent)}
+.compare-intro .spec-foot{margin-top:4px}
+.compare-navrow{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}
+.compare-nav.tabs{grid-template-columns:repeat(2, minmax(0,1fr));margin:0}
+.compare-nav.tabs a:nth-child(n){grid-column:auto;min-width:112px;padding-inline:13px}
+.compare-navrow>a,.compare-bench-head a{font-size:13px;font-weight:600}
+.compare-toolbar,.compare-toolbar [role=group],.compare-view-tools{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.compare-toolbar{padding:11px 16px;justify-content:space-between;gap:10px;border-bottom:1px solid var(--rule);background:#fbfcf8}
+.compare-toolbar .micro{margin-right:8px}
+.compare-toolbar button,.compare-bench button{border:1px solid #b5c9bd;border-radius:6px;background:#eff4ec;color:#295640;font-size:13px;font-weight:600;min-height:36px;padding:5px 10px}
+.compare-toolbar button:not(:disabled):hover,.compare-bench button:hover{background:#e1ecdf}
+.compare-toolbar button[aria-pressed=true],.compare-bench button[aria-pressed=true]{background:#25453b;border-color:#25453b;color:white}
+#compare-ruler{display:inline-flex;align-items:center;gap:6px}
+#compare-ruler svg{width:18px;height:18px}
+#compare-modes button{display:inline-flex;align-items:center;justify-content:center;gap:6px;white-space:nowrap}
+#compare-modes svg{width:16px;height:16px}
+.compare-orbit-legend{display:flex;gap:8px clamp(14px,3vw,46px);flex-wrap:wrap;align-items:baseline;padding:12px 16px;background:#edf3eb;border-bottom:1px solid #c8d5ca}
+.compare-orbit-label{display:flex;gap:7px;align-items:baseline;font-size:14px}
+.compare-orbit-label small{display:block;font-size:11px;margin-top:2px}
+.compare-dot{flex:none;display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--dot,#387e60)}
+#compare-stage{position:relative;height:clamp(300px,36vw,470px);background:radial-gradient(ellipse at 45% 27%,#f1f5ee,#e3ece4 69%,#d5e2d9);overflow:hidden}
+#compare-stage:focus-visible{outline:3px solid #00795f;outline-offset:-4px}
+#compare-surface,#compare-surface canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+#compare-orbit-rulers{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;pointer-events:none}
+#compare-surface canvas{cursor:grab;touch-action:none}
+#compare-surface canvas:active{cursor:grabbing}
+.compare-loading{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);margin:0;background:var(--ink);color:white;border-radius:20px;padding:6px 13px;font-size:13px;pointer-events:none}
+.compare-orbit-tools{position:absolute;bottom:14px;right:16px}
+.compare-orbit-unavailable{background:#f5f1e4;margin:0;padding:9px 16px;color:#604b2f;font-size:13px}
+.compare-plots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:radial-gradient(ellipse at 45% 30%,#f1f5ee 0,#e4ece5 70%,#dce8df 100%)}
+.compare-plots.cases-only{grid-template-columns:repeat(2,minmax(0,1fr))}
+.compare-item{--dot:#387e60;min-width:0;margin:0;padding:14px 12px 2px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.compare-item+.compare-item{box-shadow:inset 1px 0 #c8d5ca}
+.compare-mac{--dot:#65716f}.compare-object{--dot:#a15b36}
+.compare-item figcaption{display:grid;gap:3px;align-content:start;min-height:64px}
+.compare-item .micro{color:var(--quiet)}
+.compare-item .micro i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--dot);margin-right:2px}
+.compare-item strong{font-size:clamp(16px,2vw,24px);letter-spacing:-.035em;line-height:1.1}
+.compare-size{font:600 clamp(11px,1.16vw,14px)/1.3 var(--mono);color:#3e564b;font-variant-numeric:tabular-nums}
+.compare-diagram{display:block;width:100%;height:auto;max-width:348px;overflow:hidden}
+.compare-diagram .drawing{stroke:none}
+.edge-ruler .ruler-leader{stroke:#82998b}
+.edge-ruler .ruler-line,.edge-ruler .ruler-ticks{stroke:#315245}
+.edge-ruler .ticks-0{opacity:.58}
+.edge-ruler .scale-label{font-family:var(--mono);font-weight:650;fill:#213c32;stroke:#f5f8f0;paint-order:stroke;text-anchor:middle;dominant-baseline:middle}
+.compare-key{grid-column:1/-1;display:flex;align-items:center;gap:6px 15px;flex-wrap:wrap;border-top:1px solid #c8d5ca;padding:9px 16px;background:#f0f5ed;color:var(--quiet);font-size:12px}
+.compare-key strong{color:#2e5241;font-size:12px}
+.compare-ruler-note{color:#2d5242;font-weight:650}
+.compare-bench{padding:15px 16px 12px;border-top:1px solid var(--rule)}
+.compare-bench-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:3px 12px;margin-bottom:9px}
+.compare-bench h2{margin:0;font-size:17px;letter-spacing:-.025em}
+#compare-choices{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px}
+.compare-bench button{min-height:43px;padding:6px;line-height:1.15}
+.compare-object-note{margin:8px 0 0;font-size:13px;color:var(--quiet)}
+.compare-details{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:clamp(16px,3vw,42px);margin-top:clamp(24px,3.4vw,48px);scroll-margin-top:16px}
+.compare-details h2{font-size:clamp(23px,2.55vw,36px);font-weight:620;letter-spacing:-.045em;line-height:1.12;margin:5px 0 11px}
+.compare-details table{width:100%;border-collapse:collapse;font-size:14px;text-align:right;font-variant-numeric:tabular-nums}
+.compare-details :is(th,td){padding:8px 5px;border-bottom:1px solid var(--rule)}
+.compare-details th:first-child{text-align:left}
+.compare-details td:last-child{color:#165643;font-weight:650}
+.compare-details tr:last-child td:last-child{color:#8c4b2d}
+.compare-details p,.compare-advantages li,.compare-sources p,.compare-sources li{font-size:14px;color:var(--quiet);margin:7px 0}
+.compare-advantages ul{padding-left:1.15em;margin:0}
+.compare-advantages strong{color:var(--ink)}
+.compare-advantages .compare-prototype{padding-left:10px;border-left:2px solid #a7bdac;margin-top:11px;font-size:13px}
+.compare-sources{border-top:1px solid var(--rule);margin:24px 0;padding:12px 0;scroll-margin-top:16px}
+.compare-sources summary{font-weight:650}
+.compare-sources ul{padding-left:1.15em}
+.compare-credits{margin:-10px 0 24px;color:var(--quiet);font-size:12px}
+@media(max-width:1000px){
+  #compare-choices{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media(max-width:720px){
+  .compare-intro{flex-wrap:wrap;padding-bottom:14px}
+  .compare-intro .spec{min-width:0;display:flex;flex-wrap:wrap;align-items:center;gap:3px 9px;padding-left:10px}
+  .compare-intro .dimension{font-size:24px}
+  .compare-intro .spec-foot{margin:0}
+  .compare-intro .spec-foot .rule{display:none}
+  .compare-navrow>a,.compare-bench-head a{font-size:12px}
+  .compare-toolbar,.compare-bench{padding:10px}
+  .compare-toolbar button,.compare-bench button{font-size:12px}
+  .compare-toolbar .micro{margin-right:2px}
+  .compare-details{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .compare-intro{padding-top:16px;gap:8px}
+  .compare-intro h1{font-size:clamp(35px,9.2vw,46px)}
+  .compare-nav.tabs a:nth-child(n){min-width:0;padding-inline:9px}
+  .compare-navrow>a{text-align:right}
+  .compare-view-tools{width:100%;justify-content:space-between}
+  .compare-plots{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .compare-item{padding:10px 4px 0}
+  .compare-item figcaption{min-height:62px;padding-inline:3px}
+  .compare-item.compare-object{box-shadow:inset 0 1px #c8d5ca}
+  .compare-plots:not(.cases-only) .compare-key{grid-column:auto;align-content:center;border-left:1px solid #c8d5ca}
+  .compare-key{padding:9px;gap:5px}
+  .compare-orbit-legend{gap:6px 15px;padding:8px 10px}
+  .compare-orbit-label{font-size:13px}
+  #compare-stage{height:clamp(265px,86vw,365px)}
+  .compare-orbit-tools{bottom:10px;right:10px}
+  .compare-bench button{min-height:44px}
+}
+@media(max-width:380px){
+  .compare-toolbar .micro{width:100%}
+  #compare-choices{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
